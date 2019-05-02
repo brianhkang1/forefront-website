@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.headerLeft {
+  padding-left: 2rem;
+}
+
+.headerMiddle, .headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  padding: 0rem 1rem;
+}
+
+.active {
+  font-weight: bold;
+} 

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 #root {
@@ -9,3 +13,4 @@ body {
   margin: 0;
   padding: 0;
 }
+
