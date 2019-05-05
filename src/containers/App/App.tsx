@@ -13,7 +13,7 @@ import AboutUsPage from '../AboutUsPage';
 function App() {
   return (
     <div className={styles.site}>
-      <Header/>
+      {/* <Header/> */}
 
       <div className={styles.content}>
         <Switch>
