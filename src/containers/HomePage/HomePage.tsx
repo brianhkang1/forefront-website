@@ -21,6 +21,10 @@ class HomePage extends React.Component<{}, State>{
     window.addEventListener('scroll', this.listenScrollEvent)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.listenScrollEvent);
+}
+
   listenScrollEvent = e => {
     // mobile scroll event
     if(window.matchMedia("(max-width: 600px)")){
