@@ -1,47 +1,44 @@
+/* laptop */
 @media (min-width: 601px) {
-  .FeaturePictureContainer { 
-    background-image: url("../../images/MainHomePageBackground.jpg");
-    height: 48rem;
-    position: relative; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .typeWriter{
+    font-size: 5vw;
+    top: 35%;
+    left: 10%;
   }
 }
 
+/* mobile */
 @media (max-width: 600px) {
-  .FeaturePictureContainer { 
-    background-image: url("../../images/MainHomePageBackground.jpg");
-    height: 125rem;
-    position: relative; 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .typeWriter{
+    font-size: 9vw;
+    top: 30%;
+    left: 10%;
   }
+}
+
+.FeaturePictureContainer { 
+  background-image: url("../../images/MainHomePageBackground.jpg");
+  height: 100vh;
+  width: 100vw;
+  position: relative; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .typeWriter {
   position: absolute;
-  top: 35%;
-  left: 10%;
-  /* transform: translate(-50%, -50%); */
   color: white;
-  font-size: 5rem;
-  min-width: fit-content;
   opacity: 0.8;
 }
 
 .container2 {
-  min-height: 30rem;
+  min-height: 100vh;
 }
 
 .container3 {
-  min-height: 30rem;
-  background-color: rgb(69, 158, 172);
-  color: white;
+  min-height: 100vh;
 }
