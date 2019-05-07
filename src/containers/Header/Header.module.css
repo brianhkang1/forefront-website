@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: 20% 80%;
   z-index: 1;
@@ -8,7 +8,7 @@
 .headerLeft {
   text-decoration: none;
   padding-left: 1vw;
-  padding-top: 1vh;
+  padding-top: 2.2vh;
   margin-right: 2.75vw;
   color: rgb(69, 158, 172);
   background-color: white;
@@ -76,3 +76,24 @@
 .active {
   font-weight: bold;
 } 
+
+.mobileHeader {
+  width: 100vw;
+  height: 6vh;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 90vw 10vw; 
+  background-color: white;
+  padding-top: 1.5vh;
+}
+
+.mobileHeaderLeft {
+  padding-top: 0.5vh;
+  padding-left: 2vw;
+}
+
+
+.mobileTitle {
+  color: rgb(69, 158, 172);
+  font-size: 7vw;
+}
