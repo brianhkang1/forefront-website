@@ -4,7 +4,7 @@ import styles from './OurWorkPage.module.css';
 class OurWorkPage extends React.Component{
   render(){
     return (
-      <div>
+      <div> 
         Our Work Page
       </div>
     );

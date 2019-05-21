@@ -13,19 +13,23 @@ import AboutUsPage from '../AboutUsPage';
 function App() {
   return (
     <div className={styles.site}>
-      {/* <Header/> */}
+      <div className={styles.header}>
+        <Header/>
+      </div>
 
       <div className={styles.content}>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/our-approach" component={OurApproachPage} />
-          <Route path="/our-work" component={OurWorkPage} />
-          <Route path="/builders" component={BuildersPage} />
-          <Route path="/about" component={AboutUsPage} />
+            <Route exact path="/" component={HomePage} />
+            <Route path="/our-approach" component={OurApproachPage} />
+            <Route path="/our-work" component={OurWorkPage} />
+            <Route path="/builders" component={BuildersPage} />
+            <Route path="/about" component={AboutUsPage} />
         </Switch>   
       </div>
-
-      <Footer/>
+      
+      <div className={styles.footer}>
+        <Footer/>
+      </div>
     </div>
   );
 }

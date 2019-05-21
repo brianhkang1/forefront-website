@@ -2,54 +2,40 @@ import React from 'react';
 import styles from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
+
 import MobileMenu from '../../components/MobileMenu'
+import HeaderLinks from '../../components/HeaderLinks'
 
 class Header extends React.Component{
-  state = { activeItem: 'home' }
+  state = { activeLink: 'home' }
 
-  handleItemClick = (e: any, { name }: any) => this.setState({ activeItem: name })
+  handleLinkClick = (e: any, { name }: any) => this.setState({ activeItem: name })
   
+  onClick = () => {
+
+  }
+
   render(){
-    const { activeItem } = this.state
+    
     return (
+      // laptop view
       window.matchMedia("(min-width: 601px)").matches
         ? (
           <header className={styles.header}>
             <div className={styles.headerLeft}>
               <NavLink exact to="/" activeClassName={styles.active}>FOREFRONT</NavLink>
             </div>
-            <ul className={styles.headerLinks}> 
-              {/* <span className={styles.link}>
-                <NavLink exact to="/" activeClassName={styles.active}>Home</NavLink>
-              </span> */}
-              <span className={styles.link}>
-                <NavLink to="/our-approach" activeClassName={styles.active}>Our Approach</NavLink>
-              </span>
-              <span className={styles.link}>
-                <NavLink to="/our-work" activeClassName={styles.active}>Our Work</NavLink>
-              </span>
-              <span className={styles.link}>
-                <NavLink to="/builders" activeClassName={styles.active}>Builders</NavLink>
-              </span>
-              <span className={styles.link}>
-                <NavLink to="/about" activeClassName={styles.active}>About Us</NavLink>
-              </span>
-              <span className={styles.link}>
-                <a href="#">Shop</a>
-              </span>
-              <span className={styles.link}>
-                <a href="#">Donate</a>
-              </span>
-            </ul>
+            <HeaderLinks handleLinkClick={this.handleLinkClick}/>
           </header>
           )
         : (
+      //mobile view
           <>
           <header className={styles.mobileHeader}>
             <div className={styles.mobileHeaderLeft}>
               <span className={styles.mobileTitle}>FOREFRONT</span>
             </div>
-            <div>
+            <div onClick={this.onClick}>
               <Icon color="grey" name="bars" size="large" />
             </div>
           </header>

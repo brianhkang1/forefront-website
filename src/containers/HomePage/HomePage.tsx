@@ -49,14 +49,16 @@ class HomePage extends React.Component<{}, State>{
   }
 
   renderFeatureTitle = () => {
+    // if mobile browser
     if(window.matchMedia("(max-width: 600px)").matches){
       return (
       <>
-        <div>We are</div>
+        <div className={styles.mobileTitlePadding}>We are</div>
         <TextLoop children={["leaders.", "difference-makers.", "avengers."]}/>
       </>
       ) 
     }
+    //if laptop browser
     else if (window.matchMedia("(min-width: 601px)").matches){
       return (
       <>
@@ -73,9 +75,8 @@ class HomePage extends React.Component<{}, State>{
 
   render(){
     return (
-      <div style={{backgroundColor: this.state.color, transition: 'background-color 0.75s'}}>
+      <div style={{backgroundColor: this.state.color, transition: 'background-color 0.75s', position: 'relative'}}>
         <div className={styles.FeaturePictureContainer}>
-          <Header/>
           <div className={styles.typeWriter}>
             {this.renderFeatureTitle()}
           </div>  

@@ -1,4 +1,5 @@
 .mobileMenu {
   width: 100vw;
   background-color: white;
+  display: none;
 }
