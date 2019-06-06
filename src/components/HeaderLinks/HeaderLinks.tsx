@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 interface Props {
   handleLinkClick: (e: any, name: string) => void;
+  isMobile?: boolean;
 }
 
 class HeaderLinks extends React.Component<Props> {
   render(){
     return(
       <div className={styles.headerLinks}>
-      {/* show home link in mobile view */}
-      {window.matchMedia("(max-width: 600px)").matches
+      {this.props.isMobile
         ? (
           <div className={styles.link}>
             <NavLink exact to="/" activeClassName={styles.active}>Home</NavLink>

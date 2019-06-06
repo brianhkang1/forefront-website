@@ -1,29 +1,42 @@
 import React from 'react';
 import styles from './Header.module.css';
 import { NavLink } from 'react-router-dom';
-import { Icon } from 'semantic-ui-react';
+import { classNames } from '../../util';
 
-import MobileMenu from '../../components/MobileMenu'
+import { Icon } from 'semantic-ui-react';
 import HeaderLinks from '../../components/HeaderLinks'
 
-class Header extends React.Component{
-  state = { activeLink: 'home' }
+type State = {
+  activeLink: string;
+  isMobileMenuActive: boolean;
+}
 
-  handleLinkClick = (e: any, { name }: any) => this.setState({ activeItem: name })
+class Header extends React.Component<{}, State>{
+  constructor(props){
+    super(props)
+
+    this.state = {
+      activeLink: 'home',
+      isMobileMenuActive: false
+    }
+  }
+
+  handleLinkClick = (e: any, { name }: any) => this.setState({ activeLink: name })
   
-  onClick = () => {
-
+  onMobileMenuClick = () => {
+    this.setState({isMobileMenuActive: !this.state.isMobileMenuActive})
   }
 
   render(){
-    
+    const { isMobileMenuActive } = this.state
+
     return (
       // laptop view
       window.matchMedia("(min-width: 601px)").matches
         ? (
           <header className={styles.header}>
             <div className={styles.headerLeft}>
-              <NavLink exact to="/" activeClassName={styles.active}>FOREFRONT</NavLink>
+              <NavLink exact to="/">FOREFRONT</NavLink>
             </div>
             <HeaderLinks handleLinkClick={this.handleLinkClick}/>
           </header>
@@ -35,11 +48,14 @@ class Header extends React.Component{
             <div className={styles.mobileHeaderLeft}>
               <span className={styles.mobileTitle}>FOREFRONT</span>
             </div>
-            <div onClick={this.onClick}>
+            <div onClick={this.onMobileMenuClick}>
               <Icon color="grey" name="bars" size="large" />
             </div>
           </header>
-          <MobileMenu/>
+
+          <div className={classNames(styles.mobileMenu, isMobileMenuActive && styles.displayMobileMenu) }>
+            <HeaderLinks isMobile handleLinkClick={this.handleLinkClick}/>
+          </div>
         </>
         )
       )

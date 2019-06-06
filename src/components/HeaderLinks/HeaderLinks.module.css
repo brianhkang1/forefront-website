@@ -1,24 +1,46 @@
-.headerLinks {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 2vw;
-  font-size: 1.3vw;
+/* laptop */
+@media (min-width: 601px) {
+  .headerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    font-size: 1.3vw;
+  }
+
+  .link > a, .button > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .link > a:hover {
+    color: rgb(69, 158, 172);
+  }
+
+  .link {
+    padding: 0vw 1vw;
+  }
 }
 
-.link {
-  padding: 0vw 1vw;
-}
+/* mobile */
+@media (max-width: 600px) {
+  .headerLinks {
+    font-size: 5vw;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .link {
+    padding: 1vh 0vh;
+  }
+  
+  .link > a {
+    text-decoration: none;
+    color: black;
+  }
 
-.link > a, .button > a {
-  color: white;
-  text-decoration: none;
+  .link > .active {
+    color: rgb(69, 158, 172);
+    font-weight: bold;
+  }
 }
-
-.link > a:hover {
-  color: rgb(69, 158, 172);
-}
-
-.active {
-  font-weight: bold;
-} 
