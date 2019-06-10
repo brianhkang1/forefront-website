@@ -1,0 +1,19 @@
+.root {
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: rgb(43,47,53);  */
+}
+
+.titleContainer {
+  background-color: rgb(69, 158, 172);
+  display: flex;
+  align-items: center;
+  padding-left: 4vw;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 4vw;
+}

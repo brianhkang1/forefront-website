@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FourPillarItem.module.css';
+import styles from './FourPillarsItem.module.css';
 import { Spring } from 'react-spring/renderprops';
 
 interface Props {
@@ -12,7 +12,7 @@ interface State {
   isItemFloating: boolean;
 }
 
-class FourPillarItem extends React.Component<Props, State> {
+class FourPillarsItem extends React.Component<Props, State> {
   constructor(props){
     super(props)
 
@@ -33,7 +33,7 @@ class FourPillarItem extends React.Component<Props, State> {
         <Spring
           to={{
             transform: `translateY(${isItemFloating ? '-20px' : '0px' })`,
-            boxShadow: isItemFloating ? '0px 20px 40px 1px rgba(0, 0, 0, 0.2)' : '0px 0px 0px 0px rgba(0, 0, 0, 0)'
+            boxShadow: isItemFloating ? '0px 20px 40px 1px rgba(0, 0, 0, 0.2)' : (window.matchMedia("(max-width: 600px)").matches ? '0px 0px 0px 0px' : '0px 1px 1px 0px rgba(0, 0, 0, 0.2)' )
           }}
         >
           { props => (
@@ -54,4 +54,4 @@ class FourPillarItem extends React.Component<Props, State> {
   }
 }
 
-export default FourPillarItem
+export default FourPillarsItem

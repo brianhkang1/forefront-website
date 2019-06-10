@@ -1,9 +1,16 @@
+/* laptop */
+@media (min-width: 601px) {
+  .iconContainer{
+    border: 1px solid #f8f8f8;
+    border-radius: 100px;
+  }
+}
+
 /* mobile */
 @media (max-width: 600px) {
   .iconContainer {
     padding-bottom: 3vh;
   }
-
 }
 
 .root {
@@ -19,10 +26,6 @@
   align-items: center;
   height: 10vw;
   width: 10vw;
-  
-  border: 1px solid #f8f8f8;
-  border-radius: 100px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .titleContainer {
