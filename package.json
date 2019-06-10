@@ -12,6 +12,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
+    "react-spring": "^8.0.23",
     "react-text-loop": "^2.0.2",
     "react-typing-effect": "^2.0.2",
     "semantic-ui-css": "^2.4.1",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "babel-jest": "24.7.1"
   }
 }

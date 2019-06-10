@@ -5,6 +5,12 @@
     top: 35%;
     left: 10%;
   }
+
+  .fourPillarsVisual {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 3rem;
+  }
 }
 
 /* mobile */
@@ -13,6 +19,10 @@
     font-size: 9vw;
     top: 30%;
     left: 10%;
+  }
+
+  .fourPillarsTitle {
+    line-height: 5vh;
   }
 }
 
@@ -39,28 +49,43 @@
   padding-bottom: 2vh;
 }
 
-.whatWeDoContainer {
+.fourPillarsContainer {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
 }
 
-.whatWeDoHeader {
+.fourPillarsHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.whatWeDoTitle {
+
+.fourPillarsTitle {
   font-size: 4vh;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(69, 158, 172);
 }
 
-.whatWeDoSubTitle {
+.fourPillarsSubTitle {
   font-size: 3vh;
   color: gray;
 }
 
+.centerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
 .container3 {
+  padding-top: 5vh;
   min-height: 100vh;
 }

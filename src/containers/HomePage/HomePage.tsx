@@ -3,6 +3,30 @@ import styles from './HomePage.module.css'
 import ReactTypingEffect from 'react-typing-effect';
 import TextLoop from "react-text-loop";
 import { Icon } from 'semantic-ui-react';
+import FourPillarItem from '../../components/FourPillarItem';
+
+const FourPillarItems = [
+  {
+    icon: <Icon name="tint" size="huge" color="grey"/>,
+    title: 'WATER',
+    description: '99 Million without access to improved drinking water sources'
+  },
+  {
+    icon: <Icon name="graduation cap" size="huge" color="grey"/>,
+    title: 'EDUCATION',
+    description: 'Over 50% of girls fail to enroll in school. Most girls drop out by the age of 12'
+  },
+  {
+    icon: <Icon name="band aid" size="huge" color="grey"/>,
+    title: 'MEDICAL',
+    description: 'Over 60% do not have access to adequate health care provision'
+  },
+  {
+    icon: <Icon name="users" size="huge" color="grey"/>,
+    title: 'EMPOWERMENT',
+    description: `India is 102th out of 144 in the United Nation's Gender Inequality Index`
+  }
+]
 
 class HomePage extends React.Component{
 
@@ -12,7 +36,7 @@ class HomePage extends React.Component{
       return (
       <>
         <div className={styles.mobileTitlePadding}>We are</div>
-        <TextLoop children={["leaders.", "difference-makers.", "avengers."]}/>
+        <TextLoop children={["leaders.", "revolutionaries.", "avengers."]}/>
       </>
       ) 
     }
@@ -40,13 +64,21 @@ class HomePage extends React.Component{
           </div>  
         </div>
 
-        <div className={styles.whatWeDoContainer}>
-          <div className={styles.whatWeDoHeader}>
-            <div className={styles.whatWeDoTitle}>WHAT WE DO</div>
-            <div className={styles.whatWeDoSubTitle}> some description </div>
+        <div className={styles.fourPillarsContainer}>
+          <div className={styles.fourPillarsHeader}>
+            <div className={styles.fourPillarsTitle}>
+              FOUR PILLAR APPROACH
+            </div>
+            <div className={styles.fourPillarsSubTitle}> some description </div>
           </div>
-          <div className={styles.whatWeDoVisual}>
-
+          <div className={styles.fourPillarsVisual}>
+            {FourPillarItems.map(item => (
+              <FourPillarItem
+                title={item.title}
+                description={item.description}
+                icon={item.icon}
+              />
+            ))}
           </div>
         </div>
 
