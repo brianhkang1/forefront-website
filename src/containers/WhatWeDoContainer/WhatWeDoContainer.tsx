@@ -1,33 +1,65 @@
 import React from 'react';
-import styles from './WhatWeDoContainer.module.css'
+import styles from './WhatWeDoContainer.module.css';
+import WhatWeDoItem from '../../components/WhatWeDoItem';
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 
 const whatWeDoItems = [
   {
     number: '01',
     title: 'ENABLE',
-    description: 'Enable Every Person.'
+    description: 'every person. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
   },
   {
     number: '02',
     title: 'EQUIP',
-    description: 'Equip Leaders.'
+    description: 'leaders. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
   },
   {
     number: '03',
     title: 'ESTABLISH',
-    description: 'Establish Self-Sustaining Communities.'
+    description: 'self-sustaining communities. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
   },
 
 ]
 
 const WhatWeDoContainer = () => {
+
+  const renderTitle = () => {
+    //laptop browser
+    if(window.matchMedia("(min-width: 601px)").matches){
+      return (
+        <>
+          <div className={styles.title}>WHAT</div>
+          <div className={styles.title}>WE </div>
+          <div className={styles.title}>DO</div>
+        </>
+      ) 
+    } else {
+      //mobile browser
+      return (
+        <div className={styles.title}> WHAT WE DO </div>
+      )
+    }
+
+  }
   return(
     <div className={styles.root}>
+      
       <div className={styles.titleContainer}>
-        <div className={styles.title}>
-          What We Do
-        </div>
+        { renderTitle() }
       </div>
+
+      <div className={styles.whatWeDoVisual}>
+        {whatWeDoItems.map((item, index) => (
+            <WhatWeDoItem
+              number={item.number}
+              title={item.title}
+              description={item.description}
+              index={index}
+            />
+        ))}
+      </div>
+
     </div>
   )
 }

@@ -1,7 +1,7 @@
 /* laptop */
 @media (min-width: 601px) {
   .typeWriter{
-    font-size: 5vw;
+    font-size: 6em;
     top: 35%;
     left: 10%;
   }
@@ -10,7 +10,7 @@
 /* mobile */
 @media (max-width: 600px) {
   .typeWriter{
-    font-size: 9vw;
+    font-size: 3em;
     top: 30%;
     left: 10%;
   }

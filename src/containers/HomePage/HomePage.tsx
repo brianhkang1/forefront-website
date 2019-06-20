@@ -34,14 +34,14 @@ class HomePage extends React.Component{
 
   render(){
     return (
-      <div>
+      <div className='wow fadeIn' data-wow-delay="0.5s">
         <div className={styles.FeaturePictureContainer}>
           <div className={styles.typeWriter}>
             {this.renderFeatureTitle()}
           </div>  
         </div>
 
-        {/* <WhatWeDoContainer/> */}
+        <WhatWeDoContainer/>
 
         <FourPillarsContainer/>
 

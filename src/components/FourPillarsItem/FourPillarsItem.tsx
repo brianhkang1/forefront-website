@@ -37,12 +37,12 @@ class FourPillarsItem extends React.Component<Props, State> {
           }}
         >
           { props => (
-            <div style={props} className={styles.iconContainer}>
+            <div style={props} className={`${styles.iconContainer} wow zoomIn`}>
               { icon }
             </div>
           )}
         </Spring>
-        <div className={styles.titleContainer}>
+        <div className={styles.titleContainer} >
           <div className={styles.titleText}>{ title }</div>
         </div>
         <div className={styles.descriptionContainer}>

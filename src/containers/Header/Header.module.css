@@ -5,21 +5,22 @@
 }
 
 .headerLeft {
-  text-decoration: none;
-  padding: 2.2vh 1vh;
-  margin-right: 2.75vw;
-  color: rgb(69, 158, 172);
+  display: flex;
+  justify-content: center;
+  width: 19em;
+  padding: 2vh 0;
+  min-height: fit-content;
+  border-radius: 0 0 10px 0;
   background-color: white;
-  border-radius: 0px 0px 75vw 0px;
-  min-width: fit-content;
-  max-height: 7vh;
+  color: rgb(69, 158, 172);
+
   -webkit-transition: background-color 0.4s; /* Safari */
   transition: background-color 0.4s;
 }
 
 .headerLeft > a {
   text-decoration: none;
-  font-size: 2.25vw;
+  font-size: 2.5em;
   font-weight: 300;
   -webkit-transition: color 0.4s; /* Safari */
   transition: color 0.4s;
@@ -49,11 +50,9 @@
   padding-left: 4vw;
 }
 
-
-
 .mobileTitle {
   color: rgb(69, 158, 172);
-  font-size: 8vw;
+  font-size: 2.5em;
 }
 
 .mobileMenu {

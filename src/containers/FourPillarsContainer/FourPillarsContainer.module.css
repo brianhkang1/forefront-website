@@ -3,7 +3,13 @@
   .fourPillarsVisual {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 3rem;
+    padding: 0 3em;
+  }
+
+  .fourPillarsContainer {
+    min-height: 75vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
   }
 }
 
@@ -12,12 +18,14 @@
   .fourPillarsTitle {
     line-height: 5vh;
   }
-}
 
-.fourPillarsContainer {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 2fr;
+  .fourPillarsContainer{
+    padding: 4vh 0;
+  }
+
+  .fourPillarsSubTitle {
+    padding-bottom: 5vh;
+  }
 }
 
 .fourPillarsHeader {
@@ -28,7 +36,7 @@
 }
 
 .fourPillarsTitle {
-  font-size: 4vh;
+  font-size: 3em;
   padding-bottom: 3vh;
   text-align: center;
   font-weight: bold;
@@ -36,6 +44,6 @@
 }
 
 .fourPillarsSubTitle {
-  font-size: 3vh;
+  font-size: 2em;
   color: gray;
 }

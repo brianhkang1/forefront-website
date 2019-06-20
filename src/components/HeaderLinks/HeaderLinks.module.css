@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 2vw;
-    font-size: 1.3vw;
+    font-size: 1.25em;
   }
 
   .link > a, .button > a {
@@ -25,7 +25,7 @@
 /* mobile */
 @media (max-width: 600px) {
   .headerLinks {
-    font-size: 5vw;
+    font-size: 1.25em;
     background-color: white;
     text-align: center;
   }
