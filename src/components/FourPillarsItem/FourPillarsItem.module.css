@@ -37,6 +37,7 @@
 }
 
 .titleText {
+  font-size: 1.5rem;
   font-weight: bold;
   min-height: 2.375rem;
   color: rgb(69, 158, 172);

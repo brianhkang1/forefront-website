@@ -3,7 +3,7 @@
   .root {
     min-height: 70vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     background-color: rgb(251, 251, 251);
   }
 
@@ -50,6 +50,6 @@
   .title {
     color: rgb(51,51,51);
     font-weight: bold;
-    font-size: 3em;
+    font-size: 10vw;
   }
 }
