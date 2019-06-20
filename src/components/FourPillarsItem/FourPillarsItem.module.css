@@ -29,7 +29,7 @@
 }
 
 .titleContainer {
-  padding: 1rem 0;
+  padding: 1em 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -37,9 +37,9 @@
 }
 
 .titleText {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
-  min-height: 2.375rem;
+  min-height: 2.375em;
   color: rgb(69, 158, 172);
 }
 
