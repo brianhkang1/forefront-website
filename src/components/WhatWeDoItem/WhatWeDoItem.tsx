@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './WhatWeDoItem.module.css'
-import { classNames } from '../../util';
 
 type Props = {
   number: string;
