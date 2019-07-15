@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './WhatWeDoContainer.module.css';
 import WhatWeDoItem from '../../components/WhatWeDoItem';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+
+type WhatWeDoItemType = {
+  number: string;
+  title: string;
+  description: string;
+}
 
 const whatWeDoItems = [
   {
@@ -50,12 +55,12 @@ const WhatWeDoContainer = () => {
       </div>
 
       <div className={styles.whatWeDoVisual}>
-        {whatWeDoItems.map((item, index) => (
+        {whatWeDoItems.map((item: WhatWeDoItemType, index: number) => (
             <WhatWeDoItem
+              key={`whatWeDoItem${index+1}`}
               number={item.number}
               title={item.title}
               description={item.description}
-              index={index}
             />
         ))}
       </div>

@@ -3,6 +3,12 @@ import styles from './FourPillarsContainer.module.css'
 import { Icon } from 'semantic-ui-react';
 import FourPillarItem from '../../components/FourPillarsItem';
 
+type FourPillarItemType = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
 const FourPillarItems = [
   {
     icon: <Icon name="tint" size="huge" color="grey"/>,
@@ -36,8 +42,9 @@ const FourPillarsContainer = () => {
       <div className={styles.fourPillarsSubTitle}> some description </div>
     </div>
     <div className={styles.fourPillarsVisual}>
-      {FourPillarItems.map(item => (
+      {FourPillarItems.map((item: FourPillarItemType, index: number) => (
         <FourPillarItem
+          key={`fourPillarItem${index+1}`}
           title={item.title}
           description={item.description}
           icon={item.icon}

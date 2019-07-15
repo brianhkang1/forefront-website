@@ -35,7 +35,7 @@ class Header extends React.Component<{}, State>{
       window.matchMedia("(min-width: 601px)").matches
         ? (
           <header className={styles.header}>
-            <div className={`${styles.headerLeft} animated fadeIn`}>
+            <div className={`${styles.headerLeft}`}>
               <NavLink exact to="/">FOREFRONT</NavLink>
             </div>
             <HeaderLinks handleLinkClick={this.handleLinkClick}/>
@@ -44,7 +44,7 @@ class Header extends React.Component<{}, State>{
         : (
       //mobile view
           <>
-            <div className={`${styles.mobileHeader} wow fadeIn`}>
+            <div className={`${styles.mobileHeader}`}>
               <div className={styles.mobileHeaderLeft}>
                 <span className={styles.mobileTitle}>FOREFRONT</span>
               </div>

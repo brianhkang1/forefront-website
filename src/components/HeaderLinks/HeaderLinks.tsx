@@ -20,19 +20,16 @@ class HeaderLinks extends React.Component<Props> {
         : null    
       } 
         <div className={styles.link}>
-          <NavLink to="/our-approach" activeClassName={styles.active}>Our Approach</NavLink>
+          <NavLink exact to="/our-approach" activeClassName={styles.active}>Our Approach</NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink to="/our-work" activeClassName={styles.active}>Our Work</NavLink>
+          <NavLink exact to="/our-work" activeClassName={styles.active}>Our Work</NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink to="/builders" activeClassName={styles.active}>Builders</NavLink>
+          <NavLink exact to="/builders" activeClassName={styles.active}>Builders</NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink to="/about" activeClassName={styles.active}>About Us</NavLink>
-        </div>
-        <div className={styles.link}>
-          <a href="#">Shop</a>
+          <NavLink exact to="/about" activeClassName={styles.active}>About Us</NavLink>
         </div>
         <div className={styles.link}>
           <a href="#">Donate</a>

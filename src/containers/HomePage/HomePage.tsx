@@ -4,6 +4,9 @@ import ReactTypingEffect from 'react-typing-effect';
 import TextLoop from "react-text-loop";
 import FourPillarsContainer from '../FourPillarsContainer'
 import WhatWeDoContainer from '../WhatWeDoContainer'
+import HowToGetInvolvedContainer from '../HowToGetInvolvedContainer'
+import Header from '../Header';
+import Footer from '../Footer';
 
 class HomePage extends React.Component{
 
@@ -34,21 +37,23 @@ class HomePage extends React.Component{
 
   render(){
     return (
-      <div className='wow fadeIn' data-wow-delay="0.5s">
-        <div className={styles.FeaturePictureContainer}>
-          <div className={styles.typeWriter}>
-            {this.renderFeatureTitle()}
-          </div>  
-        </div>
+        <>
+          <div className={styles.FeaturePictureContainer}> 
+            <div className={styles.header}>
+              <Header/>
+            </div> 
 
-        <WhatWeDoContainer/>
+            <div className={styles.typeWriter}>
+              {this.renderFeatureTitle()}
+            </div>  
+          </div>
 
-        <FourPillarsContainer/>
+          <WhatWeDoContainer/>
+          <FourPillarsContainer/>
+          <HowToGetInvolvedContainer/>
 
-        <div className={styles.container3}>
-          container 3
-        </div>
-      </div>
+          <Footer/>
+        </>
     );
   }
 }

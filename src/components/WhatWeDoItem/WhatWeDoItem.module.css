@@ -18,22 +18,6 @@
     border-radius: 1em;
     padding: 1em;
   }
-  
-  .cardContent:hover {
-    background-color: rgb(212, 233, 231);
-  }
-
-  .card1 {
-    transform: translate(0, 10vh) rotate(5deg);
-  }
-
-  .card2 {
-    transform: translate(0, -10vh) rotate(-5deg);
-  }
-
-  .card3 {
-    transform: translate(1vw, 15vh) rotate(-10deg);
-  }
 
   .number {
     font-size: 2.5em;

@@ -1,0 +1,20 @@
+.root {
+  padding: 5vh 0;
+  width: 100vw;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(69, 158, 172);
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: 8vh;
+}
+
+.howToGetInvolvedItemsContainer {
+  padding: 0 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
