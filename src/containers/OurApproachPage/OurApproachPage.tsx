@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from './OurApproachPage.module.css';
-import { classNames } from '../../util';
-import WaterImage from '../../Images/water.jpg';
 import MedicalImage from '../../Images/medical.jpg';
 import EducationImage from '../../Images/education.jpg';
 import EmpowermentImage from '../../Images/7.jpg';
+import WaterImage from '../../Images/water.jpg';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -24,7 +23,7 @@ class OurApproachPage extends React.Component{
           </div>
         </div>
 
-        <div className={styles.featureContainer}>
+        <div className={styles.featureContainer}> 
           <div className={styles.featureSquare} style={{backgroundImage: `url(${WaterImage})`}}></div>
           <div className={styles.featureSquare} style={{backgroundImage: `url(${EducationImage})`}}></div>
           <div className={styles.featureSquare} style={{backgroundImage: `url(${MedicalImage})`}}></div>
