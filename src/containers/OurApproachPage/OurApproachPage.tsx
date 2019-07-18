@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './OurApproachPage.module.css';
-import MedicalImage from './../../Images/medical.jpg';
-import EducationImage from './../../Images/education.jpg';
-import EmpowermentImage from './../../Images/7.jpg';
-import WaterImage from './../../Images/water.jpg';
+import MedicalImage from '../../Images/medical.jpg';
+import EducationImage from '../../Images/education.jpg';
+import EmpowermentImage from '../../Images/7.jpg';
+import WaterImage from '../../Images/water.jpg';
 
 import Header from '../Header';
 import Footer from '../Footer';
