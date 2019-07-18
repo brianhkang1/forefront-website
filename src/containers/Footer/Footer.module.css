@@ -1,4 +1,10 @@
 .footer {
   width: 100vw;
   border-top: 1px solid black;
+  min-height: 5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }

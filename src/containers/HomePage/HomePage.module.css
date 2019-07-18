@@ -24,7 +24,7 @@
 }
 
 .FeaturePictureContainer { 
-  background-image: url("../../images/MainHomePageBackground.jpg");
+  background-image: url("../../Images/MainHomePageBackground.jpg");
   height: 100vh;
   width: 100vw;
   position: relative; 

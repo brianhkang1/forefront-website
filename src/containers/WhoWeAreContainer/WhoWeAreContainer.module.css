@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleContainer {
+  padding: 7vh 0;
+  font-size: 3.5rem;
+}
+
+.subTitleContainer {
+  padding: 0 8vw 6vh 10vw;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.highlight {
+  background: url('../../Images//BrushStrokes/brushStroke1.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 14vh 2vw;
+  font-weight: bold;
+  color: rgb(51,51,51);
+  }

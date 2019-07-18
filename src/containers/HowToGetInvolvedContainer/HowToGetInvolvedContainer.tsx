@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HowToGetInvolvedContainer.module.css';
 import HowToGetInvolvedItem from '../../components/HowToGetInvolvedItem';
-import BackgroundImage from '../../images/HowToGetInvolved.jpg';
+import BackgroundImage from '../../Images/HowToGetInvolved.jpg';
 
 type HowToGetInvolvedItemType = {
   title: string;
@@ -10,16 +10,16 @@ type HowToGetInvolvedItemType = {
 }
 
 const HowToGetInvolvedItems = [
-  {
-    title: 'Create A Chapter',
-    description: 'Some Description',
-    backgroundImage: `url(${BackgroundImage})`
-  },
-  {
-    title: 'Peer To Peer',
-    description: 'Some Description',
-    backgroundImage: `url(${BackgroundImage})`
-  },
+  // {
+  //   title: 'Create A Chapter',
+  //   description: 'Some Description',
+  //   backgroundImage: `url(${BackgroundImage})`
+  // },
+  // {
+  //   title: 'Peer To Peer',
+  //   description: 'Some Description',
+  //   backgroundImage: `url(${BackgroundImage})`
+  // },
   {
     title: 'Donate Now',
     description: 'Some Description',
@@ -41,10 +41,15 @@ class HowToGetInvolvedContainer extends React.Component {
   render(){
     return(
       <div className={styles.root}>
-        <div className={styles.title}>How Can I Help?</div>
+        <div className={styles.titleContainer}>
+          <div className={styles.title}>
+            <span className={styles.highlight}>How Can I Help?</span>
+          </div>
+        </div>
         <div className={styles.howToGetInvolvedItemsContainer}>
-          {HowToGetInvolvedItems.map((item: HowToGetInvolvedItemType) => (
+          {HowToGetInvolvedItems.map((item: HowToGetInvolvedItemType, index: number) => (
             <HowToGetInvolvedItem 
+              key={`HowToGetInvolvedItem${index+1}`}
               title={item.title}
               description={item.description}
               backgroundImage={item.backgroundImage}

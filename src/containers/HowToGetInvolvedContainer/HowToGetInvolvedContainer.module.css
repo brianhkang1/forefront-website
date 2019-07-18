@@ -1,15 +1,12 @@
 .root {
-  padding: 5vh 0;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  color: rgb(69, 158, 172);
-  font-size: 3em;
-  font-weight: bold;
-  padding-bottom: 8vh;
+.titleContainer {
+  padding: 7vh 0;
+  font-size: 3.5rem;
 }
 
 .howToGetInvolvedItemsContainer {
@@ -18,3 +15,12 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.highlight {
+  background: url('../../Images//BrushStrokes/brushStroke1.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 14vh 4vw;
+  font-weight: bold;
+  color: rgb(51,51,51);
+  }

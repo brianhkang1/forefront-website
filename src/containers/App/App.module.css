@@ -10,7 +10,7 @@
 
 .pageFadeEnter.pageFadeEnterActive {
   opacity: 1;
-  transition: opacity 1000ms;
+  transition: opacity 2000ms;
 }
 
 .pageFadeExit {
@@ -20,5 +20,5 @@
 
 .pageFadeExit.pageFadeExitActive {
   opacity: 0;
-  transition: opacity 1000ms;
+  transition: opacity 2000ms;
 }

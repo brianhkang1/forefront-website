@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './HomePage.module.css'
 import ReactTypingEffect from 'react-typing-effect';
 import TextLoop from "react-text-loop";
-import FourPillarsContainer from '../FourPillarsContainer'
-import WhatWeDoContainer from '../WhatWeDoContainer'
-import HowToGetInvolvedContainer from '../HowToGetInvolvedContainer'
+import FourPillarsContainer from '../FourPillarsContainer';
+import WhatWeDoContainer from '../WhatWeDoContainer';
+import WhoWeAreContainer from '../WhoWeAreContainer';
+import HowToGetInvolvedContainer from '../HowToGetInvolvedContainer';
 import Header from '../Header';
 import Footer from '../Footer';
 
@@ -48,6 +49,7 @@ class HomePage extends React.Component{
             </div>  
           </div>
 
+          <WhoWeAreContainer/>
           <WhatWeDoContainer/>
           <FourPillarsContainer/>
           <HowToGetInvolvedContainer/>

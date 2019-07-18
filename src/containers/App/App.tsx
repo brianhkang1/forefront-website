@@ -33,7 +33,7 @@ class App extends React.Component{
                 <CSSTransition
                   key={location.key}
                   in={match !== null}
-                  timeout={1000}
+                  timeout={2000}
                   classNames={{
                     appear: styles.pageFadeAppear,
                     appearActive: styles.pageFadeAppearActive,
