@@ -6,12 +6,16 @@ import { classNames } from '../../util';
 import { Icon } from 'semantic-ui-react';
 import HeaderLinks from '../../components/HeaderLinks'
 
+type Props = {
+  isBlackText?: boolean;
+}
+
 type State = {
   activeLink: string;
   isMobileMenuActive: boolean;
 }
 
-class Header extends React.Component<{}, State>{
+class Header extends React.Component<Props, State>{
   constructor(props){
     super(props)
 
@@ -28,17 +32,18 @@ class Header extends React.Component<{}, State>{
   }
 
   render(){
+    const { isBlackText } = this.props
     const { isMobileMenuActive } = this.state
 
     return (
       // laptop view
       window.matchMedia("(min-width: 601px)").matches
-        ? (
+        ? (  
           <header className={styles.header}>
-            <div className={`${styles.headerLeft}`}>
+            <div className={classNames(isBlackText ? styles.headerLeftBlack : styles.headerLeft)}>
               <NavLink exact to="/">FOREFRONT</NavLink>
             </div>
-            <HeaderLinks handleLinkClick={this.handleLinkClick}/>
+            <HeaderLinks isBlackText={isBlackText} handleLinkClick={this.handleLinkClick}/>
           </header>
           )
         : (

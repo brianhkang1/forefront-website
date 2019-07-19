@@ -17,7 +17,11 @@
     color: rgb(69, 158, 172);
   }
 
-  .link {
+  .blackLink > a {
+    color: black;
+  }
+
+  .link, .blackLink {
     padding: 0vw 1vw;
   }
 }
