@@ -26,7 +26,7 @@
     width: 100vw;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 30vh;
+    padding-top: 35vh;
     margin-top: 5vh;
     height: 0;
   }
@@ -37,7 +37,7 @@
   }
 
   .root {
-    height: 55vh;
+    height: 65vh;
     width: 100vw;
   }
 }
