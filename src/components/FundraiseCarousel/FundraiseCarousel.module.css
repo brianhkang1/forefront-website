@@ -1,0 +1,56 @@
+.titleContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  height: 0;
+}
+
+.carouselContainer {
+  height: 80vh;
+}
+
+.title{
+  padding-top: 5vh;
+  z-index: 999;
+  font-size: 3rem;
+  color: white;
+}
+
+.highlight {
+  background: url('../../Images//BrushStrokes/brushStroke1.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 10vh 8vw;
+  font-weight: bold;
+  color: white;
+}
+
+.whiteDivider {
+  width: 100vw;
+  height: 0.5rem;
+  background-color: white;
+}
+
+/******************************************************************/
+
+/* mobile */
+@media (max-width: 600px) {
+  .title{
+    font-size: 2.25rem;
+  }
+
+  .carouselContainer {
+    height: 60vh;
+  }
+
+  .sliderPicContainer {
+    height: 60vh;
+  }
+  
+  .sliderPic {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+}

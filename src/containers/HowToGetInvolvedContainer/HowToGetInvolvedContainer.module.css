@@ -9,18 +9,40 @@
   font-size: 3.5rem;
 }
 
-.howToGetInvolvedItemsContainer {
-  padding: 0 10vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .highlight {
   background: url('../../Images//BrushStrokes/brushStroke1.svg');
   background-repeat: no-repeat;
   background-size: 100% 95%;
   padding: 14vh 4vw;
   font-weight: bold;
-  color: rgb(51,51,51);
+  color: white;
+}
+
+/******************************************************************/
+
+/* laptop */
+@media (min-width: 601px) {
+  .howToGetInvolvedItemsContainer {
+    padding: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+}
+
+/******************************************************************/
+
+/* mobile */
+@media (max-width: 600px) {
+  .titleContainer{
+    font-size: 2.25rem;
+  }
+
+  .highlight {
+    padding: 10vh 10vw;
+  }
+
+  .howToGetInvolvedItemsContainer {
+    padding: 0;
+  }
+}

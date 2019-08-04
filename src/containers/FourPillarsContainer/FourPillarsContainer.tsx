@@ -46,9 +46,8 @@ const FourPillarsContainer = () => {
     <div className={styles.root}>
       <div className={styles.fourPillarsHeader}>
         <div className={styles.fourPillarsTitle}>
-          <span className={styles.highlight}>OUR FOUR PILLAR APPROACH</span>
+          <span className={styles.highlight}>OUR FOUR PILLARS </span>
         </div>
-        {/* <div className={styles.fourPillarsSubTitle}> some description </div> */}
       </div>
 
       <div className={styles.fourPillarsVisual}>

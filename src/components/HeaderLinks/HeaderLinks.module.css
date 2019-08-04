@@ -8,9 +8,14 @@
     font-size: 1.25em;
   }
 
-  .link > a, .button > a {
+  .link > a, .button > a, .donateButton > a, .donateButton:hover > a {
     color: white;
     text-decoration: none;
+  }
+
+  .donateButton:hover {
+    background-color: rgb(69, 158, 172);
+    border: solid thin rgb(69, 158, 172);
   }
   
   .link > a:hover {
@@ -23,6 +28,12 @@
 
   .link, .blackLink {
     padding: 0vw 1vw;
+  }
+
+  .donateButton {
+    border-radius: 4px;
+    border: solid thin white;
+    padding: 0.5rem 0.6rem;
   }
 }
 

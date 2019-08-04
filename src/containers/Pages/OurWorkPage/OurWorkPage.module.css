@@ -66,40 +66,10 @@
   height: 70vh;
   border-radius: 10px;
 
-  background-image: url("../../Images/5.jpg");
+  background-image: url("../../../Images/5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.statsContainer {
-  height: 30vh;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
-  width: 100%;
-
-  background-image: url("../../Images/6.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  text-align: center;
-}
-
-.statsItem{
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-size: 1.25rem;
-  line-height: 4vh;
-}
-
-.numberCounterItem{
-  font-size: 3rem;
 }
 
 .footerContainer {

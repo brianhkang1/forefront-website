@@ -4,11 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import WOW from "wow.js/dist/wow.js";
 
-import HomePage from '../HomePage';
-import OurApproachPage from '../OurApproachPage';
-import OurWorkPage from '../OurWorkPage';
-import BuildersPage from '../BuildersPage';
-import AboutUsPage from '../AboutUsPage';
+import HomePage from '../Pages/HomePage';
+import OurApproachPage from '../Pages/OurApproachPage';
+import OurWorkPage from '../Pages/OurWorkPage';
+import BuildersPage from '../Pages/BuildersPage';
+import AboutUsPage from '../Pages/AboutUsPage';
 
 const routes = [
   { path: '/', name: 'Home', Component: HomePage },

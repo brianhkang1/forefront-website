@@ -35,7 +35,7 @@ class HeaderLinks extends React.Component<Props> {
           <NavLink exact to="/about" activeClassName={styles.active}>About Us</NavLink>
         </div>
         <div className={isBlackText ? styles.blackLink : styles.link}>
-          <a href="#">Donate</a>
+          <span className={styles.donateButton}><a href="#">Donate</a></span>
         </div>
       </div>
     )

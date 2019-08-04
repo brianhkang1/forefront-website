@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { classNames } from '../../util';
 
 import { Icon } from 'semantic-ui-react';
+import ForeFrontLogo from '../../Images/Logos/ForefrontWhite.png';
+import ForeFrontLogoColor from '../../Images/Logos/ForefrontColor.png';
 import HeaderLinks from '../../components/HeaderLinks'
 
 type Props = {
@@ -41,7 +43,13 @@ class Header extends React.Component<Props, State>{
         ? (  
           <header className={styles.header}>
             <div className={classNames(isBlackText ? styles.headerLeftBlack : styles.headerLeft)}>
-              <NavLink exact to="/">FOREFRONT</NavLink>
+              <NavLink exact to="/">
+                <img 
+                  src={ForeFrontLogo} 
+                  alt="Forefront Logo"
+                  style={{marginLeft: '1rem', width: '20rem', height: '5rem'}}
+                />
+              </NavLink>
             </div>
             <HeaderLinks isBlackText={isBlackText} handleLinkClick={this.handleLinkClick}/>
           </header>
@@ -51,9 +59,15 @@ class Header extends React.Component<Props, State>{
           <>
             <div className={`${styles.mobileHeader}`}>
               <div className={styles.mobileHeaderLeft}>
-                <span className={styles.mobileTitle}>FOREFRONT</span>
+                <NavLink exact to="/">
+                  <img 
+                    src={ForeFrontLogoColor} 
+                    alt="Forefront Logo"
+                    style={{width: '70vw', height: '9vh'}}
+                  />
+                </NavLink>
               </div>
-              <div onClick={this.onMobileMenuClick}>
+              <div className={styles.mobileMenuIcon} onClick={this.onMobileMenuClick}>
                 <Icon color="grey" name="bars" size="large" />
               </div>
             </div>

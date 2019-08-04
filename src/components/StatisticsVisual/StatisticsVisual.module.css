@@ -1,0 +1,56 @@
+.root {
+  height: 30vh;
+  width: 100%;
+
+  background-image: url("../../Images/6.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.statsItem{
+  color: white;
+  font-size: 1.25rem;
+  line-height: 5vh;
+}
+
+.numberCounterItem{
+  font-size: 3rem;
+}
+
+.whiteDivider {
+  width: 100vw;
+  height: 0.5rem;
+  background-color: white;
+}
+
+/******************************************************************/
+
+/* laptop */
+@media (min-width: 601px) {
+  .root {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/******************************************************************/
+
+/* mobile */
+@media (max-width: 600px) {
+  .root {
+    height: 80vh;
+    width: 100vw;
+  
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
