@@ -1,9 +1,9 @@
 /* mobile */
 @media (max-width: 600px) {
   .header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
   }
 }
