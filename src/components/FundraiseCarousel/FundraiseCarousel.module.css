@@ -18,11 +18,11 @@
 }
 
 .highlight {
-  background: url('../../Images//BrushStrokes/brushStroke1.svg');
+  /* background: url('../../Images//BrushStrokes/brushStroke1.svg');
   background-repeat: no-repeat;
   background-size: 100% 95%;
   padding: 10vh 8vw;
-  font-weight: bold;
+  font-weight: bold; */
   color: white;
 }
 

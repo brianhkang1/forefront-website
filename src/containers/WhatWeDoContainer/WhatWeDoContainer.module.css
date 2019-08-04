@@ -99,11 +99,13 @@
 }
 
 .highlight {
-  background: url('../../Images//BrushStrokes/brushStroke1.svg');
+  /* background: url('../../Images//BrushStrokes/brushStroke1.svg');
   background-repeat: no-repeat;
   background-size: 100% 95%;
   padding: 12vh 10vw;
   font-weight: bold;
   color: white;
+   */
+  color: rgb(69, 158, 172);
 }
 

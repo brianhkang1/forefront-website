@@ -17,20 +17,12 @@
     font-weight: bold;
     z-index: 999;
   }
-
-  .highlight {
-    padding: 12vh 8vw;
-  }
 }
 
 /******************************************************************/
 
 /* mobile */
 @media (max-width: 600px) {
-  .root {
-    padding-top: 5vh;
-  }
-
   .fourPillarsVisual {
     width: 100vw;
     display: grid;
@@ -50,10 +42,6 @@
     font-weight: bold;
     z-index: 999;
   }
-
-  .highlight {
-    padding: 8vh 8vw;
-  }
 }
 
 /******************************************************************/
@@ -62,6 +50,7 @@
   position: absolute;
   z-index: 999;
   width: 100%;
+  padding-top: 5vh;
 }
 
 .fourPillarsSubTitle {
@@ -71,10 +60,12 @@
 }
 
 .highlight {
-  background: url('../../Images//BrushStrokes/brushStroke1.svg');
+  /* background: url('../../Images//BrushStrokes/brushStroke1.svg');
   background-repeat: no-repeat;
   background-size: 100% 95%;
   font-weight: bold;
+  color: white; */
+
   color: white;
   }
 
