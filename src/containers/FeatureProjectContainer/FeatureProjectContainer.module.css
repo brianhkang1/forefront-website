@@ -1,0 +1,103 @@
+.root {
+  padding: 2rem 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 82vh;
+  width: 70vw;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.picture {
+  position: relative;
+  height: 64vh;
+  border-radius: 10px 10px 0 0;
+  background-image: url('../../Images/school.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictureText {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.textContainer {
+  height: 18vh;
+  padding: 2rem;
+  background-color: rgb(69, 158, 172);
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.textItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boldText{
+  font-weight: bold;
+  font-size: 1.25rem
+}
+
+.descriptionText {
+  opacity: 0.6;
+  font-size: 0.75rem;
+}
+
+.learnMoreContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 1.5rem;
+  border: solid thin white;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.triangle {
+	position: absolute;
+	background-color: rgb(69, 158, 172);
+  bottom: 9.25rem;
+  left: 30rem;
+}
+.triangle:before,
+.triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+	width:  1rem;
+	height: 1rem;
+	border-top-right-radius: 30%;
+}
+
+.triangle {
+	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+}
+.triangle:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.triangle:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}

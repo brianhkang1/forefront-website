@@ -10,16 +10,6 @@ type HowToGetInvolvedItemType = {
 }
 
 const HowToGetInvolvedItems = [
-  // {
-  //   title: 'Create A Chapter',
-  //   description: 'Some Description',
-  //   backgroundImage: `url(${BackgroundImage})`
-  // },
-  // {
-  //   title: 'Peer To Peer',
-  //   description: 'Some Description',
-  //   backgroundImage: `url(${BackgroundImage})`
-  // },
   {
     title: 'Donate Now',
     description: 'Some Description',

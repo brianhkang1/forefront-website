@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './FourPillarsContainer.module.css'
 import { Icon } from 'semantic-ui-react';
+
+import Title from '../../components/Title';
 import FourPillarsItem from '../../components/FourPillarsItem';
 import WaterImage from '../../Images/water.jpg';
 import MedicalImage from '../../Images/medical.jpg';
 import EducationImage from '../../Images/education.jpg';
-import EmpowermentImage from '../../Images/7.jpg';
+import EmpowermentImage from '../../Images/empowerment.jpg';
 
 type FourPillarItemType = {
   icon: React.ReactNode;
@@ -44,11 +46,12 @@ const FourPillarItems = [
 const FourPillarsContainer = () => {
   return (
     <div className={styles.root}>
-      <div className={styles.fourPillarsHeader}>
-        <div className={styles.fourPillarsTitle}>
-          <span className={styles.highlight}>OUR FOUR PILLARS </span>
-        </div>
-      </div>
+      <Title
+        title='Four Pillars'
+        description='There are many variations of passages of Lorem Ipsum available, 
+        but the majority have suffered alteration in some form, 
+        by injected humour, or randomised words which dont look even slightly believable.'
+      />
 
       <div className={styles.fourPillarsVisual}>
         {FourPillarItems.map((item: FourPillarItemType, index: number) => (

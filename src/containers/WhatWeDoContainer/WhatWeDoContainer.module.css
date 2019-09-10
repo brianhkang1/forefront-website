@@ -1,111 +1,26 @@
-/* laptop */
-@media (min-width: 601px) {
-  .root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 4vh;
-  }
-  
-  .subHeaderContainer {
-    padding: 10vh 20vw;
-    font-size: 1.25rem;
-    line-height: 2rem;
-  }
-
-  .descriptionContainer {
-    padding-bottom: 5vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .description {
-    font-size: 2rem;
-    color: rgb(51,51,51);
-  }
-  
-  .forwardSlash {
-    color: rgb(69, 158, 172);
-    font-size: 5rem;
-    padding: 0 1rem;
-  }
-
-  .titleContainer {
-    padding-top: 6vh;
-  }
-
-  .title {
-    font-size: 3rem;
-  }
+.picturesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 0 4rem;
 }
 
-/******************************************************************/
+.picture {
+  cursor: pointer;
+  height: 25vh;
+  width: 25vw;
+  border-radius: 20px;
+  transition: transform .3s; /* Animation */
 
-/* mobile */
-@media (max-width: 600px) {
-  .titleContainer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding: 6vh 0;
-  }
-  
-  .title {
-    font-weight: bold;
-    font-size: 2.5rem;
-  }
-
-  .descriptionContainer {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .description {
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem 0;
-    line-height: 3rem;
-  }
-
-  .subHeaderContainer {
-    width: 100vw;
-    padding: 2vh 10vw;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    text-align: center;
-  }
-
-  .forwardSlash {
-    color: rgb(69, 158, 172);
-    font-size: 3rem;
-    padding: 0.5rem 0;
-  }
-
-  .logo {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
 }
 
-/******************************************************************/
-
-.whiteDivider {
-  width: 100vw;
-  height: 0.5rem;
-  background-color: white;
+.picture:hover {
+ transform: scale(1.1);
 }
 
-.highlight {
-  /* background: url('../../Images//BrushStrokes/brushStroke1.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 95%;
-  padding: 12vh 10vw;
-  font-weight: bold;
+.title {
+  padding: 1.5rem 0 0 1.5rem;
   color: white;
-   */
-  color: rgb(69, 158, 172);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-

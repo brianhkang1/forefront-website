@@ -1,51 +1,63 @@
 import React from 'react';
 import styles from './WhatWeDoContainer.module.css';
-import Logo from '../../Images/Logos/LogoColor.jpg';
+import { withRouter } from "react-router-dom";
+import { RouteComponentProps } from "react-router";
+import Title from '../../components/Title';
 
-const WhatWeDoContainer = () => {
-  return(
-    <div className={styles.root}>
-      <div className={styles.whiteDivider}/>
-      <div className={`${styles.titleContainer}`}>
-        <div className={styles.title}>
-          <span className={styles.highlight}>OUR MISSION</span>
-        </div>
-      </div>
+import OurApproachImage from '../../Images/10.jpg';
+import OurWorkImage from '../../Images/11.jpg';
+import OurBuildersImage from '../../Images/2.jpg';
 
-      <div className={styles.subHeaderContainer}>
-        Forefront is a non-profit charity organization randomised words which don't look even slightly believable. 
-        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
-      </div>
+const PictureItems = [
+  {
+    title: 'Our Approach',
+    backgroundImage: `url(${OurApproachImage})`,
+    link: '/our-approach'
+  },
+  {
+    title: 'Our Work',
+    backgroundImage: `url(${OurWorkImage})`,
+    link: '/our-work'
+  },
+  {
+    title: 'Our Builders',
+    backgroundImage: `url(${OurBuildersImage})`,
+    link: '/builders'
+  }
+]
 
-      <div className={`${styles.descriptionContainer}`}>
-        <span className={styles.description}>
-          Enable every person
-        </span>
-
-        <span className={styles.forwardSlash}> / </span>
-
-        <span className={styles.description}>
-          Equip leaders
-        </span>
-
-        <span className={styles.forwardSlash}> / </span>
-
-        <span className={styles.description}>
-          Establish self-sustaining communities
-        </span>
-
-      </div>
-
-      <div className={styles.logo}>
-        <img 
-          src={Logo} 
-          alt="Logo"
-          style={{width: '5rem', height: '5rem'}}
+class WhatWeDoContainer extends React.Component<RouteComponentProps> {
+  render(){
+    return(
+      <>
+      <div style={{paddingTop: '2rem'}}>
+        <Title
+          title='What We Do'
+          description='There are many variations of passages of Lorem Ipsum available, 
+          but the majority have suffered alteration in some form, 
+          by injected humour, or randomised words which dont look even slightly believable.'
         />
       </div>
 
-    </div>
-  )
+        <div className={styles.picturesContainer}>
+          {PictureItems.map(p => (
+            <div 
+              className={styles.picture} 
+              style={{
+                backgroundImage: p.backgroundImage, 
+                backgroundSize: 'cover'
+              }}
+              onClick={() => this.props.history.push(p.link)}
+            >
+              <div className={styles.title}>
+                {p.title}
+              </div>     
+            </div>
+          ))}
+        </div>
+      </>
+    )
+  }
 }
 
-export default WhatWeDoContainer;
+export default withRouter(WhatWeDoContainer);

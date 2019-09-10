@@ -1,0 +1,55 @@
+.root {
+  margin: 2rem 0;
+  width: 100vw;
+  height: 80vh; 
+  background-image: url('../../Images/5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  width: 50vw;
+  color: white;
+  font-size: 3rem;
+}
+
+.description1 {
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  width: 45vw;
+
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2.25rem;
+}
+
+.description2 {
+  position: absolute;
+  top: 24rem;
+  left: 2rem;
+  width: 45vw;
+
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2.25rem;
+}
+
+.button {
+  position: absolute;
+  bottom: 3rem;
+  left: 13rem;
+  margin-top: 1.5rem;
+
+  border: solid thin white;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
