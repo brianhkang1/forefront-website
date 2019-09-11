@@ -32,7 +32,7 @@ class WhatWeDoContainer extends React.Component<RouteComponentProps> {
       <>
       <div style={{paddingTop: '2rem'}}>
         <Title
-          title='What We Do'
+          title='Learn More'
           description='There are many variations of passages of Lorem Ipsum available, 
           but the majority have suffered alteration in some form, 
           by injected humour, or randomised words which dont look even slightly believable.'

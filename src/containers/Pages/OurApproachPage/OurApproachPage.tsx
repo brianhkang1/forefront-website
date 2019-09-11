@@ -10,7 +10,7 @@ class OurApproachPage extends React.Component{
   render(){
     return (
       <div>
-        <div className={styles.FeaturePictureContainer}>
+        <div className={styles.featurePictureContainer}>
           <div className={styles.header}>
             <Header/>
           </div> 

@@ -5,6 +5,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import OurMissionContainer from '../../OurMissionContainer';
 import WhatWeDoContainer from '../../WhatWeDoContainer';
 import BlogContainer from '../../BlogContainer';
+import FourPillarsContainer from '../../FourPillarsContainer';
 import StatisticsVisual from '../../../components/StatisticsVisual';
 import FeatureProjectContainer from '../../FeatureProjectContainer';
 import Header from '../../Header';
@@ -15,7 +16,7 @@ class HomePage extends React.Component{
   render(){
     return (
         <>
-          <div className={styles.FeaturePictureContainer}> 
+          <div className={styles.featurePictureContainer}> 
             <div className={styles.header}>
               <Header/>
             </div> 
@@ -33,9 +34,10 @@ class HomePage extends React.Component{
 
           <OurMissionContainer/>
           <StatisticsVisual/>
-          <WhatWeDoContainer/>
-          <BlogContainer/>
           <FeatureProjectContainer/>
+          {/* <BlogContainer/> */}
+          <FourPillarsContainer/>
+          <WhatWeDoContainer/>
 
           <Footer/>
         </>

@@ -27,7 +27,7 @@ const FeatureProjectContainer = () => {
       <div className={styles.content}>
         <div className={styles.container}>
           <div className={styles.picture}>
-            <div className={styles.pictureText}>The School Project: need an appropriate subtitle for this picture as soon as possible</div>
+            <div className={styles.pictureText}>Forefront International School: need an appropriate subtitle for this picture as soon as possible</div>
           </div>
 
           <span className={styles.triangle}/>

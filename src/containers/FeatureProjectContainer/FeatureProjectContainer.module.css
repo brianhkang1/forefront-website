@@ -28,11 +28,11 @@
 
 .pictureText {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2.5rem;
   left: 2rem;
   color: white;
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.75rem;
 }
 
 .textContainer {
@@ -76,7 +76,7 @@
 	position: absolute;
 	background-color: rgb(69, 158, 172);
   bottom: 9.25rem;
-  left: 30rem;
+  left: 35rem;
 }
 .triangle:before,
 .triangle:after {

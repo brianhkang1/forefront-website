@@ -2,22 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.titleContainer {
-  padding: 7vh 0;
-  font-size: 3.5rem;
-}
-
-.highlight {
-  /* background: url('../../Images//BrushStrokes/brushStroke1.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 95%;
-  padding: 14vh 4vw;
-  font-weight: bold;
-  color: white; */
-
-  color: rgb(69, 158, 172);
+  padding-top: 2rem;
 }
 
 /******************************************************************/
@@ -36,14 +21,6 @@
 
 /* mobile */
 @media (max-width: 600px) {
-  .titleContainer{
-    font-size: 2.25rem;
-  }
-
-  .highlight {
-    padding: 10vh 10vw;
-  }
-
   .howToGetInvolvedItemsContainer {
     padding: 0;
   }

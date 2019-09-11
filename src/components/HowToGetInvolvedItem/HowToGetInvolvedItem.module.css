@@ -1,5 +1,5 @@
 .description {
-  padding-bottom: 2vh;
+  padding-top: 3vh;
   color: white;
   font-weight: bold;
 }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-bottom: 4vh;
     margin: 0 4vw 5vh 4vw;
     border-radius: 10px;

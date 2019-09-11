@@ -28,14 +28,14 @@
   }
 }
 
-.FeaturePictureContainer { 
+.featurePictureContainer { 
   width: 100vw;
   height: 100vh;
   position: relative; 
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.FeaturePictureContainer::before {
+.featurePictureContainer::before {
   pointer-events: none;
   content: ' ';
   position: fixed; 
