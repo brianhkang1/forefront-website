@@ -1,0 +1,54 @@
+.optionButtons {
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttonTitle {
+  padding-left: 1rem;
+  font-size: 1.25rem;
+}
+
+.slides {
+  transition-duration: 500ms;
+  /* transition-delay: 200ms; */
+  display: flex;
+  width: 100vw;
+  height: 65vh;
+}
+
+.slideContainer {
+  flex-shrink: 0;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.descriptionTextContainer {
+  max-width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;;
+}
+
+.descriptionText {
+  padding: 0 4rem;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2.5rem;
+}
+
+.descriptionPicture {
+  width: 50vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

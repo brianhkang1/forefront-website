@@ -38,3 +38,10 @@
   font-size: 5rem;
   opacity: 0.8;
 }
+
+.paragraph {
+  padding: 3rem 10rem;
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 3rem;
+}
