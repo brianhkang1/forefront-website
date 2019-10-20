@@ -3,7 +3,7 @@ import styles from './HomePage.module.css'
 import ReactTypingEffect from 'react-typing-effect';
 
 import OurMissionContainer from '../../OurMissionContainer';
-import WhatWeDoContainer from '../../WhatWeDoContainer';
+import LearnMoreContainer from '../../LearnMoreContainer';
 import BlogContainer from '../../BlogContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import StatisticsVisual from '../../../components/StatisticsVisual';
@@ -35,9 +35,9 @@ class HomePage extends React.Component{
           <OurMissionContainer/>
           <StatisticsVisual/>
           <FeatureProjectContainer/>
-          {/* <BlogContainer/> */}
           <FourPillarsContainer/>
-          <WhatWeDoContainer/>
+          <BlogContainer/>
+          <LearnMoreContainer/>
 
           <Footer/>
         </>

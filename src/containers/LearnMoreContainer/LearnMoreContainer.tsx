@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './WhatWeDoContainer.module.css';
+import styles from './LearnMoreContainer.module.css';
 import { withRouter } from "react-router-dom";
 import { RouteComponentProps } from "react-router";
 import Title from '../../components/Title';
@@ -26,11 +26,11 @@ const PictureItems = [
   }
 ]
 
-class WhatWeDoContainer extends React.Component<RouteComponentProps> {
+class LearnMoreContainer extends React.Component<RouteComponentProps> {
   render(){
     return(
       <>
-      <div style={{paddingTop: '2rem'}}>
+      <div style={{paddingTop: '5rem'}}>
         <Title
           title='Learn More'
           description='There are many variations of passages of Lorem Ipsum available, 
@@ -60,4 +60,4 @@ class WhatWeDoContainer extends React.Component<RouteComponentProps> {
   }
 }
 
-export default withRouter(WhatWeDoContainer);
+export default withRouter(LearnMoreContainer);

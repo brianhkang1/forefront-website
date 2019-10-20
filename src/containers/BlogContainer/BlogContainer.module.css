@@ -1,55 +1,58 @@
 .root {
-  margin: 2rem 0;
   width: 100vw;
-  height: 80vh; 
+  height: 60vh; 
+  display: flex;
+  justify-content: center;
+}
+
+.picture {
+  width: 35vw;
+  height: 65vh;
   background-image: url('../../Images/5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
+}
 
-  position: relative;
+.textContainer {
+  width: 40vw;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  width: 50vw;
-  color: white;
-  font-size: 3rem;
+  font-size: 1.75rem;
+  color: rgb(69, 158, 172);
+  padding-bottom: 2rem;
+  line-height: 2.5rem;
 }
 
 .description1 {
-  position: absolute;
-  top: 10rem;
-  left: 2rem;
-  width: 45vw;
-
-  font-size: 1.5rem;
-  color: white;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
 
 .description2 {
-  position: absolute;
-  top: 24rem;
-  left: 2rem;
-  width: 45vw;
-
-  font-size: 1.5rem;
-  color: white;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
 }
 
 .button {
-  position: absolute;
-  bottom: 3rem;
-  left: 13rem;
-  margin-top: 1.5rem;
-
-  border: solid thin white;
-  padding: 0.5rem 1rem;
-  color: white;
+  width: 8vw;
+  color: rgb(69, 158, 172);
+  border: solid thin rgb(69, 158, 172);
+  padding: 0.5rem 0 0.5rem 0.8rem;
   cursor: pointer;
   border-radius: 8px;
+  align-self: center;
+}
+
+.button:hover {
+  border-color: white;
+  color: white;
+  background-color: rgb(69, 158, 172);
 }
