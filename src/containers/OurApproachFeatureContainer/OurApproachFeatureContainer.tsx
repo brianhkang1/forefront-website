@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './OurApproachFeatureContainer.module.css';
 import WaterImage from '../../Images/water.jpg';
 import MedicalImage from '../../Images/medical.jpg';

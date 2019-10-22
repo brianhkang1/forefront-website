@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './OurApproachPage.module.css';
 
-import FourPillarsContainer from '../../FourPillarsContainer';
 import OurApproachFeatureContainer from '../../OurApproachFeatureContainer';
 import HowToGetInvolvedContainer from '../../HowToGetInvolvedContainer';
 import Header from '../../Header';

@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { classNames } from '../../util';
 
 import { Icon } from 'semantic-ui-react';
-import ForeFrontLogo from '../../Images/Logos/ForefrontWhite.png';
-import ForeFrontLogoColor from '../../Images/Logos/ForefrontColor.png';
+import ForeFrontLogo from '../../Images/Icons/ForefrontWhite.png';
+import ForeFrontLogoColor from '../../Images/Icons/ForefrontColor.png';
 import HeaderLinks from '../../components/HeaderLinks'
 
 type Props = {
