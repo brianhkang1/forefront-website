@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './AboutUsPage.module.css'
 import Header from '../../Header';
 import Footer from '../../Footer';
+import Title from '../../../components/Title';
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.jpg';
 import BlogIcon from '../../../Images/Icons/blog_icon.png';
 import SoTIcon from '../../../Images/Icons/SoT_icon.png';
@@ -31,6 +32,10 @@ class AboutUsPage extends React.Component{
               Learn More
             </a>
           </div>
+        </div>
+
+        <div className={styles.iconsContainerTitle}>
+          <Title title="Check us out"/>
         </div>
 
         <div className={styles.iconsContainer}>
