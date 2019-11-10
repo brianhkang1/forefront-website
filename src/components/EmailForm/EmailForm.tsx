@@ -37,7 +37,6 @@ class EmailForm extends React.Component<{}, State> {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "Email subscription", ...this.state })
     })
-      .then(() => alert("Successfully signed up for Forefront emails!"))
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -55,6 +54,7 @@ class EmailForm extends React.Component<{}, State> {
         </div>
 
         <form onSubmit={this.handleSubmit}>
+          <input type="hidden" name="Email subscription" value="Email subscription" />
           <div className={styles.inputContainer}>
             <input className={styles.input} type="text" name="firstName" placeholder="First Name" value={firstName} onChange={this.handleChange} />   
           </div>
