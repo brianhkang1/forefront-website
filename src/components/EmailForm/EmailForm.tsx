@@ -54,7 +54,7 @@ class EmailForm extends React.Component<{}, State> {
         </div>
 
         <form name="Email subscription" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
-          <input type="hidden" name="Email subscription" value="Email subscription" />
+          <input type="hidden" name="form-name" value="Email subscription" />
           <div className={styles.inputContainer}>
             <input className={styles.input} type="text" name="firstName" placeholder="First Name" value={firstName} onChange={this.handleChange} />   
           </div>
