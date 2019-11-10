@@ -3,6 +3,8 @@ import styles from './AboutUsPage.module.css'
 import Header from '../../Header';
 import Footer from '../../Footer';
 import Title from '../../../components/Title';
+import Button from '../../../components/Button';
+
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.jpg';
 import BlogIcon from '../../../Images/Icons/blog_icon.png';
 import SoTIcon from '../../../Images/Icons/SoT_icon.png';
@@ -22,15 +24,17 @@ class AboutUsPage extends React.Component{
             Change happens through <br/> powerful individuals
           </div>
 
-          <div className={styles.button}>
-            <a 
-              style={{color: 'white', opacity: 0.8}} 
-              href="https://blog.goforefront.org/the-force-of-four" 
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn More
-            </a>
+          <div className={styles.buttonContainer}>
+            <Button size="large">
+              <a 
+                style={{color: 'white', opacity: 0.8}} 
+                href="https://blog.goforefront.org/the-force-of-four" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
+            </Button>
           </div>
         </div>
 
@@ -69,6 +73,18 @@ class AboutUsPage extends React.Component{
                 <div className={styles.iconLink}>OUR BLOG</div>
             </div>
           </a>
+        </div>
+
+        <div className={styles.teamContainer}>
+            <div className={styles.teamLinkContainer}>
+              <div className={styles.teamLinkText}>Get to <br/> know us</div>
+              <div className={styles.teamLinkButton}><Button size="large"><a href="">Link</a></Button></div>
+            </div>
+
+            <div className={styles.teamLinkContainer}>
+              <div className={styles.teamLinkText}>Join <br/> our team</div>
+              <div className={styles.teamLinkButton}><Button size="large"><a href="">Link</a></Button></div>
+            </div>
         </div>
         <Footer/>
       </div>

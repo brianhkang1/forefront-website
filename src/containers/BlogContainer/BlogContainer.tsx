@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './BlogContainer.module.css';
 import Title from '../../components/Title';
+import Button from '../../components/Button';
 
 const BlogContainer = () => {
   return (
@@ -26,7 +27,7 @@ const BlogContainer = () => {
           By providing basic necessities like clean water, girls like Priyanka can make their dream of becoming a community leader a reality.
         </div>
 
-        <div className={styles.button}>Read More</div>
+        <Button>Read More</Button>
       </div>
 
       <div className={styles.picture}/>

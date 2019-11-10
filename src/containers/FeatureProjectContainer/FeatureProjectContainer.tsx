@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FeatureProjectContainer.module.css';
 import Title from '../../components/Title';
+import Button from '../../components/Button';
 
 const textItems = [
   {
@@ -46,7 +47,7 @@ const FeatureProjectContainer = () => {
               ))}
             </div>
             <div className={styles.learnMoreContainer}>
-              <div className={styles.button}>Learn More</div>
+              <Button>Learn More</Button>
             </div>
           </div>
 

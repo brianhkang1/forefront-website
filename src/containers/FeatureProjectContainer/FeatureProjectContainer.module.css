@@ -63,15 +63,6 @@
   justify-content: center;
 }
 
-.button {
-  margin-top: 1.5rem;
-  border: solid thin white;
-  padding: 0.5rem 1rem;
-  color: white;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
 .triangle {
 	position: absolute;
 	background-color: rgb(69, 158, 172);

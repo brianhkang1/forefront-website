@@ -7,6 +7,8 @@ const OurMissionContainer = () => {
   return(
     <div className={styles.root}>
 
+      <Title title="Who We Are"/>
+      
       <div className={styles.textContainer}>
         <div className={styles.definitionContainer}>
           <div className={styles.forefront}>FOREFRONT</div>
@@ -21,26 +23,27 @@ const OurMissionContainer = () => {
             education, health care, and leadership training.
           </div>
         </div>
-        <div className={styles.missionsContainer}>
-          <div className={styles.missionTitle}>OUR MISSION</div>
-          <div className={styles.mission}>Enable every person</div>
-          <div className={styles.mission}>Equip leaders</div>
-          <div className={styles.mission}>Establish sustainable communities</div>
-        </div>
-      </div>
-     
+
         <div className={styles.video}>
           <iframe
             title='home page video'
             style={{
-              width: '60vw',
-              height: '50vh',
+              width: '45vw',
+              height: '40vh',
               borderRadius: '10px'
             }}
             src={`https://www.youtube.com/embed/VVfv3N4yLyM`}
             frameBorder="0"
             allow="fullscreen; accelerometer; encrypted-media; gyroscope; picture-in-picture" 
           />
+        </div>
+      </div>
+     
+        <div className={styles.missionsContainer}>
+          <div className={styles.missionTitle}>Our Mission: </div>
+          <div className={styles.mission}>ENABLE <br/> <span className={styles.subText}>every person</span></div>
+          <div className={styles.mission}>EQUIP <br/> <span>leaders</span></div>
+          <div className={styles.mission}>ESTABLISH <br/> <span>sustainable communities</span></div>
         </div>
     </div>
   )

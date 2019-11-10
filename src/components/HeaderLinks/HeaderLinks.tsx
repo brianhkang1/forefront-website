@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './HeaderLinks.module.css'
 import { NavLink } from 'react-router-dom';
+import Button from '../Button';
 
 interface Props {
   handleLinkClick: (e: any, name: string) => void;
@@ -35,7 +36,7 @@ class HeaderLinks extends React.Component<Props> {
           <NavLink exact to="/about" activeClassName={styles.active}>About Us</NavLink>
         </div>
         <div className={isBlackText ? styles.blackLink : styles.link}>
-          <span className={styles.donateButton}><a href="#">Donate</a></span>
+          <Button><a href="#">Donate</a></Button>
         </div>
       </div>
     )

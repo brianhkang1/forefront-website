@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './OurWorkPage.module.css';
 import Header from '../../Header';
 import Footer from '../../Footer';
+import StatisticsVisual from '../../../components/StatisticsVisual';
 
 class OurWorkPage extends React.Component{
   render(){
@@ -41,6 +42,8 @@ class OurWorkPage extends React.Component{
           <div className={styles.title}>Current Projects</div>
           <div className={styles.divider}></div>
         </div>
+
+        <StatisticsVisual/>
         <Footer/>
       </div>
     );

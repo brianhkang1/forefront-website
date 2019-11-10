@@ -6,7 +6,6 @@ import OurMissionContainer from '../../OurMissionContainer';
 import LearnMoreContainer from '../../LearnMoreContainer';
 import BlogContainer from '../../BlogContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
-import StatisticsVisual from '../../../components/StatisticsVisual';
 import FeatureProjectContainer from '../../FeatureProjectContainer';
 import Header from '../../Header';
 import Footer from '../../Footer';
@@ -33,7 +32,6 @@ class HomePage extends React.Component{
 
 
           <OurMissionContainer/>
-          <StatisticsVisual/>
           <FeatureProjectContainer/>
           <FourPillarsContainer/>
           <BlogContainer/>

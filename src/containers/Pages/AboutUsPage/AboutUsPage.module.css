@@ -43,22 +43,18 @@
   text-align: center;
 }
 
-.button {
+.buttonContainer {
   position: absolute;
-  top: 90%;
-  font-size: 1.5rem;
-  opacity: 0.8;
-  color: white;
-  border: solid thin white;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-  border-radius: 8px;
+  top: 85%;
 }
 
-.button:hover {
-  opacity: 1;
-  background-color: rgb(69, 158, 172);
-  border-color: rgb(69, 158, 172);
+.buttonContainer > button, .buttonContainer > button > a {
+  color: white;
+  border-color: white;
+}
+
+.buttonContainer > button:hover {
+  border-color: none;
 }
 
 .iconsContainer {
@@ -101,4 +97,37 @@
   color: rgb(69, 158, 172);
   display: flex;
   justify-content: center;
+}
+
+.teamContainer {
+  width: 100vw;
+  height: 70vh;
+  background-image: url('../../../Images/8.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.teamLinkContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamLinkText {
+  padding: 4rem 0;
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.teamLinkButton > button, .teamLinkButton > button > a {
+  color: white;
+  border-color: white;
 }

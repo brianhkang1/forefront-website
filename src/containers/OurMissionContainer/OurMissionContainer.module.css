@@ -7,7 +7,9 @@
 
 .textContainer {
   display: flex;
+  align-items: center;
   padding-bottom: 3rem;
+  height: 45vh;
 }
 
 .definitionContainer {
@@ -19,18 +21,16 @@
 }
 
 .missionsContainer {
-  width: 45vw;
-  height: 35vh;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-
-
 
   background-image: url("../../Images/1.jpg");
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -53,16 +53,17 @@
 }
 
 .missionTitle {
-  padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: white;
-  align-self: flex-start;
 }
 
 .mission {
+  text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
+  line-height: 2.25rem;
+  white-space: nowrap;
 }
 
 .italic {

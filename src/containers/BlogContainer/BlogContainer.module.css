@@ -40,19 +40,3 @@
   line-height: 2rem;
   padding-bottom: 2rem;
 }
-
-.button {
-  width: 8vw;
-  color: rgb(69, 158, 172);
-  border: solid thin rgb(69, 158, 172);
-  padding: 0.5rem 0 0.5rem 0.8rem;
-  cursor: pointer;
-  border-radius: 8px;
-  align-self: center;
-}
-
-.button:hover {
-  border-color: white;
-  color: white;
-  background-color: rgb(69, 158, 172);
-}
