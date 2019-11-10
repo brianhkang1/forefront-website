@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email subscription</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+    <form name="Email subscription" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstName"/>
+      <input type="text" name="lastName"/>
+      <input type="email" name="email" />
+    </form>
+
+    <div id="root"></div>
+    <script type="text/babel">
+    </script>
+  </body>
+</html>
