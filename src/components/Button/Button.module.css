@@ -37,15 +37,21 @@
 .solid {
   background-color: rgb(69, 158, 172);
   color: white;
+  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
 }
 
-.solid:hover {
-  background-color: rgb(76, 162, 175);
-}
+/* .solid:hover {
+  background-color: white;
+  color: rgb(69, 158, 172);
+  border-color: rgb(69, 158, 172);
+} */
 
 .text {
   background-color: transparent;
   color: rgb(69, 158, 172);
+  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
 }
 
 .text:hover {
@@ -56,6 +62,8 @@
   border: 1px solid rgb(69, 158, 172);
   background-color: transparent;
   color: rgb(69, 158, 172);
+  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
 }
 
 .outlined > a {
@@ -70,4 +78,8 @@
 
 .roundedCorners {
   border-radius: 0.3125rem;
+}
+
+.outlined:focus, .solid:focus, .text:focus {
+  outline: 0;
 }

@@ -16,8 +16,8 @@ class HowToGetInvolvedItem extends React.Component<Props> {
     return(
       <div className={styles.root} style={{backgroundImage, backgroundSize: 'cover'}}>
           <div className={styles.description}>{description}</div>
-          <Button>
-            <a href="#" className={styles.buttonText}>{title}</a>
+          <Button className={styles.whiteOutline}>
+            <a href="#">{title}</a>
           </Button>
       </div>
     )

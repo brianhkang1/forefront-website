@@ -48,9 +48,11 @@ const FourPillarsContainer = () => {
     <div className={styles.root}>
       <Title
         title='Four Pillars'
-        description='There are many variations of passages of Lorem Ipsum available, 
-        but the majority have suffered alteration in some form, 
-        by injected humour, or randomised words which dont look even slightly believable.'
+        description='How do you establish self-sustaining communities? We need to empower the locals, the
+        people who know their community best. All future leaders must first be equipped with their fundamental human rights to clean water, education,
+        and access to basic medical care if they are to succeed in becoming an empowered change maker.
+        At Forefront we designed our unique, four-pillar approach to partner with communities on their journey
+        approach to partner with communities on their journey logically lead to development.'
       />
 
       <div className={styles.fourPillarsVisual}>

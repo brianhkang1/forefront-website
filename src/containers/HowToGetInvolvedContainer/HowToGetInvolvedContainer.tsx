@@ -14,18 +14,18 @@ type HowToGetInvolvedItemType = {
 
 const HowToGetInvolvedItems = [
   {
-    title: 'Donate Now',
-    description: 'Some Description',
+    title: 'Donate',
+    description: 'Building the future starts with a gift of any amount',
     backgroundImage: `url(${BackgroundImage1})`
   },
   {
     title: 'Start A Fundraiser',
-    description: 'Some Description',
+    description: 'Be a changemaker today',
     backgroundImage: `url(${BackgroundImage2})`
   },
   {
     title: 'Become a Builder',
-    description: 'Some Description',
+    description: 'You can build up communities today',
     backgroundImage: `url(${BackgroundImage3})`
   }
 ]
@@ -36,6 +36,12 @@ class HowToGetInvolvedContainer extends React.Component {
       <div className={styles.root}>
         <Title
           title='How Can I Help?'
+          description={
+          <span>
+            Never underestimate the impact you can have on someone else's life. 
+            In India, access to clean water means more time for women to earn money and children to attend school, so
+            they can build a better future for themselves. Thank you for giving and investing in these future leaders!
+          </span>}
         />
 
         <div className={styles.howToGetInvolvedItemsContainer}>

@@ -3,7 +3,6 @@ import styles from './HomePage.module.css'
 import ReactTypingEffect from 'react-typing-effect';
 
 import OurMissionContainer from '../../OurMissionContainer';
-import LearnMoreContainer from '../../LearnMoreContainer';
 import BlogContainer from '../../BlogContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import FeatureProjectContainer from '../../FeatureProjectContainer';
@@ -32,10 +31,9 @@ class HomePage extends React.Component{
 
 
           <OurMissionContainer/>
-          <FeatureProjectContainer/>
           <FourPillarsContainer/>
+          <FeatureProjectContainer/>
           <BlogContainer/>
-          <LearnMoreContainer/>
 
           <Footer/>
         </>

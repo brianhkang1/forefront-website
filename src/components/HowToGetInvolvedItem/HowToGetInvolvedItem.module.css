@@ -1,7 +1,27 @@
 .description {
+  width: 80%;
+  text-align: center;
   padding-top: 3vh;
   color: white;
   font-weight: bold;
+}
+
+.whiteOutline {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.whiteOutline:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.whiteOutline > a, .whiteOutline > a:hover {
+  color: white;
 }
 
 /******************************************************************/
@@ -16,7 +36,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 4vh;
-    margin: 0 4vw 5vh 4vw;
+    margin: 0 4vw 0 4vw;
     border-radius: 10px;
   }
 }

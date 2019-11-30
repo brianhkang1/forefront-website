@@ -8,7 +8,7 @@ const BlogContainer = () => {
     <>
     <div style={{paddingTop: '2rem'}}>
       <Title
-        title='Our Blog'
+        title='Learn More'
       />
     </div>
     <div className={styles.root}>
@@ -17,9 +17,8 @@ const BlogContainer = () => {
           Meet Priyanka,<br/>16-year-old change-maker
         </div>
         <div className={styles.description1}>
-          Priyanka wants to bring change to Thallur by becoming a political leader. 
-          However, instead of dedicating time to education and her dreams, 
-          she spends her days making six hour-long trips to retrieve water for her village. 
+          Before the water pump, a water truck used to come to Priyanka's village every day but only delivered clean water
+          Priyanka's village every day but only delivered clean water village has access to clean water.
         </div>
 
         <div className={styles.description2}>

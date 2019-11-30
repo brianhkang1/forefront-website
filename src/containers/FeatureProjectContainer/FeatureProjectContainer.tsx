@@ -1,24 +1,29 @@
 import React from 'react';
 import styles from './FeatureProjectContainer.module.css';
+import { withRouter } from "react-router-dom";
+import { RouteComponentProps } from "react-router";
+
 import Title from '../../components/Title';
 import Button from '../../components/Button';
 
 const textItems = [
   {
-    title: '200,000',
-    description: 'targeted population'
+    title: '400',
+    description: 'students per year'
   },
   {
-    title: '4.5 years',
-    description: 'October 2016 to March 2021'
+    title: 'Grades 1-5',
+    description: 'another description here'
   },
   {
-    title: 'Districts of Kasungu, Chitipa',
-    description: '100% complete'
+    title: 'Located in Kolluru, India',
+    description: '100% funding complete'
   }
 ]
 
-const FeatureProjectContainer = () => {
+const FeatureProjectContainer = ({
+  history
+}: RouteComponentProps) => {
   return(
     <div className={styles.root}>
       <Title
@@ -28,7 +33,7 @@ const FeatureProjectContainer = () => {
       <div className={styles.content}>
         <div className={styles.container}>
           <div className={styles.picture}>
-            <div className={styles.pictureText}>Forefront International School: need an appropriate subtitle for this picture as soon as possible</div>
+            <div className={styles.pictureText}>Forefront International School: Quality education for low-income children</div>
           </div>
 
           <span className={styles.triangle}/>
@@ -47,7 +52,16 @@ const FeatureProjectContainer = () => {
               ))}
             </div>
             <div className={styles.learnMoreContainer}>
-              <Button>Learn More</Button>
+              <Button 
+                onClick={() => {
+                  history.push('/our-work')
+                  }} 
+                  size="large" 
+                  variant="outlined" 
+                  className={styles.whiteOutline}
+                >
+                Learn More
+              </Button>
             </div>
           </div>
 
@@ -57,4 +71,4 @@ const FeatureProjectContainer = () => {
   )
 }
 
-export default FeatureProjectContainer; 
+export default withRouter(FeatureProjectContainer); 

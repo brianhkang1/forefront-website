@@ -28,11 +28,15 @@
 
 .pictureText {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 1.5rem;
   left: 2rem;
   color: white;
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 2.75rem;
+  background-color: rgba(0,0,0,0.4);
+  margin-right: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .textContainer {
@@ -50,7 +54,7 @@
 
 .boldText{
   font-weight: bold;
-  font-size: 1.25rem
+  font-size: 1.5rem
 }
 
 .descriptionText {
@@ -61,6 +65,7 @@
 .learnMoreContainer {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .triangle {
@@ -91,4 +96,18 @@
 }
 .triangle:after {
 	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+.whiteOutline {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.whiteOutline:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }

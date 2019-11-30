@@ -5,6 +5,10 @@ import Footer from '../../Footer';
 import StatisticsVisual from '../../../components/StatisticsVisual';
 
 class OurWorkPage extends React.Component{
+  componentDidMount(){
+    setTimeout(() => window.scrollTo({top: 0, left: 0}), 1000)
+  }
+
   render(){
     return (
       <div className={styles.root}>
