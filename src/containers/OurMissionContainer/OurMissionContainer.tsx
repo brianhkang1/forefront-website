@@ -20,7 +20,7 @@ const OurMissionContainer = () => {
       
         <div className={styles.picturesContainer}>
           <div className={styles.filter}>
-            <div style={{fontSize: '2.5rem', whiteSpace: 'nowrap'}}>OUR MISSION</div>
+            <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>OUR MISSION</div>
 
             <div className={styles.missionsContainer}>
               <div>Enable every person</div>

@@ -2,20 +2,28 @@ import React from 'react';
 import styles from './Title.module.css'
 
 type Props = {
-  title: React.ReactNode;
-  description?: React.ReactNode;
+  smallTitle?: string;
+  bigTitle?: string;
+  description?: string;
 }
 
 class Title extends React.Component<Props> {
   render(){
-    const { title, description } = this.props;
+    const { smallTitle, bigTitle, description } = this.props;
 
     return(
       <div className={styles.root}>
-        <div className={styles.title}>
-          {title}
-        </div>
-        <div className={styles.divider}/>
+        {smallTitle && (
+          <div className={styles.smallTitle}>
+            {smallTitle.toUpperCase()}
+          </div>
+        )}
+
+        {bigTitle && (
+          <div className={styles.bigTitle}>
+            {bigTitle}
+          </div>
+        )}
         
         {description && (
           <div className={styles.description}>

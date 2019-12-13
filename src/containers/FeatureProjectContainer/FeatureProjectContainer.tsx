@@ -27,44 +27,45 @@ const FeatureProjectContainer = ({
   return(
     <div className={styles.root}>
       <Title
-        title='Feature Project'
+        smallTitle='Feature Project'
+        bigTitle='What are we working on?'
+        description='We need to empower the locals, the people who know their community best. 
+        All future leaders must first be equipped with their fundamental human rights to clean water, education, 
+        and access to basic medical care if they are to succeed in becoming an empowered change maker. CHANGE THIS' 
       />
 
-      <div className={styles.content}>
-        <div className={styles.container}>
-          <div className={styles.picture}>
-            <div className={styles.pictureText}>Forefront International School: Quality education for low-income children</div>
-          </div>
+      <div className={styles.container}>
+        <div className={styles.picture}>
+          <div className={styles.pictureText}>Forefront International School: Quality education for low-income children</div>
+        </div>
 
-          <span className={styles.triangle}/>
-          
-          <div className={styles.textContainer}>
-            <div className={styles.textItems}>
-              {textItems.map(text => (
-                <div>
-                  <div className={styles.boldText}>
-                    {text.title}
-                  </div>
-                  <div className={styles.descriptionText}>
-                    {text.description}
-                  </div>
+        <span className={styles.triangle}/>
+        
+        <div className={styles.textContainer}>
+          <div className={styles.textItems}>
+            {textItems.map(text => (
+              <div>
+                <div className={styles.boldText}>
+                  {text.title}
                 </div>
-              ))}
-            </div>
-            <div className={styles.learnMoreContainer}>
-              <Button 
-                onClick={() => {
-                  history.push('/our-work')
-                  }} 
-                  size="large" 
-                  variant="outlined" 
-                  className={styles.whiteOutline}
-                >
-                Learn More
-              </Button>
-            </div>
+                <div className={styles.descriptionText}>
+                  {text.description}
+                </div>
+              </div>
+            ))}
           </div>
-
+          <div className={styles.learnMoreContainer}>
+            <Button 
+              onClick={() => {
+                history.push('/our-work')
+                }} 
+                size="large" 
+                variant="outlined" 
+                className={styles.whiteOutline}
+              >
+              Learn More
+            </Button>
+          </div>
         </div>
       </div>
     </div>

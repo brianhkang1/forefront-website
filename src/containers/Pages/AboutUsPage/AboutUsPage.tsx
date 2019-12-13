@@ -39,7 +39,7 @@ class AboutUsPage extends React.Component{
         </div>
 
         <div className={styles.iconsContainerTitle}>
-          <Title title="Check us out"/>
+          <Title smallTitle="Check us out"/>
         </div>
 
         <div className={styles.iconsContainer}>

@@ -1,43 +1,23 @@
-.root {
+.pictureContainer {
   width: 100vw;
-  height: 60vh; 
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
-
-.picture {
-  width: 35vw;
-  height: 65vh;
+  height: 85vh;
   background-image: url('../../Images/5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
 }
 
-.textContainer {
-  width: 40vw;
-  padding-right: 5rem;
-  display: flex;
-  flex-direction: column;
+.button {
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
 }
 
-.title {
-  font-size: 1.75rem;
-  color: rgb(69, 158, 172);
-  padding-bottom: 2rem;
-  line-height: 2.5rem;
-}
-
-.description1 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-bottom: 1rem;
-}
-
-.description2 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-bottom: 2rem;
+.button:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
