@@ -5,6 +5,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import OurMissionContainer from '../../OurMissionContainer';
 import BlogContainer from '../../BlogContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
+import TheProblemContainer from '../../TheProblemContainer';
 import FeatureProjectContainer from '../../FeatureProjectContainer';
 import Header from '../../Header';
 import Footer from '../../Footer';
@@ -31,6 +32,7 @@ class HomePage extends React.Component{
 
 
           <OurMissionContainer/>
+          <TheProblemContainer/>
           <FourPillarsContainer/>
           <FeatureProjectContainer/>
           <BlogContainer/>

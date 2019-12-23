@@ -39,9 +39,26 @@
   opacity: 0.8;
 }
 
-.paragraph {
-  padding: 3rem 10rem;
-  font-size: 1.75rem;
-  text-align: center;
-  line-height: 3rem;
+.pictureContainer {
+  width: 100vw;
+  height: 85vh;
+  background-image: url('../../../Images/9.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
