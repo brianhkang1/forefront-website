@@ -4,7 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(69, 158, 172);
+  color: white;
+
+  position: relative;
+  background-image: url('../../Images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {

@@ -13,11 +13,13 @@ class BuildersPage extends React.Component{
           </div>
         </div>
 
-        <div 
-          data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-          id="give-lively-widget" 
-          className="gl-branded-donation-widget"
-        />
+        <div style={{height: '100vh'}}>
+          <div 
+            data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+            id="give-lively-widget" 
+            className="gl-branded-donation-widget"
+          />
+        </div>
 
         <Footer/>
       </div>
