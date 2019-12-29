@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './HowToGetInvolvedItem.module.css';
 import Button from '../Button';
+import PictureFilter from '../PictureFilter';
 
 type Props = {
   title: string;
@@ -15,10 +16,14 @@ class HowToGetInvolvedItem extends React.Component<Props> {
 
     return(
       <div className={styles.root} style={{backgroundImage, backgroundSize: 'cover'}}>
-          <div className={styles.description}>{description}</div>
-          <Button className={styles.whiteOutline}>
-            <a href="#">{title}</a>
-          </Button>
+        <PictureFilter className={styles.pictureFilter}>
+          <div className={styles.container}>
+            <div className={styles.description}>{description}</div>
+            <Button>
+              <a href="#">{title}</a>
+            </Button>
+          </div>
+        </PictureFilter>
       </div>
     )
   }

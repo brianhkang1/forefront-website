@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './OurApproachFeatureContainer.module.css';
-import WaterImage from '../../Images/water.jpg';
-import MedicalImage from '../../Images/medical.jpg';
-import EducationImage from '../../Images/education.jpg';
-import EmpowermentImage from '../../Images/empowerment.jpg';
+import WaterImage from '../../Images/Water/9.jpg';
+import MedicalImage from '../../Images/Medical/2.jpg';
+import EducationImage from '../../Images/Education/19.jpg';
+import EmpowermentImage from '../../Images/Empowerment/5.jpg';
 import { Icon } from 'semantic-ui-react';
 
 enum FourPillars {
@@ -95,7 +95,8 @@ const OurApproachFeatureContainer = () => {
             className={styles.descriptionPicture} 
             style={{
               backgroundImage: `url(${approach.image})`,
-            }}/>
+            }}
+          />
       </div>
     ))}
 

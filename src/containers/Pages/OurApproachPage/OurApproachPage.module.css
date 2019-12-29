@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   background-color: white;
-  background: url("../../../Images/3.jpg") no-repeat center center;
+  background: url("../../../Images/Feature/4.jpg") no-repeat center center;
   background-size: cover;
   will-change: transform;
   z-index: -1;
@@ -32,16 +32,18 @@
 
 .featureTitle {
   position: absolute;
-  top: 45vh;
-  left: 32vw;
+  top: 28vh;
+  left: 7vw;
   color: white;
   font-size: 5rem;
   opacity: 0.8;
+  line-height: 6rem;
+  /* text-align: center; */
 }
 
 .pictureContainer {
   width: 100vw;
-  height: 85vh;
+  height: 60vh;
   background-image: url('../../../Images/9.jpg');
   background-position: center;
   background-repeat: no-repeat;

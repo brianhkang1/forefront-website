@@ -4,10 +4,10 @@ import { Icon } from 'semantic-ui-react';
 
 import Title from '../../components/Title';
 import FourPillarsItem from '../../components/FourPillarsItem';
-import WaterImage from '../../Images/water.jpg';
-import MedicalImage from '../../Images/medical.jpg';
-import EducationImage from '../../Images/education.jpg';
-import EmpowermentImage from '../../Images/empowerment.jpg';
+import WaterImage from '../../Images/Water/1.jpg';
+import MedicalImage from '../../Images/Medical/1.jpg';
+import EducationImage from '../../Images/Education/12.jpg';
+import EmpowermentImage from '../../Images/Empowerment/1.jpg';
 
 type FourPillarItemType = {
   icon: React.ReactNode;

@@ -1,11 +1,6 @@
 .root {
   height: 80vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,10 +16,20 @@
   transition: filter 0.3s ease;
 }
 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+
 .title {
   color: white;
   padding-top: 4vh;
-  font-size: 2rem;
+  
+  font-size: 2.25rem;
 }
 
 .description {

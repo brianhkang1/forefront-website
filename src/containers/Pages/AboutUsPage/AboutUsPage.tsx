@@ -5,37 +5,41 @@ import Footer from '../../Footer';
 import Title from '../../../components/Title';
 import Button from '../../../components/Button';
 
-import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.jpg';
+import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.png';
 import BlogIcon from '../../../Images/Icons/blog_icon.png';
 import SoTIcon from '../../../Images/Icons/SoT_icon.png';
 // @ts-ignore
 import Report from '../../../Documents/annual_report_2018.pdf';
+import PictureFilter from '../../../components/PictureFilter';
 
 class AboutUsPage extends React.Component{
   render(){
     return (
       <div className={styles.root}>
         <div className={styles.featurePictureContainer}>
-          <div className={styles.header}>
-            <Header/>
-          </div>
+          <PictureFilter>
+            <div className={styles.header}>
+              <Header/>
+            </div>
 
-          <div className={styles.title}>
-            Change happens through <br/> powerful individuals
-          </div>
+            <div className={styles.title}>
+              Change happens through <br/> powerful individuals
+            </div>
 
-          <div className={styles.buttonContainer}>
-            <Button size="large">
-              <a 
-                style={{color: 'white', opacity: 0.8}} 
-                href="https://blog.goforefront.org/the-force-of-four" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn More
-              </a>
-            </Button>
-          </div>
+            <div className={styles.buttonContainer}>
+              <Button size="large">
+                <a 
+                  style={{opacity: 0.8}} 
+                  href="https://blog.goforefront.org/the-force-of-four" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Learn More
+                </a>
+              </Button>
+            </div>
+
+          </PictureFilter>
         </div>
 
         <div className={styles.iconsContainerTitle}>

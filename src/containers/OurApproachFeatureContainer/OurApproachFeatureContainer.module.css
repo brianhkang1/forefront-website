@@ -21,7 +21,7 @@
   /* transition-delay: 200ms; */
   display: flex;
   width: 100vw;
-  height: 65vh;
+  height: 60vh;
 }
 
 .slideContainer {
@@ -31,7 +31,7 @@
 }
 
 .descriptionTextContainer {
-  max-width: 50vw;
+  width: 58vw;
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,8 +47,8 @@
 }
 
 .descriptionPicture {
-  width: 50vw;
-  background-size: cover;
+  width: 42vw;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }

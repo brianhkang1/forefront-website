@@ -94,7 +94,7 @@ class EmailForm extends React.Component<{}, State> {
       open={isModalOpen}
       onClose={this.closeModal}
       trigger={
-        <Button size="large" onClick={this.openModal}>
+        <Button onClick={this.openModal}>
           Join Our List
         </Button>
       }
@@ -118,7 +118,6 @@ class EmailForm extends React.Component<{}, State> {
           </div>
           <div className={styles.buttonContainer}>
             <Button 
-              size="large" 
               variant="solid" 
               type="submit"
             >

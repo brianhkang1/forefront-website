@@ -8,16 +8,12 @@ import ForeFrontLogo from '../../Images/Icons/ForefrontWhite.png';
 import ForeFrontLogoColor from '../../Images/Icons/ForefrontColor.png';
 import HeaderLinks from '../../components/HeaderLinks'
 
-type Props = {
-  isBlackText?: boolean;
-}
-
 type State = {
   activeLink: string;
   isMobileMenuActive: boolean;
 }
 
-class Header extends React.Component<Props, State>{
+class Header extends React.Component<{}, State>{
   constructor(props){
     super(props)
 
@@ -34,7 +30,6 @@ class Header extends React.Component<Props, State>{
   }
 
   render(){
-    const { isBlackText } = this.props
     const { isMobileMenuActive } = this.state
 
     return (
@@ -42,7 +37,7 @@ class Header extends React.Component<Props, State>{
       window.matchMedia("(min-width: 601px)").matches
         ? (  
           <header className={styles.header}>
-            <div className={classNames(isBlackText ? styles.headerLeftBlack : styles.headerLeft)}>
+            <div className={classNames(styles.headerLeft)}>
               <NavLink exact to="/">
                 <img 
                   src={ForeFrontLogo} 
@@ -51,7 +46,7 @@ class Header extends React.Component<Props, State>{
                 />
               </NavLink>
             </div>
-            <HeaderLinks isBlackText={isBlackText} handleLinkClick={this.handleLinkClick}/>
+            <HeaderLinks handleLinkClick={this.handleLinkClick}/>
           </header>
           )
         : (

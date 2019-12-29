@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './FourPillarsItem.module.css';
+import PictureFilter from '../PictureFilter';
 
 interface Props {
   title: React.ReactNode;
@@ -32,17 +33,20 @@ class FourPillarsItem extends React.Component<Props, State> {
         onMouseEnter={() => this.setState({isHovering: true})}
         onMouseLeave={() => this.setState({isHovering: false})}
       >
-        {!isHovering && (
-          <>
-            <div>{icon}</div>
-            <div className={styles.title}>{title}</div>
-          </>
-        )}
+        <PictureFilter>
+          <div className={styles.container}>
+            {!isHovering && (
+              <>
+                {/* <div>{icon}</div> */}
+                <div className={styles.title}>{title}</div>
+              </>
+            )}
 
-        {isHovering && (
-          <div className={styles.description}>{description}</div>
-        )}
-        
+            {isHovering && (
+              <div className={styles.description}>{description}</div>
+            )}
+          </div>
+        </PictureFilter>
       </div>
     )
   }

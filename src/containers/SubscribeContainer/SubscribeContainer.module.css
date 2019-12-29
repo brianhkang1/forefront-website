@@ -1,16 +1,19 @@
 .root {
   height: 40vh;
+  position: relative;
+  background-image: url('../../Images/5.jpg');
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textContainer {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-
-  position: relative;
-  background-image: url('../../Images/7.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .title {

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './OurMissionContainer.module.css';
-import Button from '../../components/Button';
 
 const OurMissionContainer = () => {
   return(

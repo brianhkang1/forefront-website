@@ -4,29 +4,6 @@
   grid-template-columns: 20% 80%;
 }
 
-.headerLeftBlack {
-  display: flex;
-  justify-content: center;
-  width: 19em;
-  padding: 2vh 0;
-  min-height: fit-content;
-  border-radius: 0 0 10px 0;
-  background-color: white;
-  color: rgb(69, 158, 172);
-
-  -webkit-transition: background-color 0.4s; /* Safari */
-  transition: background-color 0.4s;
-}
-
-.headerLeftBlack > a {
-  text-decoration: none;
-  font-size: 2.5em;
-  font-weight: 300;
-  -webkit-transition: color 0.4s; /* Safari */
-  transition: color 0.4s;
-  color: black;
-}
-
 .headerLeft:hover {
   cursor: pointer;
 }

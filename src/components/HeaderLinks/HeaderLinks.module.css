@@ -16,23 +16,7 @@
     color: rgb(69, 158, 172);
   }
 
-  .link > button {
-    border-color: white;
-  }
-
-  .link > button:hover {
-    border-color: rgb(69, 158, 172);
-  }
-
-  .link > button > a {
-    color: white;
-  }
-
-  .blackLink > a {
-    color: black;
-  }
-
-  .link, .blackLink {
+  .link {
     padding: 0vw 1vw;
   }
 }

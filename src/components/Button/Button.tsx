@@ -22,7 +22,6 @@ const Button: React.FunctionComponent<Props> = ({
   <button
     className={classNames(
       styles.button,
-      styles.roundedCorners,
       styles[size],
       styles[variant],
       fullWidth ? styles.fullWidth : null,

@@ -1,8 +1,34 @@
+/* Animate the size, outside */
+.button:hover, 
+.button:focus {
+  outline: none;
+  animation: pulse 0.75s;
+  box-shadow: 0 0 0 0.5em rgba(255,255,255,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 white; }
+}
+
+@-moz-keyframes pulse {
+  0% { box-shadow: 0 0 0 0 white; }
+}
+
+@-webkit-keyframes pulse  /* Safari and Chrome */ {
+  0% { box-shadow: 0 0 0 0 white; }
+}
+
+@-o-keyframes pulse  /* Opera */ {
+  0% { box-shadow: 0 0 0 0 white; }
+}
+@-ms-keyframes pulse  /* IE */ {
+  0% { box-shadow: 0 0 0 0 white; }
+}
+
 .button {
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
-  user-select: none;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -10,7 +36,15 @@
   width: auto;
   min-width: 4rem;
   justify-content: center;
-  border: 1px solid transparent;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 0.3125rem;
+}
+
+.button > a, 
+.button > a:hover {
+  color: white;
 }
 
 .small {
@@ -19,11 +53,12 @@
 }
 
 .medium {
+  font-size: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
 
 .large {
-  font-size: 1.25rem;
+  font-size: 3rem;
   padding: 0.75rem 1.25rem;
 }
 
@@ -39,47 +74,4 @@
   color: white;
   transition: all 0.25s ease-in;
   -webkit-transition: all 0.25s ease-in;
-}
-
-/* .solid:hover {
-  background-color: white;
-  color: rgb(69, 158, 172);
-  border-color: rgb(69, 158, 172);
-} */
-
-.text {
-  background-color: transparent;
-  color: rgb(69, 158, 172);
-  transition: all 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in;
-}
-
-.text:hover {
-  color: rgb(76, 162, 175);
-}
-
-.outlined {
-  border: 1px solid rgb(69, 158, 172);
-  background-color: transparent;
-  color: rgb(69, 158, 172);
-  transition: all 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in;
-}
-
-.outlined > a {
-  color: rgb(69, 158, 172);
-}
-
-.outlined:hover {
-  color: white;
-  background-color: rgb(69, 158, 172);
-  border: 1px solid transparent;
-}
-
-.roundedCorners {
-  border-radius: 0.3125rem;
-}
-
-.outlined:focus, .solid:focus, .text:focus {
-  outline: 0;
 }

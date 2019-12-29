@@ -13,8 +13,8 @@
 .picture {
   position: relative;
   height: 65vh;
-  background-image: url('../../Images/school.jpg');
-  background-position: center;
+  background-image: url('../../Images/School/1.jpg');
+  background-position: 0% 65%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26,7 +26,6 @@
   color: white;
   font-size: 2.25rem;
   line-height: 2.75rem;
-  background-color: rgba(0,0,0,0.4);
   margin-right: 2rem;
   padding: 1rem;
 }
@@ -87,18 +86,4 @@
 }
 .triangle:after {
 	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
-}
-
-.whiteOutline {
-  background-color: transparent;
-  color: white;
-  border-color: white;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-}
-
-.whiteOutline:hover {
-  background-color: transparent;
-  color: white;
-  border-color: white;
 }

@@ -19,7 +19,10 @@ class OurApproachPage extends React.Component{
               <Header/>
             </div> 
           
-            <div className={styles.featureTitle}>Our Approach</div>
+            <div className={styles.featureTitle}>
+              Some sort of <br/>
+              title here
+            </div>
           </PictureFilter>
         </div>
 

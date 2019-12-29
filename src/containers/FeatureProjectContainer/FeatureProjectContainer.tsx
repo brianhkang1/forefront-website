@@ -5,6 +5,7 @@ import { RouteComponentProps } from "react-router";
 
 import Title from '../../components/Title';
 import Button from '../../components/Button';
+import PictureFilter from '../../components/PictureFilter';
 
 const textItems = [
   {
@@ -36,7 +37,9 @@ const FeatureProjectContainer = ({
 
       <div className={styles.container}>
         <div className={styles.picture}>
-          <div className={styles.pictureText}>Forefront International School: Quality education for low-income children</div>
+          <PictureFilter>
+            <div className={styles.pictureText}>Forefront International School: Quality education for low-income children</div>
+          </PictureFilter>
         </div>
 
         <span className={styles.triangle}/>
@@ -59,9 +62,6 @@ const FeatureProjectContainer = ({
               onClick={() => {
                 history.push('/our-work')
                 }} 
-                size="large" 
-                variant="outlined" 
-                className={styles.whiteOutline}
               >
               Learn More
             </Button>
