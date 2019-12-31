@@ -1,30 +1,36 @@
 import React from 'react';
 import styles from './StatisticsVisual.module.css'
+import PictureFilter from '../PictureFilter';
+import Spacer from '../Spacer';
 
 const StatisticsVisual = () => {
   return (
     <>
-      <div className={styles.whiteDivider}/>
+      <Spacer height='0.5rem'/>
       
       <div className={styles.root}>
-        <div className={styles.title}> Our Impact: </div>
-        <div className={`${styles.statsItem} wow zoomIn`}>
-          <div className={styles.numberCounterItem}>50,000+</div> 
-          <div>villagers with accessible water</div>
-        </div>
+        <PictureFilter>
+          <div className={styles.container}>
+            <div className={styles.title}> Your Impact: </div>
+            <div className={`${styles.statsItem} wow zoomIn`}>
+              <div className={styles.numberCounterItem}>925</div> 
+              <div>unique donors</div>
+            </div>
 
-        <div className={`${styles.statsItem} wow zoomIn`}>
-          <div className={styles.numberCounterItem}>2500+</div> 
-          <div>soaps distributed</div>
-        </div>
+            <div className={`${styles.statsItem} wow zoomIn`}>
+              <div className={styles.numberCounterItem}>$625,000</div> 
+              <div>total support</div>
+            </div>
 
-        <div className={`${styles.statsItem} wow zoomIn`}>
-          <div className={styles.numberCounterItem}>19,000 sq ft</div> 
-          <div>school building in progress</div>
-        </div>
+            <div className={`${styles.statsItem} wow zoomIn`}>
+              <div className={styles.numberCounterItem}>20,230 sq ft</div> 
+              <div>school building in progress</div>
+            </div>
+          </div>
+        </PictureFilter>
       </div>
 
-      <div className={styles.whiteDivider}/>
+      <Spacer height='0.5rem'/>
     </>
   )
 }

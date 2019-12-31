@@ -30,67 +30,43 @@
   z-index: -1;
 }
 
+.title {
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  color: white;
+  font-size: 5rem;
+  opacity: 0.8;
+  line-height: 6rem;
+  text-align: center;
+}
+
 .header {
   padding-bottom: 8vh;
 }
 
-.currentProjectsContainer {
-  padding: 2rem 0;
+.chartContainer {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  height: 65vh;
+}
+
+.chartDescription {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.title { 
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding-bottom: 3vh;
-}
-
-.divider {
-  width: 3vw;
-  height: 1vh;
-  border-radius: 4px;
-  background-color: rgb(69, 158, 172);
-}
-
-.featureContainer {
-  padding: 5vh 15vw;
-  display: grid;
-  grid-template-columns: 1fr 1.75fr;
-  grid-gap: 4vw;
-}
-
-.featureText {
-  font-size: 1.5rem;
-  color: gray;
-}
-
-.bigText {
-  padding-bottom: 10vh;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 4vh;
-  color: black;
-}
-
-.smallText {
-  line-height: 4vh;
-  padding-bottom: 20vh
-}
-
-.redirect {
-  display: flex;
   justify-content: center;
+  align-items: center;
+  
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 4rem;
 }
 
-.featurePicture {
-  width: 25vw;
-  height: 70vh;
-  border-radius: 10px;
-
-  background-image: url("../../../Images/5.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.bigNumber {
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: 10rem;
 }

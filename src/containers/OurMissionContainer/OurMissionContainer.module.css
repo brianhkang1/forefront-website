@@ -20,16 +20,19 @@
   padding: 0 4rem;
 }
 
+/* first picture */
 .picturesContainer {
   width: 62vw;
-  background-image: url("../../Images/7.jpg");
-  background-position: center;
+  background-image: url("../../Images/11.jpg");
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* second picture */
 .picturesContainer:first-of-type {
   background-image: url("../../Images/8.jpg");
+  background-position: center;
 }
 
 .filter {
