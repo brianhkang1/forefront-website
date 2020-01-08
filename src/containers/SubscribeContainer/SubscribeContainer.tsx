@@ -2,9 +2,12 @@ import React from 'react';
 import styles from './SubscribeContainer.module.css';
 import EmailForm from '../../components/EmailForm';
 import PictureFilter from '../../components/PictureFilter';
+import Spacer from '../../components/Spacer';
 
 const SubscribeContainer = () => {
   return (
+    <>
+    <Spacer/>
     <div className={styles.root}>
       <PictureFilter>
         <div className={styles.textContainer}>
@@ -14,6 +17,7 @@ const SubscribeContainer = () => {
         </div>
       </PictureFilter>
     </div>
+    </>
   )
 }
 

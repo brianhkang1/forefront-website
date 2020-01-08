@@ -6,6 +6,7 @@ import Footer from '../../Footer';
 import BarChart from '../../../components/BarChart';
 import StatisticsVisual from '../../../components/StatisticsVisual';
 import PictureFilter from '../../../components/PictureFilter';
+import Map from '../../../components/Map';
 
 const waterWellData = [
   {
@@ -102,7 +103,7 @@ class OurWorkPage extends React.Component{
         >
           <div className={styles.chartDescription}>
             <div className={styles.bigNumber}>+11</div>
-            <div>Water Wells</div>
+            <div>water wells</div>
             <div>projected in 2020</div>
           </div>
 
@@ -139,7 +140,7 @@ class OurWorkPage extends React.Component{
         >
           <div className={styles.chartDescription}>
             <div className={styles.bigNumber}>$470K</div>
-            <div>Fundraised</div>
+            <div>fundraised</div>
             <div>for school</div>
           </div>
 
@@ -154,6 +155,7 @@ class OurWorkPage extends React.Component{
         </div>
 
         <StatisticsVisual/>
+        <Map/>
         <Footer/>
       </div>
     );
