@@ -41,11 +41,7 @@ class AboutUsPage extends React.Component{
 
           </PictureFilter>
         </div>
-
-        <div className={styles.iconsContainerTitle}>
-          <Title smallTitle="Check us out"/>
-        </div>
-
+        
         <div className={styles.iconsContainer}>
           <a 
             href="https://www.guidestar.org/profile/47-3373120" 

@@ -11,6 +11,13 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 
 class HomePage extends React.Component{
+  renderText = () => {
+    return (
+      <span className={styles.bold}>
+        We are
+      </span>
+      )
+  }
 
   render(){
     return (
@@ -22,7 +29,7 @@ class HomePage extends React.Component{
 
             <div className={styles.title}>
               <ReactTypingEffect
-                staticText='We are'
+                staticText={this.renderText()}
                 eraseDelay={1750}
                 speed={75}
                 text={["compassionate.", "committed.", "at the FOREFRONT." ]}
@@ -32,7 +39,7 @@ class HomePage extends React.Component{
 
 
           <OurMissionContainer/>
-          <TheProblemContainer/>
+          {/* <TheProblemContainer/> */}
           <FourPillarsContainer/>
           <FeatureProjectContainer/>
           <BlogContainer/>

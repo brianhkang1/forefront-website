@@ -1,8 +1,15 @@
 .pictureContainer {
   width: 100vw;
-  height: 85vh;
+  height: 60vh;
   background-image: url('../../Images/Water/6.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.buttonContainer {
+  height: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }

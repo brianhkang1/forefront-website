@@ -60,35 +60,31 @@
 }
 
 .iconsContainer {
-  padding: 0 10rem;
+  padding: 0 15rem;
   width: 100vw;
-  height: 50vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-
-.iconsContainerTitle {
-  padding-top: 2rem;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .iconContainer {
-  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid thin rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  /* padding: 1rem 0; */
+  /* border: solid thin rgba(0, 0, 0, 0.1);
+  border-radius: 10px; */
 }
 
-.iconContainer:hover {
+/* .iconContainer:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .icon {
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   background-size: cover;
 }
 

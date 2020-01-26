@@ -2,7 +2,7 @@
 @media (min-width: 601px) {  
   .title{
     font-size: 5rem;
-    top: 45%;
+    top: 40%;
     left: 13%;
   }
 
@@ -52,7 +52,15 @@
 
 .title {
   position: absolute;
-  color: white;
+  padding: 3rem 0;
+  background-color: white;
+  color: black;
   opacity: 0.8;
+}
+
+.bold {
+  background-color: black;
+  color: white;
+  padding: 1.5rem 2rem;
   font-weight: bold;
 }

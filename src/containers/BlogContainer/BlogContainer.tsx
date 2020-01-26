@@ -17,7 +17,7 @@ const BlogContainer = () => {
 
       <div className={styles.pictureContainer}>
         <PictureFilter>
-          <div style={{height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          <div className={styles.buttonContainer}>
             <Button size="large" className={styles.button}>Our Blog</Button>
           </div>
         </PictureFilter>
