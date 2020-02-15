@@ -11,6 +11,7 @@ import SoTIcon from '../../../Images/Icons/SoT_icon.png';
 // @ts-ignore
 import Report from '../../../Documents/annual_report_2018.pdf';
 import PictureFilter from '../../../components/PictureFilter';
+import PictureText from '../../../components/PictureText';
 
 class AboutUsPage extends React.Component{
   render(){
@@ -23,7 +24,9 @@ class AboutUsPage extends React.Component{
             </div>
 
             <div className={styles.title}>
-              Change happens through <br/> powerful individuals
+              <PictureText>
+                Change happens through <br/> powerful individuals
+              </PictureText>
             </div>
 
             <div className={styles.buttonContainer}>

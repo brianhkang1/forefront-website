@@ -1,9 +1,13 @@
 .description {
-  width: 80%;
-  text-align: center;
-  padding-top: 3vh;
-  color: white;
+  width: 100%;
+  /* text-align: center; */
+  margin-top: 4vh;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
   font-weight: bold;
+  padding: 0.75rem 1rem;
+  /* border-radius: 10px; */
 }
 
 .pictureFilter {

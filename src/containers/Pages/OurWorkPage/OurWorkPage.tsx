@@ -6,6 +6,7 @@ import Footer from '../../Footer';
 import BarChart from '../../../components/BarChart';
 import StatisticsVisual from '../../../components/StatisticsVisual';
 import PictureFilter from '../../../components/PictureFilter';
+import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
 
 const waterWellData = [
@@ -92,7 +93,9 @@ class OurWorkPage extends React.Component{
             </div>    
 
             <div className={styles.title}>
-              Some sort of <br/> title here
+              <PictureText>
+                Some sort of <br/> title here
+              </PictureText>
             </div>
           </PictureFilter>
         </div>

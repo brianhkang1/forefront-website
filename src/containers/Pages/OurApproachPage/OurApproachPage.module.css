@@ -34,11 +34,8 @@
   position: absolute;
   top: 28vh;
   left: 7vw;
-  color: white;
   font-size: 5rem;
-  opacity: 0.8;
   line-height: 6rem;
-  /* text-align: center; */
 }
 
 .pictureContainer {

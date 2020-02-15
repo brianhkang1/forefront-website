@@ -57,7 +57,7 @@ const FeatureProjectContainer = ({
               </div>
             ))}
           </div>
-          <div className={styles.learnMoreContainer}>
+          {/* <div className={styles.learnMoreContainer}>
             <Button 
               onClick={() => {
                 history.push('/our-work')
@@ -65,7 +65,7 @@ const FeatureProjectContainer = ({
               >
               Learn More
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

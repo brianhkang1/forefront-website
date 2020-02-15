@@ -53,14 +53,7 @@
 .title {
   position: absolute;
   padding: 3rem 0;
-  background-color: white;
-  color: black;
-  opacity: 0.8;
-}
-
-.bold {
   background-color: black;
   color: white;
-  padding: 1.5rem 2rem;
-  font-weight: bold;
+  opacity: 0.8
 }

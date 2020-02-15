@@ -8,6 +8,7 @@ import Title from '../../../components/Title';
 import Header from '../../Header';
 import Footer from '../../Footer';
 import Button from '../../../components/Button';
+import PictureText from '../../../components/PictureText'
 
 class OurApproachPage extends React.Component{
   render(){
@@ -20,8 +21,10 @@ class OurApproachPage extends React.Component{
             </div> 
           
             <div className={styles.featureTitle}>
-              Some sort of <br/>
-              title here
+              <PictureText opacity={0.6} padding='0.5rem'>
+                Some sort of <br/>
+                title here
+              </PictureText>
             </div>
           </PictureFilter>
         </div>

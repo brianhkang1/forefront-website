@@ -37,10 +37,8 @@
   position: absolute;
   top: 35%;
   left: 18%;
-  color: white;
   font-size: 5rem;
-  opacity: 0.8;
-  line-height: 6rem;
+  line-height: 7rem;
   text-align: center;
 }
 
@@ -60,7 +58,7 @@
 }
 
 .iconsContainer {
-  padding: 0 15rem;
+  padding: 0 10rem;
   width: 100vw;
   height: 60vh;
   display: flex;
@@ -73,14 +71,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 1rem 0; */
-  /* border: solid thin rgba(0, 0, 0, 0.1);
-  border-radius: 10px; */
+  border: solid thin rgba(0, 0, 0, 0.1);
+  /* padding: 2rem 3rem; */
+  width: 24rem;
+  height: 20em;
+  border-radius: 10px; 
 }
 
-/* .iconContainer:hover {
+.iconContainer:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} */
+}
 
 .icon {
   width: 14rem;
