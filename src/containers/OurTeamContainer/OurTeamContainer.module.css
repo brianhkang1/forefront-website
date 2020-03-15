@@ -58,18 +58,28 @@
 }
 
 .teamMemberPicture {
-  width: 14.5rem;
-  height: 21.6875rem;
+  width: 17rem;
+  height: 26rem;
   margin-bottom: 2rem;
 }
 
 .teamMemberPictureTitle {
   font-size: 1.25rem;
-  margin-bottom: 18rem;
+  margin-bottom: 21.5rem;
   min-width: 10rem;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5rem;
 }
 
 .teamMemberPictureDescription {
+  height: 100%;
+  padding: 0 0.75rem;
   font-size: 1rem;
-  margin-bottom: 2rem;
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

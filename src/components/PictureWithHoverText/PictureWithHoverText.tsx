@@ -26,7 +26,14 @@ class PictureWithHoverText extends React.Component<Props, State> {
   }
 
   render(){
-    const { title, description, image, className, titleClassName, descriptionClassName } = this.props;
+    const { 
+      title, 
+      description, 
+      image, 
+      className, 
+      titleClassName, 
+      descriptionClassName,
+    } = this.props;
     const { isHovering } = this.state;
 
     return(
@@ -39,10 +46,7 @@ class PictureWithHoverText extends React.Component<Props, State> {
         <PictureFilter>
           <div className={styles.container}>
             {!isHovering && (
-              <>
-                {/* <div>{icon}</div> */}
-                <div className={classNames(styles.title, titleClassName)}>{title}</div>
-              </>
+              <div className={classNames(styles.title, titleClassName)}>{title}</div>
             )}
 
             {isHovering && (
