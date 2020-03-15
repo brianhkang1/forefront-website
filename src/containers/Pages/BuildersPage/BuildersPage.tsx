@@ -4,6 +4,12 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 
 class BuildersPage extends React.Component{
+  componentDidMount(){
+    const script = document.createElement("script");
+    script.src = 'https://secure.givelively.org/widgets/branded_donation/forefront-charity.js';
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
   render(){
     return (
       <div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './OurMissionContainer.module.css';
+import PictureText from '../../components/PictureText';
 
 const OurMissionContainer = () => {
   return(
@@ -19,7 +20,7 @@ const OurMissionContainer = () => {
         
           <div className={styles.picturesContainer}>
             <div className={styles.filter}>
-              <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>OUR MISSION</div>
+              <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>OUR MISSION:</div>
 
               <div className={styles.missionsContainer}>
                 <div>Enable every person</div>
@@ -39,7 +40,7 @@ const OurMissionContainer = () => {
         <div className={styles.container}>       
           <div className={styles.picturesContainer}>
             <div className={styles.filter}>
-              <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>THE PROBLEM</div>
+              <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>THE PROBLEM:</div>
 
               <div className={styles.missionsContainer}>
                 <div>Problem</div>
