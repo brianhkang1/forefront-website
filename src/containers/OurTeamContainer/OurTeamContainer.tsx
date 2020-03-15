@@ -56,7 +56,7 @@ const TeamMembers = [
   {
     title: <span>KATE <br/> KIM</span>,
     image: MemberPicture,
-    description: "Kate graduated from the Hotel School of Administration at Cornell University.  On the side, she is a wedding planner/coordinator!  She also loves travelling and spending time her puppy.  She is excited to be part of this team making an impact around the globe!"
+    description: "Kate graduated from the Hotel School of Administration at Cornell University.  On the side, she is a wedding planner / coordinator!  She also loves travelling and spending time with her puppy.  She is excited to be part of this team making an impact around the globe!"
   },
   {
     title: <span>MATT <br/> LAWSON</span>,
