@@ -1,3 +1,10 @@
+:root {
+  --main-color: #459eac;
+  --main-colorPlus: #daedf0;
+
+  --blue-color: #00305B;;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;

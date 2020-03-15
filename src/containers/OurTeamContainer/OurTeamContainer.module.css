@@ -1,0 +1,75 @@
+.mainPictureContainer {
+  display: flex;
+}
+
+.mainPictureTextContainer {
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-colorPlus);
+}
+
+.mainPictureText {
+  color: var(--blue-color);
+  line-height: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.dashText {
+  padding: 2rem;
+  font-size: 4rem;
+  color: var(--blue-color);
+  font-weight: bold;
+}
+
+.mainPictureSubtext {
+  color: var(--blue-color);
+  line-height: 2rem;
+  padding: 2rem 3rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.mainPictureLink {
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.mainPictureLink > a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.mainPicture {
+  width: 70vw;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.teamMembersContainer {
+  padding: 1rem 14rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.teamMemberPicture {
+  width: 14.5rem;
+  height: 21.6875rem;
+  margin-bottom: 2rem;
+}
+
+.teamMemberPictureTitle {
+  font-size: 1.25rem;
+  margin-bottom: 18rem;
+  min-width: 10rem;
+}
+
+.teamMemberPictureDescription {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}

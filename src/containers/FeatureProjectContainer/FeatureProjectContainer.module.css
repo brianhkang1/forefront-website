@@ -32,7 +32,7 @@
   /* height is 18vh with button */
   height: 12vh;
   padding: 2rem;
-  background-color: rgb(69, 158, 172);
+  background-color: var(--main-color);
   color: white;
 }
 
@@ -59,7 +59,7 @@
 
 .triangle {
 	position: absolute;
-	background-color: rgb(69, 158, 172);
+	background-color: var(--main-color);
   bottom: 9.25rem;
   left: 48%;
 }

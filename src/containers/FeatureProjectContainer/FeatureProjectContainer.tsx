@@ -4,7 +4,6 @@ import { withRouter } from "react-router-dom";
 import { RouteComponentProps } from "react-router";
 
 import Title from '../../components/Title';
-import Button from '../../components/Button';
 import PictureFilter from '../../components/PictureFilter';
 
 const textItems = [

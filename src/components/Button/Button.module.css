@@ -74,7 +74,7 @@
 }
 
 .solid {
-  background-color: rgb(69, 158, 172);
+  background-color: var(--main-color);
   color: white;
   transition: all 0.25s ease-in;
   -webkit-transition: all 0.25s ease-in;

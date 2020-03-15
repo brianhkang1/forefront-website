@@ -1,19 +1,22 @@
 import React from 'react';
-import styles from './FourPillarsItem.module.css';
+import styles from './PictureWithHoverText.module.css';
 import PictureFilter from '../PictureFilter';
+import { classNames } from '../../util';
 
 interface Props {
   title: React.ReactNode;
   description: string;
-  icon: React.ReactNode;
   image: React.ReactNode;
+  className?: string;
+  titleClassName: string;
+  descriptionClassName: string;
 }
 
 type State = {
   isHovering: boolean;
 }
 
-class FourPillarsItem extends React.Component<Props, State> {
+class PictureWithHoverText extends React.Component<Props, State> {
   constructor(props){
     super(props)
 
@@ -23,12 +26,12 @@ class FourPillarsItem extends React.Component<Props, State> {
   }
 
   render(){
-    const { title, description, icon, image } = this.props;
+    const { title, description, image, className, titleClassName, descriptionClassName } = this.props;
     const { isHovering } = this.state;
 
     return(
       <div 
-        className={styles.root} 
+        className={classNames(styles.root, className)} 
         style={{backgroundImage: `url(${image})`}}
         onMouseEnter={() => this.setState({isHovering: true})}
         onMouseLeave={() => this.setState({isHovering: false})}
@@ -38,12 +41,12 @@ class FourPillarsItem extends React.Component<Props, State> {
             {!isHovering && (
               <>
                 {/* <div>{icon}</div> */}
-                <div className={styles.title}>{title}</div>
+                <div className={classNames(styles.title, titleClassName)}>{title}</div>
               </>
             )}
 
             {isHovering && (
-              <div className={styles.description}>{description}</div>
+              <div className={classNames(styles.description, descriptionClassName)}>{description}</div>
             )}
           </div>
         </PictureFilter>
@@ -53,4 +56,4 @@ class FourPillarsItem extends React.Component<Props, State> {
 }
 
 
-export default FourPillarsItem
+export default PictureWithHoverText

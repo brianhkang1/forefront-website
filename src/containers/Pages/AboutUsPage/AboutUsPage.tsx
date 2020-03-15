@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './AboutUsPage.module.css'
 import Header from '../../Header';
 import Footer from '../../Footer';
-import Title from '../../../components/Title';
 import Button from '../../../components/Button';
 
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.png';
@@ -12,6 +11,7 @@ import SoTIcon from '../../../Images/Icons/SoT_icon.png';
 import Report from '../../../Documents/annual_report_2018.pdf';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
+import OurTeamContainer from '../../OurTeamContainer';
 
 class AboutUsPage extends React.Component{
   render(){
@@ -53,7 +53,8 @@ class AboutUsPage extends React.Component{
           >
             <div className={styles.iconContainer}>
                 <div className={styles.icon} style={{backgroundImage: `url(${SoTIcon})`}}/>
-                <div className={styles.iconLink}>GUIDESTAR CERTIFIED</div>
+                <div className={styles.iconText}>We are a 501(c)(3) non-profit committed to transparency</div>
+                <div className={styles.iconLink}>We are gold certified</div>
             </div>
           </a>
           <a 
@@ -63,7 +64,8 @@ class AboutUsPage extends React.Component{
           >
             <div className={styles.iconContainer}>
                 <div className={styles.icon} style={{backgroundImage: `url(${AnnualReportIcon})`}}/>
-                <div className={styles.iconLink}>ANNUAL REPORT</div>
+                <div className={styles.iconText}>We ensure 100% of your <br/> donations go to the cause</div>
+                <div className={styles.iconLink}>See our annual report</div>
             </div>
           </a>
           <a 
@@ -73,22 +75,13 @@ class AboutUsPage extends React.Component{
           >
             <div className={styles.iconContainer}>
                 <div className={styles.icon} style={{backgroundImage: `url(${BlogIcon})`}}/>
-                <div className={styles.iconLink}>OUR BLOG</div>
+                <div className={styles.iconText}>Read about our personal <br/> experiences from the field</div>
+                <div className={styles.iconLink}>Check out our blog</div>
             </div>
           </a>
         </div>
 
-        <div className={styles.teamContainer}>
-            <div className={styles.teamLinkContainer}>
-              <div className={styles.teamLinkText}>Get to <br/> know us</div>
-              <div className={styles.teamLinkButton}><Button size="large"><a href="">Link</a></Button></div>
-            </div>
-
-            <div className={styles.teamLinkContainer}>
-              <div className={styles.teamLinkText}>Join <br/> our team</div>
-              <div className={styles.teamLinkButton}><Button size="large"><a href="">Link</a></Button></div>
-            </div>
-        </div>
+        <OurTeamContainer/>
         <Footer/>
       </div>
     );

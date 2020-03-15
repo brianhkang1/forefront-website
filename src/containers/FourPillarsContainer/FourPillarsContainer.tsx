@@ -3,7 +3,7 @@ import styles from './FourPillarsContainer.module.css'
 import { Icon } from 'semantic-ui-react';
 
 import Title from '../../components/Title';
-import FourPillarsItem from '../../components/FourPillarsItem';
+import PictureWithHoverText from '../../components/PictureWithHoverText';
 import WaterImage from '../../Images/Water/1.jpg';
 import MedicalImage from '../../Images/Medical/1.jpg';
 import EducationImage from '../../Images/Education/12.jpg';
@@ -58,12 +58,14 @@ const FourPillarsContainer = () => {
 
       <div className={styles.fourPillarsVisual}>
         {FourPillarItems.map((item: FourPillarItemType, index: number) => (
-          <FourPillarsItem
+          <PictureWithHoverText
+            className={styles.pictureSize}
             key={`fourPillarItem${index+1}`}
             title={item.title}
             description={item.description}
-            icon={item.icon}
             image={item.image}
+            titleClassName={styles.fourPillarTitle}
+            descriptionClassName={styles.fourPillarDescription}
           />
         ))}
       </div>

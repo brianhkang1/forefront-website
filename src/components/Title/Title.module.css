@@ -30,5 +30,5 @@
   width: 4vw;
   height: 0.5vh;
   border-radius: 4px;
-  background-color: rgb(69, 158, 172);
+  background-color: var(--main-color);
 } */

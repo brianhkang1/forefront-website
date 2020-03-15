@@ -24,6 +24,22 @@
 
 /******************************************************************/
 
+.pictureSize {
+  height: 80vh;
+  width: 100%;
+}
+
+.fourPillarTitle {
+  font-size: 2.25rem;
+  padding: 1.5rem 1rem;
+}
+
+.fourPillarDescription {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
 .iconsContainer{
   color: white;
   border: solid white medium;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './EmailForm.module.css';
 import Button from '../../components/Button';
-import { Header, Modal } from 'semantic-ui-react'
+import { Modal } from 'semantic-ui-react'
 
 interface State {
   firstName: string;

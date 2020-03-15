@@ -1,6 +1,4 @@
 .root {
-  height: 80vh;
-  width: 100%;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,23 +20,18 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 6rem;
 }
 
 .title {
-  padding: 1.5rem 1rem;
   opacity: 0.8;
   background-color: black;
   color: white;
   font-weight: bold;
-  font-size: 2.25rem;
+  text-align: center;
 }
 
 .description {
   opacity: 0.8;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  line-height: 3rem;
   text-align: center;
   color: black;
   background-color: white;

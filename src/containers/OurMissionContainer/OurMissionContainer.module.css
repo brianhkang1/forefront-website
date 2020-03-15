@@ -6,7 +6,7 @@
 }
 
 .textContainer {
-  background-color: rgb(69, 158, 172);
+  background-color: var(--main-color);
   color: white;
   width: 35vw;
   display: flex;

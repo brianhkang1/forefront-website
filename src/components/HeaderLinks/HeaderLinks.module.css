@@ -14,7 +14,7 @@
   }
 
   .link > a:hover {
-    color: rgb(69, 158, 172);
+    color: var(--main-color);
   }
 
   .link {
@@ -40,7 +40,7 @@
   }
 
   .link > .active {
-    color: rgb(69, 158, 172);
+    color: var(--main-color);
     font-weight: bold;
   }
 }
