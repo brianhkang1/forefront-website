@@ -58,12 +58,11 @@
 }
 
 .iconsContainer {
-  padding: 0 13rem;
+  margin: 4rem 0;
   width: 100vw;
-  height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .iconContainer {
@@ -73,8 +72,9 @@
   align-items: center;
   justify-content: center;
   /* border: solid thin rgba(0, 0, 0, 0.1); */
-  width: 22rem;
-  height: 24rem;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 1rem;
   border-radius: 10px; 
 }
 

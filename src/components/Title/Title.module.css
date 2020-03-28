@@ -15,6 +15,7 @@
   font-size: 4rem;
   line-height: 5rem;
   font-weight: bold;
+  color: var(--base-text);
 }
 
 .description {

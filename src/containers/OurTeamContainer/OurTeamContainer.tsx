@@ -5,6 +5,10 @@ import Picture from '../../components/Picture';
 import TeamPicture from '../../Images/Education/11.jpg';
 import MemberPicture from '../../Images/Portrait/2.jpg';
 import PictureWithHoverText from '../../components/PictureWithHoverText';
+import JobPosting from '../../components/JobPosting';
+
+// @ts-ignore
+import InternshipPDF from '../../Documents/Forefront_Internship.pdf';
 
 type Member = {
   title: React.ReactNode;
@@ -81,6 +85,13 @@ const TeamMembers = [
 ]
 
 const OurTeamContainer: React.FC = () => {
+  const scrollToBottomOfPage = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <div className={styles.root}>
       <div className={styles.mainPictureContainer}>
@@ -92,16 +103,22 @@ const OurTeamContainer: React.FC = () => {
           <div className={styles.dashText}>—</div>
 
           <div className={styles.mainPictureSubtext}>
-            We are everyday people that use our skills and 
-            talents to serve others!
+            We are everyday people that use our skills <br/>
+            and talents to serve others!
+          </div>
+
+          <div onClick={scrollToBottomOfPage} className={styles.mainPictureLink}>
+            Join the Forefront team
           </div>
 
           <div className={styles.mainPictureLink}>
-            <a href="#">Join the Forefront team!</a>
-          </div>
-
-          <div className={styles.mainPictureLink}>
-            <a href="#">Apply for an internship</a>
+            <a 
+              href={InternshipPDF}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply for an internship
+            </a>
           </div>
         </div>
 
@@ -126,6 +143,8 @@ const OurTeamContainer: React.FC = () => {
           />
         ))}
       </div>
+
+      <JobPosting/>
     </div>
   )
 }

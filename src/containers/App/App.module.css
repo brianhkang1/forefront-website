@@ -1,6 +1,7 @@
-.page {
+/* Needed to do page transition */
+/* .page {
   position: absolute;
-}
+} */
 
 /* PAGE ANIMATIONS */
 .pageFadeEnter {

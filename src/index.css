@@ -3,17 +3,21 @@
   --main-colorPlus: #daedf0;
 
   --blue-color: #00305B;
+  --gray-color: #58595B;
+
+  --base-text:#333e48;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  letter-spacing: 1.75px;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  /* letter-spacing: 1px; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 body {
   margin: 0;
   padding: 0;
-  color: #333e48;
 }

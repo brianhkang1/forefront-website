@@ -1,0 +1,36 @@
+.root {
+  margin: 2rem 4rem;
+}
+
+.containerTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  border-bottom: thin solid var(--gray-color);
+}
+
+.jobPostingContainer {
+  padding-top: 1.5rem;
+}
+
+.jobPosting {
+  color: var(--text-base);
+  border-bottom: thin solid var(--gray-color);
+  padding: 1rem 0;
+  margin: 0 0 0 2rem;
+}
+
+.jobTitle {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.jobTitle > a, .jobTitle > a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-base);
+}
+
+.jobDescription {
+  font-size: 1.25rem;
+}
