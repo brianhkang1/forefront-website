@@ -21,6 +21,16 @@
   background-size: cover;
 }
 
+.widgetContainer {
+  width: 35vw;
+  position: absolute;
+  bottom: 15vh;
+  right: 10vw;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
 .blurb {
   padding: 2rem 15rem;
   display: flex;

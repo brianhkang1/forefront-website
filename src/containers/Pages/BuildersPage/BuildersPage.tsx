@@ -44,9 +44,13 @@ const Testimonials = [
 class BuildersPage extends React.Component{
   componentDidMount(){
     const script = document.createElement("script");
-    script.src = 'https://secure.givelively.org/widgets/branded_donation/forefront-charity.js';
+    script.src = 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?show_suggested_amount_buttons=true&show_in_honor_of=true&address_required=false&suggested_donation_amounts[]=20&suggested_donation_amounts[]=30&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100'
     document.getElementsByTagName("head")[0].appendChild(script);
   }
+
+  // componentWillUnmount(){
+  //   document.getElementsByTagName("head")[0].remove();
+  // }
 
   render(){
     return (
@@ -55,6 +59,14 @@ class BuildersPage extends React.Component{
           <PictureFilter>
             <div className={styles.header}>
               <Header/>
+            </div>
+
+            <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.5s">
+              <div 
+                data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+                id="give-lively-widget" 
+                className="gl-branded-donation-widget"
+              />
             </div>
           </PictureFilter>
         </div>
@@ -123,15 +135,7 @@ class BuildersPage extends React.Component{
           </div>
         </div>
 
-        <div style={{height: '120vh'}}>
-          <div 
-            data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-            id="give-lively-widget" 
-            className="gl-branded-donation-widget"
-          />
-        </div>
-
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     );
   }
