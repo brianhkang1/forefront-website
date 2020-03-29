@@ -119,6 +119,7 @@ class BuildersPage extends React.Component{
                   <img
                     src={item.image}
                     className={styles.testimonialPic}
+                    alt={`testimonial ${index + 1}`}
                   >
                     {/* <span className={styles.testimonialText}>
                       <PictureText>{item.description}</PictureText>

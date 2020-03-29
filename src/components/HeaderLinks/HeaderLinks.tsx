@@ -33,7 +33,15 @@ class HeaderLinks extends React.Component<Props> {
           <NavLink exact to="/about" activeClassName={styles.active}>About Us</NavLink>
         </div>
         <div className={styles.link}>
-          <Button><a href="#">Donate</a></Button>
+          <Button>
+            <a     
+              href={'https://secure.givelively.org/donate/forefront-charity'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate
+            </a>
+          </Button>
         </div>
       </div>
     )

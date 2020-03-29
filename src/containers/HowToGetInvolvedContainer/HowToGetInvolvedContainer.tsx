@@ -10,23 +10,28 @@ type HowToGetInvolvedItemType = {
   title: string;
   description: string;
   backgroundImage: string;
+  link: string;
 }
 
+// TODO: become a build link
 const HowToGetInvolvedItems = [
   {
     title: 'Donate',
     description: 'Building the future starts with a gift of any amount',
-    backgroundImage: `url(${BackgroundImage1})`
+    backgroundImage: `url(${BackgroundImage1})`,
+    link: 'https://secure.givelively.org/donate/forefront-charity'
   },
   {
     title: 'Start A Fundraiser',
     description: 'Be a changemaker today',
-    backgroundImage: `url(${BackgroundImage2})`
+    backgroundImage: `url(${BackgroundImage2})`,
+    link: 'https://donate.goforefront.org/campaign/lets-start-something/c141547'
   },
   {
     title: 'Become a Builder',
     description: 'You can build up communities today',
-    backgroundImage: `url(${BackgroundImage3})`
+    backgroundImage: `url(${BackgroundImage3})`,
+    link: '#'
   }
 ]
 
@@ -49,6 +54,7 @@ class HowToGetInvolvedContainer extends React.Component {
               title={item.title}
               description={item.description}
               backgroundImage={item.backgroundImage}
+              link={item.link}
             />
           ))}
         </div>

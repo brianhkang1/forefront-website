@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './OurMissionContainer.module.css';
-import PictureText from '../../components/PictureText';
 
 const OurMissionContainer = () => {
   return(
