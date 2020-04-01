@@ -1,31 +1,30 @@
 import React from 'react';
 import styles from './JobPosting.module.css';
 // @ts-ignore
-import InternshipPDF from '../../Documents/Forefront_Internship.pdf';
+import WebDevApp from '../../Documents/Web_Developer_Application.pdf';
 
 
-// TODO: update PDF links
 const JobPostingInfo = [
   {
-    title: 'Fake Job 1',
+    title: 'Web Developer',
     description: 'Lorem ipsum dolor sit amet',
-    link: InternshipPDF
+    link: WebDevApp
   },
-  {
-    title: 'Fake Job 2',
-    description: 'Lorem ipsum dolor sit amet',
-    link: InternshipPDF
-  },
-  {
-    title: 'Fake job 3',
-    description: 'Lorem ipsum dolor sit amet',
-    link: InternshipPDF
-  },
-  {
-    title: 'Fake job 4',
-    description: 'Lorem ipsum dolor sit amet',
-    link: InternshipPDF
-  }
+  // {
+  //   title: 'Fake Job 2',
+  //   description: 'Lorem ipsum dolor sit amet',
+  //   link: InternshipPDF
+  // },
+  // {
+  //   title: 'Fake job 3',
+  //   description: 'Lorem ipsum dolor sit amet',
+  //   link: InternshipPDF
+  // },
+  // {
+  //   title: 'Fake job 4',
+  //   description: 'Lorem ipsum dolor sit amet',
+  //   link: InternshipPDF
+  // }
 ]
 
 const JobPosting: React.FC = () => {
