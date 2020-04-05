@@ -1,30 +1,64 @@
 import React from 'react';
 import styles from './JobPosting.module.css';
 // @ts-ignore
-import WebDevApp from '../../Documents/Web_Developer_Application.pdf';
-
+import ChiefMarketingOfficerApp from '../../Documents/Chief_Marketing_Officer.doc';
+// @ts-ignore
+import CopyWriteLeadApp from '../../Documents/Copy_Write_Lead.doc';
+// @ts-ignore
+import DirectorOfEducationApp from '../../Documents/Director_of_Education.doc';
+// @ts-ignore
+import DirectorOfMedicalApp from '../../Documents/Director_of_Medical.doc';
+// @ts-ignore
+import DirectorOfProgramsApp from '../../Documents/Director_of_Programs.doc';
+// @ts-ignore
+import EventsLeadApp from '../../Documents/Events_Lead.doc';
+// @ts-ignore
+import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.doc';
+// @ts-ignore
+import PublicRelationsLeadApp from '../../Documents/Public_Relations_Lead.doc';
 
 const JobPostingInfo = [
   {
-    title: 'Web Developer',
+    title: 'Chief Marketing Officer',
     description: 'Lorem ipsum dolor sit amet',
-    link: WebDevApp
+    link: ChiefMarketingOfficerApp
   },
-  // {
-  //   title: 'Fake Job 2',
-  //   description: 'Lorem ipsum dolor sit amet',
-  //   link: InternshipPDF
-  // },
-  // {
-  //   title: 'Fake job 3',
-  //   description: 'Lorem ipsum dolor sit amet',
-  //   link: InternshipPDF
-  // },
-  // {
-  //   title: 'Fake job 4',
-  //   description: 'Lorem ipsum dolor sit amet',
-  //   link: InternshipPDF
-  // }
+  {
+    title: 'Copy-Write Lead',
+    description: 'Lorem ipsum dolor sit amet',
+    link: CopyWriteLeadApp
+  },
+  {
+    title: 'Director Of Education',
+    description: 'Lorem ipsum dolor sit amet',
+    link: DirectorOfEducationApp
+  },
+  {
+    title: 'Director of Medical',
+    description: 'Lorem ipsum dolor sit amet',
+    link: DirectorOfMedicalApp
+  },
+  {
+    title: 'Director of Programs',
+    description: 'Lorem ipsum dolor sit amet',
+    link: DirectorOfProgramsApp
+  },
+  {
+    title: 'Events Lead',
+    description: 'Lorem ipsum dolor sit amet',
+    link: EventsLeadApp
+  },
+  {
+    title: 'People & Culture Lead',
+    description: 'Lorem ipsum dolor sit amet',
+    link: PeopleAndCultureLeadApp
+  },
+  {
+    title: 'Public Relations Lead',
+    description: 'Lorem ipsum dolor sit amet',
+    link: PublicRelationsLeadApp
+  },
+
 ]
 
 const JobPosting: React.FC = () => {
