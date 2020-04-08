@@ -3,7 +3,6 @@ import styles from './BuildersPage.module.css';
 import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
-import OurApproachFeatureContainer from '../../OurApproachFeatureContainer';
 
 import BenefitPic1 from '../../../Images/Portrait/1.jpg';
 import BenefitPic2 from '../../../Images/Portrait/2.jpg';
@@ -15,8 +14,32 @@ import TestimonialPic2 from '../../../Images/2.jpg';
 import TestimonialPic3 from '../../../Images/3.jpg';
 import TestimonialPic4 from '../../../Images/4.jpg';
 
+import { Icon } from 'semantic-ui-react';
 import Carousel from 'react-material-ui-carousel'
 import PictureText from '../../../components/PictureText';
+
+export const FourPillarItems = [
+  {
+    title: 'WATER',
+    icon: <div className={styles.icons}><Icon color='blue' name="tint" size="huge"/></div>,
+    description: 'Dig clean water wells and provide hand soap'
+  },
+  {
+    title: 'EDUCATION',
+    icon: <div className={styles.icons}><Icon color='violet' name="graduation cap" size="huge"/></div>,
+    description: 'Build quality schools '
+  },
+  {
+    title: 'MEDICAL',
+    icon: <div className={styles.icons}><Icon color='brown' name="band aid" size="huge"/></div>,
+    description: 'Create accessible and affordable health clinics'
+  },
+  {
+    title: 'EMPOWERMENT',
+    icon: <div className={styles.icons}><Icon color='red' name="users" size="huge"/></div>,
+    description: 'Empower leadership training'
+  }
+]
 
 const BenefitsPictures = [
   BenefitPic1, BenefitPic2, BenefitPic3, BenefitPic4
@@ -48,10 +71,6 @@ class BuildersPage extends React.Component{
     document.getElementsByTagName("head")[0].appendChild(script);
   }
 
-  // componentWillUnmount(){
-  //   document.getElementsByTagName("head")[0].remove();
-  // }
-
   render(){
     return (
       <div>
@@ -59,6 +78,24 @@ class BuildersPage extends React.Component{
           <PictureFilter>
             <div className={styles.header}>
               <Header/>
+            </div>
+
+            <div className={styles.featureText}>
+              <div>
+                <PictureText>
+                  Builders: an unstoppable group of monthly givers
+                </PictureText>
+              </div>
+              <div>
+                <PictureText>
+                  in building up communities where every person
+                </PictureText>
+              </div>
+              <div>
+                <PictureText>
+                  has the opportunity to thrive
+                </PictureText>
+              </div>
             </div>
 
             <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.5s">
@@ -72,12 +109,32 @@ class BuildersPage extends React.Component{
         </div>
 
         <div className={styles.blurb}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Reiciendis fugit illum quia quo deserunt nam saepe voluptatibus 
-          officia repellat soluta, ut inventore reprehenderit? 
+            Join other passionate and dedicated group of givers 
+            to build up local community leaders that will multiply 
+            into a global network of change. By providing basic life 
+            necessities, you are giving opportunities to dream and 
+            realize their potential. 
         </div>
 
-        <OurApproachFeatureContainer/>
+        <div>
+          <div className={styles.sectionTitle}> 
+            Your monthly giving will support the four pillars <br/>
+            that will equip communities with the necessities 
+            to thrive:   
+          </div>
+          <div className={styles.iconsContainer}>
+            {FourPillarItems.map(item => (
+              <div className={styles.iconItem}>
+                <div>{item.icon}</div>
+                <div className={styles.iconDescription}>
+                  {item.description}
+                </div>
+              </div>
+              ))}
+          </div>
+        </div>
+
+        
 
         <div className={styles.whyBeMonthlyDonor}>
           <div className={styles.title}>
@@ -85,10 +142,15 @@ class BuildersPage extends React.Component{
           </div>
           <div className={styles.whyBeMonthlyDonorText}>
             <div className={styles.whyBeMonthlyDonorItem}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Shape a sustainable future
             </div>
+
             <div className={styles.whyBeMonthlyDonorItem}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Get updates and news first
+            </div>
+
+            <div className={styles.whyBeMonthlyDonorItem}>
+              Share love with villagers 
             </div>
           </div>
         </div>

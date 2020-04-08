@@ -30,7 +30,7 @@ class HeaderLinks extends React.Component<Props> {
           <NavLink exact to="/builders" activeClassName={styles.active}>Builders</NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/about" activeClassName={styles.active}>About Us</NavLink>
+          <NavLink exact to="/about-us" activeClassName={styles.active}>About Us</NavLink>
         </div>
         <div className={styles.link}>
           <Button>

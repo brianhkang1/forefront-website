@@ -29,7 +29,7 @@ const JobPostingInfo = [
     link: CopyWriteLeadApp
   },
   {
-    title: 'Director Of Education',
+    title: 'Director of Education',
     description: 'Lorem ipsum dolor sit amet',
     link: DirectorOfEducationApp
   },

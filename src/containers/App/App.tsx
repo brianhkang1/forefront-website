@@ -15,7 +15,7 @@ const routes = [
   { path: '/our-approach', name: 'Our Approach', Component: OurApproachPage },
   { path: '/our-work', name: 'Our Work', Component: OurWorkPage },
   { path: '/builders', name: 'Builders', Component: BuildersPage },
-  { path: '/about', name: 'About Us', Component: AboutUsPage },
+  { path: '/about-us', name: 'About Us', Component: AboutUsPage },
 ]
 
 class App extends React.Component{

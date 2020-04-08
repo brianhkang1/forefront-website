@@ -24,9 +24,23 @@ class AboutUsPage extends React.Component{
             </div>
 
             <div className={styles.title}>
-              <PictureText>
-                Change happens through <br/> powerful individuals
-              </PictureText>
+              <div>
+                <PictureText>
+                  Enable every person
+                </PictureText>
+              </div>
+
+              <div>
+                <PictureText>
+                  Equip leaders
+                </PictureText>
+              </div>
+
+              <div>
+                <PictureText>
+                  Establish self-sustaining communities
+                </PictureText>
+              </div>
             </div>
 
             <div className={styles.buttonContainer}>
