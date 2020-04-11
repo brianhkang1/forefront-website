@@ -26,7 +26,7 @@
 }
 
 .jobTitle > a, .jobTitle > a:hover {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   color: var(--text-base);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.module.css';
 import { Switch, Route } from 'react-router-dom';
-// import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import WOW from "wow.js/dist/wow.js";
 
 import HomePage from '../Pages/HomePage';
@@ -29,7 +29,7 @@ class App extends React.Component{
         <div className={styles.root}>
 
           <div className={styles.content}>
-            {/* <TransitionGroup>
+            <TransitionGroup>
                 <CSSTransition
                   key={location.key}
                   in={match !== null}
@@ -46,7 +46,7 @@ class App extends React.Component{
                     exitDone: styles.pageFadeExitDone,
                    }}
                   unmountOnExit
-                > */}
+                >
                   <Switch location={location}>
                     {routes.map(({ path, Component }) => (
                       <Route key={path} exact path={path}>         
@@ -56,8 +56,8 @@ class App extends React.Component{
                       </Route> 
                     ))} 
                   </Switch>
-                {/* </CSSTransition>
-              </TransitionGroup> */}
+                </CSSTransition>
+              </TransitionGroup>
             </div>
   
         </div>

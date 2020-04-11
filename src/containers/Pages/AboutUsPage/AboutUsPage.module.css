@@ -37,15 +37,15 @@
   position: absolute;
   top: 25%;
   left: 8%;
-  font-size: 4rem;
-  line-height: 8rem;
+  font-size: 3rem;
+  line-height: 7rem;
   text-align: left;
 }
 
 .buttonContainer {
   position: absolute;
   top: 85%;
-  left: 40%;
+  left: 45%;
 }
 
 .buttonContainer > button, .buttonContainer > button > a {
@@ -66,21 +66,19 @@
 }
 
 .iconContainer {
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border: solid thin rgba(0, 0, 0, 0.1); */
   width: 25rem;
   height: 25rem;
   margin: 0 1rem;
   border-radius: 10px; 
 }
 
-.iconContainer:hover {
+/* .iconContainer:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .icon {
   width: 14rem;
@@ -100,6 +98,14 @@
   font-weight: bold;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.iconLink > a, .iconLink > a:hover {
   color: var(--main-color);
+}
+
+.dropdownContainer {
+  padding-top: 1rem;
 }
 

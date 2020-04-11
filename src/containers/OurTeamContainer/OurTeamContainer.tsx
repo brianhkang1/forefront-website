@@ -32,16 +32,6 @@ type Member = {
 
 const TeamMembers = [
   {
-    title: <span>MATTHEW OH</span>,
-    image: MatthewOhPic,
-    description: "Matt is a Cornell University chemical engineer. Matt founded FOREFRONT in 2015 after having gone to India since 2012 and other countries such as El Salvador, Venezuela, and Paraguay and seeing the various severe needs in water/sanitation, education, health, and social justice."
-  },
-  {
-    title: <span>CHANWOOK PARK</span>,
-    image: ChanwookParkPic,
-    description: "Chanwook leads the FOREFRONT programs team. He holds B.S. and M.Eng degrees in engineering from Cornell University. His favorite places in the world are Ithaca, Salzburg, and Oscar's Seafood Tacos in San Diego. He hopes that he can be a light to many who are truly poor and needy in this world."
-  },
-  {
     title: <span>ANNA CHUN</span>,
     image: AnnaChunPic,
     description: "Anna studied Civil Engineering at Cornell University and graduated from UC Berkeley with her Masters in Environmental Engineering. In her free time, Anna enjoys hiking. Anna grew up in Sydney, Australia and Long Island, New York."
@@ -50,6 +40,11 @@ const TeamMembers = [
     title: <span>BRIAN KIM</span>,
     image: BrianKimPic,
     description: "Brian graduated from St. John's University with a degree in accounting.  He enjoys cooking, hiking and gardening."
+  },
+  {
+    title: <span>CHANWOOK PARK</span>,
+    image: ChanwookParkPic,
+    description: "Chanwook leads the FOREFRONT programs team. He holds B.S. and M.Eng degrees in engineering from Cornell University. His favorite places in the world are Ithaca, Salzburg, and Oscar's Seafood Tacos in San Diego. He hopes that he can be a light to many who are truly poor and needy in this world."
   },
   {
     title: <span>DARIEN KIM</span>,
@@ -67,6 +62,11 @@ const TeamMembers = [
     description: "Eunice will receive her degree in Communications with a specialization in Public Relations. She has been a part of the FOREFRONT family since 2016, working on the marketing team where she has been focused on managing our social media channels and increasing our reach."
   },
   {
+    title: <span>JEFF LEVY</span>,
+    image: JeffLevyPic,
+    description: "Jeff was inspired by FOREFRONT's vision to help people in another part of the globe according to the needs they share. Jeff enjoys meeting people and finding ways to learn and help. He works as a teacher and coach in the Washington DC area and has taught in the Boston area as well as in South Korea and Japan."
+  },
+  {
     title: <span>JULIANA CANALE</span>,
     image: JulianaCanalePic,
     description: "Juliana holds a B.S. in Food Science from Cornell University.  Juliana is looking to make a positive impact on society through a unifying medium. She is a bookworm, extreme baker, nature lover, and can carry on a conversation about almost anything."
@@ -82,33 +82,39 @@ const TeamMembers = [
     description: "Matt is a graduate of Western Kentucky University where he studied International Affairs, Spanish, and Business Administration. Aside from international development, Matt loves learning languages, running and reading."
   },
   {
+    title: <span>MATTHEW OH</span>,
+    image: MatthewOhPic,
+    description: "Matt is a Cornell University chemical engineer. Matt founded FOREFRONT in 2015 after having gone to India since 2012 and other countries such as El Salvador, Venezuela, and Paraguay and seeing the various severe needs in water/sanitation, education, health, and social justice."
+  },
+  {
     title: <span>MICHELLE CHANG</span>,
     image: MichelleChangPic,
     description: "Michelle is our Chief Development Officer(CDO). Previously, she was a 2016-2018 Teach for America Corp member and also worked in Sales and Trading at J.P. Morgan, NYC. Michelle holds a B.S. in Business Administration from Georgetown University and a M.S. in Secondary Education from Johns Hopkins University."
-  },
-  {
-    title: <span>SOOJI KIM</span>,
-    image: SoojiKimPic,
-    description: "Sooji graduated with a dual degree in evolutionary anthropology and political science at Rutgers University. Her passion for world issues led her to join the FOREFRONT team. She is a coffee enthusiast and a world traveler."
-  },
-  {
-    title: <span>JEFF LEVY</span>,
-    image: JeffLevyPic,
-    description: "Jeff was inspired by FOREFRONT's vision to help people in another part of the globe according to the needs they share. Jeff enjoys meeting people and finding ways to learn and help. He works as a teacher and coach in the Washington DC area and has taught in the Boston area as well as in South Korea and Japan."
   },
   {
     title: <span>NANCY CHENG</span>,
     image: NancyChengPic,
     description: "Nancy holds a BFA in graphic design. She has a passion to serve anyone in need. In addition to design, she loves to dance! Nancy is excited to bring her design elements into the world of education!"
   },
+  {
+    title: <span>SOOJI KIM</span>,
+    image: SoojiKimPic,
+    description: "Sooji graduated with a dual degree in evolutionary anthropology and political science at Rutgers University. Her passion for world issues led her to join the FOREFRONT team. She is a coffee enthusiast and a world traveler."
+  },
 ]
 
 const OurTeamContainer: React.FC = () => {
-  const scrollToBottomOfPage = () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth'
-    });
+  const jobPostingRef = React.useRef<HTMLDivElement>(null);
+  
+  const scrollToJobPostings = () => {
+    if(jobPostingRef && jobPostingRef.current){
+      console.log('hello', jobPostingRef)
+      window.scrollTo({
+        //-25 is just so that it doesn't scroll just too far
+        top: jobPostingRef.current.offsetTop - 25,
+        behavior: 'smooth'
+      });
+    }
   }
 
   return (
@@ -126,7 +132,7 @@ const OurTeamContainer: React.FC = () => {
             and talents to serve others!
           </div>
 
-          <div onClick={scrollToBottomOfPage} className={styles.mainPictureLink}>
+          <div onClick={scrollToJobPostings} className={styles.mainPictureLink}>
             Join the Forefront team
           </div>
 
@@ -163,7 +169,9 @@ const OurTeamContainer: React.FC = () => {
         ))}
       </div>
 
-      <JobPosting/>
+      <div ref={jobPostingRef}>
+        <JobPosting/>
+      </div>
     </div>
   )
 }

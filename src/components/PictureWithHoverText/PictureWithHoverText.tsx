@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './PictureWithHoverText.module.css';
-import PictureFilter from '../PictureFilter';
 import { classNames } from '../../util';
 
 interface Props {
@@ -43,17 +42,15 @@ class PictureWithHoverText extends React.Component<Props, State> {
         onMouseEnter={() => this.setState({isHovering: true})}
         onMouseLeave={() => this.setState({isHovering: false})}
       >
-        <PictureFilter>
-          <div className={styles.container}>
-            {!isHovering && (
-              <div className={classNames(styles.title, titleClassName)}>{title}</div>
-            )}
+        <div className={styles.container}>
+          {!isHovering && (
+            <div className={classNames(styles.title, titleClassName)}>{title}</div>
+          )}
 
-            {isHovering && (
-              <div className={classNames(styles.description, descriptionClassName)}>{description}</div>
-            )}
-          </div>
-        </PictureFilter>
+          {isHovering && (
+            <div className={classNames(styles.description, descriptionClassName)}>{description}</div>
+          )}
+        </div>
       </div>
     )
   }
