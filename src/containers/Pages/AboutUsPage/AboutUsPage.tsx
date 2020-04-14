@@ -43,25 +43,11 @@ class AboutUsPage extends React.Component{
               <Header/>
             </div>
 
-            <div className={styles.title}>
-              <div>
-                <PictureText>
-                  Enable every person
-                </PictureText>
-              </div>
-
-              <div>
-                <PictureText>
-                  Equip leaders
-                </PictureText>
-              </div>
-
-              <div>
-                <PictureText>
-                  Establish self-sustaining communities
-                </PictureText>
-              </div>
-            </div>
+            <PictureText className={styles.pictureText}>
+              <div>Enable every person</div>
+              <div>Equip leaders</div>
+              <div>Establish self-sustaining communities</div>
+            </PictureText>
 
             <div className={styles.buttonContainer}>
               <Button>

@@ -91,12 +91,10 @@ class OurWorkPage extends React.Component{
             <div className={styles.header}>
               <Header/>
             </div>    
-
-            <div className={styles.title}>
-              <PictureText>
-                Some sort of <br/> title here
-              </PictureText>
-            </div>
+        
+            <PictureText className={styles.title}>
+              Some sort of <br/> title here
+            </PictureText>
           </PictureFilter>
         </div>
 

@@ -22,12 +22,11 @@
 }
 
 .featureText {
-  position: absolute;
+  font-size: 2rem;
+  line-height: 3.5rem;
   top: 13rem;
   right: 4rem;
-  font-size: 2rem;
-  line-height: 4.5rem;
-  text-align: center;
+  width: 41vw;
 }
 
 .widgetContainer {
@@ -41,104 +40,108 @@
 }
 
 .blurb {
-  padding: 2rem 15rem;
+  padding: 2rem 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40vh;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  height: 35vh;
+  font-size: 2rem;
+  line-height: 3.25rem;
   text-align: center;
 }
 
 .sectionTitle {
-  padding-left: 3rem;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: left;
-  line-height: 3.5rem;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
 .iconItem {
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  border: thin solid black;
+}
+
+.iconItem:nth-child(1) {
+  border: thin solid black;
+  border-right: none;
+  border-bottom: none;
+}
+
+.iconItem:nth-child(2) {
+  border: thin solid black;
+  border-bottom: none;
+}
+
+.iconItem:nth-child(3) {
+  border: thin solid black;
+  border-right: none;
+}
+
+.iconItem:nth-child(4) {
+  border: thin solid black;
 }
 
 .iconsContainer {
-  padding: 0 10rem;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0 35vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .iconDescription {
   font-size: 1.25rem;
-  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 
 .icons{
-  color: black;
-  border: solid black medium;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  height: 8rem;
-  width: 8rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .whyBeMonthlyDonor {
+  padding: 2rem 0;
   width: 100vw;
-  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .title {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 600;
   padding: 2rem 0;
+}
+
+.pictureContainer {
+  margin: 2rem 0;
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-image: url('../../../Images/7.jpg');
+  object-fit: contain;
+}
+
+.pictureText {
+  top: 30%;
+  left: 10%;
+  width: 80vw;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .whyBeMonthlyDonorText {
   width: 100vw;
+  padding: 2rem 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  padding-top: 2rem;
+  grid-gap: 1rem;
+  font-size: 1.5rem;
   text-align: center;
-  justify-content: center;
-}
-
-.whyBeMonthlyDonorItem {
-  width: 30rem;
-  padding-right: 8rem;
-}
-
-.benefitsContainer {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.benefitsPictures {
-  padding-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5rem;
-}
-
-.benefitsPic {
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
 }
 
 .testimonialContainer {
@@ -165,9 +168,8 @@
 }
 
 .testimonialText {
-  position: absolute;
   bottom: 3rem;
-  left: 10rem;
+  left: 22%;
   font-size: 1rem;
   text-align: center;
 }

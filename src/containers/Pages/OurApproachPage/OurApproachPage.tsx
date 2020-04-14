@@ -19,13 +19,11 @@ class OurApproachPage extends React.Component{
             <div className={styles.header}>
               <Header/>
             </div> 
-          
-            <div className={styles.featureTitle}>
-              <PictureText opacity={0.6} padding='0.5rem'>
-                Some sort of <br/>
-                title here
-              </PictureText>
-            </div>
+            
+            <PictureText className={styles.featureTitle} padding='1rem 2rem'>
+              <div>Some sort of</div>
+              <div>title here</div>
+            </PictureText>
           </PictureFilter>
         </div>
 

@@ -7,18 +7,17 @@ import BlogContainer from '../../BlogContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 // import TheProblemContainer from '../../TheProblemContainer';
 import FeatureProjectContainer from '../../FeatureProjectContainer';
-import PictureText from '../../../components/PictureText';
 import Header from '../../Header';
 import Footer from '../../Footer';
 
 class HomePage extends React.Component{
-  renderText = () => {
-    return (
-      <PictureText opacity={1} padding="0 0 0 1.5rem">
-        We are 
-      </PictureText>
-      )
-  }
+  // renderText = () => {
+  //   return (
+  //     <PictureText opacity={1} padding="0 0 0 1.5rem">
+  //       We are 
+  //     </PictureText>
+  //     )
+  // }
 
   render(){
     return (
@@ -30,10 +29,10 @@ class HomePage extends React.Component{
 
             <div className={styles.title}>
               <ReactTypingEffect
-                staticText={this.renderText()}
+                // staticText={this.renderText()}
                 eraseDelay={1750}
                 speed={75}
-                text={["compassionate.", "committed.", "at the FOREFRONT." ]}
+                text={["We are compassionate.", "We are committed.", "We are at the FOREFRONT." ]}
               />
             </div>  
           </div>

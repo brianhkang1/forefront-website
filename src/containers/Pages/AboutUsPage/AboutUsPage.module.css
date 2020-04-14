@@ -33,12 +33,11 @@
   z-index: -1;
 }
 
-.title {
-  position: absolute;
-  top: 25%;
+.pictureText {
+  top: 30%;
   left: 8%;
   font-size: 3rem;
-  line-height: 7rem;
+  line-height: 5rem;
   text-align: left;
 }
 

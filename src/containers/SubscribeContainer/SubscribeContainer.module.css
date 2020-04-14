@@ -7,23 +7,22 @@
   background-size: cover;
 }
 
-.textContainer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
 .title {
+  position: absolute;
+  left: 40%;
+  top: 16%;
   font-size: 2.5rem;
-  padding-bottom: 1rem;
 }
 
 .subTitle {
   font-size: 1.5rem;
-  line-height: 2.5rem;
-  text-align: center;
-  padding: 2rem 20rem;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.emailButton {
+  position: absolute;
+  left: 45%;
+  bottom: 10%;
 }

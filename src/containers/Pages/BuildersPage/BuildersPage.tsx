@@ -4,11 +4,6 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
 
-import BenefitPic1 from '../../../Images/Portrait/1.jpg';
-import BenefitPic2 from '../../../Images/Portrait/2.jpg';
-import BenefitPic3 from '../../../Images/Portrait/3.jpg';
-import BenefitPic4 from '../../../Images/Portrait/4.jpg';
-
 import TestimonialPic1 from '../../../Images/1.jpg';
 import TestimonialPic2 from '../../../Images/2.jpg';
 import TestimonialPic3 from '../../../Images/3.jpg';
@@ -21,28 +16,24 @@ import PictureText from '../../../components/PictureText';
 export const FourPillarItems = [
   {
     title: 'WATER',
-    icon: <div className={styles.icons}><Icon color='blue' name="tint" size="huge"/></div>,
+    icon: <div className={styles.icons}><Icon name="tint" size="huge"/></div>,
     description: 'Dig clean water wells and provide hand soap'
   },
   {
     title: 'EDUCATION',
-    icon: <div className={styles.icons}><Icon color='violet' name="graduation cap" size="huge"/></div>,
+    icon: <div className={styles.icons}><Icon name="graduation cap" size="huge"/></div>,
     description: 'Build quality schools '
   },
   {
     title: 'MEDICAL',
-    icon: <div className={styles.icons}><Icon color='brown' name="band aid" size="huge"/></div>,
+    icon: <div className={styles.icons}><Icon name="band aid" size="huge"/></div>,
     description: 'Create accessible and affordable health clinics'
   },
   {
     title: 'EMPOWERMENT',
-    icon: <div className={styles.icons}><Icon color='red' name="users" size="huge"/></div>,
+    icon: <div className={styles.icons}><Icon name="users" size="huge"/></div>,
     description: 'Empower leadership training'
   }
-]
-
-const BenefitsPictures = [
-  BenefitPic1, BenefitPic2, BenefitPic3, BenefitPic4
 ]
 
 const Testimonials = [
@@ -80,23 +71,11 @@ class BuildersPage extends React.Component{
               <Header/>
             </div>
 
-            <div className={styles.featureText}>
-              <div>
-                <PictureText>
-                  Builders: an unstoppable group of monthly givers
-                </PictureText>
-              </div>
-              <div>
-                <PictureText>
-                  in building up communities where every person
-                </PictureText>
-              </div>
-              <div>
-                <PictureText>
-                  has the opportunity to thrive
-                </PictureText>
-              </div>
-            </div>
+            <PictureText className={styles.featureText}>
+              Builders: an unstoppable group of monthly givers
+              in building up communities where every person
+              has the opportunity to thrive
+            </PictureText>
 
             <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.5s">
               <div 
@@ -118,9 +97,7 @@ class BuildersPage extends React.Component{
 
         <div>
           <div className={styles.sectionTitle}> 
-            Your monthly giving will support the four pillars <br/>
-            that will equip communities with the necessities 
-            to thrive:   
+          Your monthly giving equips communities with the necessities to thrive:
           </div>
           <div className={styles.iconsContainer}>
             {FourPillarItems.map(item => (
@@ -134,13 +111,34 @@ class BuildersPage extends React.Component{
           </div>
         </div>
 
-        
+        <div className={styles.pictureContainer}>
+          <PictureText className={styles.pictureText}>
+            The key to establishing sustainable communities in developing areas 
+            is empowering the locals, the people who know their community best. 
+            All future leaders must first be equipped with their fundamental human rights 
+            to clean water, education, and access to basic medical care 
+            to give them a platform to succeed.
+          </PictureText>
+        </div>
+
+        <div className={styles.blurb}>
+          Making change doesn't require you to have credentials 
+          but just a giving kind heart. 
+          It's everyday people who are everyday heroes. 
+          So we are bringing everyday heroes together to make 
+          everyday impact.
+        </div>
 
         <div className={styles.whyBeMonthlyDonor}>
           <div className={styles.title}>
-            Why be a monthly donor?
+            Why be a Builder?
           </div>
+
           <div className={styles.whyBeMonthlyDonorText}>
+            <div className={styles.whyBeMonthlyDonorItem}>
+              Share love with villagers 
+            </div>
+
             <div className={styles.whyBeMonthlyDonorItem}>
               Shape a sustainable future
             </div>
@@ -148,23 +146,6 @@ class BuildersPage extends React.Component{
             <div className={styles.whyBeMonthlyDonorItem}>
               Get updates and news first
             </div>
-
-            <div className={styles.whyBeMonthlyDonorItem}>
-              Share love with villagers 
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.benefitsContainer}>
-          <div className={styles.title}>Benefits</div>
-          <div className={styles.benefitsPictures}>
-            {BenefitsPictures.map((pic, index) => (
-              <img 
-                src={pic} 
-                alt={`benefit ${index+1}`}
-                className={styles.benefitsPic}
-              />
-            ))}
           </div>
         </div>
 
@@ -182,14 +163,11 @@ class BuildersPage extends React.Component{
                     src={item.image}
                     className={styles.testimonialPic}
                     alt={`testimonial ${index + 1}`}
-                  >
-                    {/* <span className={styles.testimonialText}>
-                      <PictureText>{item.description}</PictureText>
-                    </span> */}
-                  </img>
-                  <div className={styles.testimonialText}>
-                    <PictureText>{item.description}</PictureText>
-                  </div>
+                  />
+                  
+                  <PictureText className={styles.testimonialText}>
+                    {item.description}
+                  </PictureText>
                 </div>
               ))
 

@@ -16,16 +16,9 @@
 }
 
 .pictureText {
-  position: absolute;
-  bottom: 1.5rem;
+  bottom: 2.5rem;
   left: 2rem;
-  color: white;
   font-size: 2.25rem;
-  line-height: 2.75rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  background-color: black;
-  opacity: 0.7;
 }
 
 .textContainer {
@@ -49,12 +42,6 @@
 .descriptionText {
   opacity: 0.6;
   font-size: 0.75rem;
-}
-
-.learnMoreContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
 }
 
 .triangle {

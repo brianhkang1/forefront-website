@@ -11,18 +11,16 @@ const SubscribeContainer = () => {
     <Spacer/>
     <div className={styles.root}>
       <PictureFilter>
-        <div className={styles.textContainer}>
-          <div className={styles.title}>
-            <PictureText opacity={0.8}>
-              Get Email Updates
-            </PictureText>
-          </div>
-          <div className={styles.subTitle}>
-            <PictureText opacity={0.8}>
-              Sign up for our newsletter to hear updates from our team and how you can help share the message of hope. 
-              CHANGE THIS.
-            </PictureText>
-          </div>
+        <PictureText className={styles.title}>
+          Get Email Updates
+        </PictureText>
+        
+        <PictureText className={styles.subTitle}>
+          Sign up for our newsletter to hear updates from our team and how you can help share the message of hope. 
+          CHANGE THIS.
+        </PictureText>
+        
+        <div className={styles.emailButton}>
           <EmailForm/>
         </div>
       </PictureFilter>
