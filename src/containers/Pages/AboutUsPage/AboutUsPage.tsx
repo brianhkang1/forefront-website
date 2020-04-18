@@ -4,6 +4,7 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 import Button from '../../../components/Button';
 import { Dropdown } from 'semantic-ui-react'
+import { classNames } from '../../../util';
 
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.png';
 import BlogIcon from '../../../Images/Icons/blog_icon.png';
@@ -43,9 +44,15 @@ class AboutUsPage extends React.Component{
               <Header/>
             </div>
 
-            <PictureText className={styles.pictureText}>
+            <PictureText padding='1.75rem' className={classNames(styles.heroText1, styles.heroText)}>
               <div>Enable every person</div>
+            </PictureText>
+
+            <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText2)}>
               <div>Equip leaders</div>
+            </PictureText>
+
+            <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText3)}>
               <div>Establish self-sustaining communities</div>
             </PictureText>
 

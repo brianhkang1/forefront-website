@@ -71,7 +71,7 @@ class BuildersPage extends React.Component{
               <Header/>
             </div>
 
-            <PictureText className={styles.featureText}>
+            <PictureText padding='1rem 1.5rem' className={styles.featureText}>
               Builders: an unstoppable group of monthly givers
               in building up communities where every person
               has the opportunity to thrive
@@ -174,6 +174,14 @@ class BuildersPage extends React.Component{
               }
             </Carousel>
           </div>
+        </div>
+
+        <div className={styles.blurb}>
+          You too, along with many other givers, can also make impact. 
+          It's everyday people who through their own act of generosity, 
+          makes ripple effect positively changing people's lives. 
+          You can also do the same. Together, we will leave a legacy 
+          in this world.
         </div>
 
         <Footer/>

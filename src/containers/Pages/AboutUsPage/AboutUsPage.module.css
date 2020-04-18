@@ -33,12 +33,22 @@
   z-index: -1;
 }
 
-.pictureText {
-  top: 30%;
+.heroText {
   left: 8%;
   font-size: 3rem;
-  line-height: 5rem;
   text-align: left;
+}
+
+.heroText1 {
+  top: 30%;
+}
+
+.heroText2 {
+  top: 40%;
+}
+
+.heroText3 {
+  top: 50%;
 }
 
 .buttonContainer {
