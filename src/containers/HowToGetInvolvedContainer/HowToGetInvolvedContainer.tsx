@@ -40,8 +40,7 @@ class HowToGetInvolvedContainer extends React.Component {
     return(
       <div className={styles.root}>
         <Title
-          smallTitle='YOUR RESPONSE'
-          bigTitle='What Can I Do To Help?'
+          title='Your Response'
           description="Never underestimate the impact you can have on someone else's life. 
             In India, access to clean water means more time for women to earn money and children to attend school, so
             they can build a better future for themselves. Thank you for giving and investing in these future leaders!"

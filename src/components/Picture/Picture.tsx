@@ -22,6 +22,7 @@ const Picture: React.FC<Props> = ({
       style={{
         width,
         height,
+        objectFit: 'cover'
       }}
       alt={alt}
     />

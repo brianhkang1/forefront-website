@@ -1,9 +1,8 @@
 /* laptop */
 @media (min-width: 601px) {  
-  .title{
-    font-size: 5rem;
-    top: 40%;
-    left: 13%;
+  .heroText {
+    top: 35%;
+    left: 10%;
   }
 
   .logo{
@@ -13,7 +12,7 @@
 
 /* mobile */
 @media (max-width: 600px) {
-  .title{
+  .heroTextDynamic{
     font-size: 3rem;
     top: 30%;
     left: 20%;
@@ -50,10 +49,58 @@
   z-index: -1;
 }
 
-.title {
+.heroText {
+  font-size: 4rem;
   position: absolute;
-  padding: 3rem 1rem;
   background-color: white;
-  color: black;
   opacity: 0.8;
+  line-height: 4.5rem;
+}
+
+.blurb {
+  padding: 6rem 10rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.accomplishmentsContainer, .getInvolvedContainer {
+  padding: 2rem 0;
+}
+
+.accomplishmentsItemContainer {
+  padding: 1rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}
+
+.accomplishmentsItem {
+  position: relative;
+}
+
+.accomplishmentsIcon {
+  position: absolute;
+  bottom: 0.5rem;
+  left: -2rem;
+  opacity: 0.2;
+}
+
+.accomplishmentsText {
+  font-size: 1.25rem;
+}
+
+.getInvolvedItemContainer {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.getInvolvedText {
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: black;
+  color: white;
 }

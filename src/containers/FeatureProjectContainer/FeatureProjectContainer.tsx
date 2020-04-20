@@ -28,8 +28,7 @@ const FeatureProjectContainer = ({
   return(
     <div className={styles.root}>
       <Title
-        smallTitle='Feature Project'
-        bigTitle='What are we working on?'
+        title='Feature Project'
         description='We need to empower the locals, the people who know their community best. 
         All future leaders must first be equipped with their fundamental human rights to clean water, education, 
         and access to basic medical care if they are to succeed in becoming an empowered change maker. CHANGE THIS' 

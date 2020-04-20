@@ -28,8 +28,7 @@ class OurApproachPage extends React.Component{
         </div>
 
         <Title
-          smallTitle='FOUR PILLARS'
-          bigTitle='Add some sort of title here'
+          title='Four Pillars'
           description="To achieve our mission to enable every person, equip leaders, establish self-sustaining communities, Forefront uses a unique four-pillar approach. 
           These areas are what have been determined to be the most impactful."
         />
@@ -38,8 +37,7 @@ class OurApproachPage extends React.Component{
 
         <div>
           <Title
-            smallTitle='LONG-TERM SUSTAINABILITY'
-            bigTitle='Add some sort of title here'
+            title='Long-term Sustainability'
             description="To achieve our mission to enable every person, equip leaders, establish self-sustaining communities, Forefront uses a unique four-pillar approach. 
             These areas are what have been determined to be the most impactful."
           />

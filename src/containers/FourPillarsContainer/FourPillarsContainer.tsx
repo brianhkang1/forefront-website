@@ -17,22 +17,22 @@ type FourPillarItemType = {
 const FourPillarItems = [
   {
     title: 'WATER',
-    description: '99 Million without access to improved drinking water sources',
+    description: 'Through our clean water wells, soap distribution, and sanitation education, our villagers are healthier and have more time for learning',
     image: WaterImage
   },
   {
     title: 'EDUCATION',
-    description: 'Over 50% of girls fail to enroll in school. Most girls drop out by the age of 12',
+    description: 'Through our school, students will engage in academically rigorous and joyful learning. Our students will develop skills in critical thinking, character, and creativity to become active change agents',
     image: EducationImage
   },
   {
     title: 'MEDICAL',
-    description: 'Over 60% do not have access to adequate health care provision',
+    description: 'Through our low-cost, high-volume interventions, we will improve the wellness of many communities. More villagers will be allowed to work, provide for their families, and send their children to school',
     image: MedicalImage
   },
   {
     title: 'EMPOWERMENT',
-    description: `India is 102th out of 144 in the United Nation's Gender Inequality Index`,
+    description: `Through our leadership training, local leaders will amplify their impact and inspire more change in their neighboring communities with their newfound resources`,
     image: EmpowermentImage
   }
 ]
@@ -41,13 +41,12 @@ const FourPillarsContainer = () => {
   return (
     <div className={styles.root}>
       <Title
-        smallTitle='Four Pillars'
-        bigTitle='How do you establish self-sustaining communities?'
-        description='We need to empower the locals, the
-        people who know their community best. All future leaders must first be equipped with their fundamental human rights to clean water, education,
-        and access to basic medical care if they are to succeed in becoming an empowered change maker.
-        At FOREFRONT we designed our unique, four-pillar approach to partner with communities on their journey
-        approach to partner with communities on their journey logically lead to development.'
+        title='The Solution'
+        description='The key to establishing sustainable communities in developing areas is 
+        empowering locals. They know their communities best. We equip future leaders with
+        fundamental human rights to clean water, quality education, access to medical
+        care, and leadership training. With these resources, leaders invest in their communities,
+        multipying local-to-local long-term change. There will be a day when everyone:'
       />
 
       <div className={styles.fourPillarsVisual}>

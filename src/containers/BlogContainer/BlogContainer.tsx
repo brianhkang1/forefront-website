@@ -8,8 +8,7 @@ const BlogContainer = () => {
   return (
     <div>
       <Title
-        smallTitle='Learn More'
-        bigTitle='Who are we helping?'
+        title='Learn More'
         description="Meet Priyanka, 16-year-old change-maker. Before the water pump, a water truck used to come to Priyanka's village every day but only delivered clean water
         Priyanka's village every day but only delivered clean water village has access to clean water. FOREFRONT understands that basic necessities are foundational to a self-sustaining community. 
         By providing basic necessities like clean water, girls like Priyanka can make their dream of becoming a community leader a reality."

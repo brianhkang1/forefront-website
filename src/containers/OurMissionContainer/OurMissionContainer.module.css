@@ -1,5 +1,5 @@
 .container {
-  height: 50vh;
+  height: 45vh;
   display: flex;
   justify-content: space-between;
   margin: 1rem;
@@ -8,57 +8,11 @@
 .textContainer {
   background-color: var(--main-color);
   color: white;
-  width: 35vw;
+  width: 57vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.definition {
   font-size: 1.75rem;
   line-height: 2.75rem;
   padding: 0 4rem;
-}
-
-/* first picture */
-.picturesContainer {
-  width: 62vw;
-  background-image: url("../../Images/11.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* second picture */
-.picturesContainer:first-of-type {
-  background-image: url("../../Images/8.jpg");
-  background-position: center;
-}
-
-.filter {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0, 0.2);
-  padding: 2.5rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.missionsContainer {
-  font-size: 2.5rem; 
-  line-height: 4.25rem; 
-  white-space: nowrap;
-  align-self: center;
-  text-align: center;
-  padding-top: 3.5rem;
-}
-
-.buttonContainer {
-  font-size: 1.75rem;
-}
-
-.buttonContainer > button, .buttonContainer > button > a {
-  color: white;
-  border-color: white;
 }

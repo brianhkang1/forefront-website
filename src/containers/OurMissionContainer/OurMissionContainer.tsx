@@ -1,68 +1,46 @@
 import React from 'react';
 import styles from './OurMissionContainer.module.css';
+import Picture from '../../components/Picture';
+
+import OurMissionPicture1 from "../../Images/HomePage/Mission1.jpg";
+import OurMissionPicture2 from "../../Images/HomePage/Mission2.jpg";
 
 const OurMissionContainer = () => {
   return(
     <>
       <div className={styles.root}>
         <div className={styles.container}>
+          <Picture
+            src={OurMissionPicture1}
+            width='40vw'
+            height='100%'
+            alt='Our Mission 1'
+          />
+
           <div className={styles.textContainer}>
-            <div className={styles.definition}>
-              FOREFRONT is a non-profit organization that facilitates sustainable, 
-              local projects in India and
-              around the world to increase access to clean water,
-              education, health care, and leadership training.
-            </div>
-          </div>
-
-          <div/>
-        
-          <div className={styles.picturesContainer}>
-            <div className={styles.filter}>
-              <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>OUR MISSION:</div>
-
-              <div className={styles.missionsContainer}>
-                <div>Enable every person</div>
-                <div>Equip leaders</div>
-                <div>Establish self-sustaining communities</div>
-
-                {/* <div className={styles.buttonContainer}>
-                  <Button>
-                    <a href="">Learn More</a>
-                  </Button>
-                </div> */}
-              </div>
-            </div>
+            We are more than a charity. We are people-powered.
+            To become a changemaker starts with an opportunity.
+            That's why we work side by side with locals to provide basic
+            life necessities, resources, and training that create
+            sustainable change for the individual, families,
+            and communities. 
           </div>
         </div>
 
         <div className={styles.container}>       
-          <div className={styles.picturesContainer}>
-            <div className={styles.filter}>
-              <div style={{fontSize: '3rem', whiteSpace: 'nowrap'}}>THE PROBLEM:</div>
-
-              <div className={styles.missionsContainer}>
-                <div>Problem</div>
-                <div>Say Something</div>
-                <div>Another One</div>
-
-                {/* <div className={styles.buttonContainer}>
-                  <Button>
-                    <a href="">Learn More</a>
-                  </Button>
-                </div> */}
-              </div>
-            </div>
-          </div>
-
-          <div/>
-
           <div className={styles.textContainer}>
-            <div className={styles.definition}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            </div>
+            With just one opportunity, imagine how many leaders 
+            will be raised and communities changed. So we believe
+            in their vision and stand with all the changemakers to create
+            a future for what it can be.
           </div>
+
+          <Picture
+            src={OurMissionPicture2}
+            width='40vw'
+            height='100%'
+            alt='Our Mission 2'
+          />
         </div>
       </div>
     </>
