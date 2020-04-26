@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './BuildersPage.module.css';
+import { classNames } from '../../../util';
 import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
@@ -8,10 +9,12 @@ import TestimonialPic1 from '../../../Images/1.jpg';
 import TestimonialPic2 from '../../../Images/2.jpg';
 import TestimonialPic3 from '../../../Images/3.jpg';
 import TestimonialPic4 from '../../../Images/4.jpg';
+import RandomPic from '../../../Images/10.jpg';
 
 import { Icon } from 'semantic-ui-react';
 import Carousel from 'react-material-ui-carousel'
 import PictureText from '../../../components/PictureText';
+import Picture from '../../../components/Picture';
 
 export const FourPillarItems = [
   {
@@ -22,7 +25,7 @@ export const FourPillarItems = [
   {
     title: 'EDUCATION',
     icon: <div className={styles.icons}><Icon name="graduation cap" size="huge"/></div>,
-    description: 'Build quality schools '
+    description: 'Provide quality education for children'
   },
   {
     title: 'MEDICAL',
@@ -87,12 +90,10 @@ class BuildersPage extends React.Component{
           </PictureFilter>
         </div>
 
-        <div className={styles.blurb}>
-            Join other passionate and dedicated group of givers 
+        <div className={classNames(styles.blurb, styles.bold)}>
+            Become a Builder and join other passionate and dedicated group of givers 
             to build up local community leaders that will multiply 
-            into a global network of change. By providing basic life 
-            necessities, you are giving opportunities to dream and 
-            realize their potential. 
+            into a global network of change.
         </div>
 
         <div>
@@ -111,15 +112,21 @@ class BuildersPage extends React.Component{
           </div>
         </div>
 
-        <div className={styles.pictureContainer}>
-          <PictureText className={styles.pictureText}>
-            The key to establishing sustainable communities in developing areas 
-            is empowering the locals, the people who know their community best. 
-            All future leaders must first be equipped with their fundamental human rights 
-            to clean water, education, and access to basic medical care 
-            to give them a platform to succeed.
-          </PictureText>
+        <div className={styles.blurb}>
+          You too, along with many other givers, can also make impact. 
+          It's everyday people who through their own act of generosity, 
+          makes ripple effect positively changing people's lives. 
+          You can also do the same. Together, we will leave a legacy 
+          in this world.
         </div>
+
+        <Picture
+          src={RandomPic}
+          width="100vw"
+          height='60vh'
+          alt='picture'
+          className={styles.pictureContainer}
+        />
 
         <div className={styles.blurb}>
           Making change doesn't require you to have credentials 
@@ -174,14 +181,6 @@ class BuildersPage extends React.Component{
               }
             </Carousel>
           </div>
-        </div>
-
-        <div className={styles.blurb}>
-          You too, along with many other givers, can also make impact. 
-          It's everyday people who through their own act of generosity, 
-          makes ripple effect positively changing people's lives. 
-          You can also do the same. Together, we will leave a legacy 
-          in this world.
         </div>
 
         <Footer/>

@@ -1,45 +1,43 @@
 import React from 'react';
 import styles from './Footer.module.css'
 import { Icon } from 'semantic-ui-react';
-import SubscribeContainer from '../SubscribeContainer';
+import EmailForm from '../../components/EmailForm';
 
 class Footer extends React.Component{
   render(){
     return (
       <div className={styles.root}>
-        <SubscribeContainer/>
-
-        <footer className={styles.footer}>
-          <div className={styles.leftAlign}>
-            <span className={styles.item}>
-              <div className={styles.text}>
-                © 2019 by FOREFRONT Charity 
-
-                {/* laptop view */}
-                {window.matchMedia("(min-width: 601px)").matches
-                    ? ' // ' : ''
-                }
-              </div> 
-              <div className={styles.text}>
-                PO Box 1818 New York, NY 10163
-
-                {/* laptop view */}
-                {window.matchMedia("(min-width: 601px)").matches
-                  ? ' // ' : ''
-                }
-              </div> 
-              <div className={styles.text}>contact@goforefront.org</div> 
-            </span>
+        <div className={styles.leftAlign}>
+          <div className={styles.emailFormContainer}>
+            <div className={styles.title}>
+              Get Email Updates To Stay Up To Date
+            </div>
+            <EmailForm/>
           </div>
-          <div className={styles.rightAlign}>
-            <span className={styles.whiteIcon}><Icon name="facebook f" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="tumblr" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="amazon" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="twitter" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="connectdevelop" size="large" /></span>
-          </div>
-        </footer>
 
+          <div className={styles.iconsContainer}>
+            <span className={styles.whiteIcon}><Icon name="facebook f" size="big" /></span>
+            <span className={styles.whiteIcon}><Icon name="tumblr" size="big" /></span>
+            <span className={styles.whiteIcon}><Icon name="amazon" size="big" /></span>
+            <span className={styles.whiteIcon}><Icon name="twitter" size="big" /></span>
+            <span className={styles.whiteIcon}><Icon name="connectdevelop" size="big" /></span>
+          </div>
+        </div>
+
+        <div className={styles.rightAlign}>
+          <div className={styles.text}>
+              © 2020 by FOREFRONT Charity 
+            </div> 
+            <div className={styles.text}>
+              PO Box 1818 New York, NY 10163
+            </div> 
+            <div className={styles.text}>
+              contact@goforefront.org
+            </div> 
+            <div className={styles.text}>
+              US 501(c)(3) Public Charity, EIN 47-3373120
+            </div> 
+        </div>
       </div>
     );
   }

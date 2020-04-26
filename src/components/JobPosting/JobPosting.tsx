@@ -5,8 +5,6 @@ import ChiefMarketingOfficerApp from '../../Documents/Chief_Marketing_Officer.do
 // @ts-ignore
 import CopyWriteLeadApp from '../../Documents/Copy_Write_Lead.doc';
 // @ts-ignore
-import DirectorOfEducationApp from '../../Documents/Director_of_Education.doc';
-// @ts-ignore
 import DirectorOfMedicalApp from '../../Documents/Director_of_Medical.doc';
 // @ts-ignore
 import DirectorOfProgramsApp from '../../Documents/Director_of_Programs.doc';
@@ -27,11 +25,6 @@ const JobPostingInfo = [
     title: 'Copy-Write Lead',
     // description: 'Lorem ipsum dolor sit amet',
     link: CopyWriteLeadApp
-  },
-  {
-    title: 'Director of Education',
-    // description: 'Lorem ipsum dolor sit amet',
-    link: DirectorOfEducationApp
   },
   {
     title: 'Director of Medical',

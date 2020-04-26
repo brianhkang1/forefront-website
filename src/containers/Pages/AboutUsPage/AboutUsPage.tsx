@@ -59,7 +59,7 @@ class AboutUsPage extends React.Component{
             <div className={styles.buttonContainer}>
               <Button>
                 <a 
-                  href="https://blog.goforefront.org/the-force-of-four" 
+                  href="https://blog.goforefront.org/unlocking-leaders-of-change" 
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -74,7 +74,7 @@ class AboutUsPage extends React.Component{
         <div className={styles.iconsContainer}>
             <div className={styles.iconContainer}>
                 <div className={styles.icon} style={{backgroundImage: `url(${SoTIcon})`}}/>
-                <div className={styles.iconText}>We are a 501(c)(3) non-profit <br/>committed to transparency</div>
+                <div className={styles.iconText}>We are a 501(c)(3) non-profit <br/>committed to transparency.</div>
                 <div className={styles.iconLink}>
                   <a 
                     href="https://www.guidestar.org/profile/47-3373120" 
@@ -89,10 +89,9 @@ class AboutUsPage extends React.Component{
           <div className={styles.iconContainer}>
               <div className={styles.icon} style={{backgroundImage: `url(${AnnualReportIcon})`}}/>
               <div className={styles.iconText}>
-                We ensure 100% of your donations go to the cause<br/>
-                Read our annual reports for more information
+              Read our annual reports for <br/>full transparency and program impact.
               </div>
-              {/* <div className={styles.iconLink}>See our annual report</div> */}
+              
               <div className={styles.dropdownContainer}>
                 <Dropdown placeholder="Select a year" selection>
                   <Dropdown.Menu>
@@ -110,7 +109,7 @@ class AboutUsPage extends React.Component{
 
           <div className={styles.iconContainer}>
               <div className={styles.icon} style={{backgroundImage: `url(${BlogIcon})`}}/>
-              <div className={styles.iconText}>Read about our team members' <br/>personal experiences from the field</div>
+              <div className={styles.iconText}>Read our personal stories and <br/>the impact we are making from the field.</div>
               <div className={styles.iconLink}>
               <a 
                 href="https://blog.goforefront.org" 

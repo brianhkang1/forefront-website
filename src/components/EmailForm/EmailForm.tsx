@@ -1,13 +1,11 @@
 import React from 'react';
+import { Icon } from 'semantic-ui-react';
 import styles from './EmailForm.module.css';
-import Button from '../../components/Button';
-import { Modal } from 'semantic-ui-react'
 
 interface State {
   firstName: string;
   lastName: string;
   email: string;
-  isModalOpen: boolean;
 }
 
 const encode = (data) => {
@@ -23,7 +21,6 @@ class EmailForm extends React.Component<{}, State> {
     firstName: "",
     lastName: "",
     email: "",
-    isModalOpen: false
    }
  }
 
@@ -61,7 +58,6 @@ class EmailForm extends React.Component<{}, State> {
     })
       .then((res) => {
         if(res.status === 200){
-          this.closeModal()
           alert("You are successfully subscribed for Forefront emails")
         }
         if(res.status === 404){
@@ -73,60 +69,32 @@ class EmailForm extends React.Component<{}, State> {
     e.preventDefault();
   };
 
-  openModal = () => {
-    this.setState({
-      isModalOpen: true
-    })
-  }
-
-  closeModal = () => {
-    this.setState({
-      isModalOpen: false
-    })
-  }
-
  render(){
-   const { firstName, lastName, email, isModalOpen } = this.state;
+   const { firstName, lastName, email } = this.state;
 
    return (
-    <Modal 
-      size="small" 
-      open={isModalOpen}
-      onClose={this.closeModal}
-      trigger={
-        <Button onClick={this.openModal}>
-          Join Our List
-        </Button>
-      }
+    <form 
+      className={styles.root}
+      name="Email subscription" 
+      method="post"
+      data-netlify="true" 
+      data-netlify-honeypot="bot-field"
     >
-      <div className={styles.root}>
-        <div className={styles.titleContainer}>
-          <div className={styles.title}>GET EMAIL UPDATES</div>
-          <div className={styles.subTitle}>Sign up for our newsletter to hear updates from our team and how you can help share the message of hope. CHANGE THIS.</div>
-        </div>
-
-        <form name="Email subscription" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
-          <input type="hidden" name="form-name" value="Email subscription" />
-          <div className={styles.inputContainer}>
-            <input required className={styles.input} type="text" name="firstName" placeholder="First Name" value={firstName} onChange={this.handleChange} />   
-          </div>
-          <div className={styles.inputContainer}>
-            <input required className={styles.input} type="text" name="lastName" placeholder="Last Name" value={lastName} onChange={this.handleChange} />    
-          </div>
-          <div className={styles.inputContainer}>
-            <input required className={styles.input} type="email" name="email" placeholder="Email Address" value={email} onChange={this.handleChange} />
-          </div>
-          <div className={styles.buttonContainer}>
-            <Button 
-              variant="solid" 
-              type="submit"
-            >
-              SUBMIT
-            </Button>
-          </div>
-        </form>
+      <input type="hidden" name="form-name" value="Email subscription" />
+      <div className={styles.inputContainer}>
+        <input required className={styles.input} type="text" name="firstName" placeholder="First Name" value={firstName} onChange={this.handleChange} />   
       </div>
-    </Modal>
+      <div className={styles.inputContainer}>
+        <input required className={styles.input} type="text" name="lastName" placeholder="Last Name" value={lastName} onChange={this.handleChange} />    
+      </div>
+      <div className={styles.inputContainer}>
+        <input required className={styles.input} type="email" name="email" placeholder="Email Address" value={email} onChange={this.handleChange} />
+      </div>
+
+      <div className={styles.buttonContainer} onClick={this.handleSubmit}>
+        <Icon name="arrow right" size="large"/>
+      </div>
+    </form>
    )
  }
 }
