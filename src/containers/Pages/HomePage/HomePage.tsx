@@ -5,8 +5,8 @@ import ReactTypingEffect from 'react-typing-effect';
 import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
-// import BlogContainer from '../../BlogContainer';
-// import FeatureProjectContainer from '../../FeatureProjectContainer';
+import Picture from '../../../components/Picture';
+import Button from '../../../components/Button';
 import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
@@ -40,24 +40,40 @@ const Accomplishments = [
 const GetInvolved = [
   {
     image: GetInvolvedPic1,
-    text: 'Donation'
+    text: 'Donation',
+    link: 'https://www.google.com'
   },
   {
     image: GetInvolvedPic2,
-    text: 'Builder'
+    text: 'Builder',
+    link: 'https://www.google.com'
   },
   {
     image: GetInvolvedPic3,
-    text: 'Campaign'
+    text: 'Campaign',
+    link: 'https://www.google.com'
   },
   {
     image: GetInvolvedPic4,
-    text: 'Start a Chapter'
+    text: 'Start a Chapter',
+    link: 'https://www.google.com'
   },
 ]
 
 class HomePage extends React.Component{
   render(){
+    const renderPictureText = (item) => {
+      return (
+        <div className={styles.link}>
+          <Button>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              {item.text}
+            </a>
+          </Button>
+        </div>
+      )
+    }
+
     return (
         <>
           <div className={styles.featurePictureContainer}> 
@@ -103,17 +119,18 @@ class HomePage extends React.Component{
             <Title title='How you can get involved'/>
             <div className={styles.getInvolvedItemContainer}>
               {GetInvolved.map(getInvolvedItem => (
-                <div key={getInvolvedItem.text} className={styles.getInvolvedItem}>
-                  <img src={getInvolvedItem.image} width='100%' height='400px' alt={getInvolvedItem.text} style={{objectFit: 'cover'}}/>
-                  <div className={styles.getInvolvedText}>
-                    {getInvolvedItem.text}
-                  </div>
-                </div>
+                <Picture
+                  src={getInvolvedItem.image}
+                  width='100%' 
+                  height='400px'
+                >
+                  <PictureFilter>
+                    {renderPictureText(getInvolvedItem)}
+                  </PictureFilter>
+                </Picture>
               ))}
             </div>
           </div>
-          {/* <FeatureProjectContainer/>
-          <BlogContainer/> */}
 
           <Footer/>
         </>

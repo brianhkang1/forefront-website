@@ -9,7 +9,7 @@
 }
 
 .FeaturePictureContainer { 
-  background-image: url("../../../Images/Feature/3.jpg");
+  background-image: url("../../../Images/Hero/BuildersPage.jpg");
   height: 100vh;
   width: 100vw;
   position: relative; 
@@ -62,38 +62,18 @@
 }
 
 .iconItem {
-  padding: 2rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: thin solid black;
-}
-
-.iconItem:nth-child(1) {
-  border: thin solid black;
-  border-right: none;
-  border-bottom: none;
-}
-
-.iconItem:nth-child(2) {
-  border: thin solid black;
-  border-bottom: none;
-}
-
-.iconItem:nth-child(3) {
-  border: thin solid black;
-  border-right: none;
-}
-
-.iconItem:nth-child(4) {
-  border: thin solid black;
+  color: white;
 }
 
 .iconsContainer {
-  padding: 0 35vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .iconDescription {

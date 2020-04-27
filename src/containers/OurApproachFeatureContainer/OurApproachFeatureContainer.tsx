@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './OurApproachFeatureContainer.module.css';
-import WaterImage from '../../Images/Water/9.jpg';
-import MedicalImage from '../../Images/Medical/2.jpg';
-import EducationImage from '../../Images/Education/19.jpg';
-import EmpowermentImage from '../../Images/Empowerment/5.jpg';
+import WaterImage from '../../Images/FourPillars/Water.jpg';
+import MedicalImage from '../../Images/FourPillars/Medical.jpg';
+import EducationImage from '../../Images/FourPillars/Education.jpg';
+import EmpowermentImage from '../../Images/FourPillars/Empowerment.jpg';
 import { Icon } from 'semantic-ui-react';
 
 enum FourPillars {

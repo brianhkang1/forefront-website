@@ -41,7 +41,7 @@
 
 .mainPictureLink, .mainPictureLink > a {
   text-decoration: none;
-  color: var(--blue-color);
+  color: var(--link-blue-color);
   font-weight: bold;
   cursor: pointer;
 }
@@ -72,6 +72,7 @@
 
 .teamMemberPictureTitle {
   font-size: 1.25rem;
+  font-weight: bold;
   margin-bottom: 22.5rem;
   min-width: 13rem;
   min-height: 3rem;
@@ -83,6 +84,7 @@
 
 .teamMemberPictureDescription {
   height: 100%;
+  font-weight: bold;
   padding: 0 0.75rem;
   font-size: 1rem;
   line-height: 1.6rem;

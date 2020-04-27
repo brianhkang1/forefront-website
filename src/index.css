@@ -2,9 +2,15 @@
   --main-color: #459eac;
   --main-colorPlus: #daedf0;
 
-  --blue-color: #00305B;
+  --link-blue-color: #00305B;
   --gray-color: #58595B;
   --light-gray-color: #C2C2C3;
+
+  --blue-color: #3681C1;
+  --yellow-color: #EBBC49;
+  --red-color: #D55F5A;
+  --purple-color: #845EA1;
+
 
   --base-text:#333e48;
 }

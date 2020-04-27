@@ -9,7 +9,7 @@ import TestimonialPic1 from '../../../Images/1.jpg';
 import TestimonialPic2 from '../../../Images/2.jpg';
 import TestimonialPic3 from '../../../Images/3.jpg';
 import TestimonialPic4 from '../../../Images/4.jpg';
-import RandomPic from '../../../Images/10.jpg';
+import RandomPic from '../../../Images/1.jpg';
 
 import { Icon } from 'semantic-ui-react';
 import Carousel from 'react-material-ui-carousel'
@@ -20,22 +20,26 @@ export const FourPillarItems = [
   {
     title: 'WATER',
     icon: <div className={styles.icons}><Icon name="tint" size="huge"/></div>,
-    description: 'Dig clean water wells and provide hand soap'
+    description: 'Dig clean water wells and provide hand soap',
+    color: 'var(--blue-color)'
   },
   {
     title: 'EDUCATION',
     icon: <div className={styles.icons}><Icon name="graduation cap" size="huge"/></div>,
-    description: 'Provide quality education for children'
+    description: 'Provide quality education for children',
+    color: 'var(--yellow-color)'
   },
   {
     title: 'MEDICAL',
     icon: <div className={styles.icons}><Icon name="band aid" size="huge"/></div>,
-    description: 'Create accessible and affordable health clinics'
+    description: 'Create accessible and affordable health clinics',
+    color: 'var(--red-color)'
   },
   {
     title: 'EMPOWERMENT',
     icon: <div className={styles.icons}><Icon name="users" size="huge"/></div>,
-    description: 'Empower leadership training'
+    description: 'Empower leadership training',
+    color: 'var(--purple-color)'
   }
 ]
 
@@ -102,7 +106,7 @@ class BuildersPage extends React.Component{
           </div>
           <div className={styles.iconsContainer}>
             {FourPillarItems.map(item => (
-              <div className={styles.iconItem}>
+              <div className={styles.iconItem} style={{backgroundColor: item.color}}>
                 <div>{item.icon}</div>
                 <div className={styles.iconDescription}>
                   {item.description}
@@ -124,7 +128,6 @@ class BuildersPage extends React.Component{
           src={RandomPic}
           width="100vw"
           height='60vh'
-          alt='picture'
           className={styles.pictureContainer}
         />
 

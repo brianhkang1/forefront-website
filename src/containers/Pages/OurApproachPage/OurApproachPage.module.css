@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   background-color: white;
-  background: url("../../../Images/Feature/4.jpg") no-repeat center center;
+  background: url("../../../Images/Hero/OurApproachPage.jpg") no-repeat center center;
   background-size: cover;
   will-change: transform;
   z-index: -1;
@@ -41,7 +41,7 @@
 .pictureContainer {
   width: 100vw;
   height: 60vh;
-  background-image: url('../../../Images/9.jpg');
+  background-image: url('../../../Images/1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

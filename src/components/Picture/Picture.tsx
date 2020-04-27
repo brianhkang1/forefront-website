@@ -5,27 +5,28 @@ type Props = {
   width: string;
   height: string;
   className?: string;
-  alt?: string;
 }
 
 const Picture: React.FC<Props> = ({
   src,
   width,
   height,
-  alt,
-  className
+  className,
+  children
 }) => {
   return(
-    <img
-      src={src}
+    <div
       className={className}
       style={{
+        background: `url("${src}") no-repeat center center`,
+        backgroundSize: 'cover',
+        position: 'relative',
         width,
         height,
-        objectFit: 'cover'
       }}
-      alt={alt}
-    />
+    >
+      {children}
+    </div>
   )
 }
 

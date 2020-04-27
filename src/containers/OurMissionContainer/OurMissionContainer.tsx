@@ -14,7 +14,6 @@ const OurMissionContainer = () => {
             src={OurMissionPicture1}
             width='40vw'
             height='100%'
-            alt='Our Mission 1'
           />
 
           <div className={styles.textContainer}>
@@ -39,7 +38,6 @@ const OurMissionContainer = () => {
             src={OurMissionPicture2}
             width='40vw'
             height='100%'
-            alt='Our Mission 2'
           />
         </div>
       </div>

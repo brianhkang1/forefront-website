@@ -3,10 +3,10 @@ import styles from './FourPillarsContainer.module.css'
 
 import Title from '../../components/Title';
 import PictureWithHoverText from '../../components/PictureWithHoverText';
-import WaterImage from '../../Images/Water/1.jpg';
-import MedicalImage from '../../Images/Medical/1.jpg';
-import EducationImage from '../../Images/Education/12.jpg';
-import EmpowermentImage from '../../Images/Empowerment/1.jpg';
+import WaterImage from '../../Images/FourPillars/Water.jpg';
+import MedicalImage from '../../Images/FourPillars/Medical.jpg';
+import EducationImage from '../../Images/FourPillars/Education.jpg';
+import EmpowermentImage from '../../Images/FourPillars/Empowerment.jpg';
 
 type FourPillarItemType = {
   title: string;
