@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './HowToGetInvolvedContainer.module.css';
 import HowToGetInvolvedItem from '../../components/HowToGetInvolvedItem';
 import Title from '../../components/Title';
 import BackgroundImage1 from '../../Images/Portrait/1.jpg';
 import BackgroundImage2 from '../../Images/Portrait/5.jpg';
 import BackgroundImage3 from '../../Images/Portrait/3.jpg';
+
+import styles from './YourResponseContainer.module.css';
 
 type HowToGetInvolvedItemType = {
   title: string;
@@ -35,7 +36,7 @@ const HowToGetInvolvedItems = [
   }
 ]
 
-class HowToGetInvolvedContainer extends React.Component {
+class YourResponseContainer extends React.Component {
   render(){
     return(
       <div className={styles.root}>
@@ -62,4 +63,4 @@ class HowToGetInvolvedContainer extends React.Component {
   }
 }
 
-export default HowToGetInvolvedContainer;
+export default YourResponseContainer;

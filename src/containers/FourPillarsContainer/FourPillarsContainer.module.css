@@ -31,6 +31,7 @@
 
 .fourPillarTitle {
   font-size: 2.25rem;
+  font-weight: bold;
   padding: 1.5rem 1rem;
   margin-bottom: 4rem;
 }
@@ -38,6 +39,7 @@
 .fourPillarDescription {
   padding: 1rem;
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 2.5rem;
   margin-bottom: 4rem;
 }

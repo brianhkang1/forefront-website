@@ -99,7 +99,7 @@ class OurWorkPage extends React.Component{
         </div>
 
         <div 
-          style={{backgroundColor: 'rgb(64,116,177)'}}
+          style={{backgroundColor: 'var(--blue-color)'}}
           className={`${styles.chartContainer} wow fadeIn`} 
         >
           <div className={styles.chartDescription}>
@@ -118,7 +118,7 @@ class OurWorkPage extends React.Component{
         </div>
 
         <div 
-          style={{backgroundColor: 'rgb(69,158,172)'}}
+          style={{backgroundColor: 'var(--main-color)'}}
           className={`${styles.chartContainer} wow fadeIn`}
         >
           <div className={styles.chart}>
@@ -136,7 +136,7 @@ class OurWorkPage extends React.Component{
         </div>
 
         <div 
-          style={{backgroundColor: 'rgb(217,91,94)'}}
+          style={{backgroundColor: 'var(--red-color)'}}
           className={`${styles.chartContainer} wow fadeIn`}
         >
           <div className={styles.chartDescription}>

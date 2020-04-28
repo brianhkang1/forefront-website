@@ -95,14 +95,14 @@ class BuildersPage extends React.Component{
         </div>
 
         <div className={classNames(styles.blurb, styles.bold)}>
-            Become a Builder and join other passionate and dedicated group of givers 
-            to build up local community leaders that will multiply 
-            into a global network of change.
+          Become a Builder and join other passionate and dedicated group of givers 
+          to build up local community leaders that will multiply 
+          into a global network of change.
         </div>
 
         <div>
           <div className={styles.sectionTitle}> 
-          Your monthly giving equips communities with the necessities to thrive:
+            Your monthly giving equips communities with the necessities to thrive:
           </div>
           <div className={styles.iconsContainer}>
             {FourPillarItems.map(item => (
