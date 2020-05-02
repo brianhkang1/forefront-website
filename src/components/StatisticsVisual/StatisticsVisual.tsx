@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './StatisticsVisual.module.css'
 import PictureFilter from '../PictureFilter';
-import Spacer from '../Spacer';
+// import Spacer from '../Spacer';
 
 const StatisticsVisual = () => {
   return (
     <>
-      <Spacer height='0.5rem'/>
+      {/* <Spacer height='3rem'/> */}
       
       <div className={styles.root}>
         <PictureFilter>
@@ -30,7 +30,7 @@ const StatisticsVisual = () => {
         </PictureFilter>
       </div>
 
-      <Spacer height='0.5rem'/>
+      {/* <Spacer height='3rem'/> */}
     </>
   )
 }

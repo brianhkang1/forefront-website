@@ -1,10 +1,30 @@
+/* laptop */
+@media (min-width: 741px) {
+  .heroText {
+    top: 35vh;
+    left: 17vw;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    width: 65vw;
+  }
+}
+
 /* mobile */
-@media (max-width: 600px) {
+@media (max-width: 740px) {
   .header {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
+  }
+
+  .heroText {
+    top: 35%;
+    left: 33%;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
   }
 }
 
@@ -30,40 +50,11 @@
   z-index: -1;
 }
 
-.title {
-  top: 35%;
-  left: 33%;
-  font-size: 5rem;
-  line-height: 6rem;
-  text-align: center;
-}
-
 .header {
   padding-bottom: 8vh;
 }
 
-.chartContainer {
-  display: flex;
-  align-items: center;
-  padding: 0 3rem;
-  height: 65vh;
-}
-
-.chartDescription {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  line-height: 4rem;
-}
-
-.bigNumber {
-  font-size: 10rem;
-  font-weight: bold;
-  line-height: 10rem;
+.mapTitle {
+  font-size: 2rem;
+  padding: 2rem 0;
 }

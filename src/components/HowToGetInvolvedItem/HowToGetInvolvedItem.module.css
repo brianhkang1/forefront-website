@@ -17,7 +17,7 @@
 /******************************************************************/
 
 /* laptop */
-@media (min-width: 601px) {
+@media (min-width: 741px) {
   .root {
     height: 50vh;
     width: 20vw;
@@ -38,7 +38,7 @@
 /******************************************************************/
 
 /* mobile */
-@media (max-width: 600px) {
+@media (max-width: 740px) {
   .root {
     height: 50vh;
     width: 75vw;

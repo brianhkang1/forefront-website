@@ -46,7 +46,7 @@ const FourPillarsContainer = () => {
         empowering locals. They know their communities best. We equip future leaders with
         fundamental human rights to clean water, quality education, access to medical
         care, and leadership training. With these resources, leaders invest in their communities,
-        multipying local-to-local long-term change. There will be a day when everyone:'
+        multiplying local-to-local long-term change. There will be a day when everyone has:'
       />
 
       <div className={styles.fourPillarsVisual}>

@@ -1,5 +1,5 @@
 /* laptop */
-@media (min-width: 601px) {  
+@media (min-width: 741px) {  
   .heroText {
     bottom: 20vh;
     left: 5vw;
@@ -7,7 +7,7 @@
 }
 
 /* mobile */
-@media (max-width: 600px) {
+@media (max-width: 740px) {
   .heroTextDynamic{
     font-size: 3rem;
     top: 30%;

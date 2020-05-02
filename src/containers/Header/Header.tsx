@@ -34,7 +34,7 @@ class Header extends React.Component<{}, State>{
 
     return (
       // laptop view
-      window.matchMedia("(min-width: 601px)").matches
+      window.matchMedia("(min-width: 741px)").matches
         ? (  
           <header className={styles.header}>
             <div className={classNames(styles.headerLeft)}>

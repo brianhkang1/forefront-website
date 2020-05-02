@@ -1,0 +1,54 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartContainer {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+.chartDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.bigNumber {
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: 9rem;
+}
+
+.iconsContainer {
+  padding: 2rem 10rem 0 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.selectedIcon {
+  border: 3px solid white;
+}
+
+.description {
+  padding: 0 3rem 3rem 3rem;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
