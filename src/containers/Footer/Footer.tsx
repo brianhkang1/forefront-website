@@ -16,11 +16,11 @@ class Footer extends React.Component{
           </div>
 
           <div className={styles.iconsContainer}>
-            <span className={styles.whiteIcon}><Icon name="facebook f" size="big" /></span>
-            <span className={styles.whiteIcon}><Icon name="tumblr" size="big" /></span>
-            <span className={styles.whiteIcon}><Icon name="amazon" size="big" /></span>
-            <span className={styles.whiteIcon}><Icon name="twitter" size="big" /></span>
-            <span className={styles.whiteIcon}><Icon name="connectdevelop" size="big" /></span>
+            <span className={styles.whiteIcon}><Icon name="facebook f" size="large" /></span>
+            <span className={styles.whiteIcon}><Icon name="tumblr" size="large" /></span>
+            <span className={styles.whiteIcon}><Icon name="amazon" size="large" /></span>
+            <span className={styles.whiteIcon}><Icon name="twitter" size="large" /></span>
+            <span className={styles.whiteIcon}><Icon name="connectdevelop" size="large" /></span>
           </div>
         </div>
 

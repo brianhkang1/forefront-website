@@ -10,10 +10,20 @@
   color: white;
   width: 57vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 1.75rem;
   line-height: 2.75rem;
-  text-align: center;
   padding: 0 5rem;
+}
+
+.dramaticText {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
+.bold {
+  font-weight: bold;
 }

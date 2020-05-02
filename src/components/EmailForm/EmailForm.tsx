@@ -24,18 +24,18 @@ class EmailForm extends React.Component<{}, State> {
    }
  }
 
-  handleChange = (e: React.FormEvent<HTMLInputElement>) => {
-    if(e.currentTarget.name === 'firstName'){
+  handleChange = (e: React.FormEvent<HTMLInputElement>, inputName: string) => {
+    if(inputName === 'firstName'){
       return this.setState({ 
         firstName: e.currentTarget.value
       });
     }
-    if(e.currentTarget.name === 'lastName'){
+    if(inputName === 'lastName'){
       return this.setState({ 
         lastName: e.currentTarget.value
       });
     }
-    if(e.currentTarget.name === 'email'){
+    if(inputName === 'email'){
       return this.setState({ 
         email: e.currentTarget.value
       });
@@ -82,13 +82,13 @@ class EmailForm extends React.Component<{}, State> {
     >
       <input type="hidden" name="form-name" value="Email subscription" />
       <div className={styles.inputContainer}>
-        <input required className={styles.input} type="text" name="firstName" placeholder="First Name" value={firstName} onChange={this.handleChange} />   
+        <input required className={styles.input} type="text" placeholder="First Name" value={firstName} onChange={(e) => this.handleChange(e, 'firstName')} autoComplete='new-password' />   
       </div>
       <div className={styles.inputContainer}>
-        <input required className={styles.input} type="text" name="lastName" placeholder="Last Name" value={lastName} onChange={this.handleChange} />    
+        <input required className={styles.input} type="text" placeholder="Last Name" value={lastName} onChange={(e) => this.handleChange(e, 'lastName')} autoComplete='new-password' />    
       </div>
       <div className={styles.inputContainer}>
-        <input required className={styles.input} type="email" name="email" placeholder="Email Address" value={email} onChange={this.handleChange} />
+        <input required className={styles.input} type="email" placeholder="Email Address" value={email} onChange={(e) => this.handleChange(e, 'email')} autoComplete='new-password' />
       </div>
 
       <div className={styles.buttonContainer} onClick={this.handleSubmit}>

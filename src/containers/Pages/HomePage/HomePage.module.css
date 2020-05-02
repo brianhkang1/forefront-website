@@ -1,12 +1,8 @@
 /* laptop */
 @media (min-width: 601px) {  
   .heroText {
-    top: 35%;
-    left: 10%;
-  }
-
-  .logo{
-    padding: 0 1rem;
+    bottom: 20vh;
+    left: 5vw;
   }
 }
 
@@ -63,29 +59,37 @@
   text-align: center;
 }
 
-.accomplishmentsContainer, .getInvolvedContainer {
+.theirVisionVisual {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourImpactContainer, .getInvolvedContainer {
   padding: 2rem 0;
 }
 
-.accomplishmentsItemContainer {
+.ourImpactItemContainer {
   padding: 1rem 10rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
 }
 
-.accomplishmentsItem {
+.ourImpactItem {
   position: relative;
 }
 
-.accomplishmentsIcon {
+.ourImpactIcon {
   position: absolute;
   bottom: 0.5rem;
   left: -2rem;
   opacity: 0.2;
 }
 
-.accomplishmentsText {
+.ourImpactText {
   font-size: 1.25rem;
 }
 

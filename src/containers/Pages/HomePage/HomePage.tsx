@@ -17,8 +17,9 @@ import GetInvolvedPic1 from '../../../Images/1.jpg';
 import GetInvolvedPic2 from '../../../Images/2.jpg';
 import GetInvolvedPic3 from '../../../Images/3.jpg';
 import GetInvolvedPic4 from '../../../Images/4.jpg';
+import TheirVisionIsOurMission from '../../../Images/HomePage/TheirVisionIsOurMission.png';
 
-const Accomplishments = [
+const OurImpact = [
   {
     icon: <Icon name="tint" size="huge"/>,
     text: '31 water wells; 94% hand-washing rate (up from 39%)'
@@ -40,18 +41,18 @@ const Accomplishments = [
 const GetInvolved = [
   {
     image: GetInvolvedPic1,
-    text: 'Donation',
-    link: 'https://www.google.com'
+    text: 'Donate',
+    link: 'https://secure.givelively.org/donate/forefront-charity'
   },
   {
     image: GetInvolvedPic2,
-    text: 'Builder',
-    link: 'https://www.google.com'
+    text: 'Monthly Donor',
+    link: './builders'
   },
   {
     image: GetInvolvedPic3,
     text: 'Campaign',
-    link: 'https://www.google.com'
+    link: 'https://secure.givelively.org/donate/forefront-charity/start-something'
   },
   {
     image: GetInvolvedPic4,
@@ -66,7 +67,11 @@ class HomePage extends React.Component{
       return (
         <div className={styles.link}>
           <Button>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
+            <a 
+              href={item.link} 
+              target={item.link === './builders' ? "_self" : "_blank"} 
+              rel="noopener noreferrer"
+            >
               {item.text}
             </a>
           </Button>
@@ -93,21 +98,26 @@ class HomePage extends React.Component{
             </PictureFilter>
           </div>
 
-          <div className={styles.blurb}>
-            Their vision is our mission
+          <div className={styles.theirVisionVisual}>
+            <Picture
+              src={TheirVisionIsOurMission}
+              width='80vw'
+              height='35vh'
+            />
           </div>
+
           <OurMissionContainer/>
           <FourPillarsContainer/>
 
-          <div className={styles.accomplishmentsContainer}>
-            <Title title='Accomplishments'/>
-            <div className={styles.accomplishmentsItemContainer}>
-              {Accomplishments.map((accItem, index) => (
-                <div key={`accItem-${index+1}`} className={styles.accomplishmentsItem}>
-                  <div className={styles.accomplishmentsIcon}>
+          <div className={styles.ourImpactContainer}>
+            <Title title='Our Impact'/>
+            <div className={styles.ourImpactItemContainer}>
+              {OurImpact.map((accItem, index) => (
+                <div key={`accItem-${index+1}`} className={styles.ourImpactItem}>
+                  <div className={styles.ourImpactIcon}>
                     {accItem.icon}
                   </div>
-                  <div className={styles.accomplishmentsText}>
+                  <div className={styles.ourImpactText}>
                     {accItem.text}
                   </div>
                 </div>
@@ -116,7 +126,7 @@ class HomePage extends React.Component{
           </div>
 
           <div className={styles.getInvolvedContainer}>
-            <Title title='How you can get involved'/>
+            <Title title='How You Can Get Involved'/>
             <div className={styles.getInvolvedItemContainer}>
               {GetInvolved.map(getInvolvedItem => (
                 <Picture
