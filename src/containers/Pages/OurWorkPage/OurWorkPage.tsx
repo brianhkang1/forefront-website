@@ -10,6 +10,7 @@ import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
 import { Icon } from 'semantic-ui-react';
+import Spacer from '../../../components/Spacer';
 
 const waterWellData = [
   {
@@ -186,9 +187,10 @@ class OurWorkPage extends React.Component{
             </div>    
         
             <PictureText className={styles.heroText}>
-              Thanks to you, we accomplished much together,
-              and we are excited for the upcoming projects 
-              we have in our pipeline! 
+              Your donations are invested into building sustainable, community-owned and led initiatives. 
+              Our team consists of professional experts that work closely with local partners to ensure 
+              that it is impactful, helps the people in most need, and that every dollar is well spent and accounted for. 
+              See our impact and where we work.
             </PictureText>
           </PictureFilter>
         </div>
@@ -198,12 +200,12 @@ class OurWorkPage extends React.Component{
           visualData={waterVisualData}
         />
 
-        <StatisticsVisual/>
-
         <OurWorkVisual
           backgroundColor={'var(--red-color)'}
           visualData={schoolVisualData}
         />
+
+        <StatisticsVisual/>
 
         <Map/>
         <Footer/>

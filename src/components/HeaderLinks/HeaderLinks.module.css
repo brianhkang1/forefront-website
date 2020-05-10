@@ -29,9 +29,13 @@
     background-color: white;
     text-align: center;
   }
-  
+
   .link {
-    padding: 1vh 0vh;
+    padding: 1.5vh 0vh;
+  }
+  
+  .link:not(:last-of-type) {
+    border-top: thin solid black;
   }
   
   .link > a {

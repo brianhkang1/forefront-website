@@ -13,10 +13,10 @@ import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
 import { Icon } from 'semantic-ui-react';
 
-import GetInvolvedPic1 from '../../../Images/1.jpg';
-import GetInvolvedPic2 from '../../../Images/2.jpg';
-import GetInvolvedPic3 from '../../../Images/3.jpg';
-import GetInvolvedPic4 from '../../../Images/4.jpg';
+import GetInvolvedPic1 from '../../../Images/HomePage/GetInvolved1.jpg';
+import GetInvolvedPic2 from '../../../Images/HomePage/GetInvolved2.jpg';
+import GetInvolvedPic3 from '../../../Images/HomePage/GetInvolved3.jpg';
+// import GetInvolvedPic4 from '../../../Images/4.jpg';
 import TheirVisionIsOurMission from '../../../Images/HomePage/TheirVisionIsOurMission.png';
 
 const OurImpact = [
@@ -54,11 +54,11 @@ const GetInvolved = [
     text: 'Campaign',
     link: 'https://secure.givelively.org/donate/forefront-charity/start-something'
   },
-  {
-    image: GetInvolvedPic4,
-    text: 'Start a Chapter',
-    link: 'https://www.google.com'
-  },
+  // {
+  //   image: GetInvolvedPic4,
+  //   text: 'Start a Chapter',
+  //   link: 'https://www.google.com'
+  // },
 ]
 
 class HomePage extends React.Component{

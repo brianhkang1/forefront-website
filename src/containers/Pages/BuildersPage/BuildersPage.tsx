@@ -9,7 +9,7 @@ import TestimonialPic1 from '../../../Images/1.jpg';
 import TestimonialPic2 from '../../../Images/2.jpg';
 import TestimonialPic3 from '../../../Images/3.jpg';
 import TestimonialPic4 from '../../../Images/4.jpg';
-import RandomPic from '../../../Images/1.jpg';
+import RandomPic from '../../../Images/BuildersPage/RandomPic.jpg';
 
 import { Icon } from 'semantic-ui-react';
 import Carousel from 'react-material-ui-carousel'

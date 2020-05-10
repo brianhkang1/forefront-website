@@ -18,37 +18,30 @@ import PublicRelationsLeadApp from '../../Documents/Public_Relations_Lead.doc';
 const JobPostingInfo = [
   {
     title: 'Chief Marketing Officer',
-    // description: 'Lorem ipsum dolor sit amet',
     link: ChiefMarketingOfficerApp
   },
   {
     title: 'Copy-Write Lead',
-    // description: 'Lorem ipsum dolor sit amet',
     link: CopyWriteLeadApp
   },
   {
     title: 'Director of Medical',
-    // description: 'Lorem ipsum dolor sit amet',
     link: DirectorOfMedicalApp
   },
   {
     title: 'Director of Programs',
-    // description: 'Lorem ipsum dolor sit amet',
     link: DirectorOfProgramsApp
   },
   {
     title: 'Events Lead',
-    // description: 'Lorem ipsum dolor sit amet',
     link: EventsLeadApp
   },
   {
     title: 'People & Culture Lead',
-    // description: 'Lorem ipsum dolor sit amet',
     link: PeopleAndCultureLeadApp
   },
   {
     title: 'Public Relations Lead',
-    // description: 'Lorem ipsum dolor sit amet',
     link: PublicRelationsLeadApp
   },
 
@@ -69,9 +62,6 @@ const JobPosting: React.FC = () => {
                   {posting.title}
                 </a>
               </div>
-              {/* <div className={styles.jobDescription}>
-                {posting.description}
-              </div> */}
           </div>
         ))}
       </div>

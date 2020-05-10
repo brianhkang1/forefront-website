@@ -22,9 +22,9 @@ const Map = () => {
     <div>
       <Title
         title='Where We Work'
-        description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown 
-        printer took a galley of type and scrambled it to make a type specimen book.'
+        description='We fund basic life necessities - water, proper sanitation, education, medical, and leadership training - 
+        currently in rural India. We choose to work in unreached areas that suffer from water scarcity, poverty, 
+        social inequality, lack of facilities, and lack of opportunities. A map of our impact:'
       />
 
       <LeafletMap center={latLong} zoom={11} scrollWheelZoom={false}>

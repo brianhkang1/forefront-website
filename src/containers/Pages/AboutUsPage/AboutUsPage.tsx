@@ -35,39 +35,96 @@ const AnnualReports = [
 ]
 
 class AboutUsPage extends React.Component{
+  renderLaptopHeroText = () => {
+    return (
+      <div className={styles.heroTextContainer}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <PictureText padding='1.75rem' className={classNames(styles.heroText1, styles.heroText)}>
+            <div>Enable every person</div>
+          </PictureText>
+
+          <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText2)}>
+            <div>Equip leaders</div>
+          </PictureText>
+
+          <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText3)}>
+            <div>Establish self-sustaining communities</div>
+          </PictureText>
+
+          <div className={styles.buttonContainer}>
+            <Button>
+              <a 
+                href="https://blog.goforefront.org/unlocking-leaders-of-change" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  renderMobileHeroText = () => {
+    return (
+      <div className={styles.heroTextContainer}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <PictureText padding='1rem' className={classNames(styles.heroText1, styles.heroText)}>
+            <div>Enable every person</div>
+          </PictureText>
+
+          <PictureText padding='1rem' className={classNames(styles.heroText, styles.heroText2)}>
+            <div>Equip leaders</div>
+          </PictureText>
+
+          <PictureText padding='1rem' className={classNames(styles.heroText, styles.heroText3)}>
+            <div>Establish </div>
+            <div>self-sustaining</div>
+            <div>communities</div>
+          </PictureText>
+
+          <div className={styles.buttonContainer}>
+            <Button>
+              <a 
+                href="https://blog.goforefront.org/unlocking-leaders-of-change" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   render(){
     return (
       <div className={styles.root}>
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+           <div className={styles.header}>
+           <Header/>
+         </div>
+        )}
+
         <div className={styles.featurePictureContainer}>
           <PictureFilter>
-            <div className={styles.header}>
-              <Header/>
-            </div>
+            {/* laptop view */}
+            {window.matchMedia("(min-width: 741px)").matches && (
+                <div className={styles.header}>
+                <Header/>
+              </div>
+            )}
 
-            <PictureText padding='1.75rem' className={classNames(styles.heroText1, styles.heroText)}>
-              <div>Enable every person</div>
-            </PictureText>
-
-            <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText2)}>
-              <div>Equip leaders</div>
-            </PictureText>
-
-            <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText3)}>
-              <div>Establish self-sustaining communities</div>
-            </PictureText>
-
-            <div className={styles.buttonContainer}>
-              <Button>
-                <a 
-                  href="https://blog.goforefront.org/unlocking-leaders-of-change" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn More
-                </a>
-              </Button>
-            </div>
-
+            {// laptop view
+              window.matchMedia("(min-width: 741px)").matches
+               ? this.renderLaptopHeroText()
+               : this.renderMobileHeroText()
+            }
           </PictureFilter>
         </div>
         

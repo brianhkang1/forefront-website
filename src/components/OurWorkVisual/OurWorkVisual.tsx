@@ -45,6 +45,18 @@ class OurWorkVisual extends React.Component<Props, State> {
         }}
         className={`${styles.root} wow fadeIn`}  
       >
+        <div className={styles.iconsContainer}>
+          {visualData.map((item: VisualData, idx: number) => (
+            <span 
+              key={`icon-${item.name}`}
+              className={classNames(styles.icon, selectedIndex === idx ? styles.selectedIcon : '')} 
+              onClick={() => this.onIconClick(idx)}
+            >
+              {item.icon}
+            </span>
+          ))}
+        </div>
+        
         <div className={styles.chartContainer}>
           <div className={styles.chartDescription}>
             <div className={styles.bigNumber}>
@@ -53,18 +65,6 @@ class OurWorkVisual extends React.Component<Props, State> {
 
             <div>
               {visualData[selectedIndex].subTitle}
-            </div>
-
-            <div className={styles.iconsContainer}>
-              {visualData.map((item: VisualData, idx: number) => (
-                <span 
-                  key={`icon-${item.name}`}
-                  className={classNames(styles.icon, selectedIndex === idx ? styles.selectedIcon : '')} 
-                  onClick={() => this.onIconClick(idx)}
-                >
-                  {item.icon}
-                </span>
-              ))}
             </div>
           </div>
 

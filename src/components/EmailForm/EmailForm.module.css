@@ -1,35 +1,77 @@
-.root {
-  margin-left: -1rem;
-  display: flex;
-  align-items: center; 
+/* ************ LAPTOP ************** */
+@media (min-width: 741px) {
+  .root {
+    margin-left: -1rem;
+    display: flex;
+    align-items: center; 
+  }
+
+  .input {
+    background-color: var(--main-color);
+    -webkit-appearance: none; 
+    box-shadow: none;
+    width: 10rem;
+    color: white;
+  }
+  
+  .inputContainer {
+    padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+    border: thin solid white;
+    display:inline-block;
+    transform: skew(30deg);
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+  }
+  
+  .inputContainer input {
+    outline: none;
+    border: none;
+    transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+  }
 }
 
-.inputContainer {
-  border: thin solid white;
-  display:inline-block;
-  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
-  transform: skew(30deg);
-  -webkit-transform: skew(-30deg);
-  -moz-transform: skew(-30deg);
-  -o-transform: skew(-30deg);
-}
+/* ************MOBILE**************** */
 
-.inputContainer input {
-  outline: none;
-  border: none;
-  transform: skew(30deg);
-  -webkit-transform: skew(30deg);
-  -moz-transform: skew(30deg);
-  -o-transform: skew(30deg);
-}
+@media (max-width: 740px) {
+  .root {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
 
-.input {
-  background-color: var(--main-color);
-  -webkit-appearance: none; 
-  box-shadow: none;
-  width: 10rem;
-  color: white;
+  .input {
+    background-color: var(--main-color);
+    -webkit-appearance: none; 
+    box-shadow: none;
+    width: 5rem;
+    color: white;
+  }
+  
+  .inputContainer {
+    margin: 1.25rem 0;
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+    border: thin solid white;
+    display:inline-block;
+    width: 20rem;
+  }
+  
+  .inputContainer input {
+    outline: none;
+    border: none;
+    width: 15rem;
+  }
+
+  .buttonContainer {
+    margin-left: -1rem;
+    margin-top: 1.5rem;
+  }
 }
+/* ************************************ */
 
 .inputContainer:focus-within, .input:focus {
   background-color: white;

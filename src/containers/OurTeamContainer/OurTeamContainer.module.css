@@ -1,10 +1,105 @@
-.mainPictureContainer {
-  display: flex;
+/* mobile */
+@media (max-width: 740px) {
+  .mainPictureContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainPictureTextContainer {
+    width: 100vw;
+  }
+
+  .mainPictureText {
+    padding-top: 3rem;
+  }
+
+  .teamMembersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .teamMemberPicture {
+    width: 100vw;
+    height: 50vh;
+    -ms-background-position-y: top;
+    background-position: center top;
+  }
+
+  .teamMemberPictureTitle {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    margin-bottom: 42vh;
+    min-width: 13rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .teamMemberPictureDescription {
+    height: 100%;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+/* laptop */
+@media (min-width: 741px) {
+  .mainPictureContainer {
+    display: flex;
+  }
+
+  .mainPictureTextContainer {
+    width: 30vw;
+  }
+
+  .teamMembersContainer {
+    padding: 2rem 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teamMemberPicture {
+    width: 17rem;
+    height: 26rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+
+  .teamMemberPictureTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 22.5rem;
+    min-width: 13rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+  }
+  
+  .teamMemberPictureDescription {
+    height: 100%;
+    padding: 0 0.75rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ***************************** */
 
 .mainPictureTextContainer {
   display: flex;
-  width: 30vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -54,41 +149,4 @@
   width: 70vw;
   height: 70vh;
   object-fit: cover;
-}
-
-.teamMembersContainer {
-  padding: 2rem 12rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.teamMemberPicture {
-  width: 17rem;
-  height: 26rem;
-  margin-bottom: 2rem;
-  margin-right: 2rem;
-}
-
-.teamMemberPictureTitle {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 22.5rem;
-  min-width: 13rem;
-  min-height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.5rem;
-}
-
-.teamMemberPictureDescription {
-  height: 100%;
-  font-weight: bold;
-  padding: 0 0.75rem;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

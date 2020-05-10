@@ -1,5 +1,15 @@
-.root {
-  margin: 2rem 4rem;
+/* laptop */
+@media (min-width: 741px) {
+  .root {
+    margin: 2rem 4rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+  .root {
+    margin: 3rem 2rem;
+  }
 }
 
 .containerTitle {
@@ -29,8 +39,4 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--text-base);
-}
-
-.jobDescription {
-  font-size: 1.25rem;
 }
