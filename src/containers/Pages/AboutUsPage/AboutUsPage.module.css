@@ -128,9 +128,27 @@
   border-radius: 10px; 
 }
 
-/* .iconContainer:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} */
+.dropdown {
+  color: var(--link-blue-color) !important;
+  border: 1px solid var(--link-blue-color) !important;
+}
+
+.dropdown div {
+  color: var(--link-blue-color) !important;
+}
+
+.dropdownMenu {
+  border: thin solid var(--link-blue-color) !important;
+}
+
+.dropdownItem {
+  border-top: thin solid var(--light-gray-color) !important;
+}
+
+.dropdownItem:hover {
+  background-color: var(--link-blue-color) !important;
+  color: white !important;
+}
 
 .icon {
   width: 14rem;
@@ -147,13 +165,17 @@
 
 .iconLink {
   font-size: 1.25rem;
-  font-weight: bold;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
-.iconLink > a, .iconLink > a:hover {
+.iconLink > a {
+  font-weight: bold;
+  color: var(--link-blue-color);
+}
+
+.iconLink > a:hover {
   color: var(--main-color);
 }
 

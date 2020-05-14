@@ -149,11 +149,12 @@ class HomePage extends React.Component{
             <div className={styles.getInvolvedItemContainer}>
               {GetInvolved.map(getInvolvedItem => (
                 <Picture
+                  className={styles.getInvolvedImage}
                   src={getInvolvedItem.image}
-                  width='100%' 
-                  height='400px'
+                  width='22rem' 
+                  height='25rem'
                 >
-                  <PictureFilter>
+                  <PictureFilter className={styles.getInvolvedImage}>
                     {renderPictureText(getInvolvedItem)}
                   </PictureFilter>
                 </Picture>

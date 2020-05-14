@@ -118,7 +118,11 @@
   padding: 0 14rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
+}
+
+.getInvolvedImage {
+  border-radius: 1rem;
 }
 
 .getInvolvedText {

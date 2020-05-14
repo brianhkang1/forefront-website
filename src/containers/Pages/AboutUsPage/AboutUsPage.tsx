@@ -150,10 +150,11 @@ class AboutUsPage extends React.Component{
               </div>
               
               <div className={styles.dropdownContainer}>
-                <Dropdown placeholder="Select a year" selection>
-                  <Dropdown.Menu>
+                <Dropdown placeholder="Select a year" selection className={styles.dropdown}>
+                  <Dropdown.Menu className={styles.dropdownMenu}>
                     {AnnualReports.map(report => (
                       <Dropdown.Item
+                        className={styles.dropdownItem}
                         text={report.year}
                         onClick={() => window.open(report.href)}
                       />
