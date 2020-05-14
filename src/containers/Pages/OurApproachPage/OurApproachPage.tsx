@@ -41,17 +41,11 @@ class OurApproachPage extends React.Component{
           <Title
             title='Long-term Sustainability'
             description="By moving beyond these barriers which everyone should have access to,
-            individuals powerfully become more than thei rchallenges and are able to contribute
-            back ot their village."
+            individuals powerfully become more than their challenges and are able to contribute
+            back to their village."
           />
 
-          <div className={styles.pictureContainer}>
-            {/* <PictureFilter>
-              <div style={{height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <Button size="large" className={styles.button}>Learn More</Button>
-              </div>
-            </PictureFilter> */}
-          </div>
+          <div className={styles.pictureContainer}/>
         </div>
 
         <YourResponseContainer/>

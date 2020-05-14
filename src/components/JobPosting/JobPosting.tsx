@@ -9,8 +9,6 @@ import DirectorOfMedicalApp from '../../Documents/Director_of_Medical.doc';
 // @ts-ignore
 import DirectorOfProgramsApp from '../../Documents/Director_of_Programs.doc';
 // @ts-ignore
-import EventsLeadApp from '../../Documents/Events_Lead.doc';
-// @ts-ignore
 import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.doc';
 // @ts-ignore
 import PublicRelationsLeadApp from '../../Documents/Public_Relations_Lead.doc';
@@ -31,10 +29,6 @@ const JobPostingInfo = [
   {
     title: 'Director of Programs',
     link: DirectorOfProgramsApp
-  },
-  {
-    title: 'Events Lead',
-    link: EventsLeadApp
   },
   {
     title: 'People & Culture Lead',

@@ -10,7 +10,6 @@ import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
 import { Icon } from 'semantic-ui-react';
-import Spacer from '../../../components/Spacer';
 
 const waterWellData = [
   {
@@ -188,9 +187,8 @@ class OurWorkPage extends React.Component{
         
             <PictureText className={styles.heroText}>
               Your donations are invested into building sustainable, community-owned and led initiatives. 
-              Our team consists of professional experts that work closely with local partners to ensure 
-              that it is impactful, helps the people in most need, and that every dollar is well spent and accounted for. 
-              See our impact and where we work.
+              Our team work closely with local partners to ensure that it is impactful, helps the people 
+              in most need, and that every dollar is well spent and accounted for.
             </PictureText>
           </PictureFilter>
         </div>

@@ -11,29 +11,35 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
-import { Icon } from 'semantic-ui-react';
 
 import GetInvolvedPic1 from '../../../Images/HomePage/GetInvolved1.jpg';
 import GetInvolvedPic2 from '../../../Images/HomePage/GetInvolved2.jpg';
 import GetInvolvedPic3 from '../../../Images/HomePage/GetInvolved3.jpg';
-// import GetInvolvedPic4 from '../../../Images/4.jpg';
 import TheirVisionIsOurMission from '../../../Images/HomePage/TheirVisionIsOurMission.png';
+import WaterIcon from '../../../Images/Icons/FourPillars/Water_color.png';
+import EducationIcon from '../../../Images/Icons/FourPillars/Education_color.png';
+import MedicalIcon from '../../../Images/Icons/FourPillars/Medical_color.png';
+import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color.png';
 
 const OurImpact = [
   {
-    icon: <Icon name="tint" size="huge"/>,
+    image: GetInvolvedPic1,
+    icon: WaterIcon,
     text: '31 water wells; 94% hand-washing rate (up from 39%)'
   },
   {
-    icon: <Icon name="graduation cap" size="huge"/>,
+    image: GetInvolvedPic1,
+    icon: EducationIcon,
     text: '7:1 student to teacher ratio at our After School program'
   },
   {
-    icon: <Icon name="band aid" size="huge"/>,
+    image: GetInvolvedPic1,
+    icon: MedicalIcon,
     text: '5 health and wellness workshops'
   },
   {
-    icon: <Icon name="users" size="huge"/>,
+    image: GetInvolvedPic1,
+    icon: EmpowermentIcon,
     text: 'Soap business run by local women'
   },
 ]
@@ -112,13 +118,26 @@ class HomePage extends React.Component{
           <div className={styles.ourImpactContainer}>
             <Title title='Our Impact'/>
             <div className={styles.ourImpactItemContainer}>
-              {OurImpact.map((accItem, index) => (
-                <div key={`accItem-${index+1}`} className={styles.ourImpactItem}>
-                  <div className={styles.ourImpactIcon}>
-                    {accItem.icon}
-                  </div>
+              {OurImpact.map((ourImpactItem, index) => (
+                <div className={styles.ourImpactItem}>
+                  <Picture 
+                    key={`ourImpactItem-${index+1}`} 
+                    src={ourImpactItem.image} 
+                    className={styles.ourImpactImage} 
+                    width='18rem' 
+                    height='18rem'
+                  >
+                    <div className={styles.ourImpactIcon}>
+                      <Picture 
+                        src={ourImpactItem.icon}  
+                        width='5rem' 
+                        height='5rem'
+                      />
+                    </div>
+                  </Picture>
+
                   <div className={styles.ourImpactText}>
-                    {accItem.text}
+                    {ourImpactItem.text}
                   </div>
                 </div>
               ))}
