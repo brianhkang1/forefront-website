@@ -31,20 +31,13 @@
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  font-size: 2rem;
 }
 
 .icon {
-  color: white;
   cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 1rem;
   margin-right: 2rem;
-  opacity: 0.2;
-}
-
-.selectedIcon {
-  opacity: 1;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
 .description {

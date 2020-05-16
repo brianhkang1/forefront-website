@@ -23,21 +23,25 @@ import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color
 
 const OurImpact = [
   {
+    type: 'WATER',
     image: GetInvolvedPic1,
     icon: WaterIcon,
     text: '31 water wells; 94% hand-washing rate (up from 39%)'
   },
   {
+    type: 'EDUCATION',
     image: GetInvolvedPic1,
     icon: EducationIcon,
     text: '7:1 student to teacher ratio at our After School program'
   },
   {
+    type: 'MEDICAL',
     image: GetInvolvedPic1,
     icon: MedicalIcon,
     text: '5 health and wellness workshops'
   },
   {
+    type: 'EMPOWERMENT',
     image: GetInvolvedPic1,
     icon: EmpowermentIcon,
     text: 'Soap business run by local women'
@@ -137,7 +141,12 @@ class HomePage extends React.Component{
                   </Picture>
 
                   <div className={styles.ourImpactText}>
-                    {ourImpactItem.text}
+                    <div className={styles.ourImpactType}>
+                      {ourImpactItem.type}
+                    </div>
+                    <div>
+                      {ourImpactItem.text}
+                    </div>
                   </div>
                 </div>
               ))}

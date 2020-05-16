@@ -5,12 +5,14 @@ type Props = {
   width: string;
   height: string;
   className?: string;
+  backgroundSize?: 'cover' | 'contain';
 }
 
 const Picture: React.FC<Props> = ({
   src,
   width,
   height,
+  backgroundSize = 'cover',
   className,
   children
 }) => {
@@ -18,8 +20,7 @@ const Picture: React.FC<Props> = ({
     <div
       className={className}
       style={{
-        background: `url("${src}") no-repeat center center`,
-        backgroundSize: 'cover',
+        background: `url("${src}") no-repeat center center / ${backgroundSize}`,
         position: 'relative',
         width,
         height,

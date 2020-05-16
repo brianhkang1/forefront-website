@@ -1,6 +1,6 @@
 import React from 'react';
-import { classNames } from '../../util';
 import styles from './OurWorkVisual.module.css';
+import Picture from '../Picture';
 
 type Props = {
   backgroundColor: string;
@@ -13,7 +13,8 @@ type State = {
 
 type VisualData = {
   name: string;
-  icon: React.ReactNode;
+  icon: string;
+  selectedIcon: string;
   chart:  React.ReactNode;
   bigNumber: React.ReactNode;
   subTitle: React.ReactNode;
@@ -47,13 +48,23 @@ class OurWorkVisual extends React.Component<Props, State> {
       >
         <div className={styles.iconsContainer}>
           {visualData.map((item: VisualData, idx: number) => (
-            <span 
+            <div 
               key={`icon-${item.name}`}
-              className={classNames(styles.icon, selectedIndex === idx ? styles.selectedIcon : '')} 
               onClick={() => this.onIconClick(idx)}
+              style={{
+                opacity: selectedIndex === idx ? '1' : '0.2'
+              }}
             >
-              {item.icon}
-            </span>
+              <div className={styles.icon}>
+                <Picture
+                  src={selectedIndex === idx ? item.selectedIcon : item.icon}
+                  // {item.icon}
+                  width='4rem'
+                  height='4rem'
+                  backgroundSize='contain'
+                />
+              </div>
+            </div>
           ))}
         </div>
         

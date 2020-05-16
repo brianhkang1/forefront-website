@@ -7,8 +7,9 @@ import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
 import Header from '../../Header';
 import Footer from '../../Footer';
-// import Button from '../../../components/Button';
 import PictureText from '../../../components/PictureText'
+import Picture from '../../../components/Picture';
+import LongTermSustainabilityImage from '../../../Images/OurApproachPage/LongTermSustainability.jpg';
 
 class OurApproachPage extends React.Component{
   render(){
@@ -20,7 +21,7 @@ class OurApproachPage extends React.Component{
               <Header/>
             </div> 
             
-            <PictureText className={styles.featureTitle} padding='1rem 2rem'>
+            <PictureText className={styles.heroText} padding='1rem 2rem'>
               <div>Breaking barriers, no matter</div>
               <div>how small, has the power to</div>
               <div>change a community's course.</div>
@@ -45,7 +46,11 @@ class OurApproachPage extends React.Component{
             back to their village."
           />
 
-          <div className={styles.pictureContainer}/>
+          <Picture
+            src={LongTermSustainabilityImage}
+            width='100vw'
+            height='75vh'
+          />
         </div>
 
         <YourResponseContainer/>

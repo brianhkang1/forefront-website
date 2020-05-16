@@ -9,7 +9,15 @@ import StatisticsVisual from '../../../components/StatisticsVisual';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
-import { Icon } from 'semantic-ui-react';
+
+import HatIcon from '../../../Images/OurWorkPage/Hat.png';
+import HatShadowIcon from '../../../Images/OurWorkPage/HatShadow.png';
+import SchoolIcon from '../../../Images/OurWorkPage/School.png';
+import SchoolShadowIcon from '../../../Images/OurWorkPage/SchoolShadow.png';
+import SoapIcon from '../../../Images/OurWorkPage/Soap.png';
+import SoapShadowIcon from '../../../Images/OurWorkPage/SoapShadow.png';
+import WaterIcon from '../../../Images/OurWorkPage/Water.png';
+import WaterShadowIcon from '../../../Images/OurWorkPage/WaterShadow.png';
 
 const waterWellData = [
   {
@@ -83,7 +91,8 @@ const schoolFundsData = [
 const waterVisualData = [
   {
     name: 'waterWells',
-    icon: <Icon name="tint" size="large"/>,
+    icon: WaterIcon,
+    selectedIcon: WaterShadowIcon,
     chart: (
       <BarChart 
         data={waterWellData} 
@@ -109,7 +118,8 @@ const waterVisualData = [
   },
   {
     name: 'soapToys',
-    icon: <Icon name="tint" size="large"/>,
+    icon: SoapIcon,
+    selectedIcon: SoapShadowIcon,
     chart: (
       <BarChart 
         data={soapToysData} 
@@ -130,7 +140,8 @@ const waterVisualData = [
 const schoolVisualData = [
   {
     name: 'fundraisedAmount',
-    icon: <Icon name="graduation cap" size="large"/>,
+    icon: SchoolIcon,
+    selectedIcon: SchoolShadowIcon,
     chart: (
       <BarChart 
         data={schoolFundsData} 
@@ -157,7 +168,8 @@ const schoolVisualData = [
   },
   {
     name: 'soapToys',
-    icon: <Icon name="graduation cap" size="large"/>,
+    icon: HatIcon,
+    selectedIcon: HatShadowIcon,
     chart: (
       <BarChart 
         data={soapToysData} 
@@ -199,7 +211,7 @@ class OurWorkPage extends React.Component{
         />
 
         <OurWorkVisual
-          backgroundColor={'var(--red-color)'}
+          backgroundColor={'var(--yellow-color)'}
           visualData={schoolVisualData}
         />
 

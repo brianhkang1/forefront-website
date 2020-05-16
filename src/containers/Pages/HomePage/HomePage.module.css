@@ -109,9 +109,15 @@
 }
 
 .ourImpactText {
-  padding-top: 2.5rem;
-  font-size: 1.25rem;
+  padding-top: 2.75rem;
   width: 18rem;
+}
+
+.ourImpactType {
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+  color: var(--gray-color);
 }
 
 .getInvolvedItemContainer {

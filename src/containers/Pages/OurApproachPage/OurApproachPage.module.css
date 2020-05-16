@@ -30,34 +30,10 @@
   z-index: -1;
 }
 
-.featureTitle {
+.heroText {
   position: absolute;
   top: 25vh;
   left: 5vw;
   font-size: 3rem;
   line-height: 4rem;
-}
-
-.pictureContainer {
-  width: 100vw;
-  height: 60vh;
-  background-image: url('../../../Images/1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.button {
-  font-size: 3rem;
-  background-color: transparent;
-  color: white;
-  border-color: white;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-}
-
-.button:hover {
-  background-color: transparent;
-  color: white;
-  border-color: white;
 }
