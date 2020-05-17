@@ -14,17 +14,37 @@ import LongTermSustainabilityImage from '../../../Images/OurApproachPage/LongTer
 class OurApproachPage extends React.Component{
   render(){
     return (
-      <div>
+      <div className={styles.root}>
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+          <div className={styles.header}>
+          <Header/>
+        </div>
+        )}
         <div className={styles.featurePictureContainer}>
+
           <PictureFilter>
-            <div className={styles.header}>
-              <Header/>
-            </div> 
-            
+            {/* laptop view */}
+            {window.matchMedia("(min-width: 741px)").matches && (
+                <div className={styles.header}>
+                <Header/>
+              </div>
+            )}
+
             <PictureText className={styles.heroText} padding='1rem 2rem'>
+            {window.matchMedia("(min-width: 741px)").matches ? (
+              <>
               <div>Breaking barriers, no matter</div>
               <div>how small, has the power to</div>
               <div>change a community's course.</div>
+              </>
+            ) : (
+              <div>
+                Breaking barriers, no matter how small, has the power to
+                change a community's course.
+              </div>
+
+            )}
             </PictureText>
           </PictureFilter>
         </div>

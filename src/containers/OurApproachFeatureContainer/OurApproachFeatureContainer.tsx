@@ -32,7 +32,7 @@ const FourPillarsApproach = {
       title: FourPillars.WATER,
       icon: WaterIcon,
       color: 'var(--blue-color)',
-      text: '750 million people lack access to clean water. That is 2.5x the population of the United States. Other areas of sustainability cannot be achieved without meeting this basic need first. That is why our first phase is dedicated to building wells that will provide water that is accessible and consumable allowing families to stay well.  Furthermore, with this access to water we are able to take sanitation a step further and provide soap toys to encourage children to wash their hands to keep infections away.',
+      text: '750 million people lack access to clean water-- other areas of sustainability cannot be achieved without meeting this basic need first. That is why our first phase is dedicated to building accessible water wells, along with soap toys to encourage children to wash their hands to keep infections away.',
       image: WaterImage,
     },
   [FourPillars.EDUCATION]: 
@@ -40,7 +40,7 @@ const FourPillarsApproach = {
       title: FourPillars.EDUCATION,
       icon: EducationIcon,
       color: 'var(--yellow-color)',
-      text: '57 million children around the globe do not have access to schools. Education is crucial to breaking the cycle of poverty, which is why our second phase is dedicated to building schools. Our long-term hope is that the students will gain vocational skills, attend college, and reinvest their newly acquired skills and knowledge into their communities.',
+      text: '57 million children around the globe do not have access to schools. Education is crucial to breaking the cycle of poverty. Our long-term hope is that the students will gain vocational skills, attend college, and reinvest their newly acquired skills and knowledge into their communities.',
       image: EducationImage,
     },
   [FourPillars.MEDICAL]: 
@@ -48,7 +48,7 @@ const FourPillarsApproach = {
       title: FourPillars.MEDICAL,
       icon: MedicalIcon,
       color: 'var(--red-color)',
-      text: '75-85% of people in developing nations cannot receive medical treatment, which means most of the world is suffering needlessly. We want to alleviate this dire issue through the construction of clinics that will provide ethical, accessible and affordable healthcare. A healthy community means more children can attend school and more adults can enter the workforce.',
+      text: '75-85% of people in developing nations cannot receive medical treatment. We want to alleviate this dire issue through the construction of clinics that will provide ethical, accessible and affordable healthcare. A healthy community means more children can attend school and more adults can enter the workforce.',
       image: MedicalImage,
     },
   [FourPillars.EMPOWERMENT]: 
@@ -56,7 +56,7 @@ const FourPillarsApproach = {
       title: FourPillars.EMPOWERMENT,
       icon: EmpowermentIcon,
       color: 'var(--purple-color)',
-      text: '27 million people worldwide are victims of human trafficking. We want to build safehouses that will provide homes, vocational training and counseling for marginalized members of a community, particularly those who are victims of sexual abuse and human trafficking. Our goal is to empower more women to enter the workforce and start their own businesses.',
+      text: '27 million people worldwide are victims of human trafficking. We want to build safehouses that will provide homes, vocational training and counseling for marginalized victims of sexual abuse and human trafficking. Our goal is to empower more women to enter the workforce and start their own businesses.',
       image: EmpowermentImage,
     }
 }
@@ -135,12 +135,12 @@ const OurApproachFeatureContainer = () => {
             />
           </div>
 
-          <div 
-            className={styles.buttonTitle}
-            style={{color: approach.color}}
-          >
+          {/* laptop view */}
+          {window.matchMedia("(min-width: 741px)").matches && (
+            <div className={styles.buttonTitle} style={{color: approach.color}}>
               {approach.title}
-            </div>
+           </div>
+          )}
         </div>
       ))}
     </div>

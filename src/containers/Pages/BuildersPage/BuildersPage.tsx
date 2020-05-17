@@ -87,7 +87,7 @@ const Testimonials = [
 const WhyBeABuilder = [
   {
     image: WhyBeBuilder1,
-    text: 'Share love with vllagers'
+    text: 'Share love with villagers'
   },
   {
     image: WhyBeBuilder2,
@@ -132,6 +132,8 @@ class BuildersPage extends React.Component{
                 has the opportunity to thrive
               </div>
 
+            {/* laptop view */}
+            {window.matchMedia("(min-width: 741px)").matches && (
               <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
                 <div 
                   data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
@@ -139,9 +141,21 @@ class BuildersPage extends React.Component{
                   className="gl-branded-donation-widget"
                 />
               </div>
+            )}
             </div>
           </PictureFilter>
         </div>
+        
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+          <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
+            <div 
+              data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+              id="give-lively-widget" 
+              className="gl-branded-donation-widget"
+            />
+          </div>
+        )}
 
         <div className={styles.blurb}>
           Become a Builder and join other passionate and dedicated group of givers 
@@ -195,7 +209,7 @@ class BuildersPage extends React.Component{
                 width='18rem'
               />
 
-              <div>
+              <div className={styles.whyBeMonthlyDonorText}>
                 {whyBeBuilderItem.text}
               </div>
             </div>

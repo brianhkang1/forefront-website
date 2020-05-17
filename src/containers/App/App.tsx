@@ -23,43 +23,55 @@ class App extends React.Component{
     new WOW().init();
   }
 
+  renderRoutes = (location) => {
+    return (
+      <Switch location={location}>
+        {routes.map(({ path, Component }) => (
+          <Route key={path} exact path={path}>         
+            <div className={styles.page}> 
+              <Component/>
+            </div>      
+          </Route> 
+        ))} 
+      </Switch>
+    )
+  }
+
+  renderRoutesWithTransitionAnimation = (match, location) => (
+    <TransitionGroup>
+      <CSSTransition
+        key={location.key}
+        in={match !== null}
+        timeout={1500}
+        classNames={{
+          appear: styles.pageFadeAppear,
+          appearActive: styles.pageFadeAppearActive,
+          appearDone: styles.pageFadeAppearDone,
+          enter: styles.pageFadeEnter,
+          enterActive: styles.pageFadeEnterActive,
+          enterDone: styles.pageFadeEnterDone,
+          exit: styles.pageFadeExit,
+          exitActive: styles.pageFadeExitActive,
+          exitDone: styles.pageFadeExitDone,
+        }}
+        unmountOnExit
+      >
+        {this.renderRoutes(location)}
+      </CSSTransition>
+    </TransitionGroup>
+  )
+
   render() {
     return (
       <Route render={({ match, location }) => (
         <div className={styles.root}>
-
           <div className={styles.content}>
-            <TransitionGroup>
-                <CSSTransition
-                  key={location.key}
-                  in={match !== null}
-                  timeout={1500}
-                  classNames={{
-                    appear: styles.pageFadeAppear,
-                    appearActive: styles.pageFadeAppearActive,
-                    appearDone: styles.pageFadeAppearDone,
-                    enter: styles.pageFadeEnter,
-                    enterActive: styles.pageFadeEnterActive,
-                    enterDone: styles.pageFadeEnterDone,
-                    exit: styles.pageFadeExit,
-                    exitActive: styles.pageFadeExitActive,
-                    exitDone: styles.pageFadeExitDone,
-                   }}
-                  unmountOnExit
-                >
-                  <Switch location={location}>
-                    {routes.map(({ path, Component }) => (
-                      <Route key={path} exact path={path}>         
-                        <div className={styles.page}> 
-                          <Component/>
-                        </div>      
-                      </Route> 
-                    ))} 
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
+            {/* only laptop gets page transition animations */}
+            {window.matchMedia("(min-width: 741px)").matches 
+              ? this.renderRoutesWithTransitionAnimation(match, location)
+              : this.renderRoutes(location)
+            }
             </div>
-  
         </div>
       )}/>
     );

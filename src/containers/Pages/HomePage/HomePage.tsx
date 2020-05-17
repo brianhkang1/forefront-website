@@ -90,12 +90,22 @@ class HomePage extends React.Component{
     }
 
     return (
-        <>
+        <div className={styles.root}>
+          {/* mobile view */}
+          {window.matchMedia("(max-width: 740px)").matches && (
+            <div className={styles.header}>
+              <Header/>
+            </div>
+          )}
+
           <div className={styles.featurePictureContainer}> 
             <PictureFilter>
-              <div className={styles.header}>
+            {/* laptop view */}
+            {window.matchMedia("(min-width: 741px)").matches && (
+                <div className={styles.header}>
                 <Header/>
-              </div> 
+              </div>
+            )}
 
               <PictureText padding='1.5rem' className={styles.heroText}>
                 <div>We build a future where dreamers</div>
@@ -172,7 +182,7 @@ class HomePage extends React.Component{
           </div>
 
           <Footer/>
-        </>
+        </div>
     );
   }
 }

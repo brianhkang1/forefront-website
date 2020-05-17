@@ -1,3 +1,14 @@
+/* laptop */
+@media (min-width: 741px) {
+  .heroText {
+    position: absolute;
+    top: 25vh;
+    left: 5vw;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
 /* mobile */
 @media (max-width: 740px) {
   .header {
@@ -6,7 +17,18 @@
     left: 0;
     z-index: 999;
   }
+
+  .heroText {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    width: 55vw;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
+
+/* ************************************* */
 
 .featurePictureContainer { 
   height: 100vh;
@@ -28,12 +50,4 @@
   background-size: cover;
   will-change: transform;
   z-index: -1;
-}
-
-.heroText {
-  position: absolute;
-  top: 25vh;
-  left: 5vw;
-  font-size: 3rem;
-  line-height: 4rem;
 }

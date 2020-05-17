@@ -1,17 +1,39 @@
-.root {
-  width: 100vw;
-  padding: 3rem 0 3rem 1.5rem;
+/* laptop */
+@media (min-width: 741px) {
+  .root {
+    width: 100vw;
+    padding: 3rem 10vw 3rem 1.5rem;
+  }
+
+  .title {
+    padding-bottom: 1.75rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--base-text);
+  }
 }
 
-.title {
-  padding-bottom: 1.75rem;
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--base-text);
+/* mobile */
+@media (max-width: 740px) {
+  .root {
+    width: 100vw;
+    padding: 3rem 8vw;
+    text-align: center;
+  }
+
+  .title {
+    padding-bottom: 1.75rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    color: var(--base-text);
+  }
 }
+
+/* ************************************* */
 
 .description {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2.25rem;
   color: gray;
 }

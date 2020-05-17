@@ -191,11 +191,21 @@ class OurWorkPage extends React.Component{
   render(){
     return (
       <div className={styles.root}>
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+          <div className={styles.header}>
+            <Header/>
+          </div>
+        )}
+
         <div className={styles.featurePictureContainer}>
           <PictureFilter>
-            <div className={styles.header}>
-              <Header/>
-            </div>    
+            {/* laptop view */}
+            {window.matchMedia("(min-width: 741px)").matches && (
+              <div className={styles.header}>
+                <Header/>
+              </div>
+            )}   
         
             <PictureText className={styles.heroText}>
               Your donations are invested into building sustainable, community-owned and led initiatives. 

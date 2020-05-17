@@ -1,3 +1,61 @@
+/* laptop */
+@media (min-width: 741px) {
+  .heroTextAndWidgetContainer {
+    position: absolute;
+    top: 24vh;
+    right: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widgetContainer {
+    width: 30vw;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+
+  .blurb {
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .iconItem {
+    padding: 5rem 0;
+  }
+
+  .whyBeMonthlyDonorContainer {
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    width: 100vw;
+    padding: 0 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .testimonialPic {
+    width: 30vw;
+    border-radius: 2rem;
+  }
+
+  .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] {
+    right: -6rem;
+  }
+  
+  .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
+    left: -6rem;
+  }
+}
+
 /* mobile */
 @media (max-width: 740px) {
   .header {
@@ -6,7 +64,57 @@
     left: 0;
     z-index: 999;
   }
+
+  .heroTextAndWidgetContainer {
+    position: absolute;
+    top: 20vh;
+    right: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widgetContainer {
+    width: 100vw;
+    padding: 1.5rem;
+  }
+
+  .blurb {
+    padding: 3rem 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .iconItem {
+    padding: 3rem 0;
+  }
+
+  .whyBeMonthlyDonorContainer {
+    margin-bottom: 2rem;
+    width: 100vw;
+    padding: 0 12rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .whyBeMonthlyDonorText {
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .testimonialPic {
+    width: 100vw;
+  }
 }
+
+/* ********************************************* */
 
 .FeaturePictureContainer { 
   background-image: url("../../../Images/Hero/BuildersPage.jpg");
@@ -19,15 +127,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.heroTextAndWidgetContainer {
-  position: absolute;
-  top: 24vh;
-  right: 4vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .heroText {
@@ -45,25 +144,7 @@
   margin-bottom: 4rem;
 }
 
-.widgetContainer {
-  width: 30vw;
-  background-color: rgba(255,255,255,0.8);
-  border-radius: 1rem;
-  padding: 1.5rem;
-}
-
-.blurb {
-  padding: 5rem 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
-}
-
 .iconItem {
-  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,7 +160,8 @@
 
 .iconDescription {
   font-size: 1.25rem;
-  padding-top: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 1rem 0 1rem;
 }
 
 .icons{
@@ -88,22 +170,11 @@
   justify-content: center;
 }
 
-.whyBeMonthlyDonorContainer {
-  margin-top: -3rem;
-  margin-bottom: 2rem;
-  width: 100vw;
-  padding: 0 12rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 .whyBeMonthlyDonorItem {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .carouselContainer {
@@ -118,10 +189,8 @@
 }
 
 .testimonialPic {
-  width: 30vw;
   height: 80vh;
   object-fit: cover;
-  border-radius: 2rem;
 }
 
 .testimonialTextContainer {
@@ -134,20 +203,13 @@
 
 .testimonialText {
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
 .bold {
   font-weight: bold;
-}
-
-.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] {
-  right: -6rem;
-}
-
-.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
-  left: -6rem;
 }
 
 .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] button,

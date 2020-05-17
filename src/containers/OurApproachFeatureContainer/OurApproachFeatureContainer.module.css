@@ -1,66 +1,120 @@
-.optionButtons {
-  padding: 0 20rem;
-  display: flex;
-  justify-content: space-between;
+/* laptop */
+@media (min-width: 741px) {
+  .optionButtons {
+    padding: 0 20rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttonContainer, .selectedButtonContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+  }
+
+  .iconContainer {
+    padding-left: 0.5rem;
+  }
+
+  .slides {
+    transition-duration: 500ms;
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .slideContainer {
+    flex-shrink: 0;
+    padding: 2rem 0;
+    display: flex;
+  }
+
+  .descriptionText {
+    padding: 0 4rem;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2.5rem;
+  }
+  
+  .descriptionPicture {
+    width: 45vw;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .descriptionTextContainer {
+    width: 55vw;
+  }
 }
 
-.buttonContainer {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3rem;
+/* mobile */
+@media (max-width: 740px) {
+  .optionButtons {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .buttonContainer, .selectedButtonContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slides {
+    transition-duration: 500ms;
+    display: flex;
+    width: 100vw;
+  }
+
+  .slideContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80vh
+  }
+
+  .descriptionText {
+    height: 50vh;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .descriptionPicture {
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .descriptionTextContainer {
+    width: 100vw;
+  }
 }
 
-.selectedButtonContainer {
-  border-radius: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.iconContainer {
-  padding-left: 0.5rem;
-}
+/* ************************************* */
 
 .buttonTitle {
   font-size: 1.25rem;
   padding-right: 1.5rem;
 }
 
-.slides {
-  transition-duration: 500ms;
-  display: flex;
-  width: 100vw;
-  height: 60vh;
-}
-
-.slideContainer {
-  flex-shrink: 0;
-  padding: 2rem 0;
-  display: flex;
-}
-
 .descriptionTextContainer {
-  width: 55vw;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;;
-}
-
-.descriptionText {
-  padding: 0 4rem;
-  font-size: 1.5rem;
-  color: white;
-  line-height: 2.5rem;
-}
-
-.descriptionPicture {
-  width: 45vw;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
 }

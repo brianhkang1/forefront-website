@@ -106,8 +106,8 @@ class AboutUsPage extends React.Component{
       <div className={styles.root}>
         {/* mobile view */}
         {window.matchMedia("(max-width: 740px)").matches && (
-           <div className={styles.header}>
-           <Header/>
+          <div className={styles.header}>
+            <Header/>
          </div>
         )}
 
