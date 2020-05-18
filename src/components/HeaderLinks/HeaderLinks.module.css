@@ -35,7 +35,7 @@
   }
   
   .link:not(:last-of-type) {
-    border-top: thin solid black;
+    border-top: 1px solid var(--light-gray-color);
   }
   
   .link > a {

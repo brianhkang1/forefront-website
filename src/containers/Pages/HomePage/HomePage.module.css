@@ -1,27 +1,102 @@
 /* laptop */
 @media (min-width: 741px) {  
   .heroText {
+    font-size: 4rem;
+    line-height: 4.5rem;
     bottom: 20vh;
     left: 5vw;
+  }
+
+  .ourImpactContainer, .getInvolvedContainer {
+    padding: 2rem 0;
+  }
+
+  .ourImpactItemContainer {
+    padding: 0 8rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ourImpactText {
+    padding-top: 2.75rem;
+    width: 18rem;
+  }
+
+  .ourImpactItem:not(:last-of-type) {
+    margin-right: 4rem;
+  }
+
+  .ourImpactItem {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .getInvolvedItemContainer {
+    padding: 0 14rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .getInvolvedImage {
+    border-radius: 1rem;
   }
 }
 
 /* mobile */
 @media (max-width: 740px) {
-  .heroTextDynamic{
-    font-size: 3rem;
-    top: 30%;
-    left: 20%;
-    line-height: 6rem
-  }
-
   .header {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
   }
+  
+  .heroText{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    bottom: 10vh;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .ourImpactItemContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourImpactText {
+    padding-top: 2.75rem;
+    width: 75vw;
+  }
+
+  .ourImpactItem {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .getInvolvedItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .getInvolvedImage {
+    margin-bottom: 1.25rem;
+    border-radius: 1rem;
+  }
 }
+
+
+/* *********************************** */
 
 .featurePictureContainer { 
   width: 100vw;
@@ -46,11 +121,9 @@
 }
 
 .heroText {
-  font-size: 4rem;
   position: absolute;
   background-color: white;
   opacity: 0.8;
-  line-height: 4.5rem;
 }
 
 .blurb {
@@ -65,28 +138,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.ourImpactContainer, .getInvolvedContainer {
-  padding: 2rem 0;
-}
-
-.ourImpactItemContainer {
-  padding: 0 8rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.ourImpactItem {
-  margin: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.ourImpactItem:not(:last-of-type) {
-  margin-right: 4rem;
 }
 
 .ourImpactImage {
@@ -108,27 +159,11 @@
   box-shadow: 0px 2px 2px gray;
 }
 
-.ourImpactText {
-  padding-top: 2.75rem;
-  width: 18rem;
-}
-
 .ourImpactType {
   font-weight: 600;
   font-size: 1rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
   color: var(--gray-color);
-}
-
-.getInvolvedItemContainer {
-  padding: 0 14rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-}
-
-.getInvolvedImage {
-  border-radius: 1rem;
 }
 
 .getInvolvedText {

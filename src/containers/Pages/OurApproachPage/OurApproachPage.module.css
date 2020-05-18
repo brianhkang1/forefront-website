@@ -20,9 +20,9 @@
 
   .heroText {
     position: absolute;
-    top: 20vh;
-    left: 5vw;
-    width: 55vw;
+    bottom: 5vh;
+    left: 0;
+    width: 100vw;
     font-size: 2rem;
     line-height: 2.5rem;
   }

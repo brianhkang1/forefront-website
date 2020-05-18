@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './HowToGetInvolvedItem.module.css';
+import styles from './YourResponseItem.module.css';
 import Button from '../Button';
 import PictureFilter from '../PictureFilter';
 
@@ -10,7 +10,7 @@ type Props = {
   link: string;
 }
 
-class HowToGetInvolvedItem extends React.Component<Props> {
+class YourResponseItem extends React.Component<Props> {
   
   render(){
     const { title, description, backgroundImage, link } = this.props;
@@ -36,4 +36,4 @@ class HowToGetInvolvedItem extends React.Component<Props> {
   }
 }
 
-export default HowToGetInvolvedItem;
+export default YourResponseItem;

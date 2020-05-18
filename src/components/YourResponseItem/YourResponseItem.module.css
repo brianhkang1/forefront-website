@@ -4,7 +4,7 @@
     height: 50vh;
     width: 20vw;
     margin: 0 3vw 0 3vw;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
   
   .container {
@@ -14,10 +14,6 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 3rem;
-  }
-
-  .pictureFilter {
-    border-radius: 10px;
   }
 
   .description {
@@ -40,8 +36,9 @@
 @media (max-width: 740px) {
   .root {
     height: 60vh;
-    width: 100vw;
-    margin: 0 0 2rem 0;
+    width: 90vw;
+    margin: 0 0 2vh 0;
+    border-radius: 1rem;
   }
   
   .container {
@@ -72,3 +69,7 @@
 }
 
 /******************************************************************/
+
+.pictureFilter {
+  border-radius: 1rem;
+}

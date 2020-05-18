@@ -156,14 +156,16 @@ const OurTeamContainer: React.FC = () => {
 
       <div className={styles.teamMembersContainer}>
         {TeamMembers.map((member: Member) => (
-          <PictureWithHoverText 
-            title={member.title}
-            description={member.description}
-            image={member.image}
-            className={styles.teamMemberPicture}
-            titleClassName={styles.teamMemberPictureTitle}
-            descriptionClassName={styles.teamMemberPictureDescription}
-          />
+          <div className={styles.teamMemberPictureContainer}>
+            <PictureWithHoverText 
+              title={member.title}
+              description={member.description}
+              image={member.image}
+              className={styles.teamMemberPicture}
+              titleClassName={styles.teamMemberPictureTitle}
+              descriptionClassName={styles.teamMemberPictureDescription}
+            />
+          </div>
         ))}
       </div>
 

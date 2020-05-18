@@ -122,7 +122,8 @@ class HomePage extends React.Component{
             <Picture
               src={TheirVisionIsOurMission}
               width='80vw'
-              height='35vh'
+              height='40vh'
+              backgroundSize='contain'
             />
           </div>
 
@@ -140,6 +141,8 @@ class HomePage extends React.Component{
                     className={styles.ourImpactImage} 
                     width='18rem' 
                     height='18rem'
+                    mobileWidth='70vw'
+                    mobileHeight='70vw'
                   >
                     <div className={styles.ourImpactIcon}>
                       <Picture 
@@ -172,6 +175,8 @@ class HomePage extends React.Component{
                   src={getInvolvedItem.image}
                   width='22rem' 
                   height='25rem'
+                  mobileWidth='90vw'
+                  mobileHeight='40vh'
                 >
                   <PictureFilter className={styles.getInvolvedImage}>
                     {renderPictureText(getInvolvedItem)}

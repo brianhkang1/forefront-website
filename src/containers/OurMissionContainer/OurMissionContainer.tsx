@@ -14,6 +14,8 @@ const OurMissionContainer = () => {
             src={OurMissionPicture1}
             width='40vw'
             height='100%'
+            mobileWidth='95vw'
+            mobileHeight='40vh'
           />
 
           <div className={styles.textContainer}>
@@ -29,19 +31,21 @@ const OurMissionContainer = () => {
           </div>
         </div>
 
-        <div className={styles.container}>       
+        <div className={`${styles.container} ${styles.reverseContainerDirection}`}>       
+          <Picture
+            src={OurMissionPicture2}
+            width='40vw'
+            height='100%'
+            mobileWidth='95vw'
+            mobileHeight='40vh'
+          />
+
           <div className={styles.textContainer}>
             <div>
              That's why we work side by side with locals to provide basic life necessities, resources, 
              and training that create <span className={styles.bold}>sustainable</span> change for the individual, families, and communities.
             </div>
           </div>
-
-          <Picture
-            src={OurMissionPicture2}
-            width='40vw'
-            height='100%'
-          />
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import HowToGetInvolvedItem from '../../components/HowToGetInvolvedItem';
+import YourResponseItem from '../../components/YourResponseItem';
 import Title from '../../components/Title';
 import BackgroundImage1 from '../../Images/Portrait/1.jpg';
 import BackgroundImage2 from '../../Images/Portrait/5.jpg';
@@ -49,7 +49,7 @@ class YourResponseContainer extends React.Component {
 
         <div className={styles.howToGetInvolvedItemsContainer}>
           {HowToGetInvolvedItems.map((item: HowToGetInvolvedItemType, index: number) => (
-            <HowToGetInvolvedItem 
+            <YourResponseItem 
               key={`HowToGetInvolvedItem${index+1}`}
               title={item.title}
               description={item.description}
