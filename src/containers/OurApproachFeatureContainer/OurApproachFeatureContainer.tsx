@@ -117,7 +117,6 @@ const OurApproachFeatureContainer = () => {
           className={`${selectedApproach === approach.title ? styles.selectedButtonContainer : styles.buttonContainer}`} 
           onClick={() => setSelectedApproach(approach.title)}
           style={{
-            // border: `thin solid ${approach.color}`,
             boxShadow: `
               ${selectedApproach === approach.title ? 'inset' : ''} 
               2px 

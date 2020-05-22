@@ -7,8 +7,8 @@
     left: 5vw;
   }
 
-  .ourImpactContainer, .getInvolvedContainer {
-    padding: 2rem 0;
+  .getInvolvedContainer {
+    padding-bottom: 2rem;
   }
 
   .ourImpactItemContainer {
@@ -20,6 +20,7 @@
   .ourImpactText {
     padding-top: 2.75rem;
     width: 18rem;
+    font-size: 1.25rem
   }
 
   .ourImpactItem:not(:last-of-type) {
@@ -58,10 +59,9 @@
   .heroText{
     font-size: 2.5rem;
     line-height: 3rem;
-    bottom: 10vh;
+    bottom: 0;
     left: 0;
     width: 100vw;
-    text-align: center;
   }
 
   .ourImpactItemContainer {
@@ -72,6 +72,7 @@
   .ourImpactText {
     padding-top: 2.75rem;
     width: 75vw;
+    font-size: 1.25rem
   }
 
   .ourImpactItem {
@@ -181,4 +182,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.greenBold {
+  color: var(--main-color);
+  font-weight: bold;
 }

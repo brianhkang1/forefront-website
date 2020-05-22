@@ -5,10 +5,10 @@ import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
 import Picture from '../../../components/Picture';
 import PictureText from '../../../components/PictureText';
+import Title from '../../../components/Title';
 
 import TestimonialAnil from '../../../Images/BuildersPage/Testimonial/Anil.jpg';
 import TestimonialBoshanam from '../../../Images/BuildersPage/Testimonial/Boshanam.jpg';
-import TestimonialBujji from '../../../Images/BuildersPage/Testimonial/Bujji.jpg';
 import TestimonialMani from '../../../Images/BuildersPage/Testimonial/Mani.jpg';
 import TestimonialTimothy from '../../../Images/BuildersPage/Testimonial/Timothy.jpg';
 import TestimonialVinod from '../../../Images/BuildersPage/Testimonial/Vinod.jpg';
@@ -55,27 +55,22 @@ const Testimonials = [
   {
     name: 'Anil',
     image: TestimonialAnil,
-    description: 'We didn’t study but somebody else will. This is for their future.'
+    description: 'I didn’t have a chance to study but through this school, children will now be able to. This is for their future.'
   },
   {
     name: 'Timothy',
     image: TestimonialTimothy,
-    description: 'I like to work on building the school as it’s going to help others.'
+    description: 'I like to help build the school because I know it will help many people.'
   },
   {
     name: 'Vinod',
     image: TestimonialVinod,
-    description: 'I’m happy to be a part of children’s education, I can’t even sign my own name. I hope this helps kids get good jobs unlike me.'
+    description: 'I can’t even sign my own name. So I’m happy to impact children’s education. I hope this helps kids get good jobs. '
   },
   {
     name: 'Boshanam',
     image: TestimonialBoshanam,
-    description: 'Because of the school, the future of little kids is going to change. There’s been no development on this side of the village and I’m glad the school is going  to change that.'
-  },
-  {
-    name: 'Bujji',
-    image: TestimonialBujji,
-    description: 'I hope my grandkids can study here.'
+    description: 'Because of the school, the future of many children will be brighter. There’s been no development on this side of the village and I’m glad the school is going to change our community. '
   },
   {
     name: 'Mani',
@@ -110,13 +105,13 @@ class BuildersPage extends React.Component{
   render(){
     return (
       <div>
-        <div className={styles.FeaturePictureContainer}>
+        <div className={styles.featurePictureContainer}>
           <PictureFilter>
             <div className={styles.header}>
               <Header/>
             </div>
 
-            <div className={styles.heroTextAndWidgetContainer}>
+            <div className={styles.heroTextContainer}>
               <div className={styles.heroText}>
                 <PictureText padding='1rem 1.5rem'>
                   Builders: an unstoppable group of monthly givers
@@ -145,22 +140,15 @@ class BuildersPage extends React.Component{
             </div>
           </PictureFilter>
         </div>
-        
-        {/* mobile view */}
-        {window.matchMedia("(max-width: 740px)").matches && (
-          <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
-            <div 
-              data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-              id="give-lively-widget" 
-              className="gl-branded-donation-widget"
-            />
-          </div>
-        )}
 
-        <div className={styles.blurb}>
-          Become a Builder and join other passionate and dedicated group of givers 
-          to build up local community leaders that will multiply 
-          into a global network of change. Your monthly giving equips communities with the necessities to thrive:
+        <div className={styles.titleContainer}>
+          <Title
+            title='Become a Builder'
+            description='Join other passionate and dedicated group of givers 
+            to build up local community leaders that will multiply 
+            into a global network of change. Your monthly giving 
+            equips communities with the necessities to thrive:'
+          />
         </div>
 
         <div className={styles.iconsContainer}>
@@ -178,13 +166,28 @@ class BuildersPage extends React.Component{
             ))}
         </div>
 
-        <div className={styles.blurb}>
-          You too, along with many other givers, can also make impact. 
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+          <>
+          <Title title='Make a Donation'/>
+          <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
+            <div 
+              data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+              id="give-lively-widget" 
+              className="gl-branded-donation-widget"
+            />
+          </div>
+          </>
+        )}
+        
+        <Title
+          title='Make a Ripple Effect of Change'
+          description="You too, along with many other givers, can also make impact. 
           It's everyday people who through their own act of generosity, 
           makes ripple effect positively changing people's lives. 
           You can also do the same. Together, we will leave a legacy 
-          in this world.
-        </div>
+          in this world."
+        />
 
         <Picture
           src={RandomPic}
@@ -192,13 +195,13 @@ class BuildersPage extends React.Component{
           height='60vh'
         />
 
-        <div className={styles.blurb}>
-          Making change doesn't require you to have credentials 
-          but just a giving kind heart. 
-          It's everyday people who are everyday heroes. 
-          So we are bringing everyday heroes together to make 
-          everyday impact. Why be a builder?
-        </div>
+        <Title
+          title='Calling Everyday Heroes'
+          description="Making change doesn't require you to have credentials 
+          but just a giving kind heart. It's everyday people who are everyday heroes. 
+          So we are bringing everyday heroes together to make everyday impact. 
+          Why be a builder?"
+        />
 
         <div className={styles.whyBeMonthlyDonorContainer}>
           {WhyBeABuilder.map(whyBeBuilderItem => (
@@ -215,6 +218,10 @@ class BuildersPage extends React.Component{
             </div>
           ))}
         </div>
+
+        <Title
+          title='Meet the People on the Ground'
+        />
 
         <div className={styles.carouselContainer}>
           <Carousel

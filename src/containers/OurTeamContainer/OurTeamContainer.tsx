@@ -39,7 +39,7 @@ const TeamMembers = [
   {
     title: "MICHELLE CHANG",
     image: MichelleChangPic,
-    description: "Michelle is our Chief Development Officer(CDO). Previously, she was a 2016-2018 Teach for America Corp member and also worked in Sales and Trading at J.P. Morgan, NYC. Michelle holds a B.S. in Business Administration from Georgetown University and a M.S. in Secondary Education from Johns Hopkins University."
+    description: "Michelle is our Chief Development Officer (CDO). She leads our finance, fundraising, donors relations, and partnership efforts. Michelle holds a B.S. in Business Administration from Georgetown University and a M.S. in Secondary Education from Johns Hopkins University. In her free time, Michelle enjoys teaching children, hiking, piano, and ballet."
   },
   {
     title: "CHANWOOK PARK",
@@ -64,12 +64,12 @@ const TeamMembers = [
   {
     title: "ELENA KIM",
     image: ElenaKimPic,
-    description: "Elena graduated with her bachelors from Rutgers University for political science. She (recently) received her Masters in Elementary Education from Rutgers Graduate School of Education. Elena does freelance photography & enjoys traveling with friends and family. She is part of our education team!"
+    description: "Elena graduated with her bachelors from Rutgers University for political science. She received her Masters in Elementary Education from Rutgers Graduate School of Education in May 2019. Elena does freelance photography & enjoys traveling with friends and family. She is part of our education team!"
   },
   {
     title: "EUNICE LIM",
     image: EuniceLimPic,
-    description: "Eunice will receive her degree in Communications with a specialization in Public Relations. She has been a part of the FOREFRONT family since 2016, working on the marketing team where she has been focused on managing our social media channels and increasing our reach."
+    description: "Eunice started out as an intern in 2016 while attending Rutgers University. She has since transitioned into a full time member working on the marketing team to strategize and execute digital campaigns on our various social platforms. Anyone that knows Eunice knows that she is obsessed with noodles."
   },
   {
     title: "JEFF LEVY",

@@ -34,12 +34,14 @@ class OurApproachPage extends React.Component{
             <PictureText className={styles.heroText} padding='1rem 2rem'>
             {window.matchMedia("(min-width: 741px)").matches ? (
               <>
+              <div className={styles.boldHeroText}>Our Approach</div>
               <div>Breaking barriers, no matter</div>
               <div>how small, has the power to</div>
               <div>change a community's course.</div>
               </>
             ) : (
               <div>
+                <div className={styles.boldHeroText}>Our Approach</div>
                 Breaking barriers, no matter how small, has the power to
                 change a community's course.
               </div>

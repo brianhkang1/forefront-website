@@ -72,11 +72,12 @@
   }
 
   .teamMemberPicture {
-    width: 90vw;
+    width: 91vw;
     height: 50vh;
     -ms-background-position-y: top;
     background-position: center top;
     margin-top: 2vh;
+    border-radius: 1rem;
   }
 
   .teamMemberPictureTitle {

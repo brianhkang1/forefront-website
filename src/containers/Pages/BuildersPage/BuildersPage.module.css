@@ -1,6 +1,10 @@
 /* laptop */
 @media (min-width: 741px) {
-  .heroTextAndWidgetContainer {
+  .featurePictureContainer { 
+    background-position: center;
+  }
+
+  .heroTextContainer {
     position: absolute;
     top: 24vh;
     right: 4vw;
@@ -9,21 +13,18 @@
     align-items: center;
   }
 
+  .heroText, .hiddenHeroText {
+    width: 45vw;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin-bottom: 4rem;
+  }
+
   .widgetContainer {
     width: 30vw;
     background-color: rgba(255,255,255,0.8);
     border-radius: 1rem;
     padding: 1.5rem;
-  }
-
-  .blurb {
-    padding: 5rem 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: center;
   }
 
   .iconItem {
@@ -43,7 +44,7 @@
   }
 
   .testimonialPic {
-    width: 30vw;
+    width: 85vw;
     border-radius: 2rem;
   }
 
@@ -58,6 +59,11 @@
 
 /* mobile */
 @media (max-width: 740px) {
+  .featurePictureContainer {
+    -ms-background-position-x: 20%;
+    background-position-x: 20%;
+  }
+
   .header {
     position: fixed;
     top: 0;
@@ -65,28 +71,26 @@
     z-index: 999;
   }
 
-  .heroTextAndWidgetContainer {
+  .heroTextContainer {
     position: absolute;
-    top: 20vh;
-    right: 17vw;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .heroText, .hiddenHeroText {
+    width: 100vw;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
   .widgetContainer {
     width: 100vw;
     padding: 1.5rem;
-  }
-
-  .blurb {
-    padding: 3rem 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    text-align: center;
+    margin-top: -3rem;
   }
 
   .iconItem {
@@ -116,7 +120,7 @@
 
 /* ********************************************* */
 
-.FeaturePictureContainer { 
+.featurePictureContainer { 
   background-image: url("../../../Images/Hero/BuildersPage.jpg");
   height: 100vh;
   width: 100vw;
@@ -124,24 +128,13 @@
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.heroText {
-  width: 45vw;
-  font-size: 2rem;
-  line-height: 2.75rem;
 }
 
 .hiddenHeroText {
   opacity: 0;
   padding: 1rem 1.5rem;
-  width: 45vw;
-  font-size: 2rem;
-  line-height: 2.75rem;
-  margin-bottom: 4rem;
 }
 
 .iconItem {
@@ -181,7 +174,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 }
 
 .testimonialPicContainer {

@@ -23,7 +23,7 @@ const OurMissionContainer = () => {
               We are more than a charity.
             </div> 
             <div>
-              We are people-powered. To become a changemaker starts with an opportunity. 
+              We are people-powered. To become a changemaker, it starts with an opportunity. 
               With just one opportunity, imagine how many leaders will be raised and communities changed. 
               So we believe in their vision and stand with all the changemakers to create a future 
               for what it can be.

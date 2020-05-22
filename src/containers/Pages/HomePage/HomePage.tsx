@@ -26,25 +26,25 @@ const OurImpact = [
     type: 'WATER',
     image: GetInvolvedPic1,
     icon: WaterIcon,
-    text: '31 water wells; 94% hand-washing rate (up from 39%)'
+    text: <span><span className={styles.greenBold}>31</span> water wells<br/><span className={styles.greenBold}>94%</span> hand-washing rate<br/>(up from 39%)</span>
   },
   {
     type: 'EDUCATION',
     image: GetInvolvedPic1,
     icon: EducationIcon,
-    text: '7:1 student to teacher ratio at our After School program'
+    text: <span><span className={styles.greenBold}>7:1</span> student to teacher ratio at our After School program</span>
   },
   {
     type: 'MEDICAL',
     image: GetInvolvedPic1,
     icon: MedicalIcon,
-    text: '5 health and wellness workshops'
+    text: <span><span className={styles.greenBold}>5</span> health and wellness workshops</span>
   },
   {
     type: 'EMPOWERMENT',
     image: GetInvolvedPic1,
     icon: EmpowermentIcon,
-    text: 'Soap business run by local women'
+    text: <span>Soap business run by local women</span>
   },
 ]
 
@@ -131,7 +131,11 @@ class HomePage extends React.Component{
           <FourPillarsContainer/>
 
           <div className={styles.ourImpactContainer}>
-            <Title title='Our Impact'/>
+            <Title 
+              title='Our Impact'
+              description='We are passionate and serious about making changemakers.  
+              That’s why 100% of your donation goes to our efforts and impact.'
+            />
             <div className={styles.ourImpactItemContainer}>
               {OurImpact.map((ourImpactItem, index) => (
                 <div className={styles.ourImpactItem}>
@@ -167,7 +171,10 @@ class HomePage extends React.Component{
           </div>
 
           <div className={styles.getInvolvedContainer}>
-            <Title title='How You Can Get Involved'/>
+            <Title 
+              title='How You Can Get Involved'
+              description='Take action today and enable future leaders to make local-to-local impact.'
+            />
             <div className={styles.getInvolvedItemContainer}>
               {GetInvolved.map(getInvolvedItem => (
                 <Picture
