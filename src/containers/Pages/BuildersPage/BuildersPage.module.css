@@ -32,7 +32,7 @@
   }
 
   .whyBeMonthlyDonorContainer {
-    margin-top: -3rem;
+    margin-top: -1rem;
     margin-bottom: 2rem;
     width: 100vw;
     padding: 0 12rem;
@@ -209,18 +209,10 @@
 .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] button:hover {
   padding: 1.25rem;
   top: calc(50% - 40px) !important;
-  /* background-color: white;
-  box-shadow: 2px 0px 2px gray;
-  color: var(--main-color);
-  opacity: 1; */
 }
 
 .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] button,
 .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] button:hover {
   padding: 1.25rem;
   top: calc(50% - 40px) !important;
-  /* background-color: white;
-  box-shadow: -2px 0px 2px gray;
-  color: var(--main-color);
-  opacity: 1; */
 }

@@ -51,14 +51,16 @@ class OurWorkVisual extends React.Component<Props, State> {
             <div 
               key={`icon-${item.name}`}
               onClick={() => this.onIconClick(idx)}
-              style={{
-                opacity: selectedIndex === idx ? '1' : '0.2'
-              }}
             >
-              <div className={styles.icon}>
+              <div 
+                className={styles.icon}
+                style={{
+                  boxShadow: `${selectedIndex === idx ? 'inset' : ''} 1px 1px 8px black`,
+                  backgroundColor
+                }}
+              >
                 <Picture
-                  src={selectedIndex === idx ? item.selectedIcon : item.icon}
-                  // {item.icon}
+                  src={item.icon}
                   width='4rem'
                   height='4rem'
                   backgroundSize='contain'

@@ -11,6 +11,7 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
+import Popup from '../../../components/Popup';
 
 import GetInvolvedPic1 from '../../../Images/HomePage/GetInvolved1.jpg';
 import GetInvolvedPic2 from '../../../Images/HomePage/GetInvolved2.jpg';
@@ -26,7 +27,13 @@ const OurImpact = [
     type: 'WATER',
     image: GetInvolvedPic1,
     icon: WaterIcon,
-    text: <span><span className={styles.greenBold}>31</span> water wells<br/><span className={styles.greenBold}>94%</span> hand-washing rate<br/>(up from 39%)</span>
+    text: (
+      <span>
+        <span className={styles.greenBold}>31</span> water wells<br/>
+        <span className={styles.greenBold}>94%</span> hand-washing rate
+        <Popup content='up from 39%'/>
+        </span>
+      )
   },
   {
     type: 'EDUCATION',

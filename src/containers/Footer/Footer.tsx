@@ -10,7 +10,7 @@ class Footer extends React.Component{
         <div className={styles.leftAlign}>
           <div className={styles.emailFormContainer}>
             <div className={styles.title}>
-              Get Email Updates To Stay Up To Date
+              Get Email Updates
             </div>
             <EmailForm/>
           </div>

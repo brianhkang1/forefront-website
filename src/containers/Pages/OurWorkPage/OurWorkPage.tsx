@@ -9,6 +9,7 @@ import StatisticsVisual from '../../../components/StatisticsVisual';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
+import Spacer from '../../../components/Spacer';
 
 import HatIcon from '../../../Images/OurWorkPage/Hat.png';
 import HatShadowIcon from '../../../Images/OurWorkPage/HatShadow.png';
@@ -225,7 +226,8 @@ class OurWorkPage extends React.Component{
           backgroundColor={'var(--yellow-color)'}
           visualData={schoolVisualData}
         />
-
+        
+        <Spacer height='2.5rem'/>
         <StatisticsVisual/>
 
         <Map/>

@@ -220,7 +220,8 @@ class BuildersPage extends React.Component{
         </div>
 
         <Title
-          title='Meet the People on the Ground'
+          title='Meet the People on the Ground...'
+          description='who are making this all possible. They are everyday heroes on the ground who believe in partnering with us to make a brighter future.'
         />
 
         <div className={styles.carouselContainer}>

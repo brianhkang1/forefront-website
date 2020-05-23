@@ -2,19 +2,19 @@
 @media (min-width: 741px) {
   .root {
     width: 100vw;
-    padding: 4rem 10vw 3rem 1.5rem;
+    padding: 4rem 10rem 3rem 2rem;
   }
 
   .title {
-    padding-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
     font-size: 3rem;
     font-weight: bold;
     color: var(--base-text);
   }
 
   .description {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: var(--gray-color);
   }
 }
