@@ -81,7 +81,9 @@ class OurWorkVisual extends React.Component<Props, State> {
             </div>
           </div>
 
-          {visualData[selectedIndex].chart}
+          <div className={styles.chart}>
+            {visualData[selectedIndex].chart}
+          </div>
         </div>
 
         <div className={styles.description}>

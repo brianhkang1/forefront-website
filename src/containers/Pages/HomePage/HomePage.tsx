@@ -105,7 +105,7 @@ class HomePage extends React.Component{
             </div>
           )}
 
-          <div className={styles.featurePictureContainer}> 
+          <div className={styles.heroPictureContainer}> 
             <PictureFilter>
             {/* laptop view */}
             {window.matchMedia("(min-width: 741px)").matches && (

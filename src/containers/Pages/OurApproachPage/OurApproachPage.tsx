@@ -21,7 +21,7 @@ class OurApproachPage extends React.Component{
           <Header/>
         </div>
         )}
-        <div className={styles.featurePictureContainer}>
+        <div className={styles.heroPictureContainer}>
 
           <PictureFilter>
             {/* laptop view */}

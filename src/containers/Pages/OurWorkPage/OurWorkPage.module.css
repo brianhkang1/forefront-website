@@ -1,5 +1,9 @@
 /* laptop */
 @media (min-width: 741px) {
+  .heroPictureContainer, .heroPictureContainer::before { 
+    height: 100vh;
+  }
+
   .heroText {
     top: 30vh;
     left: 17vw;
@@ -19,6 +23,10 @@
 
 /* mobile */
 @media (max-width: 740px) {
+  .heroPictureContainer, .heroPictureContainer::before { 
+    height: 87vh;
+  }
+
   .header {
     position: fixed;
     top: 0;
@@ -27,34 +35,31 @@
   }
 
   .boldHeroText {
-    text-align: center; 
     font-weight: bold; 
     font-size: 2.5rem; 
     margin-bottom: 0.5rem;
   }
 
   .heroText {
-    top: 35%;
-    left: 33%;
-    font-size: 3rem;
-    line-height: 4rem;
-    text-align: center;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 
-.featurePictureContainer {
-  height: 100vh;
+.heroPictureContainer {
   width: 100vw;
   position: relative; 
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.featurePictureContainer::before {
+.heroPictureContainer::before {
   pointer-events: none;
   content: ' ';
   position: fixed; 
   width: 100vw;
-  height: 100vh;
   top: 0;
   left: 0;
   background-color: white;

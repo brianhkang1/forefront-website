@@ -1,3 +1,85 @@
+/* laptop */
+@media (min-width: 741px) {
+  .chartContainer {
+    display: grid;
+    grid-template-columns: 33vw 55vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .bigNumber {
+    font-size: 8rem;
+    line-height: 9rem;
+    font-weight: bold;
+  }
+
+  .chartDescription {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 6rem;
+  }
+
+  .iconsContainer {
+    padding: 2rem 0;
+  }
+
+  .description {
+    padding: 0 3rem 3rem 3rem;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+  .root{
+    text-align: center;
+  }
+
+  .chartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .bigNumber {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+  }
+
+  .chartDescription {
+    color: white;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .chart {
+    width: 90vw;
+    margin-right: 3rem;
+  }
+
+  .iconsContainer {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .description {
+    padding: 0 1.5rem 2rem 1.5rem;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* ******************************* */
+
 .root {
   display: flex;
   flex-direction: column;
@@ -5,47 +87,17 @@
   justify-content: center;
 }
 
-.chartContainer {
-  display: grid;
-  grid-template-columns: 33vw 55vw;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0 2rem 0;
-}
-
-.chartDescription {
-  color: white;
-  font-size: 2.5rem;
-  text-align: center;
-  white-space: nowrap;
-  margin-bottom: 6rem;
-}
-
-.bigNumber {
-  font-size: 8rem;
-  line-height: 9rem;
-  font-weight: bold;
-}
-
 .iconsContainer {
-  padding: 2rem 0;
   display: flex;
   justify-content: center;
 }
 
 .icon {
   cursor: pointer;
-  margin-right: 2rem;
+  margin: 0 1rem;
   border-radius: 50%;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.description {
-  padding: 0 3rem 3rem 3rem;
-  color: white;
-  font-size: 1.5rem;
-  line-height: 2rem;
 }

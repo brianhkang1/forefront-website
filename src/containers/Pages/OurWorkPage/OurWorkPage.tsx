@@ -199,7 +199,7 @@ class OurWorkPage extends React.Component{
           </div>
         )}
 
-        <div className={styles.featurePictureContainer}>
+        <div className={styles.heroPictureContainer}>
           <PictureFilter>
             {/* laptop view */}
             {window.matchMedia("(min-width: 741px)").matches && (
@@ -211,8 +211,8 @@ class OurWorkPage extends React.Component{
             <PictureText className={styles.heroText}>
               <div className={styles.boldHeroText}>Our Work</div>
               Your donations are invested into building sustainable, community-owned and led initiatives. 
-              Our team work closely with local partners to ensure that it is impactful, helps the people 
-              in most need, and that every dollar is well spent and accounted for.
+              Our team works closely with local partners to ensure that it helps the people 
+              in most need and that every dollar is well spent and accounted for.
             </PictureText>
           </PictureFilter>
         </div>

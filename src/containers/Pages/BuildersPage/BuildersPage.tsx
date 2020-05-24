@@ -104,12 +104,22 @@ class BuildersPage extends React.Component{
 
   render(){
     return (
-      <div>
-        <div className={styles.featurePictureContainer}>
+      <div className={styles.root}>
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+          <div className={styles.header}>
+            <Header/>
+          </div>
+        )}
+
+        <div className={styles.heroPictureContainer}>
           <PictureFilter>
-            <div className={styles.header}>
-              <Header/>
-            </div>
+            {/* laptop view */}
+            {window.matchMedia("(min-width: 741px)").matches && (
+              <div className={styles.header}>
+                <Header/>
+              </div>
+            )} 
 
             <div className={styles.heroTextContainer}>
               <div className={styles.heroText}>

@@ -14,6 +14,8 @@
   .textContainer {
     width: 57vw;
     padding: 0 5rem;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -32,6 +34,8 @@
     align-items: center;
     margin-top: 1vh;
     padding: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -41,8 +45,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.75rem;
-  line-height: 2.75rem;
 }
 
 .dramaticText {
