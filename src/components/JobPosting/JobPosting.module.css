@@ -35,8 +35,13 @@
   padding-bottom: 0.5rem;
 }
 
-.jobTitle > a, .jobTitle > a:hover {
+.jobTitle > a {
   font-weight: 600;
   text-decoration: none;
   color: var(--text-base);
+}
+
+.jobTitle > a:hover {
+  color: var(--text-base);
+  text-decoration: underline;
 }

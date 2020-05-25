@@ -132,7 +132,7 @@ const OurTeamContainer: React.FC = () => {
           </div>
 
           <div onClick={scrollToJobPostings} className={styles.mainPictureLink}>
-            Join The FOREFRONT Charity Team.
+            Join The FOREFRONT Charity Team
           </div>
 
           <div className={styles.mainPictureLink}>

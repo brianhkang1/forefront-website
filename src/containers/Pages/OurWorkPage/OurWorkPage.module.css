@@ -24,7 +24,7 @@
 /* mobile */
 @media (max-width: 740px) {
   .heroPictureContainer, .heroPictureContainer::before { 
-    height: 91vh;
+    height: 93vh;
   }
 
   .header {
