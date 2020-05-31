@@ -36,7 +36,7 @@ const Map = () => {
           position={latLong}
           ref={openPopup}
         >
-          <Popup>FOREFRONT school</Popup>
+          <Popup>FOREFRONT School</Popup>
         </Marker>
       </LeafletMap>
     </div>

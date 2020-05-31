@@ -9,7 +9,6 @@ import StatisticsVisual from '../../../components/StatisticsVisual';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
-import Spacer from '../../../components/Spacer';
 
 import HatIcon from '../../../Images/OurWorkPage/Hat.png';
 import HatShadowIcon from '../../../Images/OurWorkPage/HatShadow.png';
@@ -209,7 +208,6 @@ class OurWorkPage extends React.Component{
             )}   
         
             <PictureText className={styles.heroText}>
-              <div className={styles.boldHeroText}>Our Work</div>
               Your donations are invested into building sustainable, community-owned and led initiatives. 
               Our team works closely with local partners to ensure that it helps the people 
               in most need and that every dollar is well spent and accounted for.
@@ -227,7 +225,6 @@ class OurWorkPage extends React.Component{
           visualData={schoolVisualData}
         />
         
-        <Spacer height='2.5rem'/>
         <StatisticsVisual/>
 
         <Map/>

@@ -10,9 +10,11 @@ interface Props {
 
 class HeaderLinks extends React.Component<Props> {
   render(){
+    const { isMobile } = this.props;
+
     return(
       <div className={styles.headerLinks}>
-      {this.props.isMobile
+      {isMobile
         ? (
           <div className={styles.link}>
             <NavLink exact to="/" activeClassName={styles.active}>Home</NavLink>
@@ -33,7 +35,7 @@ class HeaderLinks extends React.Component<Props> {
           <NavLink exact to="/about-us" activeClassName={styles.active}>About Us</NavLink>
         </div>
         <div className={styles.link}>
-          <Button>
+          {isMobile ? (
             <a     
               href={'https://secure.givelively.org/donate/forefront-charity'}
               target="_blank"
@@ -41,7 +43,18 @@ class HeaderLinks extends React.Component<Props> {
             >
               Donate
             </a>
-          </Button>
+            ) : (
+            <Button>
+              <a     
+                href={'https://secure.givelively.org/donate/forefront-charity'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Donate
+              </a>
+            </Button>
+            )
+          }
         </div>
       </div>
     )

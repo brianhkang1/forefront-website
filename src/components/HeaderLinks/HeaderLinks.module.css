@@ -21,6 +21,11 @@
   .link {
     padding: 0vw 1vw;
   }
+
+  .link > .active {
+    color: var(--main-color);
+    font-weight: bold;
+  }
 }
 
 /* mobile */
@@ -33,15 +38,17 @@
 
   .link {
     padding: 1.5vh 0vh;
-  }
-  
-  .link:not(:last-of-type) {
     border-top: 1px solid var(--light-gray-color);
   }
   
   .link > a {
     text-decoration: none;
     color: black;
+  }
+
+  .link > a:hover {
+    color: black;
+    text-decoration: none;
   }
 
   .link > .active {

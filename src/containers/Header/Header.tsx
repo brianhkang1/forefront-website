@@ -58,7 +58,11 @@ class Header extends React.Component<{}, State>{
                   <img 
                     src={ForeFrontLogoColor} 
                     alt="Forefront Logo"
-                    style={{width: '20.625rem', height: '9vh'}}
+                    style={{
+                      width: '20rem', 
+                      height: '5rem',
+                      objectFit: 'contain'
+                    }}
                   />
                 </NavLink>
               </div>

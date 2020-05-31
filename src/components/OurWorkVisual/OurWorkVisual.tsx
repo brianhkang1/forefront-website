@@ -61,8 +61,8 @@ class OurWorkVisual extends React.Component<Props, State> {
               >
                 <Picture
                   src={item.icon}
-                  width='4rem'
-                  height='4rem'
+                  width='2.5rem'
+                  height='2.5rem'
                   backgroundSize='contain'
                 />
               </div>

@@ -175,20 +175,6 @@ class BuildersPage extends React.Component{
             </div>
             ))}
         </div>
-
-        {/* mobile view */}
-        {window.matchMedia("(max-width: 740px)").matches && (
-          <>
-          <Title title='Make a Donation'/>
-          <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
-            <div 
-              data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-              id="give-lively-widget" 
-              className="gl-branded-donation-widget"
-            />
-          </div>
-          </>
-        )}
         
         <Title
           title='Make a Ripple Effect of Change'
@@ -254,7 +240,7 @@ class BuildersPage extends React.Component{
                 <div className={styles.testimonialTextContainer}>
                   <PictureText className={styles.testimonialText}>
                     <span className={styles.bold}>{item.name}: </span>
-                    <span>{item.description}</span>
+                    <span>"{item.description}"</span>
                   </PictureText>
                 </div>
               </div>
@@ -263,6 +249,20 @@ class BuildersPage extends React.Component{
             }
           </Carousel>
         </div>
+
+        {/* mobile view */}
+        {window.matchMedia("(max-width: 740px)").matches && (
+          <>
+          <Title title='Make a Donation'/>
+          <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
+            <div 
+              data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+              id="give-lively-widget" 
+              className="gl-branded-donation-widget"
+            />
+          </div>
+          </>
+        )}
 
         <Footer/>
       </div>

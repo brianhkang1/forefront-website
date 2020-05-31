@@ -14,17 +14,17 @@ const StatisticsVisual = () => {
             <div className={styles.title}> Your Impact: </div>
             <div className={`${styles.statsItem} wow zoomIn`}>
               <div className={styles.numberCounterItem}>925</div> 
-              <div>unique donors</div>
+              <div>Unique Donors</div>
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
               <div className={styles.numberCounterItem}>$625,000</div> 
-              <div>total support</div>
+              <div>Total Support</div>
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>20,230 sq ft</div> 
-              <div>school building in progress</div>
+              <div className={styles.numberCounterItem}>20,230 ft<sup>2</sup></div> 
+              <div>School Building in Progress</div>
             </div>
           </div>
         </PictureFilter>

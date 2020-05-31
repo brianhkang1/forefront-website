@@ -61,7 +61,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
 }
 
 .testimonialPicContainer {
@@ -162,6 +161,10 @@
   
   .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
     left: -6rem;
+  }
+
+  .carouselContainer {
+    padding-bottom: 2rem;
   }
 }
 

@@ -24,14 +24,14 @@ import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color
 
 const OurImpact = [
   {
-    type: 'WATER',
+    type: 'WATER & SANITATION',
     image: GetInvolvedPic1,
     icon: WaterIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>31</span> water wells<br/>
+        <span className={styles.greenBold}>34</span> water wells<br/>
         <span className={styles.greenBold}>94%</span> hand-washing rate
-        <Popup content='up from 39%'/>
+        <Popup content='Up from 39%'/>
         </span>
       )
   },
