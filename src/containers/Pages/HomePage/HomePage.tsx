@@ -13,6 +13,10 @@ import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
 import Popup from '../../../components/Popup';
 
+import OurImpactWater from '../../../Images/HomePage/OurImpact_Water.jpg';
+import OurImpactEducation from '../../../Images/HomePage/OurImpact_Education.jpg';
+import OurImpactMedical from '../../../Images/HomePage/OurImpact_Medical.png';
+import OurImpactEmpowerment from '../../../Images/HomePage/OurImpact_Empowerment.jpg';
 import GetInvolvedPic1 from '../../../Images/HomePage/GetInvolved1.jpg';
 import GetInvolvedPic2 from '../../../Images/HomePage/GetInvolved2.jpg';
 import GetInvolvedPic3 from '../../../Images/HomePage/GetInvolved3.jpg';
@@ -25,7 +29,7 @@ import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color
 const OurImpact = [
   {
     type: 'WATER & SANITATION',
-    image: GetInvolvedPic1,
+    image: OurImpactWater,
     icon: WaterIcon,
     text: (
       <span>
@@ -37,19 +41,19 @@ const OurImpact = [
   },
   {
     type: 'EDUCATION',
-    image: GetInvolvedPic1,
+    image: OurImpactEducation,
     icon: EducationIcon,
     text: <span><span className={styles.greenBold}>7:1</span> student to teacher ratio at our After School program</span>
   },
   {
     type: 'MEDICAL',
-    image: GetInvolvedPic1,
+    image: OurImpactMedical,
     icon: MedicalIcon,
     text: <span><span className={styles.greenBold}>5</span> health and wellness workshops</span>
   },
   {
     type: 'EMPOWERMENT',
-    image: GetInvolvedPic1,
+    image: OurImpactEmpowerment,
     icon: EmpowermentIcon,
     text: <span>Soap business run by local women</span>
   },

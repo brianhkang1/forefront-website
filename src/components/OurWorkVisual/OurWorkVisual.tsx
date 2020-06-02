@@ -38,6 +38,25 @@ class OurWorkVisual extends React.Component<Props, State> {
   render(){
     const { backgroundColor, visualData } = this.props;
     const { selectedIndex } = this.state;
+    
+    const determineChartMarginRight = (itemName: string) => {
+      const isMobile = window.matchMedia("(max-width: 740px)").matches;
+      if(!isMobile){
+        return '0'
+      } else {
+        switch(itemName){
+          case 'waterWells':
+            return '3rem';
+          
+          case 'fundraisedAmount':
+          case 'soapToys':
+            return '1rem';
+
+          default:
+            return '0'
+        }
+      }
+    }
 
     return (
       <div 
@@ -81,7 +100,10 @@ class OurWorkVisual extends React.Component<Props, State> {
             </div>
           </div>
 
-          <div className={styles.chart}>
+          <div 
+            className={styles.chart} 
+            style={{marginRight: determineChartMarginRight(visualData[selectedIndex].name)}}
+          >
             {visualData[selectedIndex].chart}
           </div>
         </div>

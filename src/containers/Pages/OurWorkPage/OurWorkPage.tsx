@@ -9,6 +9,7 @@ import StatisticsVisual from '../../../components/StatisticsVisual';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import Map from '../../../components/Map';
+import Picture from '../../../components/Picture';
 
 import HatIcon from '../../../Images/OurWorkPage/Hat.png';
 import HatShadowIcon from '../../../Images/OurWorkPage/HatShadow.png';
@@ -18,6 +19,7 @@ import SoapIcon from '../../../Images/OurWorkPage/Soap.png';
 import SoapShadowIcon from '../../../Images/OurWorkPage/SoapShadow.png';
 import WaterIcon from '../../../Images/OurWorkPage/Water.png';
 import WaterShadowIcon from '../../../Images/OurWorkPage/WaterShadow.png';
+import SchoolFloorPlan from '../../../Images/OurWorkPage/FloorPlan.png';
 
 const waterWellData = [
   {
@@ -167,21 +169,22 @@ const schoolVisualData = [
     )
   },
   {
-    name: 'soapToys',
+    name: 'schoolFloorPlan',
     icon: HatIcon,
     selectedIcon: HatShadowIcon,
     chart: (
-      <BarChart 
-        data={soapToysData} 
-        domain={[0, 3500]} 
-        isWhite
+      <Picture
+        src={SchoolFloorPlan}
+        width='100%'
+        height={window.matchMedia("(min-width: 741px)").matches ? '400px' : '200px'}
+        backgroundSize='contain'
       />
     ),
-    bigNumber: '3500+',
-    subTitle: <div>total soap toys</div>,
+    bigNumber: '248+',
+    subTitle: <div>School Floor Plan</div>,
     description: (
       <div>
-        add some description text here about soap toys
+        add some description text here about school floor plan
       </div>
     )
   }
