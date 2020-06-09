@@ -184,10 +184,14 @@ const schoolVisualData = [
       />
     ),
     bigNumber: (
-      <span style={{fontSize: '7rem', fontWeight: 'bold'}}>
+      <span style={{fontSize: '6rem', fontWeight: 'bold'}}>
         20,230 ft<sup>2</sup>
       </span>),
-    subTitle: <div>FOREFRONT School Footprint</div>,
+    subTitle: (
+      <div style={{fontSize: '2rem'}}>
+        FOREFRONT School Footprint
+        </div>
+      ),
     description: (
       <div>
         In Kolluru, India, where our school is located, 
