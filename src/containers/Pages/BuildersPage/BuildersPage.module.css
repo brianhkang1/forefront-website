@@ -228,4 +228,16 @@
   .testimonialPic {
     width: 100vw;
   }
+
+  .mobileDonationWidgetLink, .mobileDonationWidgetLink > a {
+    text-decoration: none;
+    color: var(--link-blue-color);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .mobileDonationWidgetLink:hover, .mobileDonationWidgetLink > a:hover {
+    color: var(--link-blue-color);
+    text-decoration: underline;
+  }
 }

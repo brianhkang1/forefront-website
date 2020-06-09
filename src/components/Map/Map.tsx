@@ -22,9 +22,7 @@ const Map = () => {
     <div>
       <Title
         title='Where We Work'
-        description='We fund basic life necessities - water, proper sanitation, education, medical, and leadership training - 
-        currently in rural India. We choose to work in unreached areas that suffer from water scarcity, poverty, 
-        social inequality, lack of facilities, and lack of opportunities. A map of our impact:'
+        description='We fund basic life necessities - water, proper sanitation, education, medical, and leadership training - currently in rural India. We choose to work in unreached areas that suffer from water scarcity, poverty, social inequality, lack of facilities, and lack of opportunities. Our team works closely with local partners to ensure that it helps the people in most need and that every dollar is well spent and accounted for.  A map of our impact:'
       />
 
       <LeafletMap center={latLong} zoom={11} scrollWheelZoom={false}>

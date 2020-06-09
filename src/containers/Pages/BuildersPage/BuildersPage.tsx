@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './BuildersPage.module.css';
+import useIsMobile from '../../../hooks/useIsMobile';
+
 import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
@@ -94,165 +96,191 @@ const WhyBeABuilder = [
   }
 ]
 
-class BuildersPage extends React.Component{
-  componentDidMount(){
+const BuildersPage: React.FC = () => {
+  // componentDidMount(){
+  //   const script = document.createElement("script");
+  //   script.src = 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?show_suggested_amount_buttons=true&address_required=false&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100'
+  //   // 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?address_required=false'
+  //   document.getElementsByTagName("head")[0].appendChild(script);
+  // }
+
+  const isMobile = useIsMobile();
+  const mobileDonationWidget = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
     const script = document.createElement("script");
     script.src = 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?show_suggested_amount_buttons=true&address_required=false&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100'
     // 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?address_required=false'
     document.getElementsByTagName("head")[0].appendChild(script);
+  }, [])
+
+  const renderBecomeABuilderDescription = () => {
+    if(isMobile){
+      return (
+        <span>
+          <span className={styles.mobileDonationWidgetLink} onClick={scrollToMobileDonationWidget}>
+            Join other passionate and dedicated givers {' '}
+          </span> 
+          to build up local community leaders that will multiply into a global network of change. Your monthly giving equips communities with the necessities to thrive:
+        </span>
+      )
+    } else {
+      return 'Join other passionate and dedicated givers to build up local community leaders that will multiply into a global network of change. Your monthly giving equips communities with the necessities to thrive:'
+    }
   }
 
-  render(){
-    return (
-      <div className={styles.root}>
-        {/* mobile view */}
-        {window.matchMedia("(max-width: 740px)").matches && (
-          <div className={styles.header}>
-            <Header/>
-          </div>
-        )}
+  const scrollToMobileDonationWidget = () => {
+    if(mobileDonationWidget && mobileDonationWidget.current){
+      window.scrollTo({
+        top: mobileDonationWidget.current.offsetTop - 50,
+        behavior: 'smooth'
+      });
+    }
+  }
 
-        <div className={styles.heroPictureContainer}>
-          <PictureFilter>
-            {/* laptop view */}
-            {window.matchMedia("(min-width: 741px)").matches && (
-              <div className={styles.header}>
-                <Header/>
-              </div>
-            )} 
+  return (
+    <div className={styles.root}>
+      {isMobile && (
+        <div className={styles.header}>
+          <Header/>
+        </div>
+      )}
 
-            <div className={styles.heroTextContainer}>
-              <div className={styles.heroText}>
-                <PictureText padding='1rem 1.5rem'>
-                  Builders: an unstoppable group of monthly givers
-                  in building up communities where every person
-                  has the opportunity to thrive
-                </PictureText>
-              </div>
-              {/* hacky way of ensuring heroText takes up space to place
-              widget below appropriately */}
-              <div className={styles.hiddenHeroText}>
+      <div className={styles.heroPictureContainer}>
+        <PictureFilter>
+          {!isMobile && (
+            <div className={styles.header}>
+              <Header/>
+            </div>
+          )} 
+
+          <div className={styles.heroTextContainer}>
+            <div className={styles.heroText}>
+              <PictureText padding='1rem 1.5rem'>
                 Builders: an unstoppable group of monthly givers
                 in building up communities where every person
                 has the opportunity to thrive
-              </div>
-
-            {/* laptop view */}
-            {window.matchMedia("(min-width: 741px)").matches && (
-              <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
-                <div 
-                  data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-                  id="give-lively-widget" 
-                  className="gl-branded-donation-widget"
-                />
-              </div>
-            )}
+              </PictureText>
             </div>
-          </PictureFilter>
-        </div>
+            {/* hacky way of ensuring heroText takes up space to place
+            widget below appropriately */}
+            <div className={styles.hiddenHeroText}>
+              Builders: an unstoppable group of monthly givers
+              in building up communities where every person
+              has the opportunity to thrive
+            </div>
 
-        <div className={styles.titleContainer}>
-          <Title
-            title='Become a Builder'
-            description='Join other passionate and dedicated group of givers 
-            to build up local community leaders that will multiply 
-            into a global network of change. Your monthly giving 
-            equips communities with the necessities to thrive:'
-          />
-        </div>
-
-        <div className={styles.iconsContainer}>
-          {FourPillarItems.map(item => (
-            <div className={styles.iconItem} style={{backgroundColor: item.color}}>
-              <Picture
-                src={item.icon}
-                width='6rem'
-                height='6rem'
+          {!isMobile && (
+            <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
+              <div 
+                data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+                id="give-lively-widget" 
+                className="gl-branded-donation-widget"
               />
-              <div className={styles.iconDescription}>
-                {item.description}
-              </div>
             </div>
-            ))}
-        </div>
-        
+          )}
+          </div>
+        </PictureFilter>
+      </div>
+
+      <div className={styles.titleContainer}>
         <Title
-          title='Make a Ripple Effect of Change'
-          description="You too, along with many other givers, can also make impact. 
-          It's everyday people who through their own act of generosity, 
-          makes ripple effect positively changing people's lives. 
-          You can also do the same. Together, we will leave a legacy 
-          in this world."
+          title='Become a Builder'
+          description={renderBecomeABuilderDescription()}
         />
+      </div>
 
-        <Picture
-          src={RandomPic}
-          width="100vw"
-          height='60vh'
-        />
-
-        <Title
-          title='Calling Everyday Heroes'
-          description="Making change doesn't require you to have credentials 
-          but just a giving kind heart. It's everyday people who are everyday heroes. 
-          So we are bringing everyday heroes together to make everyday impact. 
-          Why be a builder?"
-        />
-
-        <div className={styles.whyBeMonthlyDonorContainer}>
-          {WhyBeABuilder.map(whyBeBuilderItem => (
-            <div className={styles.whyBeMonthlyDonorItem}>
-              <Picture
-                src={whyBeBuilderItem.image}
-                height='18rem'
-                width='18rem'
-              />
-
-              <div className={styles.whyBeMonthlyDonorText}>
-                {whyBeBuilderItem.text}
-              </div>
+      <div className={styles.iconsContainer}>
+        {FourPillarItems.map(item => (
+          <div className={styles.iconItem} style={{backgroundColor: item.color}}>
+            <Picture
+              src={item.icon}
+              width='6rem'
+              height='6rem'
+            />
+            <div className={styles.iconDescription}>
+              {item.description}
             </div>
+          </div>
           ))}
-        </div>
+      </div>
+      
+      <Title
+        title='Make a Ripple Effect of Change'
+        description="You too, along with many other givers, can also make impact. 
+        It's everyday people who through their own act of generosity, 
+        makes ripple effect positively changing people's lives. 
+        You can also do the same. Together, we will leave a legacy 
+        in this world."
+      />
 
-        <Title
-          title='Meet the People on the Ground...'
-          description='who are making this all possible. They are everyday heroes on the ground who believe in partnering with us to make a brighter future.'
-        />
+      <Picture
+        src={RandomPic}
+        width="100vw"
+        height='60vh'
+      />
 
-        <div className={styles.carouselContainer}>
-          <Carousel
-            animation={"slide"}
-            indicators={true}
-            autoPlay={true}
-            interval={6000}
-            navButtonsAlwaysVisible={true}
-            className={styles.carousel}
-          >
-            {Testimonials.map((item, index) => (
-              <div key={item.name} className={styles.testimonialPicContainer}>
-                <img
-                  src={item.image}
-                  className={styles.testimonialPic}
-                  alt={`testimonial ${index + 1}`}
-                />
-                
-                <div className={styles.testimonialTextContainer}>
-                  <PictureText className={styles.testimonialText}>
-                    <span className={styles.bold}>{item.name}: </span>
-                    <span>"{item.description}"</span>
-                  </PictureText>
-                </div>
+      <Title
+        title='Calling Everyday Heroes'
+        description="Making change doesn't require you to have credentials 
+        but just a giving kind heart. It's everyday people who are everyday heroes. 
+        So we are bringing everyday heroes together to make everyday impact. 
+        Why be a builder?"
+      />
+
+      <div className={styles.whyBeMonthlyDonorContainer}>
+        {WhyBeABuilder.map(whyBeBuilderItem => (
+          <div className={styles.whyBeMonthlyDonorItem}>
+            <Picture
+              src={whyBeBuilderItem.image}
+              height='18rem'
+              width='18rem'
+            />
+
+            <div className={styles.whyBeMonthlyDonorText}>
+              {whyBeBuilderItem.text}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <Title
+        title='Meet the People on the Ground...'
+        description='who are making this all possible. They are everyday heroes on the ground who believe in partnering with us to make a brighter future.'
+      />
+
+      <div className={styles.carouselContainer}>
+        <Carousel
+          animation={"slide"}
+          indicators={true}
+          autoPlay={true}
+          interval={6000}
+          navButtonsAlwaysVisible={true}
+          className={styles.carousel}
+        >
+          {Testimonials.map((item, index) => (
+            <div key={item.name} className={styles.testimonialPicContainer}>
+              <img
+                src={item.image}
+                className={styles.testimonialPic}
+                alt={`testimonial ${index + 1}`}
+              />
+              
+              <div className={styles.testimonialTextContainer}>
+                <PictureText className={styles.testimonialText}>
+                  <span className={styles.bold}>{item.name}: </span>
+                  <span>"{item.description}"</span>
+                </PictureText>
               </div>
-            ))
+            </div>
+          ))
 
-            }
-          </Carousel>
-        </div>
+          }
+        </Carousel>
+      </div>
 
-        {/* mobile view */}
-        {window.matchMedia("(max-width: 740px)").matches && (
-          <>
+      {isMobile && (
+        <div ref={mobileDonationWidget}>
           <Title title='Make a Donation'/>
           <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
             <div 
@@ -261,13 +289,12 @@ class BuildersPage extends React.Component{
               className="gl-branded-donation-widget"
             />
           </div>
-          </>
-        )}
+        </div>
+      )}
 
-        <Footer/>
-      </div>
-    );
-  }
+      <Footer/>
+    </div>
+  );
 }
 
 export default BuildersPage;

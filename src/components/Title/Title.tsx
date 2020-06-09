@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Title.module.css'
 
 type Props = {
-  title?: string;
-  description?: string;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
 }
 
 class Title extends React.Component<Props> {

@@ -133,7 +133,10 @@ const waterVisualData = [
     subTitle: <div>total soap toys</div>,
     description: (
       <div>
-        add some description text here about soap toys
+        In partnership with the local Indian government and the Indian national Swachh Bharat program, 
+        FOREFRONT launched a soap business led by a woman local nameD Elizabeth.  
+        Its aim is to educate about the importance of hand washing and distributing soap to villages 
+        without easy access to soap.
       </div>
     )
   }
@@ -180,11 +183,21 @@ const schoolVisualData = [
         backgroundSize='contain'
       />
     ),
-    bigNumber: '248+',
-    subTitle: <div>School Floor Plan</div>,
+    bigNumber: (
+      <span style={{fontSize: '7rem', fontWeight: 'bold'}}>
+        20,230 ft<sup>2</sup>
+      </span>),
+    subTitle: <div>FOREFRONT School Footprint</div>,
     description: (
       <div>
-        add some description text here about school floor plan
+        In Kolluru, India, where our school is located, 
+        children do not have access to a high quality education. 
+        Only 60% of the 18,000 primary aged children living within 5 miles of our school attend school. 
+        Secondary school attendance is 37% in Kolluru, 74% in India, and 76% worldwide. 
+        Of the 2nd grade children attending school within 5 miles from Kolluru, 
+        33% cannot recognize letters, 20% cannot recognize numbers 1-9, 
+        80% have no computer access, and 44% have no toilet access. 
+        Here at our facility, we plan to change that.
       </div>
     )
   }
@@ -211,9 +224,7 @@ class OurWorkPage extends React.Component{
             )}   
         
             <PictureText className={styles.heroText}>
-              Your donations are invested into building sustainable, community-owned and led initiatives. 
-              Our team works closely with local partners to ensure that it helps the people 
-              in most need and that every dollar is well spent and accounted for.
+              Your donations are invested into building sustainable, community-owned and led initiatives.
             </PictureText>
           </PictureFilter>
         </div>
