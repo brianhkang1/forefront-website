@@ -68,7 +68,6 @@
 }
 
 .testimonialPic {
-  height: 80vh;
   object-fit: cover;
 }
 
@@ -157,7 +156,8 @@
   }
 
   .testimonialPic {
-    width: 85vw;
+    width: 75vw;
+    height: 75vh;
     border-radius: 2rem;
   }
 
@@ -233,6 +233,7 @@
 
   .testimonialPic {
     width: 100vw;
+    height: 80vh;
   }
 
   .mobileDonationWidgetLink, .mobileDonationWidgetLink > a {

@@ -70,7 +70,7 @@ class OurApproachPage extends React.Component{
           <Picture
             src={LongTermSustainabilityImage}
             width='100vw'
-            height='75vh'
+            height='70vh'
           />
         </div>
 
