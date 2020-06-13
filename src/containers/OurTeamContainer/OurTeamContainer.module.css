@@ -33,7 +33,7 @@
     justify-content: center;
     line-height: 1.5rem;
   }
-  
+
   .teamMemberPictureDescription {
     height: 100%;
     padding: 0 0.75rem;
@@ -91,7 +91,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .teamMemberPictureDescription {
     height: 100%;
     padding: 0 2rem;
@@ -141,14 +141,16 @@
   text-align: center;
 }
 
-.mainPictureLink, .mainPictureLink > a {
+.mainPictureLink,
+.mainPictureLink > a {
   text-decoration: none;
   color: var(--link-blue-color);
   font-weight: bold;
   cursor: pointer;
 }
 
-.mainPictureLink:hover, .mainPictureLink > a:hover {
+.mainPictureLink:hover,
+.mainPictureLink > a:hover {
   color: var(--link-blue-color);
   text-decoration: underline;
 }

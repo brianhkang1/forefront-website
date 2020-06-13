@@ -2,17 +2,16 @@
   --main-color: #459eac;
   --main-colorPlus: #daedf0;
 
-  --link-blue-color: #00305B;
-  --gray-color: #58595B;
-  --light-gray-color: #C2C2C3;
+  --link-blue-color: #00305b;
+  --gray-color: #58595b;
+  --light-gray-color: #c2c2c3;
 
-  --blue-color: #3681C1;
-  --yellow-color: #E2A834;
-  --red-color: #D55F5A;
-  --purple-color: #845EA1;
+  --blue-color: #3681c1;
+  --yellow-color: #e2a834;
+  --red-color: #d55f5a;
+  --purple-color: #845ea1;
 
-
-  --base-text:#333e48;
+  --base-text: #333e48;
 }
 
 * {
@@ -21,11 +20,13 @@
   font-family: 'Muli', sans-serif;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-.gl-modal, #gl-widget-modal {
+.gl-modal,
+#gl-widget-modal {
   display: none;
 }

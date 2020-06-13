@@ -1,6 +1,7 @@
 /* laptop */
 @media (min-width: 741px) {
-  .heroPictureContainer, .heroPictureContainer::before { 
+  .heroPictureContainer,
+  .heroPictureContainer::before {
     height: 100vh;
   }
 
@@ -15,7 +16,8 @@
 
 /* mobile */
 @media (max-width: 740px) {
-  .heroPictureContainer, .heroPictureContainer::before { 
+  .heroPictureContainer,
+  .heroPictureContainer::before {
     height: 93vh;
   }
 
@@ -38,21 +40,22 @@
 
 /* ************************************* */
 
-.heroPictureContainer { 
+.heroPictureContainer {
   width: 100vw;
-  position: relative; 
+  position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .heroPictureContainer::before {
   pointer-events: none;
   content: ' ';
-  position: fixed; 
+  position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
   background-color: white;
-  background: url("../../../Images/Hero/OurApproachPage.jpg") no-repeat center center;
+  background: url('../../../Images/Hero/OurApproachPage.jpg') no-repeat center
+    center;
   background-size: cover;
   will-change: transform;
   z-index: -1;

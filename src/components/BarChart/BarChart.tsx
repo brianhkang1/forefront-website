@@ -1,71 +1,62 @@
 import React from 'react';
 import {
   ResponsiveContainer,
-  BarChart as RechartBarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
+  BarChart as RechartBarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
 } from 'recharts';
 import useIsMobile from '../../hooks/useIsMobile';
 
 type Props = {
-  data: any
+  data: any;
   domain?: [number, number];
   isWhite?: boolean;
   isMoney?: boolean;
-}
+};
 
-const BarChart: React.FC<Props> = ({
-  data, 
-  domain, 
-  isWhite, 
-  isMoney
-}) => {
+const BarChart: React.FC<Props> = ({ data, domain, isWhite, isMoney }) => {
   const isMobile = useIsMobile();
 
   return (
-    <ResponsiveContainer 
-      width={'100%'} 
-      height={isMobile ? 200 : 400}
-    >
+    <ResponsiveContainer width={'100%'} height={isMobile ? 200 : 400}>
       <RechartBarChart data={data}>
-        <CartesianGrid 
+        <CartesianGrid
           vertical={false}
           stroke={isWhite ? 'white' : 'lightgray'}
         />
 
-        <XAxis 
-          dataKey="name" 
-          tickLine={false} 
+        <XAxis
+          dataKey="name"
+          tickLine={false}
           stroke={isWhite ? 'white' : 'gray'}
         />
-        
-        <YAxis 
-          dataKey="value" 
-          axisLine={false} 
+
+        <YAxis
+          dataKey="value"
+          axisLine={false}
           tickLine={false}
           width={isMoney ? 80 : 60}
           tickFormatter={(tick: number) => {
-            return isMoney 
+            return isMoney
               ? `$${new Intl.NumberFormat('en').format(tick)}`
-              : new Intl.NumberFormat('en').format(tick) 
+              : new Intl.NumberFormat('en').format(tick);
           }}
           domain={domain || [0, 'auto']}
           interval={0}
-          scale='linear'
+          scale="linear"
           stroke={isWhite ? 'white' : 'gray'}
         />
-        
-        <Bar 
-          barSize={50} 
-          dataKey="value" 
+
+        <Bar
+          barSize={50}
+          dataKey="value"
           fill={isWhite ? '#ffffff' : '#8884d8'}
         />
       </RechartBarChart>
-
     </ResponsiveContainer>
-  )
-}
+  );
+};
 
 export default BarChart;

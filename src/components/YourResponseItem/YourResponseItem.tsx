@@ -8,22 +8,24 @@ type Props = {
   description: string;
   backgroundImage: string;
   link: string;
-}
+};
 
 class YourResponseItem extends React.Component<Props> {
-  
-  render(){
+  render() {
     const { title, description, backgroundImage, link } = this.props;
 
-    return(
-      <div className={styles.root} style={{backgroundImage, backgroundSize: 'cover'}}>
+    return (
+      <div
+        className={styles.root}
+        style={{ backgroundImage, backgroundSize: 'cover' }}
+      >
         <PictureFilter className={styles.pictureFilter}>
           <div className={styles.container}>
             <div className={styles.description}>{description}</div>
             <Button>
-              <a 
+              <a
                 href={link}
-                target="_blank"
+                target={title === 'Become a Builder' ? '_self' : '_blank'}
                 rel="noopener noreferrer"
               >
                 {title}
@@ -32,7 +34,7 @@ class YourResponseItem extends React.Component<Props> {
           </div>
         </PictureFilter>
       </div>
-    )
+    );
   }
 }
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './HeaderLinks.module.css'
+import React from 'react';
+import styles from './HeaderLinks.module.css';
 import { NavLink } from 'react-router-dom';
 import Button from '../Button';
 
@@ -9,43 +9,50 @@ interface Props {
 }
 
 class HeaderLinks extends React.Component<Props> {
-  render(){
+  render() {
     const { isMobile } = this.props;
 
-    return(
+    return (
       <div className={styles.headerLinks}>
-      {isMobile
-        ? (
+        {isMobile ? (
           <div className={styles.link}>
-            <NavLink exact to="/" activeClassName={styles.active}>Home</NavLink>
+            <NavLink exact to="/" activeClassName={styles.active}>
+              Home
+            </NavLink>
           </div>
-        )
-        : null    
-      } 
+        ) : null}
         <div className={styles.link}>
-          <NavLink exact to="/our-approach" activeClassName={styles.active}>Our Approach</NavLink>
+          <NavLink exact to="/our-approach" activeClassName={styles.active}>
+            Our Approach
+          </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/our-work" activeClassName={styles.active}>Our Work</NavLink>
+          <NavLink exact to="/our-work" activeClassName={styles.active}>
+            Our Work
+          </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/builders" activeClassName={styles.active}>Builders</NavLink>
+          <NavLink exact to="/builders" activeClassName={styles.active}>
+            Builders
+          </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/about-us" activeClassName={styles.active}>About Us</NavLink>
+          <NavLink exact to="/about-us" activeClassName={styles.active}>
+            About Us
+          </NavLink>
         </div>
         <div className={styles.link}>
           {isMobile ? (
-            <a     
+            <a
               href={'https://secure.givelively.org/donate/forefront-charity'}
               target="_blank"
               rel="noopener noreferrer"
             >
               Donate
             </a>
-            ) : (
+          ) : (
             <Button>
-              <a     
+              <a
                 href={'https://secure.givelively.org/donate/forefront-charity'}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,13 +60,11 @@ class HeaderLinks extends React.Component<Props> {
                 Donate
               </a>
             </Button>
-            )
-          }
+          )}
         </div>
       </div>
-    )
-
+    );
   }
 }
 
-export default HeaderLinks
+export default HeaderLinks;

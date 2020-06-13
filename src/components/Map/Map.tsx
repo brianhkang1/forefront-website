@@ -1,28 +1,23 @@
 import React from 'react';
-import { 
-  Map as LeafletMap, 
-  TileLayer, 
-  Marker, 
-  Popup 
-} from 'react-leaflet';
+import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
 import Title from '../../components/Title';
 
-const latLong = [16.1689307, 80.8048806]
+const latLong = [16.1689307, 80.8048806];
 
 const Map = () => {
-  const openPopup = (marker) => {
+  const openPopup = marker => {
     if (marker && marker.leafletElement) {
       window.setTimeout(() => {
-        marker.leafletElement.openPopup()
-      })
+        marker.leafletElement.openPopup();
+      });
     }
-  }
+  };
 
   return (
     <div>
       <Title
-        title='Where We Work'
-        description='We fund basic life necessities - water, proper sanitation, education, medical, and leadership training - currently in rural India. We choose to work in unreached areas that suffer from water scarcity, poverty, social inequality, lack of facilities, and lack of opportunities. Our team works closely with local partners to ensure that it helps the people in most need and that every dollar is well spent and accounted for.  A map of our impact:'
+        title="Where We Work"
+        description="We fund basic life necessities - water, proper sanitation, education, medical, and leadership training - currently in rural India. We choose to work in unreached areas that suffer from water scarcity, poverty, social inequality, lack of facilities, and lack of opportunities. Our team works closely with local partners to ensure that it helps the people in most need and that every dollar is well spent and accounted for.  A map of our impact:"
       />
 
       <LeafletMap center={latLong} zoom={11} scrollWheelZoom={false}>
@@ -30,10 +25,7 @@ const Map = () => {
           url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
         />
-        <Marker 
-          position={latLong}
-          ref={openPopup}
-        >
+        <Marker position={latLong} ref={openPopup}>
           <Popup>FOREFRONT School</Popup>
         </Marker>
       </LeafletMap>

@@ -12,54 +12,56 @@ type HowToGetInvolvedItemType = {
   description: string;
   backgroundImage: string;
   link: string;
-}
+};
 
-// TODO: become a build link
 const HowToGetInvolvedItems = [
   {
     title: 'Donate',
     description: 'Building the future starts with a gift of any amount',
     backgroundImage: `url(${BackgroundImage1})`,
-    link: 'https://secure.givelively.org/donate/forefront-charity'
+    link: 'https://secure.givelively.org/donate/forefront-charity',
   },
   {
     title: 'Start A Fundraiser',
     description: 'Be a changemaker today',
     backgroundImage: `url(${BackgroundImage2})`,
-    link: 'https://donate.goforefront.org/campaign/lets-start-something/c141547'
+    link:
+      'https://secure.givelively.org/donate/forefront-charity/start-something',
   },
   {
     title: 'Become a Builder',
     description: 'You can build up communities today',
     backgroundImage: `url(${BackgroundImage3})`,
-    link: '#'
-  }
-]
+    link: './builders',
+  },
+];
 
 class YourResponseContainer extends React.Component {
-  render(){
-    return(
+  render() {
+    return (
       <div className={styles.root}>
         <Title
-          title='Your Response'
+          title="Your Response"
           description="Never underestimate the impact you can have on someone else's life. 
             In India, access to clean water means more time for women to earn money and children to attend school, so
             they can build a better future for themselves. Thank you for giving and investing in these future leaders!"
         />
 
         <div className={styles.howToGetInvolvedItemsContainer}>
-          {HowToGetInvolvedItems.map((item: HowToGetInvolvedItemType, index: number) => (
-            <YourResponseItem 
-              key={`HowToGetInvolvedItem${index+1}`}
-              title={item.title}
-              description={item.description}
-              backgroundImage={item.backgroundImage}
-              link={item.link}
-            />
-          ))}
+          {HowToGetInvolvedItems.map(
+            (item: HowToGetInvolvedItemType, index: number) => (
+              <YourResponseItem
+                key={`HowToGetInvolvedItem${index + 1}`}
+                title={item.title}
+                description={item.description}
+                backgroundImage={item.backgroundImage}
+                link={item.link}
+              />
+            )
+          )}
         </div>
       </div>
-    )
+    );
   }
 }
 

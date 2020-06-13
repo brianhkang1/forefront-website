@@ -1,18 +1,18 @@
-.heroPictureContainer { 
+.heroPictureContainer {
   width: 100vw;
-  position: relative; 
+  position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .heroPictureContainer::before {
   pointer-events: none;
   content: ' ';
-  position: fixed; 
+  position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
   background-color: white;
-  background: url("../../../Images/Hero/BuildersPage.jpg") no-repeat;
+  background: url('../../../Images/Hero/BuildersPage.jpg') no-repeat;
   background-position-y: center;
   background-size: cover;
   will-change: transform;
@@ -44,7 +44,7 @@
   padding: 0.5rem 1rem 0 1rem;
 }
 
-.icons{
+.icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,14 +90,22 @@
   font-weight: bold;
 }
 
-.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] button,
-.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] button:hover {
+.carousel
+  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11']
+  button,
+.carousel
+  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11']
+  button:hover {
   padding: 1.25rem;
   top: calc(50% - 40px) !important;
 }
 
-.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] button,
-.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] button:hover {
+.carousel
+  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12']
+  button,
+.carousel
+  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12']
+  button:hover {
   padding: 1.25rem;
   top: calc(50% - 40px) !important;
 }
@@ -111,7 +119,8 @@
 /* ********************************************* */
 /* laptop */
 @media (min-width: 741px) {
-  .heroPictureContainer, .heroPictureContainer::before { 
+  .heroPictureContainer,
+  .heroPictureContainer::before {
     height: 100vh;
     background-position: center;
   }
@@ -125,7 +134,8 @@
     align-items: center;
   }
 
-  .heroText, .hiddenHeroText {
+  .heroText,
+  .hiddenHeroText {
     width: 45vw;
     font-size: 2.25rem;
     line-height: 2.75rem;
@@ -134,7 +144,7 @@
 
   .widgetContainer {
     width: 30vw;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
     padding: 1.5rem;
   }
@@ -161,11 +171,13 @@
     border-radius: 2rem;
   }
 
-  .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] {
+  .carousel
+    div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] {
     right: -6rem;
   }
-  
-  .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
+
+  .carousel
+    div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
     left: -6rem;
   }
 
@@ -176,7 +188,8 @@
 
 /* mobile */
 @media (max-width: 740px) {
-  .heroPictureContainer, .heroPictureContainer::before {
+  .heroPictureContainer,
+  .heroPictureContainer::before {
     -ms-background-position-x: 20%;
     background-position-x: 20%;
     height: 93vh;
@@ -199,7 +212,8 @@
     align-items: center;
   }
 
-  .heroText, .hiddenHeroText {
+  .heroText,
+  .hiddenHeroText {
     width: 100vw;
     font-size: 1.75rem;
     line-height: 2.25rem;
@@ -236,14 +250,16 @@
     height: 80vh;
   }
 
-  .mobileDonationWidgetLink, .mobileDonationWidgetLink > a {
+  .mobileDonationWidgetLink,
+  .mobileDonationWidgetLink > a {
     text-decoration: underline;
     color: var(--link-blue-color);
     font-weight: bold;
     cursor: pointer;
   }
-  
-  .mobileDonationWidgetLink:hover, .mobileDonationWidgetLink > a:hover {
+
+  .mobileDonationWidgetLink:hover,
+  .mobileDonationWidgetLink > a:hover {
     color: var(--link-blue-color);
     text-decoration: underline;
   }

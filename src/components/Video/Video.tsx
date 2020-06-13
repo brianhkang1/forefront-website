@@ -4,18 +4,18 @@ const Video = () => {
   return (
     <div>
       <iframe
-        title='home page video'
+        title="home page video"
         style={{
           width: '35vw',
           height: '40vh',
-          borderRadius: '10px'
+          borderRadius: '10px',
         }}
         src={`https://www.youtube.com/embed/VVfv3N4yLyM`}
         frameBorder="0"
-        allow="fullscreen; accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+        allow="fullscreen; accelerometer; encrypted-media; gyroscope; picture-in-picture"
       />
-  </div>
-  )
-}
+    </div>
+  );
+};
 
 export default Video;

@@ -1,28 +1,38 @@
 /* Animate the size, outside */
-.button:hover, 
+.button:hover,
 .button:focus {
   outline: none;
   animation: pulse 0.75s;
-  box-shadow: 0 0 0 0.5em rgba(255,255,255,0);
+  box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0);
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 white; }
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
 }
 
 @-moz-keyframes pulse {
-  0% { box-shadow: 0 0 0 0 white; }
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
 }
 
 @-webkit-keyframes pulse  /* Safari and Chrome */ {
-  0% { box-shadow: 0 0 0 0 white; }
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
 }
 
 @-o-keyframes pulse  /* Opera */ {
-  0% { box-shadow: 0 0 0 0 white; }
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
 }
 @-ms-keyframes pulse  /* IE */ {
-  0% { box-shadow: 0 0 0 0 white; }
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
 }
 
 .button {
@@ -42,7 +52,7 @@
   border-radius: 0.3125rem;
 }
 
-.button > a, 
+.button > a,
 .button > a:hover {
   color: white;
   font-weight: bold;

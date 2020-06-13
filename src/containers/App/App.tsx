@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './App.module.css';
 import { Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import WOW from "wow.js/dist/wow.js";
+import WOW from 'wow.js/dist/wow.js';
 
 import HomePage from '../Pages/HomePage';
 import OurApproachPage from '../Pages/OurApproachPage';
@@ -16,26 +16,26 @@ const routes = [
   { path: '/our-work', name: 'Our Work', Component: OurWorkPage },
   { path: '/builders', name: 'Builders', Component: BuildersPage },
   { path: '/about-us', name: 'About Us', Component: AboutUsPage },
-]
+];
 
-class App extends React.Component{
+class App extends React.Component {
   componentDidMount() {
     new WOW().init();
   }
 
-  renderRoutes = (location) => {
+  renderRoutes = location => {
     return (
       <Switch location={location}>
         {routes.map(({ path, Component }) => (
-          <Route key={path} exact path={path}>         
-            <div className={styles.page}> 
-              <Component/>
-            </div>      
-          </Route> 
-        ))} 
+          <Route key={path} exact path={path}>
+            <div className={styles.page}>
+              <Component />
+            </div>
+          </Route>
+        ))}
       </Switch>
-    )
-  }
+    );
+  };
 
   renderRoutesWithTransitionAnimation = (match, location) => (
     <TransitionGroup>
@@ -59,21 +59,22 @@ class App extends React.Component{
         {this.renderRoutes(location)}
       </CSSTransition>
     </TransitionGroup>
-  )
+  );
 
   render() {
     return (
-      <Route render={({ match, location }) => (
-        <div className={styles.root}>
-          <div className={styles.content}>
-            {/* only laptop gets page transition animations */}
-            {window.matchMedia("(min-width: 741px)").matches 
-              ? this.renderRoutesWithTransitionAnimation(match, location)
-              : this.renderRoutes(location)
-            }
+      <Route
+        render={({ match, location }) => (
+          <div className={styles.root}>
+            <div className={styles.content}>
+              {/* only laptop gets page transition animations */}
+              {window.matchMedia('(min-width: 741px)').matches
+                ? this.renderRoutesWithTransitionAnimation(match, location)
+                : this.renderRoutes(location)}
             </div>
-        </div>
-      )}/>
+          </div>
+        )}
+      />
     );
   }
 }

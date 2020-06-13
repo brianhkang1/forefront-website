@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './AboutUsPage.module.css'
+import styles from './AboutUsPage.module.css';
 import Header from '../../Header';
 import Footer from '../../Footer';
 import Button from '../../../components/Button';
-import { Dropdown } from 'semantic-ui-react'
+import { Dropdown } from 'semantic-ui-react';
 import { classNames } from '../../../util';
 
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.png';
@@ -22,39 +22,54 @@ import OurTeamContainer from '../../OurTeamContainer';
 const AnnualReports = [
   {
     year: '2019',
-    href: Report2019
+    href: Report2019,
   },
   {
     year: '2018',
-    href: Report2018
+    href: Report2018,
   },
   {
     year: '2017',
-    href: Report2017
+    href: Report2017,
   },
-]
+];
 
-class AboutUsPage extends React.Component{
+class AboutUsPage extends React.Component {
   renderLaptopHeroText = () => {
     return (
       <div className={styles.heroTextContainer}>
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <PictureText padding='1.75rem' className={classNames(styles.heroText1, styles.heroText)}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <PictureText
+            padding="1.75rem"
+            className={classNames(styles.heroText1, styles.heroText)}
+          >
             <div>Enable every person</div>
           </PictureText>
 
-          <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText2)}>
+          <PictureText
+            padding="1.75rem"
+            className={classNames(styles.heroText, styles.heroText2)}
+          >
             <div>Equip leaders</div>
           </PictureText>
 
-          <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText3)}>
+          <PictureText
+            padding="1.75rem"
+            className={classNames(styles.heroText, styles.heroText3)}
+          >
             <div>Establish self-sustaining communities</div>
           </PictureText>
 
           <div className={styles.buttonContainer}>
             <Button>
-              <a 
-                href="https://blog.goforefront.org/unlocking-leaders-of-change" 
+              <a
+                href="https://blog.goforefront.org/unlocking-leaders-of-change"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -64,22 +79,37 @@ class AboutUsPage extends React.Component{
           </div>
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   renderMobileHeroText = () => {
     return (
       <div className={styles.heroTextContainer}>
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <PictureText padding='1rem' className={classNames(styles.heroText1, styles.heroText)}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <PictureText
+            padding="1rem"
+            className={classNames(styles.heroText1, styles.heroText)}
+          >
             <div>Enable every person</div>
           </PictureText>
 
-          <PictureText padding='1rem' className={classNames(styles.heroText, styles.heroText2)}>
+          <PictureText
+            padding="1rem"
+            className={classNames(styles.heroText, styles.heroText2)}
+          >
             <div>Equip leaders</div>
           </PictureText>
 
-          <PictureText padding='1rem' className={classNames(styles.heroText, styles.heroText3)}>
+          <PictureText
+            padding="1rem"
+            className={classNames(styles.heroText, styles.heroText3)}
+          >
             <div>Establish </div>
             <div>self-sustaining</div>
             <div>communities</div>
@@ -87,8 +117,8 @@ class AboutUsPage extends React.Component{
 
           <div className={styles.buttonContainer}>
             <Button>
-              <a 
-                href="https://blog.goforefront.org/unlocking-leaders-of-change" 
+              <a
+                href="https://blog.goforefront.org/unlocking-leaders-of-change"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -98,90 +128,108 @@ class AboutUsPage extends React.Component{
           </div>
         </div>
       </div>
-    )
-  }
+    );
+  };
 
-  render(){
+  render() {
     return (
       <div className={styles.root}>
         {/* mobile view */}
-        {window.matchMedia("(max-width: 740px)").matches && (
+        {window.matchMedia('(max-width: 740px)').matches && (
           <div className={styles.header}>
-            <Header/>
-         </div>
+            <Header />
+          </div>
         )}
 
         <div className={styles.heroPictureContainer}>
           <PictureFilter>
             {/* laptop view */}
-            {window.matchMedia("(min-width: 741px)").matches && (
-                <div className={styles.header}>
-                <Header/>
+            {window.matchMedia('(min-width: 741px)').matches && (
+              <div className={styles.header}>
+                <Header />
               </div>
             )}
 
             {// laptop view
-              window.matchMedia("(min-width: 741px)").matches
-               ? this.renderLaptopHeroText()
-               : this.renderMobileHeroText()
-            }
+            window.matchMedia('(min-width: 741px)').matches
+              ? this.renderLaptopHeroText()
+              : this.renderMobileHeroText()}
           </PictureFilter>
         </div>
-        
-        <div className={styles.iconsContainer}>
-            <div className={styles.iconContainer}>
-                <div className={styles.icon} style={{backgroundImage: `url(${SoTIcon})`}}/>
-                <div className={styles.iconText}>We are a 501(c)(3) non-profit <br/>committed to transparency.</div>
-                <div className={styles.iconLink}>
-                  <a 
-                    href="https://www.guidestar.org/profile/47-3373120" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    We are gold certified
-                  </a>
-                </div>
-            </div>
 
+        <div className={styles.iconsContainer}>
           <div className={styles.iconContainer}>
-              <div className={styles.icon} style={{backgroundImage: `url(${AnnualReportIcon})`}}/>
-              <div className={styles.iconText}>
-              Read our annual reports for <br/>full transparency and program impact.
-              </div>
-              
-              <div className={styles.dropdownContainer}>
-                <Dropdown placeholder="Select a year" selection className={styles.dropdown}>
-                  <Dropdown.Menu className={styles.dropdownMenu}>
-                    {AnnualReports.map(report => (
-                      <Dropdown.Item
-                        className={styles.dropdownItem}
-                        text={report.year}
-                        onClick={() => window.open(report.href)}
-                      />
-  
-                    ))}
-                  </Dropdown.Menu>
-                </Dropdown>
-              </div>
+            <div
+              className={styles.icon}
+              style={{ backgroundImage: `url(${SoTIcon})` }}
+            />
+            <div className={styles.iconText}>
+              We are a 501(c)(3) non-profit <br />
+              committed to transparency.
+            </div>
+            <div className={styles.iconLink}>
+              <a
+                href="https://www.guidestar.org/profile/47-3373120"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                We are gold certified
+              </a>
+            </div>
           </div>
 
           <div className={styles.iconContainer}>
-              <div className={styles.icon} style={{backgroundImage: `url(${BlogIcon})`}}/>
-              <div className={styles.iconText}>Read our personal stories and <br/>the impact we are making from the field.</div>
-              <div className={styles.iconLink}>
-              <a 
-                href="https://blog.goforefront.org" 
+            <div
+              className={styles.icon}
+              style={{ backgroundImage: `url(${AnnualReportIcon})` }}
+            />
+            <div className={styles.iconText}>
+              Read our annual reports for <br />
+              full transparency and program impact.
+            </div>
+
+            <div className={styles.dropdownContainer}>
+              <Dropdown
+                placeholder="Select a year"
+                selection
+                className={styles.dropdown}
+              >
+                <Dropdown.Menu className={styles.dropdownMenu}>
+                  {AnnualReports.map(report => (
+                    <Dropdown.Item
+                      className={styles.dropdownItem}
+                      text={report.year}
+                      onClick={() => window.open(report.href)}
+                    />
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <div
+              className={styles.icon}
+              style={{ backgroundImage: `url(${BlogIcon})` }}
+            />
+            <div className={styles.iconText}>
+              Read our personal stories and <br />
+              the impact we are making from the field.
+            </div>
+            <div className={styles.iconLink}>
+              <a
+                href="https://blog.goforefront.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Check out our blog
               </a>
-                </div>
+            </div>
           </div>
         </div>
 
-        <OurTeamContainer/>
-        <Footer/>
+        <OurTeamContainer />
+        <Footer />
       </div>
     );
   }

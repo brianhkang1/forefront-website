@@ -9,7 +9,7 @@ type Props = {
   mobileHeight?: string;
   className?: string;
   backgroundSize?: 'cover' | 'contain';
-}
+};
 
 const Picture: React.FC<Props> = ({
   src,
@@ -19,11 +19,11 @@ const Picture: React.FC<Props> = ({
   mobileHeight,
   backgroundSize = 'cover',
   className,
-  children
+  children,
 }) => {
   const isMobile = useIsMobile();
 
-  return(
+  return (
     <div
       className={className}
       style={{
@@ -35,7 +35,7 @@ const Picture: React.FC<Props> = ({
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 export default Picture;

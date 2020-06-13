@@ -9,7 +9,7 @@ interface Props {
   variant?: 'solid' | 'outlined' | 'text';
   fullWidth?: boolean;
   onClick?: any;
-};
+}
 
 const Button: React.FunctionComponent<Props> = ({
   className,

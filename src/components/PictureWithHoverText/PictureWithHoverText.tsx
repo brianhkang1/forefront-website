@@ -13,48 +13,53 @@ interface Props {
 
 type State = {
   isHovering: boolean;
-}
+};
 
 class PictureWithHoverText extends React.Component<Props, State> {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
 
-    this.state={
-      isHovering: false
-    }
+    this.state = {
+      isHovering: false,
+    };
   }
 
-  render(){
-    const { 
-      title, 
-      description, 
-      image, 
-      className, 
-      titleClassName, 
+  render() {
+    const {
+      title,
+      description,
+      image,
+      className,
+      titleClassName,
       descriptionClassName,
     } = this.props;
     const { isHovering } = this.state;
 
-    return(
-      <div 
-        className={classNames(styles.root, className)} 
-        style={{backgroundImage: `url(${image})`}}
-        onMouseEnter={() => this.setState({isHovering: true})}
-        onMouseLeave={() => this.setState({isHovering: false})}
+    return (
+      <div
+        className={classNames(styles.root, className)}
+        style={{ backgroundImage: `url(${image})` }}
+        onMouseEnter={() => this.setState({ isHovering: true })}
+        onMouseLeave={() => this.setState({ isHovering: false })}
       >
         <div className={styles.container}>
           {!isHovering && (
-            <div className={classNames(styles.title, titleClassName)}>{title}</div>
+            <div className={classNames(styles.title, titleClassName)}>
+              {title}
+            </div>
           )}
 
           {isHovering && (
-            <div className={classNames(styles.description, descriptionClassName)}>{description}</div>
+            <div
+              className={classNames(styles.description, descriptionClassName)}
+            >
+              {description}
+            </div>
           )}
         </div>
       </div>
-    )
+    );
   }
 }
 
-
-export default PictureWithHoverText
+export default PictureWithHoverText;

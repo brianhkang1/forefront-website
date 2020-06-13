@@ -2,18 +2,18 @@ import React from 'react';
 
 type Props = {
   height?: string;
-}
+};
 
 const Spacer = ({ height = '1rem' }: Props) => {
   return (
-    <div 
+    <div
       style={{
-        display: 'block', 
+        display: 'block',
         width: '100vw',
-        height: height
+        height: height,
       }}
     />
-  )
-}
+  );
+};
 
-export default Spacer; 
+export default Spacer;

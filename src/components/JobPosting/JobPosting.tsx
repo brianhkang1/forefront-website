@@ -16,51 +16,48 @@ import PublicRelationsLeadApp from '../../Documents/Public_Relations_Lead.doc';
 const JobPostingInfo = [
   {
     title: 'Chief Marketing Officer',
-    link: ChiefMarketingOfficerApp
+    link: ChiefMarketingOfficerApp,
   },
   {
     title: 'Copy-Write Lead',
-    link: CopyWriteLeadApp
+    link: CopyWriteLeadApp,
   },
   {
     title: 'Director of Medical',
-    link: DirectorOfMedicalApp
+    link: DirectorOfMedicalApp,
   },
   {
     title: 'Director of Programs',
-    link: DirectorOfProgramsApp
+    link: DirectorOfProgramsApp,
   },
   {
     title: 'People & Culture Lead',
-    link: PeopleAndCultureLeadApp
+    link: PeopleAndCultureLeadApp,
   },
   {
     title: 'Public Relations Lead',
-    link: PublicRelationsLeadApp
+    link: PublicRelationsLeadApp,
   },
-
-]
+];
 
 const JobPosting: React.FC = () => {
   return (
     <div className={styles.root}>
-      <div className={styles.containerTitle}>
-        Available Roles
-      </div>
+      <div className={styles.containerTitle}>Available Roles</div>
 
       <div className={styles.jobPostingContainer}>
         {JobPostingInfo.map(posting => (
           <div className={styles.jobPosting}>
-              <div className={styles.jobTitle}>
-                <a href={posting.link} target="_blank" rel="noopener noreferrer">
-                  {posting.title}
-                </a>
-              </div>
+            <div className={styles.jobTitle}>
+              <a href={posting.link} target="_blank" rel="noopener noreferrer">
+                {posting.title}
+              </a>
+            </div>
           </div>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default JobPosting;

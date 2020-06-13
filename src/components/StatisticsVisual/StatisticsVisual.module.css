@@ -1,6 +1,6 @@
 .root {
   width: 100vw;
-  background-image: url("../../Images/Hero/HomePage.jpg");
+  background-image: url('../../Images/Hero/HomePage.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -19,13 +19,13 @@
   font-size: 2.5rem;
 }
 
-.statsItem{
+.statsItem {
   color: white;
   font-size: 1.5rem;
   line-height: 5vh;
 }
 
-.numberCounterItem{
+.numberCounterItem {
   font-size: 3.5rem;
 }
 
@@ -36,7 +36,7 @@
   .root {
     height: 30vh;
   }
-  
+
   .container {
     grid-template-columns: 1fr 1.25fr 1.25fr 1.25fr;
   }

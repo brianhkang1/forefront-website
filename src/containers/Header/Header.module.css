@@ -16,7 +16,7 @@
   width: 100vw;
   height: 9vh;
   display: grid;
-  grid-template-columns: 88vw 12vw; 
+  grid-template-columns: 88vw 12vw;
   background-color: white;
   box-shadow: 0 1px 4px gray;
 }
