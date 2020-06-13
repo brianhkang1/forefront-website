@@ -20,7 +20,8 @@ import OurImpactEmpowerment from '../../../Images/HomePage/OurImpact_Empowerment
 import GetInvolvedPic1 from '../../../Images/HomePage/GetInvolved1.jpg';
 import GetInvolvedPic2 from '../../../Images/HomePage/GetInvolved2.jpg';
 import GetInvolvedPic3 from '../../../Images/HomePage/GetInvolved3.jpg';
-import TheirVisionIsOurMission from '../../../Images/HomePage/TheirVisionIsOurMission.png';
+import TheirVisionIsOurMissionDesktop from '../../../Images/HomePage/TVIOM_Desktop.png';
+import TheirVisionIsOurMissionMobile from '../../../Images/HomePage/TVIOM_Mobile.png';
 import WaterIcon from '../../../Images/Icons/FourPillars/Water_color.png';
 import EducationIcon from '../../../Images/Icons/FourPillars/Education_color.png';
 import MedicalIcon from '../../../Images/Icons/FourPillars/Medical_color.png';
@@ -75,15 +76,13 @@ const GetInvolved = [
     text: 'Campaign',
     link: 'https://secure.givelively.org/donate/forefront-charity/start-something'
   },
-  // {
-  //   image: GetInvolvedPic4,
-  //   text: 'Start a Chapter',
-  //   link: 'https://www.google.com'
-  // },
 ]
 
 class HomePage extends React.Component{
   render(){
+    const isMobile = window.matchMedia("(max-width: 740px)").matches;
+    const isDesktop = window.matchMedia("(min-width: 741px)").matches;
+
     const renderPictureText = (item) => {
       return (
         <div className={styles.link}>
@@ -102,8 +101,7 @@ class HomePage extends React.Component{
 
     return (
         <div className={styles.root}>
-          {/* mobile view */}
-          {window.matchMedia("(max-width: 740px)").matches && (
+          {isMobile && (
             <div className={styles.header}>
               <Header/>
             </div>
@@ -112,7 +110,7 @@ class HomePage extends React.Component{
           <div className={styles.heroPictureContainer}> 
             <PictureFilter>
             {/* laptop view */}
-            {window.matchMedia("(min-width: 741px)").matches && (
+            {isDesktop && (
                 <div className={styles.header}>
                 <Header/>
               </div>
@@ -131,9 +129,9 @@ class HomePage extends React.Component{
 
           <div className={styles.theirVisionVisual}>
             <Picture
-              src={TheirVisionIsOurMission}
-              width='80vw'
-              height='40vh'
+              src={isDesktop ? TheirVisionIsOurMissionDesktop : TheirVisionIsOurMissionMobile}
+              width={isDesktop ? '70vw' : '80vw'}
+              height={isDesktop ? '30vh' : '40vh'}
               backgroundSize='contain'
             />
           </div>

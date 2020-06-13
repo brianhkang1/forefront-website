@@ -7,8 +7,8 @@
   .heroText {
     position: absolute;
     left: 8vw;
-    font-size: 3rem;
-    text-align: left;
+    font-size: 2.5rem;
+    top: 30vh;
   }
   
   .heroText1 {

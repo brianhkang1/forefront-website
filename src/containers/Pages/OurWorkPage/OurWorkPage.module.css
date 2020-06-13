@@ -5,11 +5,12 @@
   }
 
   .heroText {
-    top: 20vh;
+    top: 30vh;
     right: 5vw;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     line-height: 3.25rem;
     width: 45vw;
+    padding: 1rem 2rem;
   }
 }
 

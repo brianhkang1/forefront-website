@@ -16,11 +16,21 @@ class Footer extends React.Component{
           </div>
 
           <div className={styles.iconsContainer}>
-            <span className={styles.whiteIcon}><Icon name="facebook f" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="tumblr" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="amazon" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="twitter" size="large" /></span>
-            <span className={styles.whiteIcon}><Icon name="connectdevelop" size="large" /></span>
+              <a className={styles.whiteIcon} href={'https://www.facebook.com/goforefront'} target="_blank" rel="noopener noreferrer">
+                <Icon name="facebook f" size="large" />
+              </a>
+            <a className={styles.whiteIcon} href={'https://www.instagram.com/goforefront'} target="_blank" rel="noopener noreferrer">
+              <Icon name="instagram" size="large" />
+            </a>
+            <a className={styles.whiteIcon} href={'http://smile.amazon.com/ch/47-3373120'} target="_blank" rel="noopener noreferrer">
+              <Icon name="amazon" size="large" />
+            </a>
+            <a className={styles.whiteIcon} href={'https://twitter.com/goforefront'} target="_blank" rel="noopener noreferrer">
+              <Icon name="twitter" size="large" />
+            </a>
+            <a className={styles.whiteIcon} href={'https://blog.goforefront.org/'} target="_blank" rel="noopener noreferrer">
+              <Icon name="connectdevelop" size="large" />
+            </a>
           </div>
         </div>
 

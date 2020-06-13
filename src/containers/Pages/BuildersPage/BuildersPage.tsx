@@ -96,14 +96,22 @@ const WhyBeABuilder = [
   }
 ]
 
-const BuildersPage: React.FC = () => {
-  // componentDidMount(){
-  //   const script = document.createElement("script");
-  //   script.src = 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?show_suggested_amount_buttons=true&address_required=false&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100'
-  //   // 'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?address_required=false'
-  //   document.getElementsByTagName("head")[0].appendChild(script);
-  // }
+const DonationWidget: React.FC = () => {
+  return (
+    <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
+      <div 
+        data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
+        id="give-lively-widget" 
+        className="gl-branded-donation-widget"
+      />
+      <div className={styles.widgetDisclaimer}>
+        Thanks to a generous donor, your 2.2% credit card fee will be covered.
+      </div>
+    </div>
+  )
+}
 
+const BuildersPage: React.FC = () => {
   const isMobile = useIsMobile();
   const mobileDonationWidget = useRef<HTMLDivElement>(null);
 
@@ -171,13 +179,7 @@ const BuildersPage: React.FC = () => {
             </div>
 
           {!isMobile && (
-            <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
-              <div 
-                data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-                id="give-lively-widget" 
-                className="gl-branded-donation-widget"
-              />
-            </div>
+            <DonationWidget/>
           )}
           </div>
         </PictureFilter>
@@ -282,13 +284,7 @@ const BuildersPage: React.FC = () => {
       {isMobile && (
         <div ref={mobileDonationWidget}>
           <Title title='Make a Donation'/>
-          <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay="0.75s">
-            <div 
-              data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget' 
-              id="give-lively-widget" 
-              className="gl-branded-donation-widget"
-            />
-          </div>
+          <DonationWidget/>
         </div>
       )}
 

@@ -32,7 +32,7 @@ const FourPillarsApproach = {
       title: FourPillars.WATER,
       icon: WaterIcon,
       color: 'var(--blue-color)',
-      text: '750 million people lack access to clean water-- other areas of sustainability cannot be achieved without meeting this basic need first. That is why our first phase is dedicated to building accessible water wells, along with soap toys to encourage children to wash their hands to keep infections away.',
+      text: "We provide access to clean water and basic sanitation for rural villages in need through a water scorecard that assesses multiple factors, including demographic of the village and location/source of the nearest water source. FOREFRONT Charity is consistently planning and implementing innovative sustainable solutions to provide clean water with lower downtime and a cleaner source of water.  Now, retrieving clean water only takes a fraction of the time which means more time for school and work.  We also promote good hygiene and sanitation by distributing homemade soap toys and teaching lessons on healthy habits which means less sick days and more income to support their family.",
       image: WaterImage,
     },
   [FourPillars.EDUCATION]: 
@@ -40,7 +40,7 @@ const FourPillarsApproach = {
       title: FourPillars.EDUCATION,
       icon: EducationIcon,
       color: 'var(--yellow-color)',
-      text: '57 million children around the globe do not have access to schools. Education is crucial to breaking the cycle of poverty. Our long-term hope is that the students will gain vocational skills, attend college, and reinvest their newly acquired skills and knowledge into their communities.',
+      text: "FOREFRONT International school aspires to provide an excellent education to all students, regardless of their gender, demographics, or family income, so that they can become skilled and active future change agents in their communities.  Teachers and parents will work together to ensure that students at the primary school develop rigorous critical thinking skills, core values, and acquire enduring understandings on how to make the world a better place.",
       image: EducationImage,
     },
   [FourPillars.MEDICAL]: 
@@ -48,7 +48,7 @@ const FourPillarsApproach = {
       title: FourPillars.MEDICAL,
       icon: MedicalIcon,
       color: 'var(--red-color)',
-      text: '75-85% of people in developing nations cannot receive medical treatment. We want to alleviate this dire issue through the construction of clinics that will provide ethical, accessible and affordable healthcare. A healthy community means more children can attend school and more adults can enter the workforce.',
+      text: "The vision of FOREFRONT Charity’s medical pillar is to provide medical access to all. We provide community engagement sessions on the importance of a healthy diet, active lifestyle, and provide free diabetes, weight, and blood pressure check-ups. Through our efforts, we have been able to test over 200+ people for diabetes, host six health & wellness workshops and have partnered with local health organizations.", 
       image: MedicalImage,
     },
   [FourPillars.EMPOWERMENT]: 
@@ -56,7 +56,7 @@ const FourPillarsApproach = {
       title: FourPillars.EMPOWERMENT,
       icon: EmpowermentIcon,
       color: 'var(--purple-color)',
-      text: '27 million people worldwide are victims of human trafficking. We want to build safehouses that will provide homes, vocational training and counseling for marginalized victims of sexual abuse and human trafficking. Our goal is to empower more women to enter the workforce and start their own businesses.',
+      text: "Our aim is to raise next generation leaders, in particular women, to give back to their villages.  In partnership with the local Indian government and the Indian national Swachh Bharat program, FOREFRONT launched a soap business led by a woman local name Elizabeth.  Its aim is to educate about the importance of hand washing and distributing soap to villages without easy access to soap.Community engagement is a unique facet of our organization that allows us to collaborate with and  understand and assess the individual needs of each community we serve. We facilitate programming that will ultimately be empowering to the local men, women and children to take ownership and initiative in their own communities. Community engagement bridges the sustainability of all our pillars.",
       image: EmpowermentImage,
     }
 }

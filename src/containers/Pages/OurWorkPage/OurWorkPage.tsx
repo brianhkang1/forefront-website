@@ -134,7 +134,7 @@ const waterVisualData = [
     description: (
       <div>
         In partnership with the local Indian government and the Indian national Swachh Bharat program, 
-        FOREFRONT launched a soap business led by a woman local nameD Elizabeth.  
+        FOREFRONT launched a soap business led by a woman named Elizabeth.  
         Its aim is to educate about the importance of hand washing and distributing soap to villages 
         without easy access to soap.
       </div>
