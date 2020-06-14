@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import L from 'leaflet';
-import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
+import {
+  Map as LeafletMap,
+  TileLayer,
+  Marker,
+  Popup,
+  useLeaflet,
+} from 'react-leaflet';
+
+import Picture from '../../components/Picture';
 import Title from '../../components/Title';
+import EducationIcon from '../../Images/Icons/FourPillars/Education_color.png';
+import DefaultLeafletMarker from '../../Images/Icons/DefaultLeafletMarker.png';
 
 const schoolLocation = [16.1689307, 80.8048806];
 
@@ -178,6 +189,54 @@ const waterWells = [
   },
 ];
 
+const Legend = () => {
+  const { map } = useLeaflet();
+
+  useEffect(() => {
+    const legend = L.control({ position: 'bottomright' });
+    const legendContent = (
+      <div
+        style={{
+          padding: '0.5rem 1rem 0 1rem',
+          backgroundColor: 'white',
+          borderRadius: '10px',
+          opacity: '0.8',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <span>
+            <img
+              src={DefaultLeafletMarker}
+              width="24px"
+              height="24px"
+              style={{ objectFit: 'contain' }}
+              alt="default leaflet marker"
+            />
+          </span>
+          <span style={{ paddingLeft: '0.5rem' }}>Water Well</span>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <span>
+            <Picture src={EducationIcon} width="24px" height="36px" />
+          </span>
+          <span style={{ paddingLeft: '0.5rem' }}>School</span>
+        </div>
+      </div>
+    );
+
+    legend.onAdd = () => {
+      const legendContainer = L.DomUtil.create('div', 'legend');
+      ReactDOM.render(legendContent, legendContainer);
+      return legendContainer;
+    };
+
+    legend.addTo(map);
+  });
+
+  return null;
+};
+
 const Map = () => {
   const openPopup = marker => {
     if (marker && marker.leafletElement) {
@@ -195,7 +254,7 @@ const Map = () => {
 
   const renderWaterWells = () => {
     return waterWells.map(w => (
-      <Marker position={w.location}>
+      <Marker key={w.location} position={w.location}>
         <Popup>
           <div>
             {w.name} ({w.year})
@@ -223,6 +282,8 @@ const Map = () => {
         <Marker position={schoolLocation} ref={openPopup} icon={SchoolIcon}>
           <Popup>FOREFRONT School</Popup>
         </Marker>
+
+        <Legend />
       </LeafletMap>
     </div>
   );
