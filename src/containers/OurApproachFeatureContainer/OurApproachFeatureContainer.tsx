@@ -132,8 +132,8 @@ const OurApproachFeatureContainer = () => {
                 <Picture src={approach.icon} width="5rem" height="5rem" />
               </div>
 
-              {/* laptop view */}
-              {window.matchMedia('(min-width: 741px)').matches && (
+              {/* desktop view */}
+              {window.matchMedia('(min-width: 769px)').matches && (
                 <div
                   className={styles.buttonTitle}
                   style={{ color: approach.color }}

@@ -1,10 +1,11 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .fourPillarsVisual {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   .pictureSize {
@@ -15,8 +16,8 @@
 
 /******************************************************************/
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .fourPillarsVisual {
     width: 100vw;
     display: grid;

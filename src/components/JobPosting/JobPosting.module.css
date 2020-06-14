@@ -1,12 +1,12 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .root {
     margin: 2rem 4rem;
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .root {
     margin: 3rem 2rem;
   }

@@ -160,7 +160,7 @@ const schoolVisualData = [
         src={SchoolFloorPlan}
         width="100%"
         height={
-          window.matchMedia('(min-width: 741px)').matches ? '400px' : '200px'
+          window.matchMedia('(min-width: 769px)').matches ? '400px' : '200px'
         }
         backgroundSize="contain"
       />
@@ -192,10 +192,13 @@ const schoolVisualData = [
 
 class OurWorkPage extends React.Component {
   render() {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+
     return (
       <div className={styles.root}>
         {/* mobile view */}
-        {window.matchMedia('(max-width: 740px)').matches && (
+        {isMobile && (
           <div className={styles.header}>
             <Header />
           </div>
@@ -203,8 +206,8 @@ class OurWorkPage extends React.Component {
 
         <div className={styles.heroPictureContainer}>
           <PictureFilter>
-            {/* laptop view */}
-            {window.matchMedia('(min-width: 741px)').matches && (
+            {/* desktop view */}
+            {isDesktop && (
               <div className={styles.header}>
                 <Header />
               </div>

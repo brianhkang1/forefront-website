@@ -1,10 +1,10 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .container {
     height: 45vh;
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 1.5rem;
   }
 
   .reverseContainerDirection {
@@ -12,15 +12,15 @@
   }
 
   .textContainer {
-    width: 57vw;
+    width: 56vw;
     padding: 0 5rem;
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;

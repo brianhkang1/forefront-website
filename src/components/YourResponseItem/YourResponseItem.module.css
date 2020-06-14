@@ -1,5 +1,5 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .root {
     height: 50vh;
     width: 20vw;
@@ -32,8 +32,8 @@
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .root {
     height: 60vh;
     width: 90vw;

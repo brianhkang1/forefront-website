@@ -1,5 +1,5 @@
-/* ************ LAPTOP ************** */
-@media (min-width: 741px) {
+/* ************ DESKTOP ************** */
+@media (min-width: 769px) {
   .root {
     margin-left: -1rem;
     display: flex;
@@ -40,7 +40,7 @@
 
 /* ************MOBILE**************** */
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .root {
     margin: 1rem 0;
     display: flex;

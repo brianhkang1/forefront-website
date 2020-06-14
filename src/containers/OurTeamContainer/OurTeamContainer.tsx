@@ -158,7 +158,7 @@ const OurTeamContainer: React.FC = () => {
           src={TeamPicture}
           className={styles.mainPicture}
           width={
-            window.matchMedia('(min-width: 741px)').matches ? '70vw' : '100vw'
+            window.matchMedia('(min-width: 769px)').matches ? '70vw' : '100vw'
           }
           height="70vh"
         />

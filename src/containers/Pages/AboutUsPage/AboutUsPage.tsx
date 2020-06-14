@@ -35,7 +35,7 @@ const AnnualReports = [
 ];
 
 class AboutUsPage extends React.Component {
-  renderLaptopHeroText = () => {
+  renderDesktopHeroText = () => {
     return (
       <div className={styles.heroTextContainer}>
         <div
@@ -132,10 +132,13 @@ class AboutUsPage extends React.Component {
   };
 
   render() {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+
     return (
       <div className={styles.root}>
         {/* mobile view */}
-        {window.matchMedia('(max-width: 740px)').matches && (
+        {isMobile && (
           <div className={styles.header}>
             <Header />
           </div>
@@ -143,16 +146,15 @@ class AboutUsPage extends React.Component {
 
         <div className={styles.heroPictureContainer}>
           <PictureFilter>
-            {/* laptop view */}
-            {window.matchMedia('(min-width: 741px)').matches && (
+            {/* desktop view */}
+            {isDesktop && (
               <div className={styles.header}>
                 <Header />
               </div>
             )}
 
-            {// laptop view
-            window.matchMedia('(min-width: 741px)').matches
-              ? this.renderLaptopHeroText()
+            {isDesktop
+              ? this.renderDesktopHeroText()
               : this.renderMobileHeroText()}
           </PictureFilter>
         </div>

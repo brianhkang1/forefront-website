@@ -32,57 +32,55 @@ class Header extends React.Component<{}, State> {
 
   render() {
     const { isMobileMenuActive } = this.state;
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
 
-    return (
-      // laptop view
-      window.matchMedia('(min-width: 741px)').matches ? (
-        <header className={styles.header}>
-          <div className={classNames(styles.headerLeft)}>
+    return isDesktop ? (
+      <header className={styles.header}>
+        <div className={classNames(styles.headerLeft)}>
+          <NavLink exact to="/">
+            <img
+              src={ForeFrontLogo}
+              alt="Forefront Logo"
+              style={{ marginLeft: '1rem', width: '20rem', height: '5rem' }}
+            />
+          </NavLink>
+        </div>
+        <HeaderLinks handleLinkClick={this.handleLinkClick} />
+      </header>
+    ) : (
+      //mobile view
+      <>
+        <div className={`${styles.mobileHeader}`}>
+          <div className={styles.mobileHeaderLeft}>
             <NavLink exact to="/">
               <img
-                src={ForeFrontLogo}
+                src={ForeFrontLogoColor}
                 alt="Forefront Logo"
-                style={{ marginLeft: '1rem', width: '20rem', height: '5rem' }}
+                style={{
+                  width: '20rem',
+                  height: '5rem',
+                  objectFit: 'contain',
+                }}
               />
             </NavLink>
           </div>
-          <HeaderLinks handleLinkClick={this.handleLinkClick} />
-        </header>
-      ) : (
-        //mobile view
-        <>
-          <div className={`${styles.mobileHeader}`}>
-            <div className={styles.mobileHeaderLeft}>
-              <NavLink exact to="/">
-                <img
-                  src={ForeFrontLogoColor}
-                  alt="Forefront Logo"
-                  style={{
-                    width: '20rem',
-                    height: '5rem',
-                    objectFit: 'contain',
-                  }}
-                />
-              </NavLink>
-            </div>
-            <div
-              className={styles.mobileMenuIcon}
-              onClick={this.onMobileMenuClick}
-            >
-              <Icon color="grey" name="bars" size="large" />
-            </div>
-          </div>
-
           <div
-            className={classNames(
-              styles.mobileMenu,
-              isMobileMenuActive && styles.displayMobileMenu
-            )}
+            className={styles.mobileMenuIcon}
+            onClick={this.onMobileMenuClick}
           >
-            <HeaderLinks isMobile handleLinkClick={this.handleLinkClick} />
+            <Icon color="grey" name="bars" size="large" />
           </div>
-        </>
-      )
+        </div>
+
+        <div
+          className={classNames(
+            styles.mobileMenu,
+            isMobileMenuActive && styles.displayMobileMenu
+          )}
+        >
+          <HeaderLinks isMobile handleLinkClick={this.handleLinkClick} />
+        </div>
+      </>
     );
   }
 }

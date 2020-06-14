@@ -14,7 +14,7 @@
 
 .mobileHeader {
   width: 100vw;
-  height: 9vh;
+  height: 4.75rem;
   display: grid;
   grid-template-columns: 88vw 12vw;
   background-color: white;

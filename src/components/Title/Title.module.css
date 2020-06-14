@@ -1,5 +1,5 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .root {
     width: 100vw;
     padding: 4rem 10rem 3rem 2rem;
@@ -19,8 +19,8 @@
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .root {
     width: 100vw;
     padding: 4vh 6vw;

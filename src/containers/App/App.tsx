@@ -67,8 +67,8 @@ class App extends React.Component {
         render={({ match, location }) => (
           <div className={styles.root}>
             <div className={styles.content}>
-              {/* only laptop gets page transition animations */}
-              {window.matchMedia('(min-width: 741px)').matches
+              {/* only desktop gets page transition animations */}
+              {window.matchMedia('(min-width: 769px)').matches
                 ? this.renderRoutesWithTransitionAnimation(match, location)
                 : this.renderRoutes(location)}
             </div>

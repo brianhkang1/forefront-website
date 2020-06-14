@@ -92,8 +92,8 @@ const GetInvolved = [
 
 class HomePage extends React.Component {
   render() {
-    const isMobile = window.matchMedia('(max-width: 740px)').matches;
-    const isDesktop = window.matchMedia('(min-width: 741px)').matches;
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
 
     const renderPictureText = item => {
       return (
@@ -121,7 +121,7 @@ class HomePage extends React.Component {
 
         <div className={styles.heroPictureContainer}>
           <PictureFilter>
-            {/* laptop view */}
+            {/* desktop view */}
             {isDesktop && (
               <div className={styles.header}>
                 <Header />
@@ -208,9 +208,7 @@ class HomePage extends React.Component {
                 mobileWidth="90vw"
                 mobileHeight="40vh"
               >
-                <PictureFilter className={styles.getInvolvedImage}>
-                  {renderPictureText(getInvolvedItem)}
-                </PictureFilter>
+                {renderPictureText(getInvolvedItem)}
               </Picture>
             ))}
           </div>

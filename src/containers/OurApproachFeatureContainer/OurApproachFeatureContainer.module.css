@@ -1,9 +1,8 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .optionButtons {
-    padding: 0 17rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .buttonContainer,
@@ -14,6 +13,7 @@
     align-items: center;
     border-radius: 3rem;
     width: 15.5195rem;
+    margin: 0 1rem;
   }
 
   .iconContainer {
@@ -53,8 +53,8 @@
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .optionButtons {
     width: 100vw;
     display: flex;

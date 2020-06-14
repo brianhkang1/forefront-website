@@ -1,5 +1,5 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .howToGetInvolvedItemsContainer {
     padding: 0 10vw;
     display: flex;
@@ -8,8 +8,8 @@
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .howToGetInvolvedItemsContainer {
     padding: 0;
   }

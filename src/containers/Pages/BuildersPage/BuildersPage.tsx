@@ -139,8 +139,8 @@ const BuildersPage: React.FC = () => {
             className={styles.mobileDonationWidgetLink}
             onClick={scrollToMobileDonationWidget}
           >
-            Join other passionate and dedicated givers{' '}
-          </span>
+            Join other passionate and dedicated givers
+          </span>{' '}
           to build up local community leaders that will multiply into a global
           network of change. Your monthly giving equips communities with the
           necessities to thrive:

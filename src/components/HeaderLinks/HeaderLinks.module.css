@@ -1,5 +1,5 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .headerLinks {
     display: flex;
     align-items: center;
@@ -28,8 +28,8 @@
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .headerLinks {
     font-size: 1.25rem;
     background-color: white;

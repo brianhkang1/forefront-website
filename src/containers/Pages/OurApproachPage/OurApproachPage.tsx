@@ -13,25 +13,28 @@ import LongTermSustainabilityImage from '../../../Images/OurApproachPage/LongTer
 
 class OurApproachPage extends React.Component {
   render() {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+
     return (
       <div className={styles.root}>
         {/* mobile view */}
-        {window.matchMedia('(max-width: 740px)').matches && (
+        {isMobile && (
           <div className={styles.header}>
             <Header />
           </div>
         )}
         <div className={styles.heroPictureContainer}>
           <PictureFilter>
-            {/* laptop view */}
-            {window.matchMedia('(min-width: 741px)').matches && (
+            {/* desktop view */}
+            {isDesktop && (
               <div className={styles.header}>
                 <Header />
               </div>
             )}
 
             <PictureText className={styles.heroText} padding="1rem 2rem">
-              {window.matchMedia('(min-width: 741px)').matches ? (
+              {isDesktop ? (
                 <>
                   <div>Breaking barriers, no matter</div>
                   <div>how small, has the power to</div>
@@ -39,7 +42,6 @@ class OurApproachPage extends React.Component {
                 </>
               ) : (
                 <div>
-                  <div className={styles.boldHeroText}>Our Approach</div>
                   Breaking barriers, no matter how small, has the power to
                   change a community's course.
                 </div>

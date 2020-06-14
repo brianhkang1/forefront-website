@@ -1,5 +1,5 @@
-/* laptop */
-@media (min-width: 741px) {
+/* DESKTOP */
+@media (min-width: 769px) {
   .heroPictureContainer,
   .heroPictureContainer::before {
     height: 100vh;
@@ -38,8 +38,8 @@
   }
 }
 
-/* mobile */
-@media (max-width: 740px) {
+/* MOBILE */
+@media (max-width: 768px) {
   .heroPictureContainer,
   .heroPictureContainer::before {
     height: 93vh;
@@ -49,7 +49,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .heroText {

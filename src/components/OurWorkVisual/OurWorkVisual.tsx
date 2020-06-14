@@ -40,7 +40,7 @@ class OurWorkVisual extends React.Component<Props, State> {
     const { selectedIndex } = this.state;
 
     const determineChartMarginRight = (itemName: string) => {
-      const isMobile = window.matchMedia('(max-width: 740px)').matches;
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
       if (!isMobile) {
         return '0';
       } else {
