@@ -31,11 +31,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.+(ts|tsx|js|css)\""
+    "format": "prettier --single-quote --trailing-comma es5 --print-width 80 --write \"src/**/*.+(ts|tsx|js|css)\""
   },
   "prettier": {
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "printWidth": 80
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,7 +54,7 @@
   },
   "lint-staged": {
     "src/**/*.+(ts|tsx|js|css)": [
-      "prettier --single-quote --trailing-comma es5 --write",
+      "prettier --single-quote --trailing-comma es5 --print-width 80 --write",
       "git add"
     ]
   },

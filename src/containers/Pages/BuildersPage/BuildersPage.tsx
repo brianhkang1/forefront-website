@@ -141,13 +141,13 @@ const BuildersPage: React.FC = () => {
           >
             Join other passionate and dedicated givers
           </span>{' '}
-          to build up local community leaders that will multiply into a global
+          to build up local community leaders who will multiply into a global
           network of change. Your monthly giving equips communities with the
           necessities to thrive:
         </span>
       );
     } else {
-      return 'Join other passionate and dedicated givers to build up local community leaders that will multiply into a global network of change. Your monthly giving equips communities with the necessities to thrive:';
+      return 'Join other passionate and dedicated givers to build up local community leaders who will multiply into a global network of change. Your monthly giving equips communities with the necessities to thrive:';
     }
   };
 
@@ -179,15 +179,15 @@ const BuildersPage: React.FC = () => {
           <div className={styles.heroTextContainer}>
             <div className={styles.heroText}>
               <PictureText padding="1rem 1.5rem">
-                Builders: an unstoppable group of monthly givers in building up
-                communities where every person has the opportunity to thrive
+                Builders: unstoppable monthly givers who give the opportunity
+                for communities to thrive.
               </PictureText>
             </div>
             {/* hacky way of ensuring heroText takes up space to place
             widget below appropriately */}
             <div className={styles.hiddenHeroText}>
-              Builders: an unstoppable group of monthly givers in building up
-              communities where every person has the opportunity to thrive
+              Builders: unstoppable monthly givers who give the opportunity for
+              communities to thrive.
             </div>
 
             {!isMobile && <DonationWidget />}
@@ -216,21 +216,14 @@ const BuildersPage: React.FC = () => {
 
       <Title
         title="Make a Ripple Effect of Change"
-        description="You too, along with many other givers, can also make impact. 
-        It's everyday people who through their own act of generosity, 
-        makes ripple effect positively changing people's lives. 
-        You can also do the same. Together, we will leave a legacy 
-        in this world."
+        description="Even a small drop of generosity each day, month, or year wells up into waves of positive impact. Together, we can make that legacy."
       />
 
       <Picture src={RandomPic} width="100vw" height="60vh" />
 
       <Title
         title="Calling Everyday Heroes"
-        description="Making change doesn't require you to have credentials 
-        but just a giving kind heart. It's everyday people who are everyday heroes. 
-        So we are bringing everyday heroes together to make everyday impact. 
-        Why be a builder?"
+        description="Everyday people make everyday heroes make everyday impact. Creating change doesn’t require credentials, just a giving heart. Why be a builder?"
       />
 
       <div className={styles.whyBeMonthlyDonorContainer}>

@@ -42,9 +42,7 @@ class YourResponseContainer extends React.Component {
       <div className={styles.root}>
         <Title
           title="Your Response"
-          description="Never underestimate the impact you can have on someone else's life. 
-            In India, access to clean water means more time for women to earn money and children to attend school, so
-            they can build a better future for themselves. Thank you for giving and investing in these future leaders!"
+          description="Never underestimate your impact on a life. In India, access to clean water liberates women and children to earn money and attend school to build a better future for themselves."
         />
 
         <div className={styles.howToGetInvolvedItemsContainer}>

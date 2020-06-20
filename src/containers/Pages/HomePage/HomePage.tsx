@@ -129,11 +129,11 @@ class HomePage extends React.Component {
             )}
 
             <PictureText padding="1.5rem" className={styles.heroText}>
-              <div>We build a future where dreamers</div>
+              <div>We build a future where rural dreamers</div>
               <ReactTypingEffect
                 speed={75}
                 eraseDelay={1000000}
-                text="become changemakers."
+                text="become global changemakers."
               />
             </PictureText>
           </PictureFilter>
@@ -158,8 +158,7 @@ class HomePage extends React.Component {
         <div className={styles.ourImpactContainer}>
           <Title
             title="Our Impact"
-            description="We are passionate and serious about making changemakers.  
-              That’s why 100% of your donation goes to our efforts and impact."
+            description="Our passion is changing the narrative to make changemakers. That’s why 100% of your donations go directly to our work on the ground."
           />
           <div className={styles.ourImpactItemContainer}>
             {OurImpact.map((ourImpactItem, index) => (

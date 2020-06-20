@@ -7,8 +7,8 @@ interface Props {
   description: string;
   image: React.ReactNode;
   className?: string;
-  titleClassName: string;
-  descriptionClassName: string;
+  titleClassName?: string;
+  descriptionClassName?: string;
 }
 
 type State = {

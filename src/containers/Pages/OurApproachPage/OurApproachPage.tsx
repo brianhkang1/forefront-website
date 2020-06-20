@@ -52,9 +52,7 @@ class OurApproachPage extends React.Component {
 
         <Title
           title="Four Pillars"
-          description="Because villagers in rural areas lack basic life necessities,
-          such as clean water, access to education, medical care, and
-          opportunity, it limits them to dream or realize their potential."
+          description="The lack of clean water, education, medical care, and opportunity in rural areas limits villagers’ potential. We want to replace these barriers with foundations for growth."
         />
 
         <OurApproachFeatureContainer />
@@ -62,9 +60,7 @@ class OurApproachPage extends React.Component {
         <div>
           <Title
             title="Long-term Sustainability"
-            description="By moving beyond these barriers which everyone should have access to,
-            individuals powerfully become more than their challenges and are able to contribute
-            back to their village."
+            description="Our M&E (Monitoring & Evaluation) initiative measures and assesses our project results to inform, adapt, and ensure that all projects are effective and beneficial. We currently maintain a robust project monitoring plan to collect and verify results from our water & sanitation, education, and health initiatives ensuring healthier, happier villagers."
           />
 
           <Picture

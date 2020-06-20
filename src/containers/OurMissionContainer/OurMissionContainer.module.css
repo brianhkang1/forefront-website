@@ -1,14 +1,14 @@
 /* DESKTOP */
 @media (min-width: 769px) {
   .container {
-    height: 45vh;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 1.5rem;
+    margin: 1rem 0;
   }
 
-  .reverseContainerDirection {
-    flex-direction: row-reverse;
+  .picture {
+    width: 100vw;
+    height: 75vh;
   }
 
   .textContainer {

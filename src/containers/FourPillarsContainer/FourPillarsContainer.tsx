@@ -18,24 +18,24 @@ const FourPillarItems = [
   {
     title: 'WATER',
     description:
-      'Through our clean water wells, soap distribution, and sanitation education, our villagers are healthier and have more time for learning',
+      'Our clean water wells, soap distribution, and sanitation education make for healthier villagers & more time for learning.',
     image: WaterImage,
   },
   {
     title: 'EDUCATION',
     description:
-      'Through our school, students will engage in academically rigorous and joyful learning. Our students will develop skills in critical thinking, character, and creativity to become active change agents',
+      'Our school provides academically rigorous but joyful learning to develop students with character, creativity, and critical thinking to go from community dwellers to community builders.',
     image: EducationImage,
   },
   {
     title: 'MEDICAL',
     description:
-      'Through our low-cost, high-volume interventions, we will improve the wellness of many communities. More villagers will be allowed to work, provide for their families, and send their children to school',
+      'Our low-cost, high-volume interventions enable villagers to work, provide for families, and send children to school—improving overall wellness in many communities.',
     image: MedicalImage,
   },
   {
     title: 'EMPOWERMENT',
-    description: `Through our leadership training, local leaders will amplify their impact and inspire more change in their neighboring communities with their newfound resources`,
+    description: `Our leadership training amplifies the impact of local leaders to inspire more change in their neighboring communities.`,
     image: EmpowermentImage,
   },
 ];
@@ -44,12 +44,8 @@ const FourPillarsContainer = () => {
   return (
     <div className={styles.root}>
       <Title
-        title="The Solution"
-        description="The key to establishing sustainable communities in developing areas is 
-        empowering locals. They know their communities best. We equip future leaders with
-        fundamental human rights to clean water, quality education, access to medical
-        care, and leadership training. With these resources, leaders invest in their communities,
-        multiplying local-to-local long-term change. There will be a day when everyone has:"
+        title="Our Solution"
+        description="Transforming developing areas into sustainable communities starts with the community—empowering future leaders with a wealth of resources to invest in their villages. With fundamental access to clean water, education, medical care, and training, leaders multiply local-to-local impact. This generational change starts with creating fundamental access to:"
       />
 
       <div className={styles.fourPillarsVisual}>

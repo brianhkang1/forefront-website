@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { Icon } from 'semantic-ui-react';
 import EmailForm from '../../components/EmailForm';
+import ExposureIcon from '../../Images/Icons/exposureWhite.png';
 
 class Footer extends React.Component {
   render() {
@@ -52,7 +53,13 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon name="connectdevelop" size="large" />
+              <img
+                className={styles.exposureIcon}
+                src={ExposureIcon}
+                width="28px"
+                height="28px"
+                alt="Exposure icon"
+              />
             </a>
           </div>
         </div>

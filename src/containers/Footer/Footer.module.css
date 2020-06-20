@@ -21,8 +21,13 @@
     padding: 3rem 0;
   }
 
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+  }
+
   .whiteIcon {
-    padding-right: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -65,7 +70,8 @@
 }
 /* ************************************ */
 
-.whiteIcon {
+.whiteIcon,
+.whiteIcon:hover {
   color: white;
 }
 
@@ -80,4 +86,9 @@
 .text {
   font-size: 1.25rem;
   padding-bottom: 0.75rem;
+}
+
+.exposureIcon {
+  display: flex;
+  align-items: center;
 }
