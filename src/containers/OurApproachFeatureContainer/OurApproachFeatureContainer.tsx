@@ -32,7 +32,7 @@ const FourPillarsApproach = {
     icon: WaterIcon,
     color: 'var(--blue-color)',
     text:
-      'We provide basic sanitation and access to clean water. Our sustainable solutions help villagers retrieve clean water in a fraction of the time it normally takes, and we bring it all together by promoting good hygiene with homemade soap toys and teaching healthy habits to villagers to make for less sick days and more income to support their family.',
+      'We provide basic sanitation and access to clean water. Our sustainable solutions help villagers retrieve clean water in a fraction of the time it normally takes, and we bring it all together by promoting good hygiene with soap toys and teaching healthy habits to villagers to make for less sick days and more income to support their family.',
     image: WaterImage,
   },
   [FourPillars.EDUCATION]: {
@@ -48,7 +48,7 @@ const FourPillarsApproach = {
     icon: MedicalIcon,
     color: 'var(--red-color)',
     text:
-      'Our vision is medical access for everyone. Through free diabetes, weight, and blood pressure check-ups, we have tested 200+ people for diabetes and continue to host community sessions and health & wellness workshops to promote healthy lifestyles. And having partnered with local health organizations, our efforts will go even further.',
+      'Our vision is medical access for everyone. Through free diabetes, weight, and blood pressure check-ups, we have tested people for diabetes and continue to host community sessions and health & wellness workshops to promote healthy lifestyles. And having partnered with local health organizations, our efforts will go even further.',
     image: MedicalImage,
   },
   [FourPillars.EMPOWERMENT]: {
@@ -56,7 +56,7 @@ const FourPillarsApproach = {
     icon: EmpowermentIcon,
     color: 'var(--purple-color)',
     text:
-      'We aim to raise next generation leaders. By working and collaborating face-to-face with locals, we’re able to understand the unique needs of each community we serve. This enables us to facilitate programming that empowers local men, women, and children to take ownership and initiative in their own communities to bridge the sustainability of all our pillars.',
+      'We aim to raise next generation leaders. By working and collaborating face-to-face with locals, we are able to understand the unique needs of each community we serve. This enables us to facilitate programming that empowers local men, women, and children to take ownership and initiative in their own communities to bridge the sustainability of all our pillars.',
     image: EmpowermentImage,
   },
 };

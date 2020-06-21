@@ -6,20 +6,17 @@ import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import Picture from '../../../components/Picture';
-import Button from '../../../components/Button';
 import Header from '../../Header';
 import Footer from '../../Footer';
 import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
 import Popup from '../../../components/Popup';
+import YourResponseContainer from '../../YourResponseContainer';
 
 import OurImpactWater from '../../../Images/HomePage/OurImpact_Water.jpg';
 import OurImpactEducation from '../../../Images/HomePage/OurImpact_Education.jpg';
 import OurImpactMedical from '../../../Images/HomePage/OurImpact_Medical.png';
 import OurImpactEmpowerment from '../../../Images/HomePage/OurImpact_Empowerment.jpg';
-import GetInvolvedPic1 from '../../../Images/HomePage/GetInvolved1.jpg';
-import GetInvolvedPic2 from '../../../Images/HomePage/GetInvolved2.jpg';
-import GetInvolvedPic3 from '../../../Images/HomePage/GetInvolved3.jpg';
 import TheirVisionIsOurMissionDesktop from '../../../Images/HomePage/TVIOM_Desktop.png';
 import TheirVisionIsOurMissionMobile from '../../../Images/HomePage/TVIOM_Mobile.png';
 import WaterIcon from '../../../Images/Icons/FourPillars/Water_color.png';
@@ -71,45 +68,10 @@ const OurImpact = [
   },
 ];
 
-const GetInvolved = [
-  {
-    image: GetInvolvedPic1,
-    text: 'Donate',
-    link: 'https://secure.givelively.org/donate/forefront-charity',
-  },
-  {
-    image: GetInvolvedPic2,
-    text: 'Monthly Donor',
-    link: './builders',
-  },
-  {
-    image: GetInvolvedPic3,
-    text: 'Campaign',
-    link:
-      'https://secure.givelively.org/donate/forefront-charity/start-something',
-  },
-];
-
 class HomePage extends React.Component {
   render() {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
     const isDesktop = window.matchMedia('(min-width: 769px)').matches;
-
-    const renderPictureText = item => {
-      return (
-        <div className={styles.link}>
-          <Button>
-            <a
-              href={item.link}
-              target={item.link === './builders' ? '_self' : '_blank'}
-              rel="noopener noreferrer"
-            >
-              {item.text}
-            </a>
-          </Button>
-        </div>
-      );
-    };
 
     return (
       <div className={styles.root}>
@@ -129,11 +91,11 @@ class HomePage extends React.Component {
             )}
 
             <PictureText padding="1.5rem" className={styles.heroText}>
-              <div>We build a future where rural dreamers</div>
+              <div>We build a future where dreamers</div>
               <ReactTypingEffect
                 speed={75}
                 eraseDelay={1000000}
-                text="become global changemakers."
+                text="become global changemakers"
               />
             </PictureText>
           </PictureFilter>
@@ -192,27 +154,7 @@ class HomePage extends React.Component {
           </div>
         </div>
 
-        <div className={styles.getInvolvedContainer}>
-          <Title
-            title="How You Can Get Involved"
-            description="Take action today and enable future leaders to make local-to-local impact."
-          />
-          <div className={styles.getInvolvedItemContainer}>
-            {GetInvolved.map(getInvolvedItem => (
-              <Picture
-                className={styles.getInvolvedImage}
-                src={getInvolvedItem.image}
-                width="22rem"
-                height="25rem"
-                mobileWidth="90vw"
-                mobileHeight="40vh"
-              >
-                {renderPictureText(getInvolvedItem)}
-              </Picture>
-            ))}
-          </div>
-        </div>
-
+        <YourResponseContainer />
         <Footer />
       </div>
     );

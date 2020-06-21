@@ -12,10 +12,6 @@
     left: 5vw;
   }
 
-  .getInvolvedContainer {
-    padding-bottom: 2rem;
-  }
-
   .ourImpactItemContainer {
     width: 100vw;
     display: flex;
@@ -35,16 +31,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .getInvolvedItemContainer {
-    display: flex;
-    justify-content: center;
-  }
-
-  .getInvolvedImage {
-    border-radius: 1rem;
-    margin: 0 1rem;
   }
 }
 
@@ -88,17 +74,6 @@
     width: 100vw;
     align-items: center;
     text-align: center;
-  }
-
-  .getInvolvedItemContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .getInvolvedImage {
-    margin-bottom: 1.25rem;
-    border-radius: 1rem;
   }
 }
 
@@ -168,23 +143,6 @@
   font-size: 1rem;
   padding-bottom: 0.5rem;
   color: var(--gray-color);
-}
-
-.getInvolvedText {
-  padding: 1rem 0;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-.link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .greenBold {

@@ -139,15 +139,15 @@ const BuildersPage: React.FC = () => {
             className={styles.mobileDonationWidgetLink}
             onClick={scrollToMobileDonationWidget}
           >
-            Join other passionate and dedicated givers
+            Join other passionate and dedicated monthly givers
           </span>{' '}
           to build up local community leaders who will multiply into a global
-          network of change. Your monthly giving equips communities with the
-          necessities to thrive:
+          network of change. Your giving equips communities with the necessities
+          to thrive:
         </span>
       );
     } else {
-      return 'Join other passionate and dedicated givers to build up local community leaders who will multiply into a global network of change. Your monthly giving equips communities with the necessities to thrive:';
+      return 'Join other passionate and dedicated monthly givers to build up local community leaders who will multiply into a global network of change. Your giving equips communities with the necessities to thrive:';
     }
   };
 
@@ -179,15 +179,15 @@ const BuildersPage: React.FC = () => {
           <div className={styles.heroTextContainer}>
             <div className={styles.heroText}>
               <PictureText padding="1rem 1.5rem">
-                Builders: unstoppable monthly givers who give the opportunity
-                for communities to thrive.
+                Builders: Monthly givers who give the opportunity for
+                communities to thrive
               </PictureText>
             </div>
             {/* hacky way of ensuring heroText takes up space to place
             widget below appropriately */}
             <div className={styles.hiddenHeroText}>
-              Builders: unstoppable monthly givers who give the opportunity for
-              communities to thrive.
+              Builders: Monthly givers who give the opportunity for communities
+              to thrive
             </div>
 
             {!isMobile && <DonationWidget />}
@@ -216,14 +216,14 @@ const BuildersPage: React.FC = () => {
 
       <Title
         title="Make a Ripple Effect of Change"
-        description="Even a small drop of generosity each day, month, or year wells up into waves of positive impact. Together, we can make that legacy."
+        description="Even a small drop of generosity every day, month, and year wells up into waves of positive impact. Together, we can make that legacy."
       />
 
       <Picture src={RandomPic} width="100vw" height="60vh" />
 
       <Title
         title="Calling Everyday Heroes"
-        description="Everyday people make everyday heroes make everyday impact. Creating change doesn’t require credentials, just a giving heart. Why be a builder?"
+        description="Everyday people make everyday heroes who make everyday impact. Creating change doesn’t require credentials, just a giving heart. Why be a Builder?"
       />
 
       <div className={styles.whyBeMonthlyDonorContainer}>
@@ -243,7 +243,7 @@ const BuildersPage: React.FC = () => {
       </div>
 
       <Title
-        title="Meet the People on the Ground..."
+        title="Meet the People..."
         description="who are making this all possible. They are everyday heroes on the ground who believe in partnering with us to make a brighter future."
       />
 

@@ -97,15 +97,19 @@ const waterVisualData = [
     selectedIcon: WaterShadowIcon,
     chart: <BarChart data={waterWellData} domain={[0, 30]} isWhite />,
     bigNumber: '+11',
-    subTitle: <div>water wells projected in 2020</div>,
+    subTitle: (
+      <div>
+        water wells projected <br /> in 2020
+      </div>
+    ),
     description: (
       <>
         <div>
-          FOREFRONT consistently plans and implements innovative solutions to
-          retrieve cleaner water in a fraction of the time. This means more time
-          for school, medical attention, and life. This small investment in a
-          community’s source of water provides an overflow of better living that
-          lasts.
+          FOREFRONT Charity consistently plans and implements innovative
+          solutions to retrieve cleaner water in a fraction of the time. This
+          means more time for school, medical attention, and life. This small
+          investment in a community’s source of water provides an overflow of
+          better living that lasts.
         </div>
       </>
     ),
@@ -119,10 +123,11 @@ const waterVisualData = [
     subTitle: <div>total soap toys</div>,
     description: (
       <div>
-        In partnership with the local Indian government and the Indian national
-        Swachh Bharat program, FOREFRONT launched a women-led soap business with
-        the aim to educate on the importance of hand washing while providing
-        villages with easy access to soap.
+        Our past partnership includes working with the local Indian government
+        (National Swachh Bharat program) by launching a women-led soap business
+        to educate on the importance of hand washing while distributing soaps to
+        villagers. Our current aim continues to focus on initiatives to help
+        locals make and distribute soap.
       </div>
     ),
   },
@@ -140,9 +145,9 @@ const schoolVisualData = [
     subTitle: <div>fundraised for school</div>,
     description: (
       <div>
-        FOREFRONT International School aspires to provide an excellent education
-        to all students,regardless of their gender or demographics, so that they
-        can become skilled and active future change agents in their communities.
+        FOREFRONT School aspires to provide an excellent education to all
+        students, regardless of their gender or demographics, so that they can
+        become skilled and active future change agents in their communities.
         Teachers and parents will work together to ensure that students at the
         primary school develop rigorous critical thinking skills, core values,
         and acquire enduring understandings on how to exercise appropriate
@@ -178,9 +183,9 @@ const schoolVisualData = [
       <div>
         Our school is located in Kolluru, India, where children have no access
         to a high quality education. Of the 18,000 primary-aged children living
-        within 5 miles of our school, just 60% attend. Secondary school
-        attendance is 37% in Kolluru, 74% in India, and 76% worldwide. Just
-        among the 2nd grade children attending school within 5 miles from
+        within 5 miles of our school, 40% are not in attendance. Secondary
+        school attendance is 37% in Kolluru vs 74% in India, and 76% worldwide.
+        Just among the 2nd grade children attending school within 5 miles from
         Kolluru, 33% cannot recognize letters, 20% cannot recognize the numbers
         1 through 9, 80% have no computer access, and 44% have no toilet access.
         Here at our facility, we plan to change that.
@@ -213,8 +218,8 @@ class OurWorkPage extends React.Component {
             )}
 
             <PictureText className={styles.heroText}>
-              Your donations build sustainable, community-owned, and
-              community-led initiatives.
+              Your donations build sustainable, community-owned and
+              community-led initiatives
             </PictureText>
           </PictureFilter>
         </div>

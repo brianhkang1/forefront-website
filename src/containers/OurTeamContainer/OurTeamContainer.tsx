@@ -7,13 +7,12 @@ import JobPosting from '../../components/JobPosting';
 // @ts-ignore
 import InternshipPDF from '../../Documents/Forefront_Internship.pdf';
 
-import MemberPicture from '../../Images/Portrait/2.jpg';
 import TeamPicture from '../../Images/Team/Team.jpg';
 import MatthewOhPic from '../../Images/Team/Matthew_Oh.jpg';
 import ChanwookParkPic from '../../Images/Team/Chanwook_Park.jpg';
 import AnnaChunPic from '../../Images/Team/Anna_Chun.jpg';
 import BrianKimPic from '../../Images/Team/Brian_Kim.jpg';
-// import DarienKimPic from '../../Images/Team/Darien_Kim.jpg';
+import DarienKimPic from '../../Images/Team/Darien_Kim.jpg';
 import ElenaKimPic from '../../Images/Team/Elena_Kim.jpg';
 import EuniceLimPic from '../../Images/Team/Eunice_Lim.jpg';
 import JulianaCanalePic from '../../Images/Team/Juliana_Canale.jpg';
@@ -63,9 +62,9 @@ const TeamMembers = [
   },
   {
     title: 'DARIEN KIM',
-    image: MemberPicture,
+    image: DarienKimPic,
     description:
-      'Darien graduated from Cornell University and currently resides in Washington D.C. He loves photography and wishes to pursue a future in it. He loves people hence his passion in portrait photography.',
+      'Darien graduated from Cornell University with a degree in Design & Environmental Analysis. He has practiced in all sorts of design ranging from graphics to architecture to photography. Currently he resides in Los Angeles freelancing and growing in his photography!',
   },
   {
     title: 'ELENA KIM',
@@ -145,6 +144,16 @@ const OurTeamContainer: React.FC = () => {
 
           <div onClick={scrollToJobPostings} className={styles.mainPictureLink}>
             Join The FOREFRONT Charity Team
+          </div>
+
+          <div className={styles.mainPictureLink}>
+            <a
+              href={'https://form.jotform.com/80993600806157'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Become a Volunteer
+            </a>
           </div>
 
           <div className={styles.mainPictureLink}>

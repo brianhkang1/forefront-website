@@ -18,7 +18,7 @@ const FourPillarItems = [
   {
     title: 'WATER',
     description:
-      'Our clean water wells, soap distribution, and sanitation education make for healthier villagers & more time for learning.',
+      'Our clean water wells, soap distribution, and sanitation initiatives make for healthier villagers & more time for learning.',
     image: WaterImage,
   },
   {
@@ -30,7 +30,7 @@ const FourPillarItems = [
   {
     title: 'MEDICAL',
     description:
-      'Our low-cost, high-volume interventions enable villagers to work, provide for families, and send children to school—improving overall wellness in many communities.',
+      'Our community-tailored interventions enable villagers to work, provide for families, and send children to school— improving overall wellness in many communities.',
     image: MedicalImage,
   },
   {
@@ -45,7 +45,7 @@ const FourPillarsContainer = () => {
     <div className={styles.root}>
       <Title
         title="Our Solution"
-        description="Transforming developing areas into sustainable communities starts with the community—empowering future leaders with a wealth of resources to invest in their villages. With fundamental access to clean water, education, medical care, and training, leaders multiply local-to-local impact. This generational change starts with creating fundamental access to:"
+        description="Transforming developing areas into sustainable communities starts with the members of the community— empowering future leaders with a wealth of resources to invest back into their villages. With fundamental access to clean water, education, medical care, and training, leaders multiply local-to-local impact. This generational change starts with creating fundamental access to:"
       />
 
       <div className={styles.fourPillarsVisual}>

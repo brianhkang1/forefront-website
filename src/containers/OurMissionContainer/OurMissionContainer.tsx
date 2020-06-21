@@ -11,8 +11,8 @@ const OurMissionContainer = () => {
     <>
       <div className={styles.root}>
         <Title
-          title="Our Passion"
-          description="is people-powered. Many villagers in rural areas lack life necessities. The barriers to clean water, education, medical care, and opportunity limit them from doing much more than just surviving, and a dream stays just that—a dream."
+          title="Our Passion is people-powered."
+          description="Villagers in rural areas lack basic life necessities. The barriers to clean water, education, medical care, and opportunity limit them from doing much more than just surviving, and a dream stays just that— a dream. That’s why we believe in their vision and seeing it through."
         />
 
         <Picture

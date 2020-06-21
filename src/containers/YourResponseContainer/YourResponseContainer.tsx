@@ -22,17 +22,17 @@ const HowToGetInvolvedItems = [
     link: 'https://secure.givelively.org/donate/forefront-charity',
   },
   {
-    title: 'Start A Fundraiser',
-    description: 'Be a changemaker today',
-    backgroundImage: `url(${BackgroundImage2})`,
-    link:
-      'https://secure.givelively.org/donate/forefront-charity/start-something',
-  },
-  {
     title: 'Become a Builder',
     description: 'You can build up communities today',
     backgroundImage: `url(${BackgroundImage3})`,
     link: './builders',
+  },
+  {
+    title: 'Start A Fundraiser',
+    description: 'Be a changemaker today',
+    backgroundImage: `url(${BackgroundImage2})`,
+    link:
+      'https://secure.givelively.org/donate/forefront-charity/start-something/fundraisers/options',
   },
 ];
 

@@ -12,6 +12,20 @@
     font-size: 2.5rem;
     line-height: 3.25rem;
   }
+
+  .getInvolvedContainer {
+    padding-bottom: 2rem;
+  }
+
+  .getInvolvedItemContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .getInvolvedImage {
+    border-radius: 1rem;
+    margin: 0 1rem;
+  }
 }
 
 /* MOBILE */
@@ -36,6 +50,17 @@
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
+  .getInvolvedItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .getInvolvedImage {
+    margin-bottom: 1.25rem;
+    border-radius: 1rem;
+  }
 }
 
 /* ************************************* */
@@ -59,4 +84,21 @@
   background-size: cover;
   will-change: transform;
   z-index: -1;
+}
+
+.getInvolvedText {
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
