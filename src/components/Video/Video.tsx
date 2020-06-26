@@ -1,14 +1,16 @@
 import React from 'react';
+import useIsMobile from '../../hooks/useIsMobile';
 
-const Video = () => {
+const Video: React.FC = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div>
       <iframe
-        title="home page video"
+        title="Our Story video"
         style={{
-          width: '35vw',
-          height: '40vh',
-          borderRadius: '10px',
+          width: isMobile ? '100vw' : '50vw',
+          height: '45vh',
         }}
         src={`https://www.youtube.com/embed/VVfv3N4yLyM`}
         frameBorder="0"

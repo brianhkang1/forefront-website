@@ -8,14 +8,14 @@ import PictureFilter from '../../../components/PictureFilter';
 import Picture from '../../../components/Picture';
 import PictureText from '../../../components/PictureText';
 import Title from '../../../components/Title';
+import Video from '../../../components/Video';
+import Button from '../../../components/Button';
 
 import TestimonialAnil from '../../../Images/BuildersPage/Testimonial/Anil.jpg';
 import TestimonialBoshanam from '../../../Images/BuildersPage/Testimonial/Boshanam.jpg';
 import TestimonialMani from '../../../Images/BuildersPage/Testimonial/Mani.jpg';
 import TestimonialTimothy from '../../../Images/BuildersPage/Testimonial/Timothy.jpg';
 import TestimonialVinod from '../../../Images/BuildersPage/Testimonial/Vinod.jpg';
-
-import RandomPic from '../../../Images/BuildersPage/RandomPic.jpg';
 import WaterIcon from '../../../Images/Icons/FourPillars/Water.png';
 import EducationIcon from '../../../Images/Icons/FourPillars/Education.png';
 import MedicalIcon from '../../../Images/Icons/FourPillars/Medical.png';
@@ -23,8 +23,40 @@ import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment.png';
 import WhyBeBuilder1 from '../../../Images/BuildersPage/WhyBeBuilder1.png';
 import WhyBeBuilder2 from '../../../Images/BuildersPage/WhyBeBuilder2.png';
 import WhyBeBuilder3 from '../../../Images/BuildersPage/WhyBeBuilder3.png';
+import RippleEffect_Water from '../../../Images/BuildersPage/RippleEffect_Water.jpg';
+import RippleEffect_Tuition from '../../../Images/BuildersPage/RippleEffect_Tuition.jpg';
+import RippleEffect_StaffHousing from '../../../Images/BuildersPage/RippleEffect_StaffHousing.jpg';
+import RippleEffect_Curriculum from '../../../Images/BuildersPage/RippleEffect_Curriculum.jpg';
+import BecomeABuilderPic from '../../../Images/BuildersPage/BecomeABuilder.jpg';
 
 import Carousel from 'react-material-ui-carousel';
+
+export const RippleEffectItems = [
+  {
+    key: 'Water',
+    text: 'Clean water for a family',
+    amount: '$20',
+    img: RippleEffect_Water,
+  },
+  {
+    key: 'Tuition',
+    text: "One month student's tuition",
+    amount: '$30',
+    img: RippleEffect_Tuition,
+  },
+  {
+    key: 'StaffHousing',
+    text: "One month staff's housing",
+    amount: '$50',
+    img: RippleEffect_StaffHousing,
+  },
+  {
+    key: 'Curriculum',
+    text: "A classroom's curriculum",
+    amount: '$100',
+    img: RippleEffect_Curriculum,
+  },
+];
 
 export const FourPillarItems = [
   {
@@ -89,15 +121,15 @@ const Testimonials = [
 const WhyBeABuilder = [
   {
     image: WhyBeBuilder1,
-    text: 'Share love with villagers',
+    text: 'Builders Newsletters',
   },
   {
     image: WhyBeBuilder2,
-    text: 'Shape a sustainable future',
+    text: 'Builders Exclusive Content',
   },
   {
     image: WhyBeBuilder3,
-    text: 'Get updates and news first',
+    text: 'Behind the Scenes Updates',
   },
 ];
 
@@ -195,90 +227,162 @@ const BuildersPage: React.FC = () => {
         </PictureFilter>
       </div>
 
-      <div className={styles.titleContainer}>
+      <div>
         <Title
-          title="Become a Builder"
-          description={renderBecomeABuilderDescription()}
+          title="Make a Ripple Effect of Change"
+          description="Even a small drop of generosity every day, month, and year wells up into waves of positive impact. Together, we can make that legacy."
         />
-      </div>
 
-      <div className={styles.iconsContainer}>
-        {FourPillarItems.map(item => (
-          <div
-            className={styles.iconItem}
-            style={{ backgroundColor: item.color }}
-          >
-            <Picture src={item.icon} width="6rem" height="6rem" />
-            <div className={styles.iconDescription}>{item.description}</div>
-          </div>
-        ))}
-      </div>
+        <div className={styles.rippleEffectItemContainer}>
+          {RippleEffectItems.map((rippleEffectItem, index) => (
+            <div className={styles.rippleEffectItem}>
+              <Picture
+                key={`ourImpactItem-${index + 1}`}
+                src={rippleEffectItem.img}
+                className={styles.rippleEffectImage}
+                width="18rem"
+                height="18rem"
+                mobileWidth="70vw"
+                mobileHeight="70vw"
+              >
+                <div className={styles.rippleEffectIcon}>
+                  {rippleEffectItem.amount}
+                </div>
+              </Picture>
 
-      <Title
-        title="Make a Ripple Effect of Change"
-        description="Even a small drop of generosity every day, month, and year wells up into waves of positive impact. Together, we can make that legacy."
-      />
-
-      <Picture src={RandomPic} width="100vw" height="60vh" />
-
-      <Title
-        title="Calling Everyday Heroes"
-        description="Everyday people make everyday heroes who make everyday impact. Creating change doesn’t require credentials, just a giving heart. Why be a Builder?"
-      />
-
-      <div className={styles.whyBeMonthlyDonorContainer}>
-        {WhyBeABuilder.map(whyBeBuilderItem => (
-          <div className={styles.whyBeMonthlyDonorItem}>
-            <Picture
-              src={whyBeBuilderItem.image}
-              height="18rem"
-              width="18rem"
-            />
-
-            <div className={styles.whyBeMonthlyDonorText}>
-              {whyBeBuilderItem.text}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <Title
-        title="Meet the People..."
-        description="who are making this all possible. They are everyday heroes on the ground who believe in partnering with us to make a brighter future."
-      />
-
-      <div className={styles.carouselContainer}>
-        <Carousel
-          animation={'slide'}
-          indicators={true}
-          autoPlay={true}
-          interval={6000}
-          navButtonsAlwaysVisible={true}
-          className={styles.carousel}
-        >
-          {Testimonials.map((item, index) => (
-            <div key={item.name} className={styles.testimonialPicContainer}>
-              <img
-                src={item.image}
-                className={styles.testimonialPic}
-                alt={`testimonial ${index + 1}`}
-              />
-
-              <div className={styles.testimonialTextContainer}>
-                <PictureText className={styles.testimonialText}>
-                  <span className={styles.bold}>{item.name}: </span>
-                  <span>"{item.description}"</span>
-                </PictureText>
+              <div className={styles.rippleEffectText}>
+                <div>{rippleEffectItem.text}</div>
               </div>
             </div>
           ))}
-        </Carousel>
+        </div>
       </div>
 
-      {isMobile && (
+      <div>
+        <div className={styles.titleContainer}>
+          <Title
+            title="Become a Builder"
+            description={renderBecomeABuilderDescription()}
+          />
+        </div>
+
+        <div className={styles.iconsContainer}>
+          {FourPillarItems.map(item => (
+            <div
+              className={styles.iconItem}
+              style={{ backgroundColor: item.color }}
+            >
+              <Picture src={item.icon} width="6rem" height="6rem" />
+              <div className={styles.iconDescription}>{item.description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <Title
+          title="Our Story"
+          description="Since 2015, we have embarked on an incredible journey to make sustainable change. Hear how we are making local changemakers."
+        />
+
+        <div className={styles.ourStoryVideoContainer}>
+          <Video />
+        </div>
+      </div>
+
+      <div>
+        <Title
+          title="Calling Everyday Heroes"
+          description="Everyday people make everyday heroes who make everyday impact. Creating change doesn’t require credentials, just a giving heart. Why be a Builder?"
+        />
+
+        <div className={styles.whyBeBuilderContainer}>
+          {WhyBeABuilder.map(whyBeBuilderItem => (
+            <div className={styles.whyBeBuilderItem}>
+              <Picture
+                src={whyBeBuilderItem.image}
+                height="18rem"
+                width="18rem"
+              />
+
+              <div className={styles.whyBeBuilderText}>
+                {whyBeBuilderItem.text}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <Title
+          title="Our on the Ground Builders"
+          description="These everyday heroes partner with us to make a brighter future."
+        />
+
+        <div className={styles.carouselContainer}>
+          <Carousel
+            animation={'slide'}
+            indicators={true}
+            autoPlay={true}
+            interval={6000}
+            navButtonsAlwaysVisible={true}
+            className={styles.carousel}
+          >
+            {Testimonials.map((item, index) => (
+              <div key={item.name} className={styles.testimonialPicContainer}>
+                <img
+                  src={item.image}
+                  className={styles.testimonialPic}
+                  alt={`testimonial ${index + 1}`}
+                />
+
+                <div className={styles.testimonialTextContainer}>
+                  <PictureText className={styles.testimonialText}>
+                    <span className={styles.bold}>{item.name}: </span>
+                    <span>"{item.description}"</span>
+                  </PictureText>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </div>
+
+      {/* <div>
+        <Title
+          title="Join These Builders"
+          description="You can join this community and they are people just like you from all over the country. They are visionaries and want to see a bright future for all. We would love to have you."
+        />
+
+        <div className={styles.joinBuilderQuoteContainer}>
+          <div>
+            "Happy Birthday Forefront"
+          </div>
+        </div>
+      </div> */}
+
+      {isMobile ? (
         <div ref={mobileDonationWidget}>
           <Title title="Make a Donation" />
           <DonationWidget />
+        </div>
+      ) : (
+        <div>
+          <Picture src={BecomeABuilderPic} width="100vw" height="60vh">
+            <div className={styles.link}>
+              <Button size={'large'}>
+                <a
+                  href={
+                    'https://secure.givelively.org/donate/forefront-charity'
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Become A Builder
+                </a>
+              </Button>
+            </div>
+          </Picture>
         </div>
       )}
 
