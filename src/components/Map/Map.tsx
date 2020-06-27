@@ -268,7 +268,7 @@ const Map = () => {
     <div>
       <Title
         title="Where We Work"
-        description="We choose to work in rural India’s most unreached areas severely lacking financial equality, social equality, facilities, and opportunities. We fund basic life necessities— water & sanitation, education, medical, and empowerment. Take a look at our impact:"
+        description="We choose to work in rural India’s most unreached areas severely lacking financial equality, social equality, facilities, and opportunities. We fund basic life necessities— water & sanitation, education, medical care, and empowerment. Take a look at our impact:"
       />
 
       <LeafletMap center={schoolLocation} zoom={12} scrollWheelZoom={false}>

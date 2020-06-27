@@ -28,7 +28,7 @@ const FourPillarItems = [
     image: EducationImage,
   },
   {
-    title: 'MEDICAL',
+    title: 'MEDICAL CARE',
     description:
       'Our community-tailored interventions enable villagers to work, provide for families, and send children to school— improving overall wellness in many communities.',
     image: MedicalImage,

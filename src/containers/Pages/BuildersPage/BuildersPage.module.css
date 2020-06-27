@@ -63,12 +63,8 @@
   align-items: center;
 }
 
-.testimonialPicContainer {
+.carouselPicContainer {
   position: relative;
-}
-
-.testimonialPic {
-  object-fit: cover;
 }
 
 .testimonialTextContainer {
@@ -143,11 +139,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.joinBuilderQuoteContainer {
-  display: flex;
-  flex-direction: column;
 }
 
 .link {
@@ -232,6 +223,11 @@
     width: 75vw;
     height: 75vh;
     border-radius: 2rem;
+  }
+
+  .quotePic {
+    width: 70vw;
+    height: 40vh;
   }
 
   .carousel
@@ -331,6 +327,11 @@
   .testimonialPic {
     width: 100vw;
     height: 80vh;
+  }
+
+  .quotePic {
+    width: 100vw;
+    height: 30vh;
   }
 
   .mobileDonationWidgetLink,

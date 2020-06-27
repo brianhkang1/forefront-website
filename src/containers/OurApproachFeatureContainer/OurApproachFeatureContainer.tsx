@@ -14,7 +14,7 @@ import EmpowermentIcon from '../../Images/Icons/FourPillars/Empowerment_color.pn
 enum FourPillars {
   WATER = 'Water',
   EDUCATION = 'Education',
-  MEDICAL = 'Medical',
+  MEDICAL = 'Medical Care',
   EMPOWERMENT = 'Empowerment',
 }
 

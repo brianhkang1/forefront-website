@@ -50,7 +50,7 @@ const OurImpact = [
     ),
   },
   {
-    type: 'MEDICAL',
+    type: 'MEDICAL CARE',
     image: OurImpactMedical,
     icon: MedicalIcon,
     text: (

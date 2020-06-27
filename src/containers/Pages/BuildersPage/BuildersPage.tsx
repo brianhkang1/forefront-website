@@ -27,11 +27,17 @@ import RippleEffect_Water from '../../../Images/BuildersPage/RippleEffect_Water.
 import RippleEffect_Tuition from '../../../Images/BuildersPage/RippleEffect_Tuition.jpg';
 import RippleEffect_StaffHousing from '../../../Images/BuildersPage/RippleEffect_StaffHousing.jpg';
 import RippleEffect_Curriculum from '../../../Images/BuildersPage/RippleEffect_Curriculum.jpg';
+import Quotes1 from '../../../Images/BuildersPage/Quotes1.png';
+import Quotes2 from '../../../Images/BuildersPage/Quotes2.png';
+import Quotes3 from '../../../Images/BuildersPage/Quotes3.png';
+import Quotes4 from '../../../Images/BuildersPage/Quotes4.png';
 import BecomeABuilderPic from '../../../Images/BuildersPage/BecomeABuilder.jpg';
 
 import Carousel from 'react-material-ui-carousel';
 
-export const RippleEffectItems = [
+const QuotePics = [Quotes1, Quotes2, Quotes3, Quotes4];
+
+const RippleEffectItems = [
   {
     key: 'Water',
     text: 'Clean water for a family',
@@ -72,7 +78,7 @@ export const FourPillarItems = [
     color: 'var(--yellow-color)',
   },
   {
-    title: 'MEDICAL',
+    title: 'MEDICAL CARE',
     icon: MedicalIcon,
     description: 'Create accessible and affordable health clinics',
     color: 'var(--red-color)',
@@ -211,15 +217,15 @@ const BuildersPage: React.FC = () => {
           <div className={styles.heroTextContainer}>
             <div className={styles.heroText}>
               <PictureText padding="1rem 1.5rem">
-                Builders: Monthly givers who give the opportunity for
-                communities to thrive
+                Builders: Monthly givers that invest in communities where every
+                person has the opportunity to thrive
               </PictureText>
             </div>
             {/* hacky way of ensuring heroText takes up space to place
             widget below appropriately */}
             <div className={styles.hiddenHeroText}>
-              Builders: Monthly givers who give the opportunity for communities
-              to thrive
+              Builders: Monthly givers that invest in communities where every
+              person has the opportunity to thrive
             </div>
 
             {!isMobile && <DonationWidget />}
@@ -329,10 +335,11 @@ const BuildersPage: React.FC = () => {
             className={styles.carousel}
           >
             {Testimonials.map((item, index) => (
-              <div key={item.name} className={styles.testimonialPicContainer}>
+              <div key={item.name} className={styles.carouselPicContainer}>
                 <img
                   src={item.image}
                   className={styles.testimonialPic}
+                  style={{ objectFit: 'cover' }}
                   alt={`testimonial ${index + 1}`}
                 />
 
@@ -348,18 +355,37 @@ const BuildersPage: React.FC = () => {
         </div>
       </div>
 
-      {/* <div>
+      <div>
         <Title
           title="Join These Builders"
           description="You can join this community and they are people just like you from all over the country. They are visionaries and want to see a bright future for all. We would love to have you."
         />
 
-        <div className={styles.joinBuilderQuoteContainer}>
-          <div>
-            "Happy Birthday Forefront"
-          </div>
+        <div className={styles.carouselContainer}>
+          <Carousel
+            animation={'slide'}
+            indicators={true}
+            autoPlay={true}
+            interval={4000}
+            navButtonsAlwaysVisible={true}
+            className={styles.carousel}
+          >
+            {QuotePics.map((img, index) => (
+              <div
+                key={`Quote${index + 1}`}
+                className={styles.carouselPicContainer}
+              >
+                <img
+                  src={img}
+                  className={styles.quotePic}
+                  style={{ objectFit: 'contain' }}
+                  alt={`quote ${index + 1}`}
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
-      </div> */}
+      </div>
 
       {isMobile ? (
         <div ref={mobileDonationWidget}>
@@ -369,18 +395,17 @@ const BuildersPage: React.FC = () => {
       ) : (
         <div>
           <Picture src={BecomeABuilderPic} width="100vw" height="60vh">
-            <div className={styles.link}>
-              <Button size={'large'}>
-                <a
-                  href={
-                    'https://secure.givelively.org/donate/forefront-charity'
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Become A Builder
-                </a>
-              </Button>
+            <div
+              className={styles.link}
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: 'smooth',
+                })
+              }
+            >
+              <Button size={'large'}>Become A Builder</Button>
             </div>
           </Picture>
         </div>
