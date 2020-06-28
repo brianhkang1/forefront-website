@@ -17,6 +17,10 @@
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
+
+  .root > div {
+    padding: 2rem 6rem 2rem 2rem;
+  }
 }
 
 /* MOBILE */
@@ -56,8 +60,4 @@
 
 .bold {
   font-weight: bold;
-}
-
-.root > div {
-  padding: 2rem 10rem 2rem 2rem;
 }
