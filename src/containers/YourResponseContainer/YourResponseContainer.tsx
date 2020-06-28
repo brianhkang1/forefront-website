@@ -41,7 +41,7 @@ class YourResponseContainer extends React.Component {
     return (
       <div className={styles.root}>
         <Title
-          title="Your Response"
+          title="Join Us"
           description="Never underestimate your impact on a life. In India, access to clean water liberates women and children to earn money and attend school to build a better future for themselves."
         />
 

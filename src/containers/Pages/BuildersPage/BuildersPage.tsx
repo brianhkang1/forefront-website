@@ -288,7 +288,7 @@ const BuildersPage: React.FC = () => {
       <div>
         <Title
           title="Our Story"
-          description="Since 2015, we have embarked on an incredible journey to make sustainable change. Hear how we are making local changemakers."
+          description="Since 2015, we have embarked on an incredible journey to make sustainable change."
         />
 
         <div className={styles.ourStoryVideoContainer}>
@@ -327,10 +327,9 @@ const BuildersPage: React.FC = () => {
 
         <div className={styles.carouselContainer}>
           <Carousel
-            animation={'slide'}
             indicators={true}
             autoPlay={true}
-            interval={6000}
+            interval={5000}
             navButtonsAlwaysVisible={true}
             className={styles.carousel}
           >
@@ -363,10 +362,9 @@ const BuildersPage: React.FC = () => {
 
         <div className={styles.carouselContainer}>
           <Carousel
-            animation={'slide'}
             indicators={true}
             autoPlay={true}
-            interval={4000}
+            interval={5000}
             navButtonsAlwaysVisible={true}
             className={styles.carousel}
           >
