@@ -154,9 +154,3 @@
   color: var(--link-blue-color);
   text-decoration: underline;
 }
-
-.mainPicture {
-  width: 70vw;
-  height: 70vh;
-  object-fit: cover;
-}

@@ -24,11 +24,6 @@
     top: 45vh;
   }
 
-  .buttonContainer {
-    position: absolute;
-    bottom: 15vh;
-  }
-
   .iconsContainer {
     margin: 4rem 0;
     width: 100vw;
@@ -68,11 +63,6 @@
 
   .heroText3 {
     top: 50vh;
-  }
-
-  .buttonContainer {
-    position: absolute;
-    bottom: 5vh;
   }
 
   .iconsContainer {
@@ -115,16 +105,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.buttonContainer > button,
-.buttonContainer > button > a {
-  color: white;
-  border-color: white;
-}
-
-.buttonContainer > button:hover {
-  border-color: none;
 }
 
 .iconContainer {

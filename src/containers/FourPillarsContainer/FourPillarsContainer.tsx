@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './FourPillarsContainer.module.css';
-
+import useIsMobile from '../../hooks/useIsMobile';
 import Title from '../../components/Title';
 import PictureWithHoverText from '../../components/PictureWithHoverText';
+import Popup from '../../components/Popup';
+
 import WaterImage from '../../Images/FourPillars/Water.jpg';
 import MedicalImage from '../../Images/FourPillars/Medical.jpg';
 import EducationImage from '../../Images/FourPillars/Education.jpg';
@@ -41,11 +43,23 @@ const FourPillarItems = [
 ];
 
 const FourPillarsContainer = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className={styles.root}>
       <Title
         title="Our Solution"
-        description="Transforming developing areas into sustainable communities starts with the members of the community— empowering future leaders with a wealth of resources to invest back into their villages. With fundamental access to clean water, education, medical care, and training, leaders multiply local-to-local impact. This generational change starts with creating fundamental access to:"
+        description={
+          <span>
+            Transforming developing areas into sustainable communities starts
+            with the members of the community— empowering future leaders with a
+            wealth of resources to invest back into their villages. With
+            fundamental access to clean water, education, medical care, and
+            training, leaders multiply local-to-local impact. This generational
+            change starts with creating fundamental access to:{' '}
+            {isMobile && <Popup content="Tap picture to learn more" />}
+          </span>
+        }
       />
 
       <div className={styles.fourPillarsVisual}>

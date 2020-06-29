@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './AboutUsPage.module.css';
 import Header from '../../Header';
 import Footer from '../../Footer';
-import Button from '../../../components/Button';
 import { Dropdown } from 'semantic-ui-react';
 import { classNames } from '../../../util';
 
@@ -65,18 +64,6 @@ class AboutUsPage extends React.Component {
           >
             <div>Establish self-sustaining communities</div>
           </PictureText>
-
-          <div className={styles.buttonContainer}>
-            <Button>
-              <a
-                href="https://blog.goforefront.org/unlocking-leaders-of-change"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn More
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     );
@@ -114,18 +101,6 @@ class AboutUsPage extends React.Component {
             <div>self-sustaining</div>
             <div>communities</div>
           </PictureText>
-
-          <div className={styles.buttonContainer}>
-            <Button>
-              <a
-                href="https://blog.goforefront.org/unlocking-leaders-of-change"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn More
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     );
