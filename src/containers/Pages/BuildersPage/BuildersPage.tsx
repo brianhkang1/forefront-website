@@ -241,7 +241,7 @@ const BuildersPage: React.FC = () => {
 
         <div className={styles.rippleEffectItemContainer}>
           {RippleEffectItems.map((rippleEffectItem, index) => (
-            <div className={styles.rippleEffectItem}>
+            <div key={rippleEffectItem.key} className={styles.rippleEffectItem}>
               <Picture
                 key={`ourImpactItem-${index + 1}`}
                 src={rippleEffectItem.img}
@@ -275,6 +275,7 @@ const BuildersPage: React.FC = () => {
         <div className={styles.iconsContainer}>
           {FourPillarItems.map(item => (
             <div
+              key={item.title}
               className={styles.iconItem}
               style={{ backgroundColor: item.color }}
             >
@@ -303,8 +304,11 @@ const BuildersPage: React.FC = () => {
         />
 
         <div className={styles.whyBeBuilderContainer}>
-          {WhyBeABuilder.map(whyBeBuilderItem => (
-            <div className={styles.whyBeBuilderItem}>
+          {WhyBeABuilder.map((whyBeBuilderItem, index) => (
+            <div
+              key={'whyBeBuilderItem' + (index + 1)}
+              className={styles.whyBeBuilderItem}
+            >
               <Picture
                 src={whyBeBuilderItem.image}
                 height="18rem"

@@ -115,8 +115,9 @@ class OurApproachPage extends React.Component {
             description="Take action today and enable future leaders to make local-to-local impact."
           />
           <div className={styles.getInvolvedItemContainer}>
-            {GetInvolved.map(getInvolvedItem => (
+            {GetInvolved.map((getInvolvedItem, index) => (
               <Picture
+                key={'getInvolvedItem' + (index + 1)}
                 className={styles.getInvolvedImage}
                 src={getInvolvedItem.image}
                 width="22rem"

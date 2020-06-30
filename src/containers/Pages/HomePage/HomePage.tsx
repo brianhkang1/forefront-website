@@ -124,9 +124,11 @@ class HomePage extends React.Component {
           />
           <div className={styles.ourImpactItemContainer}>
             {OurImpact.map((ourImpactItem, index) => (
-              <div className={styles.ourImpactItem}>
+              <div
+                key={`ourImpactItem-${index + 1}`}
+                className={styles.ourImpactItem}
+              >
                 <Picture
-                  key={`ourImpactItem-${index + 1}`}
                   src={ourImpactItem.image}
                   className={styles.ourImpactImage}
                   width="18rem"

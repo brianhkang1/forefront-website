@@ -86,7 +86,7 @@ const OurApproachFeatureContainer = () => {
         }}
       >
         {Object.values(FourPillarsApproach).map(approach => (
-          <div className={styles.slideContainer}>
+          <div key={approach.title} className={styles.slideContainer}>
             <div
               style={{ backgroundColor: approach.color }}
               className={styles.descriptionTextContainer}
@@ -112,6 +112,7 @@ const OurApproachFeatureContainer = () => {
         {Object.values(FourPillarsApproach).map(
           (approach: FourPillarsApproachType) => (
             <div
+              key={approach.title}
               className={`${
                 selectedApproach === approach.title
                   ? styles.selectedButtonContainer
