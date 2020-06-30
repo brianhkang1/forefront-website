@@ -24,7 +24,7 @@ import JeffLevyPic from '../../Images/Team/Jeff_Levy.jpg';
 import NancyChengPic from '../../Images/Team/Nancy_Cheng.jpg';
 
 type Member = {
-  title: React.ReactNode;
+  title: string;
   image: string;
   description: string;
 };
@@ -174,7 +174,7 @@ const OurTeamContainer: React.FC = () => {
 
       <div className={styles.teamMembersContainer}>
         {TeamMembers.map((member: Member) => (
-          <div className={styles.teamMemberPictureContainer}>
+          <div key={member.title} className={styles.teamMemberPictureContainer}>
             <PictureWithHoverText
               title={member.title}
               description={member.description}

@@ -174,6 +174,7 @@ class AboutUsPage extends React.Component {
                 <Dropdown.Menu className={styles.dropdownMenu}>
                   {AnnualReports.map(report => (
                     <Dropdown.Item
+                      key={'dropdown-' + report.year}
                       className={styles.dropdownItem}
                       text={report.year}
                       onClick={() => window.open(report.href)}

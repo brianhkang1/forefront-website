@@ -47,7 +47,7 @@ const JobPosting: React.FC = () => {
 
       <div className={styles.jobPostingContainer}>
         {JobPostingInfo.map(posting => (
-          <div className={styles.jobPosting}>
+          <div key={posting.title} className={styles.jobPosting}>
             <div className={styles.jobTitle}>
               <a href={posting.link} target="_blank" rel="noopener noreferrer">
                 {posting.title}
