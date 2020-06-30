@@ -85,8 +85,8 @@
   }
 
   .descriptionText {
-    height: 50vh;
-    padding: 0 1rem;
+    height: 100%;
+    padding: 1rem;
     font-size: 1.5rem;
     color: white;
     line-height: 2.25rem;
@@ -95,7 +95,7 @@
   }
 
   .descriptionPicture {
-    height: 30vh;
+    height: 100%;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
