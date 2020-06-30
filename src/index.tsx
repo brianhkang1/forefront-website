@@ -13,7 +13,7 @@ const history = createBrowserHistory();
 
 // Initialize google analytics
 if (process.env.NODE_ENV === 'production') {
-  ReactGA.initialize(process.env.GA_TRACKING_ID || '');
+  ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '');
   history.listen(location => {
     ReactGA.set({ page: location.pathname }); // Update the user's current page
     ReactGA.pageview(location.pathname); // Record a pageview for the given page
