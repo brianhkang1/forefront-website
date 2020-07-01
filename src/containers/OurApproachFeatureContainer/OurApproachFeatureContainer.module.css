@@ -81,7 +81,7 @@
   .slideContainer {
     display: flex;
     flex-direction: column-reverse;
-    height: 80vh;
+    height: 100%;
   }
 
   .descriptionText {
@@ -95,7 +95,7 @@
   }
 
   .descriptionPicture {
-    height: 100%;
+    height: 45vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
