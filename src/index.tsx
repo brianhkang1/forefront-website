@@ -9,17 +9,21 @@ import ScrollToTop from './components/ScrollToTop';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
+const trackPageView = location => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+};
+
+const initGoogleAnalytics = history => {
+  ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '', {
+    debug: true,
+  });
+  trackPageView(history.location);
+  history.listen(trackPageView);
+};
+
 const history = createBrowserHistory();
-
-// Initialize google analytics
-if (process.env.NODE_ENV === 'production') {
-  ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '');
-}
-
-history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
+initGoogleAnalytics(history);
 
 ReactDOM.render(
   <Router history={history}>
