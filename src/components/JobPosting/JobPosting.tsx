@@ -1,16 +1,12 @@
 import React from 'react';
 import styles from './JobPosting.module.css';
-// @ts-ignore
+
 import ChiefMarketingOfficerApp from '../../Documents/Chief_Marketing_Officer.doc';
-// @ts-ignore
 import CopyWriteLeadApp from '../../Documents/Copy_Write_Lead.doc';
-// @ts-ignore
 import DirectorOfMedicalApp from '../../Documents/Director_of_Medical.doc';
-// @ts-ignore
 import DirectorOfProgramsApp from '../../Documents/Director_of_Programs.doc';
-// @ts-ignore
+import DonorRelationsLeadApp from '../../Documents/Donor_Relations_Lead.doc';
 import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.doc';
-// @ts-ignore
 import PublicRelationsLeadApp from '../../Documents/Public_Relations_Lead.doc';
 
 const JobPostingInfo = [
@@ -29,6 +25,10 @@ const JobPostingInfo = [
   {
     title: 'Director of Programs',
     link: DirectorOfProgramsApp,
+  },
+  {
+    title: 'Donor Relations Lead',
+    link: DonorRelationsLeadApp,
   },
   {
     title: 'People & Culture Lead',
