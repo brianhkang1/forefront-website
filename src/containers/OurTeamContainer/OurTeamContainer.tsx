@@ -4,9 +4,7 @@ import Picture from '../../components/Picture';
 import PictureWithHoverText from '../../components/PictureWithHoverText';
 import JobPosting from '../../components/JobPosting';
 
-// @ts-ignore
 import InternshipPDF from '../../Documents/Forefront_Internship.pdf';
-
 import TeamPicture from '../../Images/Team/Team.jpg';
 import MatthewOhPic from '../../Images/Team/Matthew_Oh.jpg';
 import ChanwookParkPic from '../../Images/Team/Chanwook_Park.jpg';
@@ -15,13 +13,16 @@ import BrianKimPic from '../../Images/Team/Brian_Kim.jpg';
 import DarienKimPic from '../../Images/Team/Darien_Kim.jpg';
 import ElenaKimPic from '../../Images/Team/Elena_Kim.jpg';
 import EuniceLimPic from '../../Images/Team/Eunice_Lim.jpg';
+import HelenParkPic from '../../Images/Team/Helen_Park.jpg';
+import JeffLevyPic from '../../Images/Team/Jeff_Levy.jpg';
 import JulianaCanalePic from '../../Images/Team/Juliana_Canale.jpg';
 import KateKimPic from '../../Images/Team/Kate_Kim.jpg';
 import MattLawsonPic from '../../Images/Team/Matt_Lawson.jpg';
-import MichelleChangPic from '../../Images/Team/Michelle_Chang.jpg';
-import SoojiKimPic from '../../Images/Team/Sooji_Kim.jpg';
-import JeffLevyPic from '../../Images/Team/Jeff_Levy.jpg';
 import NancyChengPic from '../../Images/Team/Nancy_Cheng.jpg';
+import MichelleChangPic from '../../Images/Team/Michelle_Chang.jpg';
+import SarahKangPic from '../../Images/Team/Sarah_Kang.jpg';
+import SoojiKimPic from '../../Images/Team/Sooji_Kim.jpg';
+import WesanChangPic from '../../Images/Team/Wesan_Chang.jpg';
 
 type Member = {
   title: string;
@@ -79,6 +80,12 @@ const TeamMembers = [
       'Eunice started out as an intern in 2016 while attending Rutgers University. She has since transitioned into a full time member working on the marketing team to strategize and execute digital campaigns on our various social platforms. Anyone that knows Eunice knows that she is obsessed with noodles.',
   },
   {
+    title: 'HELEN PARK',
+    image: HelenParkPic,
+    description:
+      'Helen studied architecture at Pratt Institute and is currently working at a small architecture firm in NYC. She enjoys trying new things like plant-based cooking, video editing, and learning new languages. She is constantly inspired by those that use their skills and talents to help others and is honored to be part of the FOREFRONT team.',
+  },
+  {
     title: 'JEFF LEVY',
     image: JeffLevyPic,
     description:
@@ -109,10 +116,22 @@ const TeamMembers = [
       'Nancy holds a BFA in graphic design. She has a passion to serve anyone in need. In addition to design, she loves to dance! Nancy is excited to bring her design elements into the world of education!',
   },
   {
+    title: 'SARAH KANG',
+    image: SarahKangPic,
+    description:
+      "Sarah is a 7th grade English teacher at River Dell Middle School in River Edge, New Jersey. She graduated from Rutgers University-New Brunswick with a B.A. in English and a Masters in Education. Her goal is for her students to develop into confident, loving, difference-makers in today's society.",
+  },
+  {
     title: 'SOOJI KIM',
     image: SoojiKimPic,
     description:
       'Sooji graduated with a dual degree in evolutionary anthropology and political science at Rutgers University. Her passion for world issues led her to join the FOREFRONT team. She is a coffee enthusiast and a world traveler.',
+  },
+  {
+    title: 'WESAN CHANG',
+    image: WesanChangPic,
+    description:
+      'Wesan studied Accounting at Rutgers University and is currently working in corporate finance. Outside of work, she enjoys hiking, exploring new restaurants and hosting gatherings to bring people together. She has a heart for serving the marginalized, so she is excited to be a part of FOREFRONT’s mission of empowering individuals and building up sustainable communities.',
   },
 ];
 
