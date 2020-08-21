@@ -8,6 +8,12 @@ interface State {
   email: string;
 }
 
+const initialFormFields = {
+  firstName: '',
+  lastName: '',
+  email: '',
+};
+
 const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -17,11 +23,7 @@ const encode = data => {
 class EmailForm extends React.Component<{}, State> {
   constructor(props) {
     super(props);
-    this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-    };
+    this.state = { ...initialFormFields };
   }
 
   handleChange = (e: React.FormEvent<HTMLInputElement>, inputName: string) => {
@@ -63,6 +65,7 @@ class EmailForm extends React.Component<{}, State> {
       .then(res => {
         if (res.status === 200) {
           alert('You are successfully subscribed for Forefront emails');
+          this.setState({ ...initialFormFields });
         }
         if (res.status === 404) {
           alert('Unable to subscribe. Please try again later');
