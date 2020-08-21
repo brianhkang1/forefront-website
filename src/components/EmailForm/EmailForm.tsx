@@ -45,6 +45,10 @@ class EmailForm extends React.Component<{}, State> {
   handleSubmit = (e: React.FormEvent) => {
     const { firstName, lastName, email } = this.state;
 
+    if (firstName === '' || lastName === '' || email === '') {
+      return alert('Please fill out all fields before submitting');
+    }
+
     const body = {
       firstName,
       lastName,

@@ -27,7 +27,7 @@ const JobPostingInfo = [
     link: DirectorOfProgramsApp,
   },
   {
-    title: 'Donor Relations Lead',
+    title: 'Donor Relations Lead - NY/DC metro area only',
     link: DonorRelationsLeadApp,
   },
   {
