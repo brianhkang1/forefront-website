@@ -110,7 +110,7 @@ class HomePage extends React.Component {
             <div className={styles.galaHeroText}>
               <div className={styles.galaSmallTitle}>5th Annual Gala</div>
               <div className={styles.galaBigTitle}>
-                CELEBRATING 5 YEARS <br />
+                CELEBRATING 5 YEARS {isMobile ? '' : <br />}
                 OF FOREFRONT
               </div>
               <div className={styles.galaDescription}>

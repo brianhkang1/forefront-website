@@ -43,7 +43,7 @@
   .galaDescription {
     font-size: 1.5rem;
     line-height: 1.5;
-    color: #393939;
+    color: black;
     margin-bottom: 1.5rem;
   }
 
@@ -100,7 +100,7 @@
   .galaHeroText {
     width: 100%;
     position: absolute;
-    bottom: 10vh;
+    bottom: 5vh;
     color: white;
     text-align: center;
     opacity: 1 !important;
@@ -118,24 +118,23 @@
   /* TODO: DELETE THIS AFTER FOREFRONT GALA */
   .galaBigTitle {
     letter-spacing: 3px;
-    font-size: 2.35rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.1;
     font-weight: bold;
     margin-bottom: 1.25rem;
-    white-space: nowrap;
   }
 
   /* TODO: DELETE THIS AFTER FOREFRONT GALA */
   .galaDescription {
     font-size: 1rem;
     line-height: 1.5;
-    color: #393939;
+    color: black;
     margin-bottom: 1.5rem;
   }
 
   /* TODO: DELETE THIS AFTER FOREFRONT GALA */
   .galaButton {
-    margin: 0 1rem !important;
+    margin: 0.5rem 1rem !important;
   }
 
   .ourImpactItemContainer {
