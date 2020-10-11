@@ -1,5 +1,4 @@
 {
-  "extends": ["prettier", "prettier/@typescript-eslint"],
   "plugins": ["react"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
