@@ -16,28 +16,37 @@ class HeaderLinks extends React.Component<Props> {
       <div className={styles.headerLinks}>
         {isMobile ? (
           <div className={styles.link}>
-            <NavLink exact to="/" activeClassName={styles.active}>
+            <NavLink exact to='/' activeClassName={styles.active}>
               Home
             </NavLink>
           </div>
         ) : null}
         <div className={styles.link}>
-          <NavLink exact to="/our-approach" activeClassName={styles.active}>
+          <a
+            href={'https://goforefrontgala.org/'}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Gala 2020
+          </a>
+        </div>
+        <div className={styles.link}>
+          <NavLink exact to='/our-approach' activeClassName={styles.active}>
             Our Approach
           </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/our-work" activeClassName={styles.active}>
+          <NavLink exact to='/our-work' activeClassName={styles.active}>
             Our Work
           </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/builders" activeClassName={styles.active}>
+          <NavLink exact to='/builders' activeClassName={styles.active}>
             Builders
           </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to="/about-us" activeClassName={styles.active}>
+          <NavLink exact to='/about-us' activeClassName={styles.active}>
             About Us
           </NavLink>
         </div>
@@ -45,8 +54,8 @@ class HeaderLinks extends React.Component<Props> {
           {isMobile ? (
             <a
               href={'https://secure.givelively.org/donate/forefront-charity'}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Donate
             </a>
@@ -54,8 +63,8 @@ class HeaderLinks extends React.Component<Props> {
             <Button>
               <a
                 href={'https://secure.givelively.org/donate/forefront-charity'}
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Donate
               </a>

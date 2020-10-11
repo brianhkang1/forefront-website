@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-import ReactTypingEffect from 'react-typing-effect';
+// import ReactTypingEffect from 'react-typing-effect';
+import { isMobile, isDesktop } from '../../../util';
 
-import PictureText from '../../../components/PictureText';
+// import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import Picture from '../../../components/Picture';
@@ -12,6 +13,7 @@ import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
 import Popup from '../../../components/Popup';
 import YourResponseContainer from '../../YourResponseContainer';
+import Button from '../../../components/Button';
 
 import OurImpactWater from '../../../Images/HomePage/OurImpact_Water.jpg';
 import OurImpactEducation from '../../../Images/HomePage/OurImpact_Education.jpg';
@@ -34,7 +36,7 @@ const OurImpact = [
         <span className={styles.greenBold}>34</span> water wells
         <br />
         <span className={styles.greenBold}>94%</span> hand-washing rate
-        <Popup content="Up from 39%" />
+        <Popup content='Up from 39%' />
       </span>
     ),
   },
@@ -70,9 +72,6 @@ const OurImpact = [
 
 class HomePage extends React.Component {
   render() {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
-
     return (
       <div className={styles.root}>
         {isMobile && (
@@ -82,8 +81,8 @@ class HomePage extends React.Component {
         )}
 
         <div className={styles.heroPictureContainer}>
-          <PictureFilter>
-            {/* desktop view */}
+          {/* <PictureFilter>
+            desktop view
             {isDesktop && (
               <div className={styles.header}>
                 <Header />
@@ -98,6 +97,50 @@ class HomePage extends React.Component {
                 text="become global changemakers"
               />
             </PictureText>
+          </PictureFilter> */}
+
+          <PictureFilter className={styles.heroOverlay}>
+            {/* desktop view */}
+            {isDesktop && (
+              <div className={styles.header}>
+                <Header />
+              </div>
+            )}
+
+            <div className={styles.galaHeroText}>
+              <div className={styles.galaSmallTitle}>5th Annual Gala</div>
+              <div className={styles.galaBigTitle}>
+                CELEBRATING 5 YEARS <br />
+                OF FOREFRONT
+              </div>
+              <div className={styles.galaDescription}>
+                Join us for our virtual gala on Saturday, November 14, 7:00 PM
+                to 8:15 PM (EST).
+              </div>
+
+              <div>
+                <Button className={styles.galaButton}>
+                  <a
+                    href={'https://goforefrontgala.org/'}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Learn More
+                  </a>
+                </Button>
+                <Button className={styles.galaButton}>
+                  <a
+                    href={
+                      'https://secure.givelively.org/event/forefront-charity/5th-annual-forefront-gala'
+                    }
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Register
+                  </a>
+                </Button>
+              </div>
+            </div>
           </PictureFilter>
         </div>
 
@@ -110,7 +153,7 @@ class HomePage extends React.Component {
             }
             width={isDesktop ? '70vw' : '80vw'}
             height={isDesktop ? '30vh' : '40vh'}
-            backgroundSize="contain"
+            backgroundSize='contain'
           />
         </div>
 
@@ -119,8 +162,8 @@ class HomePage extends React.Component {
 
         <div className={styles.ourImpactContainer}>
           <Title
-            title="Our Impact"
-            description="Our passion is changing the narrative to make changemakers. That’s why 100% of your donations go directly to our work on the ground."
+            title='Our Impact'
+            description='Our passion is changing the narrative to make changemakers. That’s why 100% of your donations go directly to our work on the ground.'
           />
           <div className={styles.ourImpactItemContainer}>
             {OurImpact.map((ourImpactItem, index) => (
@@ -131,16 +174,16 @@ class HomePage extends React.Component {
                 <Picture
                   src={ourImpactItem.image}
                   className={styles.ourImpactImage}
-                  width="18rem"
-                  height="18rem"
-                  mobileWidth="70vw"
-                  mobileHeight="70vw"
+                  width='18rem'
+                  height='18rem'
+                  mobileWidth='70vw'
+                  mobileHeight='70vw'
                 >
                   <div className={styles.ourImpactIcon}>
                     <Picture
                       src={ourImpactItem.icon}
-                      width="5rem"
-                      height="5rem"
+                      width='5rem'
+                      height='5rem'
                     />
                   </div>
                 </Picture>
