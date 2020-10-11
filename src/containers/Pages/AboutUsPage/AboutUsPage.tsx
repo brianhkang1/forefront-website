@@ -45,21 +45,21 @@ class AboutUsPage extends React.Component {
           }}
         >
           <PictureText
-            padding="1.75rem"
+            padding='1.75rem'
             className={classNames(styles.heroText1, styles.heroText)}
           >
             <div>Enable every person</div>
           </PictureText>
 
           <PictureText
-            padding="1.75rem"
+            padding='1.75rem'
             className={classNames(styles.heroText, styles.heroText2)}
           >
             <div>Equip leaders</div>
           </PictureText>
 
           <PictureText
-            padding="1.75rem"
+            padding='1.75rem'
             className={classNames(styles.heroText, styles.heroText3)}
           >
             <div>Establish self-sustaining communities</div>
@@ -80,21 +80,21 @@ class AboutUsPage extends React.Component {
           }}
         >
           <PictureText
-            padding="1rem"
+            padding='1rem'
             className={classNames(styles.heroText1, styles.heroText)}
           >
             <div>Enable every person</div>
           </PictureText>
 
           <PictureText
-            padding="1rem"
+            padding='1rem'
             className={classNames(styles.heroText, styles.heroText2)}
           >
             <div>Equip leaders</div>
           </PictureText>
 
           <PictureText
-            padding="1rem"
+            padding='1rem'
             className={classNames(styles.heroText, styles.heroText3)}
           >
             <div>Establish </div>
@@ -146,11 +146,11 @@ class AboutUsPage extends React.Component {
             </div>
             <div className={styles.iconLink}>
               <a
-                href="https://www.guidestar.org/profile/47-3373120"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://www.guidestar.org/profile/47-3373120'
+                target='_blank'
+                rel='noopener noreferrer'
               >
-                We are gold certified
+                We are platinum certified
               </a>
             </div>
           </div>
@@ -167,7 +167,7 @@ class AboutUsPage extends React.Component {
 
             <div className={styles.dropdownContainer}>
               <Dropdown
-                placeholder="Select a year"
+                placeholder='Select a year'
                 selection
                 className={styles.dropdown}
               >
@@ -196,9 +196,9 @@ class AboutUsPage extends React.Component {
             </div>
             <div className={styles.iconLink}>
               <a
-                href="https://blog.goforefront.org"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://blog.goforefront.org'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Check out our blog
               </a>

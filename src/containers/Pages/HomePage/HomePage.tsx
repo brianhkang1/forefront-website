@@ -136,7 +136,7 @@ class HomePage extends React.Component {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    Register
+                    Get Tickets
                   </a>
                 </Button>
               </div>

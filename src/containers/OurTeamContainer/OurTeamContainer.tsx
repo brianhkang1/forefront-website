@@ -10,6 +10,8 @@ import MatthewOhPic from '../../Images/Team/Matthew_Oh.jpg';
 import ChanwookParkPic from '../../Images/Team/Chanwook_Park.jpg';
 import AnnaChunPic from '../../Images/Team/Anna_Chun.jpg';
 import BrianKimPic from '../../Images/Team/Brian_Kim.jpg';
+import ChristinaPhilipsPic from '../../Images/Team/Christina_Philips.jpg';
+import ChristianaTenaliPic from '../../Images/Team/Christiana_Tenali.jpg';
 import DarienKimPic from '../../Images/Team/Darien_Kim.jpg';
 import ElenaKimPic from '../../Images/Team/Elena_Kim.jpg';
 import EuniceLimPic from '../../Images/Team/Eunice_Lim.jpg';
@@ -22,6 +24,7 @@ import NancyChengPic from '../../Images/Team/Nancy_Cheng.jpg';
 import MichelleChangPic from '../../Images/Team/Michelle_Chang.jpg';
 import SarahKangPic from '../../Images/Team/Sarah_Kang.jpg';
 import SoojiKimPic from '../../Images/Team/Sooji_Kim.jpg';
+import VitaMallelaPic from '../../Images/Team/Vita_Mallela.jpg';
 import WesanChangPic from '../../Images/Team/Wesan_Chang.jpg';
 
 type Member = {
@@ -60,6 +63,18 @@ const TeamMembers = [
     image: BrianKimPic,
     description:
       "Brian graduated from St. John's University with a degree in accounting.  He enjoys cooking, hiking and gardening.",
+  },
+  {
+    title: 'CHRISTINA PHILIPS',
+    image: ChristinaPhilipsPic,
+    description:
+      'Christina graduated from the University of Connecticut with a B.S. in Molecular and Cellular Biology.  Born in Bangalore, India holds a special place in her heart and she hopes to help give back to the community. In her free time, she enjoys baking and hiking.',
+  },
+  {
+    title: 'CHRISTIANA TENALI',
+    image: ChristianaTenaliPic,
+    description:
+      "Christiana is from Michigan and blessed with two beautiful daughters Chloe and Clara.  Christiana's passion to serve children started from a young age through her father's ministry and is excited to be part of the community engagement team.",
   },
   {
     title: 'DARIEN KIM',
@@ -128,6 +143,12 @@ const TeamMembers = [
       'Sooji graduated with a dual degree in evolutionary anthropology and political science at Rutgers University. Her passion for world issues led her to join the FOREFRONT team. She is a coffee enthusiast and a world traveler.',
   },
   {
+    title: 'VITA MALLELA',
+    image: VitaMallelaPic,
+    description:
+      'Vita graduated from Washington University in St. Louis majoring in operations & supply chain management and marketing. She was born near Hyderabad, India and is fluent in Telugu. Vita grew up in Texas, Minnesota, and Virginia. Forefront’s work is close to her as it is an opportunity to make a difference in her home state in India.  Outside of work, Vita enjoys tennis, traveling, and exploring restaurants.',
+  },
+  {
     title: 'WESAN CHANG',
     image: WesanChangPic,
     description:
@@ -168,15 +189,15 @@ const OurTeamContainer: React.FC = () => {
           <div className={styles.mainPictureLink}>
             <a
               href={'https://form.jotform.com/80993600806157'}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Become a Volunteer
             </a>
           </div>
 
           <div className={styles.mainPictureLink}>
-            <a href={InternshipPDF} target="_blank" rel="noopener noreferrer">
+            <a href={InternshipPDF} target='_blank' rel='noopener noreferrer'>
               Apply For An Internship
             </a>
           </div>
@@ -184,10 +205,10 @@ const OurTeamContainer: React.FC = () => {
 
         <Picture
           src={TeamPicture}
-          width="70vw"
-          height="70vh"
-          mobileWidth="100vw"
-          mobileHeight="30vh"
+          width='70vw'
+          height='70vh'
+          mobileWidth='100vw'
+          mobileHeight='30vh'
         />
       </div>
 
