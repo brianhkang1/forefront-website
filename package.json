@@ -1,8 +1,10 @@
 {
   "name": "forefront",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@types/jest": "^24.0.11",
     "@types/node": "^11.13.7",
     "@types/react": "^16.8.14",
@@ -11,14 +13,14 @@
     "@types/recharts": "^1.8.10",
     "leaflet": "^1.6.0",
     "node-sass": "^4.12.0",
-    "react": "^16.8.6",
+    "react": "^16.13.1",
     "react-dom": "^16.8.6",
     "react-ga": "^3.0.0",
     "react-leaflet": "^2.6.1",
-    "react-material-ui-carousel": "^1.1.1",
+    "react-material-ui-carousel": "1.5.2",
     "react-progressive-loader": "^0.3.1",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.4.0",
+    "react-scripts": "^3.4.3",
     "react-transition-group": "^4.2.0",
     "react-typing-effect": "^2.0.3",
     "recharts": "^1.8.5",
@@ -31,13 +33,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --single-quote --trailing-comma es5 --print-width 80 --write \"src/**/*.+(ts|tsx|js|css)\""
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "printWidth": 80
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,25 +44,10 @@
     "not ie > 0",
     "not op_mini all"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.+(ts|tsx|js|css)": [
-      "prettier --single-quote --trailing-comma es5 --print-width 80 --write",
-      "git add"
-    ]
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.2.0",
     "@typescript-eslint/parser": "^3.2.0",
-    "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-react": "^7.13.0",
-    "husky": "^2.4.0",
-    "lint-staged": "^8.2.0",
-    "prettier": "^1.18.2"
+    "eslint-plugin-react": "^7.13.0"
   }
 }
