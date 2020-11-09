@@ -8,6 +8,7 @@ import { classNames } from '../../../util';
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.png';
 import BlogIcon from '../../../Images/Icons/blog_icon.png';
 import SoTIcon from '../../../Images/Icons/SoT_icon.png';
+import ShopIcon from '../../../Images/Icons/shop_icon.png';
 // @ts-ignore
 import Report2017 from '../../../Documents/annual_report_2017.pdf';
 // @ts-ignore
@@ -21,16 +22,16 @@ import OurTeamContainer from '../../OurTeamContainer';
 const AnnualReports = [
   {
     year: '2019',
-    href: Report2019,
+    href: Report2019
   },
   {
     year: '2018',
-    href: Report2018,
+    href: Report2018
   },
   {
     year: '2017',
-    href: Report2017,
-  },
+    href: Report2017
+  }
 ];
 
 class AboutUsPage extends React.Component {
@@ -41,7 +42,7 @@ class AboutUsPage extends React.Component {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: 'center'
           }}
         >
           <PictureText
@@ -76,7 +77,7 @@ class AboutUsPage extends React.Component {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: 'center'
           }}
         >
           <PictureText
@@ -201,6 +202,26 @@ class AboutUsPage extends React.Component {
                 rel='noopener noreferrer'
               >
                 Check out our blog
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <div
+              className={styles.icon}
+              style={{ backgroundImage: `url(${ShopIcon})` }}
+            />
+            <div className={styles.iconText}>
+              Do good and look good! All net profits go towards providing basic
+              life necessities to those in need.
+            </div>
+            <div className={styles.iconLink}>
+              <a
+                href={'https://ourgoodpurpose.com/'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Shop at 'Our Good Purpose'
               </a>
             </div>
           </div>
