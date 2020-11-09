@@ -46,6 +46,15 @@ class HeaderLinks extends React.Component<Props> {
           </NavLink>
         </div>
         <div className={styles.link}>
+          <a
+            href={'https://ourgoodpurpose.com/'}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Shop
+          </a>
+        </div>
+        <div className={styles.link}>
           <NavLink exact to='/about-us' activeClassName={styles.active}>
             About Us
           </NavLink>
