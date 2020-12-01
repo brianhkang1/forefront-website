@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-// import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from 'react-typing-effect';
 import { isMobile, isDesktop } from '../../../util';
 
-// import PictureText from '../../../components/PictureText';
+import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import Picture from '../../../components/Picture';
@@ -13,7 +13,6 @@ import PictureFilter from '../../../components/PictureFilter';
 import Title from '../../../components/Title';
 import Popup from '../../../components/Popup';
 import YourResponseContainer from '../../YourResponseContainer';
-import Button from '../../../components/Button';
 
 import OurImpactWater from '../../../Images/HomePage/OurImpact_Water.jpg';
 import OurImpactEducation from '../../../Images/HomePage/OurImpact_Education.jpg';
@@ -38,7 +37,7 @@ const OurImpact = [
         <span className={styles.greenBold}>94%</span> hand-washing rate
         <Popup content='Up from 39%' />
       </span>
-    ),
+    )
   },
   {
     type: 'EDUCATION',
@@ -49,7 +48,7 @@ const OurImpact = [
         <span className={styles.greenBold}>7:1</span> student to teacher ratio
         at our After School program
       </span>
-    ),
+    )
   },
   {
     type: 'MEDICAL CARE',
@@ -60,14 +59,14 @@ const OurImpact = [
         <span className={styles.greenBold}>5</span> health and wellness
         workshops
       </span>
-    ),
+    )
   },
   {
     type: 'EMPOWERMENT',
     image: OurImpactEmpowerment,
     icon: EmpowermentIcon,
-    text: <span>Soap business run by local women</span>,
-  },
+    text: <span>Soap business run by local women</span>
+  }
 ];
 
 class HomePage extends React.Component {
@@ -81,66 +80,21 @@ class HomePage extends React.Component {
         )}
 
         <div className={styles.heroPictureContainer}>
-          {/* <PictureFilter>
-            desktop view
-            {isDesktop && (
-              <div className={styles.header}>
-                <Header />
-              </div>
-            )}
-
-            <PictureText padding="1.5rem" className={styles.heroText}>
-              <div>We build a future where dreamers</div>
-              <ReactTypingEffect
-                speed={75}
-                eraseDelay={1000000}
-                text="become global changemakers"
-              />
-            </PictureText>
-          </PictureFilter> */}
-
-          <PictureFilter className={styles.heroOverlay}>
+          <PictureFilter>
             {/* desktop view */}
             {isDesktop && (
               <div className={styles.header}>
                 <Header />
               </div>
             )}
-
-            <div className={styles.galaHeroText}>
-              <div className={styles.galaSmallTitle}>5th Annual Gala</div>
-              <div className={styles.galaBigTitle}>
-                CELEBRATING 5 YEARS {isMobile ? '' : <br />}
-                OF FOREFRONT
-              </div>
-              <div className={styles.galaDescription}>
-                Join us for our virtual gala on Saturday, November 14, 7:00 PM
-                to 8:15 PM (EST).
-              </div>
-
-              <div>
-                <Button className={styles.galaButton}>
-                  <a
-                    href={'https://goforefrontgala.org/'}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    Learn More
-                  </a>
-                </Button>
-                <Button className={styles.galaButton}>
-                  <a
-                    href={
-                      'https://secure.givelively.org/event/forefront-charity/5th-annual-forefront-gala'
-                    }
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    Get Tickets
-                  </a>
-                </Button>
-              </div>
-            </div>
+            <PictureText padding='1.5rem' className={styles.heroText}>
+              <div>We build a future where dreamers</div>
+              <ReactTypingEffect
+                speed={75}
+                eraseDelay={1000000}
+                text='become global changemakers'
+              />
+            </PictureText>
           </PictureFilter>
         </div>
 
