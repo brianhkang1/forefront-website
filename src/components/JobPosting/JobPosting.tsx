@@ -1,38 +1,43 @@
 import React from 'react';
 import styles from './JobPosting.module.css';
 
-import ChiefMarketingOfficerApp from '../../Documents/Chief_Marketing_Officer.doc';
-import CopyWriteLeadApp from '../../Documents/Copy_Write_Lead.doc';
-import DirectorOfMedicalApp from '../../Documents/Director_of_Medical.doc';
-import DonorRelationsLeadApp from '../../Documents/Donor_Relations_Lead.doc';
-import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.doc';
-import PublicRelationsLeadApp from '../../Documents/Public_Relations_Lead.doc';
+import ChiefMarketingOfficerApp from '../../Documents/Chief_Marketing_Officer.docx';
+import DirectorOfMedicalAndHealthApp from '../../Documents/Director_Of_Medical_Health.docx';
+import DirectorOfWaterAndSanitationsApp from '../../Documents/Director_Of_Water_And_Sanitations.docx';
+import DonorRelationsLeadApp from '../../Documents/Donor_Relations_Lead.docx';
+import FinanceLeadApp from '../../Documents/Finance_Lead.docx';
+import MarketingLeading_CopywriterCreative from '../../Documents/Marketing_Lead_Copywriter_Creative.docx';
+import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.docx';
 
 const JobPostingInfo = [
   {
     title: 'Chief Marketing Officer',
-    link: ChiefMarketingOfficerApp,
+    link: ChiefMarketingOfficerApp
   },
   {
-    title: 'Copy-Write Lead',
-    link: CopyWriteLeadApp,
+    title: 'Director of Medical & Health',
+    link: DirectorOfMedicalAndHealthApp
   },
   {
-    title: 'Director of Medical',
-    link: DirectorOfMedicalApp,
+    title: 'Director of Water & Sanitations',
+    link: DirectorOfWaterAndSanitationsApp
   },
   {
     title: 'Donor Relations Lead',
-    link: DonorRelationsLeadApp,
+    link: DonorRelationsLeadApp
+  },
+  {
+    title: 'Finance Lead',
+    link: FinanceLeadApp
+  },
+  {
+    title: 'Marketing Lead - Copywriter/Creative',
+    link: MarketingLeading_CopywriterCreative
   },
   {
     title: 'People & Culture Lead',
-    link: PeopleAndCultureLeadApp,
-  },
-  {
-    title: 'Public Relations Lead',
-    link: PublicRelationsLeadApp,
-  },
+    link: PeopleAndCultureLeadApp
+  }
 ];
 
 const JobPosting: React.FC = () => {
@@ -46,7 +51,7 @@ const JobPosting: React.FC = () => {
         {JobPostingInfo.map(posting => (
           <div key={posting.title} className={styles.jobPosting}>
             <div className={styles.jobTitle}>
-              <a href={posting.link} target="_blank" rel="noopener noreferrer">
+              <a href={posting.link} target='_blank' rel='noopener noreferrer'>
                 {posting.title}
               </a>
             </div>
