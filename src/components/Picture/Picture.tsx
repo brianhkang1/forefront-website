@@ -19,7 +19,7 @@ const Picture: React.FC<Props> = ({
   mobileHeight,
   backgroundSize = 'cover',
   className,
-  children,
+  children
 }) => {
   const isMobile = useIsMobile();
 
@@ -30,7 +30,7 @@ const Picture: React.FC<Props> = ({
         background: `url("${src}") no-repeat center center / ${backgroundSize}`,
         position: 'relative',
         width: isMobile && mobileWidth ? mobileWidth : width,
-        height: isMobile && mobileWidth ? mobileHeight : height,
+        height: isMobile && mobileHeight ? mobileHeight : height
       }}
     >
       {children}
