@@ -205,7 +205,7 @@ const BuildersPage: React.FC = () => {
 
       {isMobile && (
         <div ref={mobileDonationWidget}>
-          <Title title='Make a Donation' />
+          <Title title='Build a Brighter Future' />
           <DonationWidget />
         </div>
       )}
