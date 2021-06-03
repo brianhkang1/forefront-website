@@ -43,3 +43,10 @@
 }
 
 /* ************************************* */
+
+.highlightTitle {
+  background-color: yellow;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--base-text);
+}

@@ -9,6 +9,7 @@ type Props = {
   mobileHeight?: string;
   className?: string;
   backgroundSize?: 'cover' | 'contain';
+  backgroundPosition?: string;
 };
 
 const Picture: React.FC<Props> = ({
