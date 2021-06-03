@@ -5,8 +5,11 @@
     padding: 5rem 6rem 2rem 2rem;
   }
 
-  .title {
+  .titleContainer {
     padding-bottom: 1.5rem;
+  }
+
+  .title {
     font-size: 3rem;
     font-weight: bold;
     color: var(--base-text);
@@ -27,8 +30,11 @@
     text-align: center;
   }
 
-  .title {
+  .titleContainer {
     padding-bottom: 1rem;
+  }
+
+  .title {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: bold;
@@ -44,9 +50,7 @@
 
 /* ************************************* */
 
+/* TODO: COVID */
 .highlightTitle {
   background-color: yellow;
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--base-text);
 }

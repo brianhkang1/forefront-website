@@ -14,8 +14,12 @@ class Title extends React.Component<Props> {
     return (
       <div className={styles.root}>
         {title && (
-          <div className={styles.title}>
-            <span className={highlightTitle ? styles.highlightTitle : ''}>
+          <div className={styles.titleContainer}>
+            <span
+              className={`${styles.title} ${
+                highlightTitle ? styles.highlightTitle : ''
+              }`}
+            >
               {title}
             </span>
           </div>
