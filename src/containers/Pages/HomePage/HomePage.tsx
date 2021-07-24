@@ -35,7 +35,7 @@ const OurImpact = [
     icon: WaterIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>34</span> water wells
+        <span className={styles.greenBold}>45</span> water wells
         <br />
         <span className={styles.greenBold}>94%</span> hand-washing rate
         <Popup content='Up from 39%' />
@@ -48,8 +48,8 @@ const OurImpact = [
     icon: EducationIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>7:1</span> student to teacher ratio
-        at our After School program
+        <span className={styles.greenBold}>20:1</span> student to teacher ratio
+        at FOREFRONT School
       </span>
     )
   },
