@@ -5,8 +5,6 @@ import PictureFilter from '../PictureFilter';
 const StatisticsVisual = () => {
   return (
     <>
-      {/* <Spacer height='3rem'/> */}
-
       <div className={styles.root}>
         <PictureFilter>
           <div className={styles.container}>
@@ -17,12 +15,12 @@ const StatisticsVisual = () => {
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>$739,041</div>
+              <div className={styles.numberCounterItem}>$855,628</div>
               <div>Total Support</div>
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>40+</div>
+              <div className={styles.numberCounterItem}>70+</div>
               <div>Builders (Monthly Donors)</div>
             </div>
           </div>

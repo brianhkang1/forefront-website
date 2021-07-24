@@ -8,8 +8,6 @@ import InternshipDoc from '../../Documents/Forefront_Internship.docx';
 import TeamPicture from '../../Images/Team/Team.jpg';
 import MatthewOhPic from '../../Images/Team/Matthew_Oh.jpg';
 import ChanwookParkPic from '../../Images/Team/Chanwook_Park.jpg';
-import AnnaChunPic from '../../Images/Team/Anna_Chun.jpg';
-import BrianKimPic from '../../Images/Team/Brian_Kim.jpg';
 import ChristinaPhilipsPic from '../../Images/Team/Christina_Philips.jpg';
 import ChristianaTenaliPic from '../../Images/Team/Christiana_Tenali.jpg';
 import DarienKimPic from '../../Images/Team/Darien_Kim.jpg';
@@ -25,7 +23,10 @@ import MichelleChangPic from '../../Images/Team/Michelle_Chang.jpg';
 import SarahKangPic from '../../Images/Team/Sarah_Kang.jpg';
 import SoojiKimPic from '../../Images/Team/Sooji_Kim.jpg';
 import VitaMallelaPic from '../../Images/Team/Vita_Mallela.jpg';
-import WesanChangPic from '../../Images/Team/Wesan_Chang.jpg';
+import JosephLeePic from '../../Images/Team/Joseph_Lee.jpg';
+import JasonChoePic from '../../Images/Team/Jason_Choe.jpg';
+import DanielKimPic from '../../Images/Team/Daniel_Kim.jpg';
+import TanviNaiduPic from '../../Images/Team/Tanvi_Naidu.jpg';
 
 type Member = {
   title: string;
@@ -53,18 +54,6 @@ const TeamMembers = [
       "Chanwook leads the FOREFRONT programs team. He holds B.S. and M.Eng degrees in engineering from Cornell University. His favorite places in the world are Ithaca, Salzburg, and Oscar's Seafood Tacos in San Diego. He hopes that he can be a light to many who are truly poor and needy in this world."
   },
   {
-    title: 'ANNA CHUN',
-    image: AnnaChunPic,
-    description:
-      'Anna studied Civil Engineering at Cornell University and graduated from UC Berkeley with her Masters in Environmental Engineering. In her free time, Anna enjoys hiking. Anna grew up in Sydney, Australia and Long Island, New York.'
-  },
-  {
-    title: 'BRIAN KIM',
-    image: BrianKimPic,
-    description:
-      "Brian graduated from St. John's University with a degree in accounting.  He enjoys cooking, hiking and gardening."
-  },
-  {
     title: 'CHRISTINA PHILIPS',
     image: ChristinaPhilipsPic,
     description:
@@ -75,6 +64,12 @@ const TeamMembers = [
     image: ChristianaTenaliPic,
     description:
       "Christiana is from Michigan and blessed with two beautiful daughters Chloe and Clara.  Christiana's passion to serve children started from a young age through her father's ministry and is excited to be part of the community engagement team."
+  },
+  {
+    title: 'DANIEL KIM',
+    image: DanielKimPic,
+    description:
+      "Daniel holds a B.S. in Industrial and Labor Relations from Cornell University and currently works as a consultant for his day job. Daniel was inspired to join by Forefront's mission and the heart that the team members have for India. He currently helps Forefront in the finance team. He enjoys photography, hiking, and Marvel movies."
   },
   {
     title: 'DARIEN KIM',
@@ -101,10 +96,22 @@ const TeamMembers = [
       'Helen studied architecture at Pratt Institute and is currently working at a small architecture firm in NYC. She enjoys trying new things like plant-based cooking, video editing, and learning new languages. She is constantly inspired by those that use their skills and talents to help others and is honored to be part of the FOREFRONT team.'
   },
   {
+    title: 'JASON CHOE',
+    image: JasonChoePic,
+    description:
+      "Jason is born and raised in Philadelphia, PA. He is a transplant pharmacist during the day and an avid Philadelphia sports fan at night. He is also a proud uncle of 3 (aka the 3 Musketeers). His heart is to give back and serve others with God’s love."
+  },
+  {
     title: 'JEFF LEVY',
     image: JeffLevyPic,
     description:
       "Jeff was inspired by FOREFRONT's vision to help people in another part of the globe according to the needs they share. Jeff enjoys meeting people and finding ways to learn and help. He works as a teacher and coach in the Washington DC area and has taught in the Boston area as well as in South Korea and Japan."
+  },
+  {
+    title: 'JOSEPH LEE',
+    image: JosephLeePic,
+    description:
+      "Joseph holds a B.S. in Operations Research Engineering from Cornell and is currently working as a Data Analyst in a HealthTech company. In his free time, he loves to explore nature and play basketball. He got into photography during his time in Ithaca and loves to take photos for his friends. He hopes he can now capture memories of Forefront School now as a member of the Education Team."
   },
   {
     title: 'JULIANA CANALE',
@@ -143,17 +150,17 @@ const TeamMembers = [
       'Sooji graduated with a dual degree in evolutionary anthropology and political science at Rutgers University. Her passion for world issues led her to join the FOREFRONT team. She is a coffee enthusiast and a world traveler.'
   },
   {
+    title: 'TANVI NAIDU',
+    image: TanviNaiduPic,
+    description:
+      'Tanvi graduated from Cornell University with a double major in civil/environmental engineering and environmental science. She currently works as a water resource engineer for a consulting firm, and spends her free time teaching yoga and hiking. She grew up all over India in a military family and is grateful for the opportunity to support communities in her motherland through Forefront.'
+  },
+  {
     title: 'VITA MALLELA',
     image: VitaMallelaPic,
     description:
       'Vita graduated from Washington University in St. Louis majoring in operations & supply chain management and marketing. She was born near Hyderabad, India and is fluent in Telugu. Vita grew up in Texas, Minnesota, and Virginia. Forefront’s work is close to her as it is an opportunity to make a difference in her home state in India.  Outside of work, Vita enjoys tennis, traveling, and exploring restaurants.'
   },
-  {
-    title: 'WESAN CHANG',
-    image: WesanChangPic,
-    description:
-      'Wesan studied Accounting at Rutgers University and is currently working in corporate finance. Outside of work, she enjoys hiking, exploring new restaurants and hosting gatherings to bring people together. She has a heart for serving the marginalized, so she is excited to be a part of FOREFRONT’s mission of empowering individuals and building up sustainable communities.'
-  }
 ];
 
 const OurTeamContainer: React.FC = () => {

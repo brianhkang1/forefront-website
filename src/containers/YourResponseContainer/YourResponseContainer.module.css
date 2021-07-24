@@ -1,7 +1,7 @@
 /* DESKTOP */
 @media (min-width: 769px) {
   .howToGetInvolvedItemsContainer {
-    padding: 0 10vw;
+    padding: 0 1vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

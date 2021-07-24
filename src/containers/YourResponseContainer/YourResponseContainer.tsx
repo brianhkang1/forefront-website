@@ -4,6 +4,7 @@ import Title from '../../components/Title';
 import BackgroundImage1 from '../../Images/Portrait/1.jpg';
 import BackgroundImage2 from '../../Images/Portrait/5.jpg';
 import BackgroundImage3 from '../../Images/Portrait/3.jpg';
+import BackgroundImage4 from '../../Images/Portrait/6.jpg';
 
 import styles from './YourResponseContainer.module.css';
 
@@ -33,6 +34,13 @@ const HowToGetInvolvedItems = [
     backgroundImage: `url(${BackgroundImage2})`,
     link:
       'https://secure.givelively.org/donate/forefront-charity/start-something/fundraisers/options',
+  },
+  {
+    title: 'FOREFRONT School',
+    description: 'Discover your impact',
+    backgroundImage: `url(${BackgroundImage4})`,
+    link:
+      'https://www.forefrontschool.org/',
   },
 ];
 

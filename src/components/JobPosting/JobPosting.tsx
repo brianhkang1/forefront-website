@@ -3,7 +3,6 @@ import styles from './JobPosting.module.css';
 
 import ChiefMarketingOfficerApp from '../../Documents/Chief_Marketing_Officer.docx';
 import DirectorOfMedicalAndHealthApp from '../../Documents/Director_Of_Medical_Health.docx';
-import DirectorOfWaterAndSanitationsApp from '../../Documents/Director_Of_Water_And_Sanitations.docx';
 import DonorRelationsLeadApp from '../../Documents/Donor_Relations_Lead.docx';
 import FinanceLeadApp from '../../Documents/Finance_Lead.docx';
 import MarketingLeading_CopywriterCreative from '../../Documents/Marketing_Lead_Copywriter_Creative.docx';
@@ -17,10 +16,6 @@ const JobPostingInfo = [
   {
     title: 'Director of Medical & Health',
     link: DirectorOfMedicalAndHealthApp
-  },
-  {
-    title: 'Director of Water & Sanitations',
-    link: DirectorOfWaterAndSanitationsApp
   },
   {
     title: 'Donor Relations Lead',

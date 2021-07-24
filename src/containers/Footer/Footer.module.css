@@ -70,6 +70,10 @@
 }
 /* ************************************ */
 
+.textCenterAlign {
+  text-align: center;
+}
+
 .whiteIcon,
 .whiteIcon:hover {
   color: white;

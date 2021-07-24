@@ -42,6 +42,10 @@ const waterWellData = [
     name: 2019,
     value: 28,
   },
+  {
+    name: 2020,
+    value: 42,
+  },
 ];
 
 const soapToysData = [
@@ -64,6 +68,10 @@ const soapToysData = [
   {
     name: 2019,
     value: 3500,
+  },
+  {
+    name: 2020,
+    value: 7000,
   },
 ];
 
@@ -95,11 +103,11 @@ const waterVisualData = [
     name: 'waterWells',
     icon: WaterIcon,
     selectedIcon: WaterShadowIcon,
-    chart: <BarChart data={waterWellData} domain={[0, 30]} isWhite />,
-    bigNumber: '+11',
+    chart: <BarChart data={waterWellData} domain={[0, 50]} isWhite />,
+    bigNumber: '42',
     subTitle: (
       <div>
-        water wells projected <br /> in 2020
+        total water wells built
       </div>
     ),
     description: (
@@ -118,8 +126,8 @@ const waterVisualData = [
     name: 'soapToys',
     icon: SoapIcon,
     selectedIcon: SoapShadowIcon,
-    chart: <BarChart data={soapToysData} domain={[0, 3500]} isWhite />,
-    bigNumber: '3500+',
+    chart: <BarChart data={soapToysData} domain={[0, 7000]} isWhite />,
+    bigNumber: '7000+',
     subTitle: <div>total soap toys</div>,
     description: (
       <div>
