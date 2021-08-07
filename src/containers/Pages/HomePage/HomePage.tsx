@@ -90,14 +90,30 @@ class HomePage extends React.Component {
                 <Header />
               </div>
             )}
-            <PictureText padding='1.5rem' className={styles.heroText}>
+            {/* <PictureText padding='1.5rem' className={styles.heroText}>
               <div>We build a future where dreamers</div>
               <ReactTypingEffect
                 speed={75}
                 eraseDelay={1000000}
                 text='become global changemakers'
               />
-            </PictureText>
+            </PictureText> */}
+            <div className={styles.galaLink}>
+              <Button
+                className={styles.galaButton}
+                size={isMobile ? 'medium' : 'large'}
+              >
+                <a
+                  href={
+                    'https://secure.givelively.org/event/forefront-charity/6th-annual-forefront-gala'
+                  }
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  RSVP Today
+                </a>
+              </Button>
+            </div>
           </PictureFilter>
         </div>
 
