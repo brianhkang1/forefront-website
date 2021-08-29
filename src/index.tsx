@@ -8,6 +8,11 @@ import 'semantic-ui-css/semantic.min.css';
 import ScrollToTop from './components/ScrollToTop';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
+import GoogleTagManager from 'react-gtm-module';
+
+const GoogleTagManagerArgs = {
+  gtmId: process.env.REACT_APP_GTM_TRACKING_ID || ''
+};
 
 const trackPageView = location => {
   ReactGA.set({ page: location.pathname });
@@ -16,8 +21,10 @@ const trackPageView = location => {
 
 const initGoogleAnalytics = history => {
   ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '', {
-    debug: true,
+    debug: true
   });
+  GoogleTagManager.initialize(GoogleTagManagerArgs);
+
   trackPageView(history.location);
   history.listen(trackPageView);
 };

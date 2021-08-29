@@ -5,6 +5,11 @@ import BackgroundImage1 from '../../Images/Portrait/1.jpg';
 import BackgroundImage2 from '../../Images/Portrait/5.jpg';
 import BackgroundImage3 from '../../Images/Portrait/3.jpg';
 import BackgroundImage4 from '../../Images/Portrait/6.jpg';
+import {
+  GoogleEventAction,
+  GoogleEventCategory,
+  GoogleEventLabel
+} from '../../util';
 
 import styles from './YourResponseContainer.module.css';
 
@@ -13,6 +18,11 @@ type HowToGetInvolvedItemType = {
   description: string;
   backgroundImage: string;
   link: string;
+
+  isGoogleEvent?: boolean;
+  googleEventCategory?: GoogleEventCategory;
+  googleEventAction?: GoogleEventAction;
+  googleEventLabel?: GoogleEventLabel;
 };
 
 const HowToGetInvolvedItems = [
@@ -21,27 +31,28 @@ const HowToGetInvolvedItems = [
     description: 'Building the future starts with a gift of any amount',
     backgroundImage: `url(${BackgroundImage1})`,
     link: 'https://secure.givelively.org/donate/forefront-charity',
+    isGoogleEvent: true,
+    googleEventCategory: GoogleEventCategory.DONATE_BUTTON_HOME_PAGE,
+    googleEventAction: GoogleEventAction.CLICK
   },
   {
     title: 'Become a Builder',
     description: 'You can build up communities today',
     backgroundImage: `url(${BackgroundImage3})`,
-    link: './builders',
+    link: './builders'
   },
   {
     title: 'Start A Fundraiser',
     description: 'Be a changemaker today',
     backgroundImage: `url(${BackgroundImage2})`,
-    link:
-      'https://secure.givelively.org/donate/forefront-charity/start-something/fundraisers/options',
+    link: 'https://secure.givelively.org/donate/forefront-charity/start-something/fundraisers/options'
   },
   {
     title: 'FOREFRONT School',
     description: 'Discover your impact',
     backgroundImage: `url(${BackgroundImage4})`,
-    link:
-      'https://www.forefrontschool.org/',
-  },
+    link: 'https://www.forefrontschool.org/'
+  }
 ];
 
 class YourResponseContainer extends React.Component {
@@ -49,8 +60,8 @@ class YourResponseContainer extends React.Component {
     return (
       <div className={styles.root}>
         <Title
-          title="Join Us"
-          description="Never underestimate your impact on a life. In India, access to clean water liberates women and children to earn money and attend school to build a better future for themselves."
+          title='Join Us'
+          description='Never underestimate your impact on a life. In India, access to clean water liberates women and children to earn money and attend school to build a better future for themselves.'
         />
 
         <div className={styles.howToGetInvolvedItemsContainer}>
