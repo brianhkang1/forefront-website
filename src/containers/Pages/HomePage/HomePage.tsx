@@ -28,6 +28,13 @@ import EducationIcon from '../../../Images/Icons/FourPillars/Education_color.png
 import MedicalIcon from '../../../Images/Icons/FourPillars/Medical_color.png';
 import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color.png';
 
+import GoogleEventTracker from '../../../components/GoogleEventTracker';
+import {
+  GoogleEventAction,
+  GoogleEventCategory,
+  GoogleEventLabel
+} from '../../../util';
+
 const OurImpact = [
   {
     type: 'WATER & SANITATION',
@@ -99,20 +106,26 @@ class HomePage extends React.Component {
               />
             </PictureText> */}
             <div className={styles.galaLink}>
-              <Button
-                className={styles.galaButton}
-                size={isMobile ? 'medium' : 'large'}
+              <GoogleEventTracker
+                category={GoogleEventCategory.GALA_RSVP_BUTTON}
+                action={GoogleEventAction.CLICK}
+                label={GoogleEventLabel.GALA_2021}
               >
-                <a
-                  href={
-                    'https://secure.givelively.org/event/forefront-charity/6th-annual-forefront-gala'
-                  }
-                  target='_blank'
-                  rel='noopener noreferrer'
+                <Button
+                  className={styles.galaButton}
+                  size={isMobile ? 'medium' : 'large'}
                 >
-                  RSVP Today
-                </a>
-              </Button>
+                  <a
+                    href={
+                      'https://secure.givelively.org/event/forefront-charity/6th-annual-forefront-gala'
+                    }
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    RSVP Today
+                  </a>
+                </Button>
+              </GoogleEventTracker>
             </div>
           </PictureFilter>
         </div>

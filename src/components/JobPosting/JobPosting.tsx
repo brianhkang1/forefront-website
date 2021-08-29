@@ -7,31 +7,45 @@ import DonorRelationsLeadApp from '../../Documents/Donor_Relations_Lead.docx';
 import FinanceLeadApp from '../../Documents/Finance_Lead.docx';
 import MarketingLeading_CopywriterCreative from '../../Documents/Marketing_Lead_Copywriter_Creative.docx';
 import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.docx';
+import GoogleEventTracker from '../GoogleEventTracker';
+import { GoogleEventCategory, GoogleEventAction } from '../../util';
 
 const JobPostingInfo = [
   {
     title: 'Chief Marketing Officer',
-    link: ChiefMarketingOfficerApp
+    link: ChiefMarketingOfficerApp,
+    googleEventCategory: GoogleEventCategory.JOB_CHIEF_MARKETING_OFFICER,
+    googleEventAction: GoogleEventAction.CLICK
   },
   {
     title: 'Director of Medical & Health',
-    link: DirectorOfMedicalAndHealthApp
+    link: DirectorOfMedicalAndHealthApp,
+    googleEventCategory: GoogleEventCategory.JOB_DIRECTOR_OF_MEDICAL_HEALTH,
+    googleEventAction: GoogleEventAction.CLICK
   },
   {
     title: 'Donor Relations Lead',
-    link: DonorRelationsLeadApp
+    link: DonorRelationsLeadApp,
+    googleEventCategory: GoogleEventCategory.JOB_DONOR_RELATIONS_LEAD,
+    googleEventAction: GoogleEventAction.CLICK
   },
   {
     title: 'Finance Lead',
-    link: FinanceLeadApp
+    link: FinanceLeadApp,
+    googleEventCategory: GoogleEventCategory.JOB_FINANCE_LEAD,
+    googleEventAction: GoogleEventAction.CLICK
   },
   {
     title: 'Marketing Lead - Copywriter/Creative',
-    link: MarketingLeading_CopywriterCreative
+    link: MarketingLeading_CopywriterCreative,
+    googleEventCategory: GoogleEventCategory.JOB_MARKETING_LEAD_COPYWRITER,
+    googleEventAction: GoogleEventAction.CLICK
   },
   {
     title: 'People & Culture Lead',
-    link: PeopleAndCultureLeadApp
+    link: PeopleAndCultureLeadApp,
+    googleEventCategory: GoogleEventCategory.JOB_PEOPLE_CULTURE_LEAD,
+    googleEventAction: GoogleEventAction.CLICK
   }
 ];
 
@@ -44,13 +58,22 @@ const JobPosting: React.FC = () => {
 
       <div className={styles.jobPostingContainer}>
         {JobPostingInfo.map(posting => (
-          <div key={posting.title} className={styles.jobPosting}>
-            <div className={styles.jobTitle}>
-              <a href={posting.link} target='_blank' rel='noopener noreferrer'>
-                {posting.title}
-              </a>
+          <GoogleEventTracker
+            category={posting.googleEventCategory}
+            action={posting.googleEventAction}
+          >
+            <div key={posting.title} className={styles.jobPosting}>
+              <div className={styles.jobTitle}>
+                <a
+                  href={posting.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {posting.title}
+                </a>
+              </div>
             </div>
-          </div>
+          </GoogleEventTracker>
         ))}
       </div>
     </div>

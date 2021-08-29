@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './HeaderLinks.module.css';
 import { NavLink } from 'react-router-dom';
 import Button from '../Button';
+import GoogleEventTracker from '../GoogleEventTracker';
+import { GoogleEventAction, GoogleEventCategory } from '../../util';
 
 interface Props {
   handleLinkClick: (e: any, name: string) => void;
@@ -36,31 +38,31 @@ class HeaderLinks extends React.Component<Props> {
             Builders
           </NavLink>
         </div>
-        <div className={styles.link}>
-          <a
-            href={'https://ourgoodpurpose.com/'}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Shop
-          </a>
-        </div>
+        <GoogleEventTracker
+          category={GoogleEventCategory.SHOP_HEADER_BUTTON}
+          action={GoogleEventAction.CLICK}
+        >
+          <div className={styles.link}>
+            <a
+              href={'https://ourgoodpurpose.com/'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Shop
+            </a>
+          </div>
+        </GoogleEventTracker>
         <div className={styles.link}>
           <NavLink exact to='/about-us' activeClassName={styles.active}>
             About Us
           </NavLink>
         </div>
-        <div className={styles.link}>
-          {isMobile ? (
-            <a
-              href={'https://secure.givelively.org/donate/forefront-charity'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Donate
-            </a>
-          ) : (
-            <Button>
+        <GoogleEventTracker
+          category={GoogleEventCategory.DONATE_HEADER_BUTTON}
+          action={GoogleEventAction.CLICK}
+        >
+          <div className={styles.link}>
+            {isMobile ? (
               <a
                 href={'https://secure.givelively.org/donate/forefront-charity'}
                 target='_blank'
@@ -68,9 +70,21 @@ class HeaderLinks extends React.Component<Props> {
               >
                 Donate
               </a>
-            </Button>
-          )}
-        </div>
+            ) : (
+              <Button>
+                <a
+                  href={
+                    'https://secure.givelively.org/donate/forefront-charity'
+                  }
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Donate
+                </a>
+              </Button>
+            )}
+          </div>
+        </GoogleEventTracker>
       </div>
     );
   }
