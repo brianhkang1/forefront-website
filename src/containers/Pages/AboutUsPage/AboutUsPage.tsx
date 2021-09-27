@@ -15,11 +15,17 @@ import Report2017 from '../../../Documents/annual_report_2017.pdf';
 import Report2018 from '../../../Documents/annual_report_2018.pdf';
 // @ts-ignore
 import Report2019 from '../../../Documents/annual_report_2019.pdf';
+// @ts-ignore
+import Report2020 from '../../../Documents/annual_report_2020.pdf';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import OurTeamContainer from '../../OurTeamContainer';
 
-const AnnualReports = [
+const ANNUAL_REPORTS = [
+  {
+    year: '2020',
+    href: Report2020
+  },
   {
     year: '2019',
     href: Report2019
@@ -173,7 +179,7 @@ class AboutUsPage extends React.Component {
                 className={styles.dropdown}
               >
                 <Dropdown.Menu className={styles.dropdownMenu}>
-                  {AnnualReports.map(report => (
+                  {ANNUAL_REPORTS.map(report => (
                     <Dropdown.Item
                       key={'dropdown-' + report.year}
                       className={styles.dropdownItem}

@@ -10,7 +10,6 @@ export enum GoogleEventCategory {
   SHOP_HEADER_BUTTON = 'Shop Button (Header)',
   DONATE_HEADER_BUTTON = 'Donate Button (Header)',
   DONATE_BUTTON_HOME_PAGE = 'Donate Button (Home page)',
-  DONATE_BUTTON_BUILDERS_PAGE = 'Donate Button (Builders page - GiveLively widget)',
   GALA_RSVP_BUTTON = 'Gala RSVP Button (Home page)',
 
   JOB_CHIEF_MARKETING_OFFICER = 'Job (Chief Marketing Officer)',
