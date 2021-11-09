@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-// import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from 'react-typing-effect';
 import { isMobile, isDesktop } from '../../../util';
 
 import CovidReliefPic from '../../../Images/CovidRelief.jpg';
 import Button from '../../../components/Button';
 
-// import PictureText from '../../../components/PictureText';
+import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import Picture from '../../../components/Picture';
@@ -28,12 +28,12 @@ import EducationIcon from '../../../Images/Icons/FourPillars/Education_color.png
 import MedicalIcon from '../../../Images/Icons/FourPillars/Medical_color.png';
 import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color.png';
 
-import GoogleEventTracker from '../../../components/GoogleEventTracker';
-import {
-  GoogleEventAction,
-  GoogleEventCategory,
-  GoogleEventLabel
-} from '../../../util';
+// import GoogleEventTracker from '../../../components/GoogleEventTracker';
+// import {
+//   GoogleEventAction,
+//   GoogleEventCategory,
+//   GoogleEventLabel
+// } from '../../../util';
 
 const OurImpact = [
   {
@@ -97,36 +97,14 @@ class HomePage extends React.Component {
                 <Header />
               </div>
             )}
-            {/* <PictureText padding='1.5rem' className={styles.heroText}>
-              <div>We build a future where dreamers</div>
+            <PictureText padding='1.5rem' className={styles.heroText}>
+              <div>We build a future where dreamers become </div>
               <ReactTypingEffect
                 speed={75}
                 eraseDelay={1000000}
-                text='become global changemakers'
+                text='global changemakers'
               />
-            </PictureText> */}
-            <div className={styles.galaLink}>
-              <GoogleEventTracker
-                category={GoogleEventCategory.GALA_RSVP_BUTTON}
-                action={GoogleEventAction.CLICK}
-                label={GoogleEventLabel.GALA_2021}
-              >
-                <Button
-                  className={styles.galaButton}
-                  size={isMobile ? 'medium' : 'large'}
-                >
-                  <a
-                    href={
-                      'https://secure.givelively.org/event/forefront-charity/6th-annual-forefront-gala'
-                    }
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    RSVP Today
-                  </a>
-                </Button>
-              </GoogleEventTracker>
-            </div>
+            </PictureText>
           </PictureFilter>
         </div>
 
