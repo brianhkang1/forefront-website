@@ -17,7 +17,8 @@ export enum GoogleEventCategory {
   JOB_DONOR_RELATIONS_LEAD = 'Job (Donor Relations Lead)',
   JOB_FINANCE_LEAD = 'Job (Finance Lead)',
   JOB_MARKETING_LEAD_COPYWRITER = 'Job (Marketing Lead - Copywriter/Creative)',
-  JOB_PEOPLE_CULTURE_LEAD = 'Job (People & Culture Lead)'
+  JOB_PEOPLE_CULTURE_LEAD = 'Job (People & Culture Lead)',
+  JOB_EDUCATION_LEAD_ACADEMIC = 'Job (Education Lead - Academic)'
 }
 
 export enum GoogleEventAction {

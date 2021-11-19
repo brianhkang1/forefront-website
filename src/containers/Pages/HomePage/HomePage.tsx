@@ -97,14 +97,16 @@ class HomePage extends React.Component {
                 <Header />
               </div>
             )}
-            <PictureText padding='1.5rem' className={styles.heroText}>
+
+            {/* TODO: reintroduce after HomePage2 is deprecated */}
+            {/* <PictureText padding='1.5rem' className={styles.heroText}>
               <div>We build a future where dreamers become </div>
               <ReactTypingEffect
                 speed={75}
                 eraseDelay={1000000}
                 text='global changemakers'
               />
-            </PictureText>
+            </PictureText> */}
           </PictureFilter>
         </div>
 

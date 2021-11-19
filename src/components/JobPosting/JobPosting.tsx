@@ -7,6 +7,7 @@ import DonorRelationsLeadApp from '../../Documents/Donor_Relations_Lead.docx';
 import FinanceLeadApp from '../../Documents/Finance_Lead.docx';
 import MarketingLeading_CopywriterCreative from '../../Documents/Marketing_Lead_Copywriter_Creative.docx';
 import PeopleAndCultureLeadApp from '../../Documents/People_And_Culture_Lead.docx';
+import EducationLeadAcademicApp from '../../Documents/Education_Lead_Academic.pdf';
 import GoogleEventTracker from '../GoogleEventTracker';
 import { GoogleEventCategory, GoogleEventAction } from '../../util';
 
@@ -45,6 +46,12 @@ const JobPostingInfo = [
     title: 'People & Culture Lead',
     link: PeopleAndCultureLeadApp,
     googleEventCategory: GoogleEventCategory.JOB_PEOPLE_CULTURE_LEAD,
+    googleEventAction: GoogleEventAction.CLICK
+  },
+  {
+    title: 'Education Lead - Academic',
+    link: EducationLeadAcademicApp,
+    googleEventCategory: GoogleEventCategory.JOB_EDUCATION_LEAD_ACADEMIC,
     googleEventAction: GoogleEventAction.CLICK
   }
 ];

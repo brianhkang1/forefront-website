@@ -5,6 +5,12 @@
     height: 100vh;
   }
 
+  /* TODO: remove after HomePage2 is deprecated */
+  .heroPictureContainer::before {
+    background: url('../../../Images/Hero/HomePage2.jpg') no-repeat center
+      center;
+  }
+
   .heroText {
     font-size: 4rem;
     line-height: 4.5rem;
@@ -41,6 +47,12 @@
   .heroPictureContainer,
   .heroPictureContainer::before {
     height: 93vh;
+  }
+
+  /* TODO: remove after HomePage2 is deprecated */
+  .heroPictureContainer::before {
+    background: url('../../../Images/Hero/HomePage2_vertical.jpg') no-repeat
+      center center;
   }
 
   .header {
@@ -104,7 +116,8 @@
   top: 0;
   left: 0;
   background-color: white;
-  background: url('../../../Images/Hero/HomePage.jpg') no-repeat center center;
+  /* TODO: reintroduce after HomePage2 is deprecated */
+  /* background: url('../../../Images/Hero/HomePage.jpg') no-repeat center center; */
   background-size: cover;
   will-change: transform;
   z-index: -1;
