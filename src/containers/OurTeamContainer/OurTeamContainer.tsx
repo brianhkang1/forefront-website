@@ -21,8 +21,6 @@ import MattLawsonPic from '../../Images/Team/Matt_Lawson.jpg';
 import NancyChengPic from '../../Images/Team/Nancy_Cheng.jpg';
 import MichelleChangPic from '../../Images/Team/Michelle_Chang.jpg';
 import SarahKangPic from '../../Images/Team/Sarah_Kang.jpg';
-import SoojiKimPic from '../../Images/Team/Sooji_Kim.jpg';
-import VitaMallelaPic from '../../Images/Team/Vita_Mallela.jpg';
 import JosephLeePic from '../../Images/Team/Joseph_Lee.jpg';
 import JasonChoePic from '../../Images/Team/Jason_Choe.jpg';
 import DanielKimPic from '../../Images/Team/Daniel_Kim.jpg';
@@ -99,7 +97,7 @@ const TeamMembers = [
     title: 'JASON CHOE',
     image: JasonChoePic,
     description:
-      "Jason is born and raised in Philadelphia, PA. He is a transplant pharmacist during the day and an avid Philadelphia sports fan at night. He is also a proud uncle of 3 (aka the 3 Musketeers). His heart is to give back and serve others with God’s love."
+      'Jason is born and raised in Philadelphia, PA. He is a transplant pharmacist during the day and an avid Philadelphia sports fan at night. He is also a proud uncle of 3 (aka the 3 Musketeers). His heart is to give back and serve others with God’s love.'
   },
   {
     title: 'JEFF LEVY',
@@ -111,7 +109,7 @@ const TeamMembers = [
     title: 'JOSEPH LEE',
     image: JosephLeePic,
     description:
-      "Joseph holds a B.S. in Operations Research Engineering from Cornell and is currently working as a Data Analyst in a HealthTech company. In his free time, he loves to explore nature and play basketball. He got into photography during his time in Ithaca and loves to take photos for his friends. He hopes he can now capture memories of Forefront School now as a member of the Education Team."
+      'Joseph holds a B.S. in Operations Research Engineering from Cornell and is currently working as a Data Analyst in a HealthTech company. In his free time, he loves to explore nature and play basketball. He got into photography during his time in Ithaca and loves to take photos for his friends. He hopes he can now capture memories of Forefront School now as a member of the Education Team.'
   },
   {
     title: 'JULIANA CANALE',
@@ -144,23 +142,11 @@ const TeamMembers = [
       "Sarah is a 7th grade English teacher at River Dell Middle School in River Edge, New Jersey. She graduated from Rutgers University-New Brunswick with a B.A. in English and a Masters in Education. Her goal is for her students to develop into confident, loving, difference-makers in today's society."
   },
   {
-    title: 'SOOJI KIM',
-    image: SoojiKimPic,
-    description:
-      'Sooji graduated with a dual degree in evolutionary anthropology and political science at Rutgers University. Her passion for world issues led her to join the FOREFRONT team. She is a coffee enthusiast and a world traveler.'
-  },
-  {
     title: 'TANVI NAIDU',
     image: TanviNaiduPic,
     description:
       'Tanvi graduated from Cornell University with a double major in civil/environmental engineering and environmental science. She currently works as a water resource engineer for a consulting firm, and spends her free time teaching yoga and hiking. She grew up all over India in a military family and is grateful for the opportunity to support communities in her motherland through Forefront.'
-  },
-  {
-    title: 'VITA MALLELA',
-    image: VitaMallelaPic,
-    description:
-      'Vita graduated from Washington University in St. Louis majoring in operations & supply chain management and marketing. She was born near Hyderabad, India and is fluent in Telugu. Vita grew up in Texas, Minnesota, and Virginia. Forefront’s work is close to her as it is an opportunity to make a difference in her home state in India.  Outside of work, Vita enjoys tennis, traveling, and exploring restaurants.'
-  },
+  }
 ];
 
 const OurTeamContainer: React.FC = () => {

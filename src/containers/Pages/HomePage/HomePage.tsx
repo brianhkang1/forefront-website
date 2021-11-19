@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-import ReactTypingEffect from 'react-typing-effect';
+// import ReactTypingEffect from 'react-typing-effect';
 import { isMobile, isDesktop } from '../../../util';
 
 import CovidReliefPic from '../../../Images/CovidRelief.jpg';
 import Button from '../../../components/Button';
 
-import PictureText from '../../../components/PictureText';
+// import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import Picture from '../../../components/Picture';
@@ -97,14 +97,16 @@ class HomePage extends React.Component {
                 <Header />
               </div>
             )}
-            <PictureText padding='1.5rem' className={styles.heroText}>
+
+            {/* TODO: reintroduce after HomePage2 is deprecated */}
+            {/* <PictureText padding='1.5rem' className={styles.heroText}>
               <div>We build a future where dreamers become </div>
               <ReactTypingEffect
                 speed={75}
                 eraseDelay={1000000}
                 text='global changemakers'
               />
-            </PictureText>
+            </PictureText> */}
           </PictureFilter>
         </div>
 
