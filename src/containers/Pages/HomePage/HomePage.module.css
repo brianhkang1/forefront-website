@@ -6,6 +6,13 @@
   }
 
   /* TODO: remove after HomePage2 is deprecated */
+  .closeTheGapButton {
+    position: absolute;
+    left: 40vw;
+    bottom: 14vh;
+  }
+
+  /* TODO: remove after HomePage2 is deprecated */
   .heroPictureContainer::before {
     background: url('../../../Images/Hero/HomePage2.jpg') no-repeat center
       center;
@@ -47,6 +54,13 @@
   .heroPictureContainer,
   .heroPictureContainer::before {
     height: 93vh;
+  }
+
+  /* TODO: remove after HomePage2 is deprecated */
+  .closeTheGapButton {
+    position: absolute;
+    left: 8.5vw;
+    bottom: 5vh;
   }
 
   /* TODO: remove after HomePage2 is deprecated */

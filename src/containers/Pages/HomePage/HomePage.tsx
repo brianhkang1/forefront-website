@@ -98,6 +98,20 @@ class HomePage extends React.Component {
               </div>
             )}
 
+            <div className={styles.closeTheGapButton}>
+              <Button size='large'>
+                <a
+                  href={
+                    'https://secure.givelively.org/donate/forefront-charity'
+                  }
+                  target={'_blank'}
+                  rel='noopener noreferrer'
+                >
+                  Close The Gap
+                </a>
+              </Button>
+            </div>
+
             {/* TODO: reintroduce after HomePage2 is deprecated */}
             {/* <PictureText padding='1.5rem' className={styles.heroText}>
               <div>We build a future where dreamers become </div>
