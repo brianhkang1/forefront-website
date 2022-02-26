@@ -1,6 +1,6 @@
 export const classNames = (...args: Array<any>): string => {
   const arr = Array.isArray(args[0]) ? [...args[0]] : args;
-  return arr.filter(f => f).join(' ');
+  return arr.filter((f) => f).join(' ');
 };
 
 export const isDesktop = window.matchMedia('(min-width: 769px)').matches;
@@ -18,13 +18,14 @@ export enum GoogleEventCategory {
   JOB_FINANCE_LEAD = 'Job (Finance Lead)',
   JOB_MARKETING_LEAD_COPYWRITER = 'Job (Marketing Lead - Copywriter/Creative)',
   JOB_PEOPLE_CULTURE_LEAD = 'Job (People & Culture Lead)',
-  JOB_EDUCATION_LEAD_ACADEMIC = 'Job (Education Lead - Academic)'
+  JOB_EDUCATION_LEAD_ACADEMIC = 'Job (Education Lead - Academic)',
+  JOB_OPERATIONS_DEVELOPMENT_LEAD = 'Job (Operations Development Lead',
 }
 
 export enum GoogleEventAction {
-  CLICK = 'Click'
+  CLICK = 'Click',
 }
 
 export enum GoogleEventLabel {
-  GALA_2021 = 'Gala 2021'
+  GALA_2021 = 'Gala 2021',
 }

@@ -38,20 +38,6 @@ class HeaderLinks extends React.Component<Props> {
             Builders
           </NavLink>
         </div>
-        <GoogleEventTracker
-          category={GoogleEventCategory.SHOP_HEADER_BUTTON}
-          action={GoogleEventAction.CLICK}
-        >
-          <div className={styles.link}>
-            <a
-              href={'https://ourgoodpurpose.com/'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Shop
-            </a>
-          </div>
-        </GoogleEventTracker>
         <div className={styles.link}>
           <NavLink exact to='/about-us' activeClassName={styles.active}>
             About Us

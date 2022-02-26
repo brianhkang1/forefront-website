@@ -25,10 +25,11 @@
   }
 
   .iconsContainer {
-    margin: 4rem 5rem;
+    margin: 4rem 14rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-content: center;
   }
 }
 

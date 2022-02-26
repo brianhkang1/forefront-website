@@ -221,7 +221,7 @@
   }
 
   .testimonialPic {
-    width: 75vw;
+    width: 100%;
     height: 75vh;
     border-radius: 2rem;
   }
@@ -229,6 +229,10 @@
   .quotePic {
     width: 70vw;
     height: 40vh;
+  }
+
+  .carousel {
+    width: 67.5rem;
   }
 
   .carousel
@@ -326,12 +330,16 @@
   }
 
   .testimonialPic {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
   }
 
-  .quotePic {
+  .carousel {
     width: 100vw;
+  }
+
+  .quotePic {
+    width: 100%;
     height: 30vh;
   }
 
