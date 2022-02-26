@@ -24,20 +24,20 @@ import OurTeamContainer from '../../OurTeamContainer';
 const ANNUAL_REPORTS = [
   {
     year: '2020',
-    href: Report2020
+    href: Report2020,
   },
   {
     year: '2019',
-    href: Report2019
+    href: Report2019,
   },
   {
     year: '2018',
-    href: Report2018
+    href: Report2018,
   },
   {
     year: '2017',
-    href: Report2017
-  }
+    href: Report2017,
+  },
 ];
 
 class AboutUsPage extends React.Component {
@@ -48,7 +48,7 @@ class AboutUsPage extends React.Component {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
           }}
         >
           <PictureText
@@ -83,7 +83,7 @@ class AboutUsPage extends React.Component {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
           }}
         >
           <PictureText
@@ -179,7 +179,7 @@ class AboutUsPage extends React.Component {
                 className={styles.dropdown}
               >
                 <Dropdown.Menu className={styles.dropdownMenu}>
-                  {ANNUAL_REPORTS.map(report => (
+                  {ANNUAL_REPORTS.map((report) => (
                     <Dropdown.Item
                       key={'dropdown-' + report.year}
                       className={styles.dropdownItem}
@@ -208,26 +208,6 @@ class AboutUsPage extends React.Component {
                 rel='noopener noreferrer'
               >
                 Check out our blog
-              </a>
-            </div>
-          </div>
-
-          <div className={styles.iconContainer}>
-            <div
-              className={styles.icon}
-              style={{ backgroundImage: `url(${ShopIcon})` }}
-            />
-            <div className={styles.iconText}>
-              Do good and look good! All net profits go towards providing basic
-              life necessities to those in need.
-            </div>
-            <div className={styles.iconLink}>
-              <a
-                href={'https://ourgoodpurpose.com/'}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Shop at 'Our Good Purpose'
               </a>
             </div>
           </div>

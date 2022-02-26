@@ -31,32 +31,28 @@ const FourPillarsApproach = {
     title: FourPillars.WATER,
     icon: WaterIcon,
     color: 'var(--blue-color)',
-    text:
-      'We provide basic sanitation and access to clean water. Our sustainable solutions help villagers retrieve clean water in a fraction of the time it normally takes, and we bring it all together by promoting good hygiene with soap toys and teaching healthy habits to villagers to make for less sick days and more income to support their family.',
+    text: 'We provide basic sanitation and access to clean water. Our sustainable solutions help villagers retrieve clean water in a fraction of the time it normally takes, and we bring it all together by promoting good hygiene with soap toys and teaching healthy habits to villagers to make for less sick days and more income to support their family.',
     image: WaterImage,
   },
   [FourPillars.EDUCATION]: {
     title: FourPillars.EDUCATION,
     icon: EducationIcon,
     color: 'var(--yellow-color)',
-    text:
-      'The FOREFRONT International School aspires to provide excellent education to students regardless of gender or demographic. With parents and teachers working together, their partnership ensures that students develop meticulous critical thinking, core values, and lasting self-care, all to become active and effective changers of their communities.',
+    text: 'The FOREFRONT International School aspires to provide excellent education to students regardless of gender or demographic. With parents and teachers working together, their partnership ensures that students develop meticulous critical thinking, core values, and lasting self-care, all to become active and effective changers of their communities.',
     image: EducationImage,
   },
   [FourPillars.MEDICAL]: {
     title: FourPillars.MEDICAL,
     icon: MedicalIcon,
     color: 'var(--red-color)',
-    text:
-      'Our vision is medical access for everyone. Through free diabetes, weight, and blood pressure check-ups, we have tested people for diabetes and continue to host community sessions and health & wellness workshops to promote healthy lifestyles. And having partnered with local health organizations, our efforts will go even further.',
+    text: 'Our vision is medical access for everyone. Through free diabetes, weight, and blood pressure check-ups, we have tested people for diabetes and continue to host community sessions and health & wellness workshops to promote healthy lifestyles. And having partnered with local health organizations, our efforts will go even further.',
     image: MedicalImage,
   },
   [FourPillars.EMPOWERMENT]: {
     title: FourPillars.EMPOWERMENT,
     icon: EmpowermentIcon,
     color: 'var(--purple-color)',
-    text:
-      'We aim to raise next generation leaders. By working and collaborating face-to-face with locals, we are able to understand the unique needs of each community we serve. This enables us to facilitate programming that empowers local men, women, and children to take ownership and initiative in their own communities to bridge the sustainability of all our pillars.',
+    text: 'We aim to raise next generation leaders. By working and collaborating face-to-face with locals, we are able to understand the unique needs of each community we serve. This enables us to facilitate programming that empowers local men, women, and children to take ownership and initiative in their own communities to bridge the sustainability of all our pillars.',
     image: EmpowermentImage,
   },
 };
@@ -85,7 +81,7 @@ const OurApproachFeatureContainer = () => {
           transform: renderSlideTransition(),
         }}
       >
-        {Object.values(FourPillarsApproach).map(approach => (
+        {Object.values(FourPillarsApproach).map((approach) => (
           <div key={approach.title} className={styles.slideContainer}>
             <div
               style={{ backgroundColor: approach.color }}
@@ -130,7 +126,7 @@ const OurApproachFeatureContainer = () => {
               }}
             >
               <div className={styles.iconContainer}>
-                <Picture src={approach.icon} width="5rem" height="5rem" />
+                <Picture src={approach.icon} width='5rem' height='5rem' />
               </div>
 
               {/* desktop view */}

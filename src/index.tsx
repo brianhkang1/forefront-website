@@ -4,24 +4,23 @@ import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import { Router } from 'react-router-dom';
-import 'semantic-ui-css/semantic.min.css';
 import ScrollToTop from './components/ScrollToTop';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import GoogleTagManager from 'react-gtm-module';
 
 const GoogleTagManagerArgs = {
-  gtmId: process.env.REACT_APP_GTM_TRACKING_ID || ''
+  gtmId: process.env.REACT_APP_GTM_TRACKING_ID || '',
 };
 
-const trackPageView = location => {
+const trackPageView = (location) => {
   ReactGA.set({ page: location.pathname });
   ReactGA.pageview(location.pathname);
 };
 
-const initGoogleAnalytics = history => {
+const initGoogleAnalytics = (history) => {
   ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '', {
-    debug: true
+    debug: true,
   });
   GoogleTagManager.initialize(GoogleTagManagerArgs);
 
