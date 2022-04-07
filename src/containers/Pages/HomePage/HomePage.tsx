@@ -2,10 +2,6 @@ import React from 'react';
 import styles from './HomePage.module.css';
 // import ReactTypingEffect from 'react-typing-effect';
 import { isMobile, isDesktop } from '../../../util';
-
-import CovidReliefPic from '../../../Images/CovidRelief.jpg';
-import Button from '../../../components/Button';
-
 // import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
@@ -47,7 +43,7 @@ const OurImpact = [
         <span className={styles.greenBold}>94%</span> hand-washing rate
         <Popup content='Up from 39%' />
       </span>
-    )
+    ),
   },
   {
     type: 'EDUCATION',
@@ -58,7 +54,7 @@ const OurImpact = [
         <span className={styles.greenBold}>20:1</span> student to teacher ratio
         at FOREFRONT School
       </span>
-    )
+    ),
   },
   {
     type: 'MEDICAL CARE',
@@ -69,14 +65,14 @@ const OurImpact = [
         <span className={styles.greenBold}>5</span> health and wellness
         workshops
       </span>
-    )
+    ),
   },
   {
     type: 'EMPOWERMENT',
     image: OurImpactEmpowerment,
     icon: EmpowermentIcon,
-    text: <span>Soap business run by local women</span>
-  }
+    text: <span>Soap business run by local women</span>,
+  },
 ];
 
 class HomePage extends React.Component {
@@ -98,21 +94,7 @@ class HomePage extends React.Component {
               </div>
             )}
 
-            <div className={styles.closeTheGapButton}>
-              <Button size='large'>
-                <a
-                  href={
-                    'https://secure.givelively.org/donate/forefront-charity'
-                  }
-                  target={'_blank'}
-                  rel='noopener noreferrer'
-                >
-                  Close The Gap
-                </a>
-              </Button>
-            </div>
-
-            {/* TODO: reintroduce after HomePage2 is deprecated */}
+            {/* TODO: reintroduce after HomePage3 is deprecated */}
             {/* <PictureText padding='1.5rem' className={styles.heroText}>
               <div>We build a future where dreamers become </div>
               <ReactTypingEffect
@@ -122,40 +104,6 @@ class HomePage extends React.Component {
               />
             </PictureText> */}
           </PictureFilter>
-        </div>
-
-        <div className={styles.covidReliefContainer}>
-          <Title
-            highlightTitle
-            title='India COVID-19 Relief'
-            description='Infections and deaths are rising in rural areas. Social distancing, lockdowns, and quarantining are more difficult in rural India. 
-            With a lack of medical access, shortage of supplies, vaccines, and oxygen tanks, villagers are living in fear. 
-            Our communities are in dire situations. To stop the spread, FOREFRONT Charity is: 
-            (1) mobilizing a COVID-19 Task Force with the highest level of Personal Protective Equipment (PPE), 
-            (2) distributing masks, food & soap, and 
-            (3) spreading awareness/information through banner outreach and digital video via WhatsApp.'
-          />
-
-          <Picture
-            src={CovidReliefPic}
-            width='100vw'
-            height='60vh'
-            mobileHeight='50vh'
-          >
-            <div className={styles.link}>
-              <Button size={isMobile ? 'medium' : 'large'}>
-                <a
-                  href={
-                    'https://secure.givelively.org/donate/forefront-charity/covid-relief-fund?utm_source=wb'
-                  }
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Give Towards COVID-19 Relief
-                </a>
-              </Button>
-            </div>
-          </Picture>
         </div>
 
         <div className={styles.theirVisionVisual}>
