@@ -4,24 +4,17 @@ import styles from './Title.module.css';
 type Props = {
   title?: React.ReactNode;
   description?: React.ReactNode;
-  highlightTitle?: boolean;
 };
 
 class Title extends React.Component<Props> {
   render() {
-    const { title, description, highlightTitle } = this.props;
+    const { title, description } = this.props;
 
     return (
       <div className={styles.root}>
         {title && (
           <div className={styles.titleContainer}>
-            <span
-              className={`${styles.title} ${
-                highlightTitle ? styles.highlightTitle : ''
-              }`}
-            >
-              {title}
-            </span>
+            <span className={`${styles.title}`}>{title}</span>
           </div>
         )}
 

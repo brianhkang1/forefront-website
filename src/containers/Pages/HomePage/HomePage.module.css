@@ -5,16 +5,8 @@
     height: 100vh;
   }
 
-  /* TODO: remove after HomePage2 is deprecated */
-  .closeTheGapButton {
-    position: absolute;
-    left: 40vw;
-    bottom: 14vh;
-  }
-
-  /* TODO: remove after HomePage2 is deprecated */
   .heroPictureContainer::before {
-    background: url('../../../Images/Hero/HomePage2.jpg') no-repeat center
+    background: url('../../../Images/Hero/HomePage3.jpg') no-repeat center
       center;
   }
 
@@ -25,9 +17,7 @@
     left: 5vw;
   }
 
-  /* TODO: COVID */
-  .ourImpactItemContainer,
-  .covidReliefContainer {
+  .ourImpactItemContainer {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -56,16 +46,8 @@
     height: 93vh;
   }
 
-  /* TODO: remove after HomePage2 is deprecated */
-  .closeTheGapButton {
-    position: absolute;
-    left: 6vw;
-    bottom: 5vh;
-  }
-
-  /* TODO: remove after HomePage2 is deprecated */
   .heroPictureContainer::before {
-    background: url('../../../Images/Hero/HomePage2_vertical.jpg') no-repeat
+    background: url('../../../Images/Hero/HomePage3_vertical.jpg') no-repeat
       center center;
   }
 
@@ -106,15 +88,6 @@
 }
 
 /* *********************************** */
-
-/* TODO: COVID */
-.link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .heroPictureContainer {
   width: 100vw;
