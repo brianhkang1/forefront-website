@@ -1,3 +1,22 @@
+.link {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+}
+
+.link,
+.link > a {
+  text-decoration: none;
+  color: var(--link-blue-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link:hover,
+.link > a:hover {
+  color: var(--link-blue-color);
+  text-decoration: underline;
+}
+
 /* DESKTOP */
 @media (min-width: 769px) {
   .root {
