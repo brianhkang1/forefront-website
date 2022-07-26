@@ -50,9 +50,10 @@ class HeaderLinks extends React.Component<Props> {
           <div className={styles.link}>
             {isMobile ? (
               <a
+                /* TODO: reintroduce after HomePage3 is deprecated */
                 // href={'https://secure.givelively.org/donate/forefront-charity'}
                 href={
-                  'https://secure.givelively.org/donate/forefront-charity/united-in-compassion'
+                  'https://givebutter.com/unitedincompassion'
                 }
                 target='_blank'
                 rel='noopener noreferrer'
@@ -62,11 +63,12 @@ class HeaderLinks extends React.Component<Props> {
             ) : (
               <Button>
                 <a
+                  /* TODO: reintroduce after HomePage3 is deprecated */
                   // href={
                   //   'https://secure.givelively.org/donate/forefront-charity'
                   // }
                   href={
-                    'https://secure.givelively.org/donate/forefront-charity/united-in-compassion'
+                    'https://givebutter.com/unitedincompassion'
                   }
                   target='_blank'
                   rel='noopener noreferrer'
