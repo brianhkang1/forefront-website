@@ -6,6 +6,7 @@
   }
 
   .heroPictureContainer::before {
+    /* TODO: change after HomePage3 is deprecated */
     background: url('../../../Images/Hero/HomePage3.jpg') no-repeat center
       center;
   }
@@ -47,6 +48,7 @@
   }
 
   .heroPictureContainer::before {
+    /* TODO: reintroduce after HomePage3 is deprecated */
     background: url('../../../Images/Hero/HomePage3_vertical.jpg') no-repeat
       center center;
   }
@@ -103,7 +105,7 @@
   top: 0;
   left: 0;
   background-color: white;
-  /* TODO: reintroduce after HomePage2 is deprecated */
+  /* TODO: reintroduce after HomePage3 is deprecated */
   /* background: url('../../../Images/Hero/HomePage.jpg') no-repeat center center; */
   background-size: cover;
   will-change: transform;
