@@ -8,20 +8,20 @@ import { classNames } from '../../../util';
 import AnnualReportIcon from '../../../Images/Icons/annualReport_icon.png';
 import BlogIcon from '../../../Images/Icons/blog_icon.png';
 import SoTIcon from '../../../Images/Icons/SoT_icon.png';
-import ShopIcon from '../../../Images/Icons/shop_icon.png';
-// @ts-ignore
 import Report2017 from '../../../Documents/annual_report_2017.pdf';
-// @ts-ignore
 import Report2018 from '../../../Documents/annual_report_2018.pdf';
-// @ts-ignore
 import Report2019 from '../../../Documents/annual_report_2019.pdf';
-// @ts-ignore
 import Report2020 from '../../../Documents/annual_report_2020.pdf';
+import Report2021 from '../../../Documents/annual_report_2021.pdf';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import OurTeamContainer from '../../OurTeamContainer';
 
 const ANNUAL_REPORTS = [
+  {
+    year: '2021',
+    href: Report2021,
+  },
   {
     year: '2020',
     href: Report2020,
