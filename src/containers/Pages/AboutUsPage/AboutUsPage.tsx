@@ -12,11 +12,16 @@ import Report2017 from '../../../Documents/annual_report_2017.pdf';
 import Report2018 from '../../../Documents/annual_report_2018.pdf';
 import Report2019 from '../../../Documents/annual_report_2019.pdf';
 import Report2020 from '../../../Documents/annual_report_2020.pdf';
+import Report2021 from '../../../Documents/annual_report_2021.pdf';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import OurTeamContainer from '../../OurTeamContainer';
 
 const ANNUAL_REPORTS = [
+  {
+    year: '2021',
+    href: Report2021,
+  },
   {
     year: '2020',
     href: Report2020,
