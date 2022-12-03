@@ -39,40 +39,24 @@ class HeaderLinks extends React.Component<Props> {
           </NavLink>
         </div>
         <div className={styles.link}>
+          <a href={'https://forefrontgallery.org'} target='_blank' rel='noopener noreferrer'>
+            Photo Gallery
+          </a>
+        </div>
+        <div className={styles.link}>
           <NavLink exact to='/about-us' activeClassName={styles.active}>
             About Us
           </NavLink>
         </div>
-        <GoogleEventTracker
-          category={GoogleEventCategory.DONATE_HEADER_BUTTON}
-          action={GoogleEventAction.CLICK}
-        >
+        <GoogleEventTracker category={GoogleEventCategory.DONATE_HEADER_BUTTON} action={GoogleEventAction.CLICK}>
           <div className={styles.link}>
             {isMobile ? (
-              <a
-                /* TODO: reintroduce after HomePage3 is deprecated */
-                // href={'https://secure.givelively.org/donate/forefront-charity'}
-                href={
-                  'https://givebutter.com/unitedincompassion'
-                }
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href={'https://givebutter.com/unitedincompassion'} target='_blank' rel='noopener noreferrer'>
                 Donate
               </a>
             ) : (
               <Button>
-                <a
-                  /* TODO: reintroduce after HomePage3 is deprecated */
-                  // href={
-                  //   'https://secure.givelively.org/donate/forefront-charity'
-                  // }
-                  href={
-                    'https://givebutter.com/unitedincompassion'
-                  }
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href={'https://givebutter.com/unitedincompassion'} target='_blank' rel='noopener noreferrer'>
                   Donate
                 </a>
               </Button>
