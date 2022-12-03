@@ -9,19 +9,20 @@ const StatisticsVisual = () => {
         <PictureFilter>
           <div className={styles.container}>
             <div className={styles.title}> Your Impact: </div>
+
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>1000+</div>
+              <div className={styles.numberCounterItem}>95,000+</div>
+              <div>Total People Impacted</div>
+            </div>
+
+            <div className={`${styles.statsItem} wow zoomIn`}>
+              <div className={styles.numberCounterItem}>1200+</div>
               <div>Unique Donors</div>
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>$855,628</div>
+              <div className={styles.numberCounterItem}>$1,260,519</div>
               <div>Total Support</div>
-            </div>
-
-            <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>70+</div>
-              <div>Builders (Monthly Donors)</div>
             </div>
           </div>
         </PictureFilter>

@@ -14,11 +14,10 @@ type State = {
 type VisualData = {
   name: string;
   icon: string;
-  selectedIcon: string;
   chart: React.ReactNode;
   bigNumber: React.ReactNode;
   subTitle: React.ReactNode;
-  description: React.ReactNode;
+  description?: React.ReactNode;
 };
 
 class OurWorkVisual extends React.Component<Props, State> {
@@ -67,25 +66,15 @@ class OurWorkVisual extends React.Component<Props, State> {
       >
         <div className={styles.iconsContainer}>
           {visualData.map((item: VisualData, idx: number) => (
-            <div
-              key={`icon-${item.name}`}
-              onClick={() => this.onIconClick(idx)}
-            >
+            <div key={`icon-${item.name}`} onClick={() => this.onIconClick(idx)}>
               <div
                 className={styles.icon}
                 style={{
-                  boxShadow: `${
-                    selectedIndex === idx ? 'inset' : ''
-                  } 1px 1px 8px black`,
+                  boxShadow: `${selectedIndex === idx ? 'inset' : ''} 1px 1px 8px black`,
                   backgroundColor,
                 }}
               >
-                <Picture
-                  src={item.icon}
-                  width="2.5rem"
-                  height="2.5rem"
-                  backgroundSize="contain"
-                />
+                <Picture src={item.icon} width='2.5rem' height='2.5rem' backgroundSize='contain' />
               </div>
             </div>
           ))}
@@ -93,9 +82,7 @@ class OurWorkVisual extends React.Component<Props, State> {
 
         <div className={styles.chartContainer}>
           <div className={styles.chartDescription}>
-            <div className={styles.bigNumber}>
-              {visualData[selectedIndex].bigNumber}
-            </div>
+            <div className={styles.bigNumber}>{visualData[selectedIndex].bigNumber}</div>
 
             <div>{visualData[selectedIndex].subTitle}</div>
           </div>
@@ -103,18 +90,14 @@ class OurWorkVisual extends React.Component<Props, State> {
           <div
             className={styles.chart}
             style={{
-              marginRight: determineChartMarginRight(
-                visualData[selectedIndex].name
-              ),
+              marginRight: determineChartMarginRight(visualData[selectedIndex].name),
             }}
           >
             {visualData[selectedIndex].chart}
           </div>
         </div>
 
-        <div className={styles.description}>
-          {visualData[selectedIndex].description}
-        </div>
+        <div className={styles.description}>{visualData[selectedIndex].description}</div>
       </div>
     );
   }
