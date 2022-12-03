@@ -4,7 +4,7 @@ import Picture from '../../components/Picture';
 import PictureWithHoverText from '../../components/PictureWithHoverText';
 import JobPosting from '../../components/JobPosting';
 
-import InternshipDoc from '../../Documents/Forefront_Internship.docx';
+// import InternshipDoc from '../../Documents/Forefront_Internship.docx';
 import TeamPicture from '../../Images/Team/Team.jpg';
 import MatthewOhPic from '../../Images/Team/Matthew_Oh.jpg';
 import ChanwookParkPic from '../../Images/Team/Chanwook_Park.jpg';
@@ -187,29 +187,19 @@ const OurTeamContainer: React.FC = () => {
           </div>
 
           <div className={styles.mainPictureLink}>
-            <a
-              href={'https://form.jotform.com/80993600806157'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
+            <a href={'https://form.jotform.com/80993600806157'} target='_blank' rel='noopener noreferrer'>
               Become a Volunteer
             </a>
           </div>
 
-          <div className={styles.mainPictureLink}>
+          {/* <div className={styles.mainPictureLink}>
             <a href={InternshipDoc} target='_blank' rel='noopener noreferrer'>
               Apply For An Internship
             </a>
-          </div>
+          </div> */}
         </div>
 
-        <Picture
-          src={TeamPicture}
-          width='70vw'
-          height='70vh'
-          mobileWidth='100vw'
-          mobileHeight='30vh'
-        />
+        <Picture src={TeamPicture} width='70vw' height='70vh' mobileWidth='100vw' mobileHeight='30vh' />
       </div>
 
       <div className={styles.teamMembersContainer}>
