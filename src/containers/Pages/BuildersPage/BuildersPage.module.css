@@ -87,30 +87,16 @@
   font-weight: bold;
 }
 
-.carousel
-  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11']
-  button,
-.carousel
-  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11']
-  button:hover {
+.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] button,
+.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] button:hover {
   padding: 1.25rem;
   top: calc(50% - 40px) !important;
 }
 
-.carousel
-  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12']
-  button,
-.carousel
-  div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12']
-  button:hover {
+.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] button,
+.carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] button:hover {
   padding: 1.25rem;
   top: calc(50% - 40px) !important;
-}
-
-.widgetDisclaimer {
-  padding-top: 0.5rem;
-  font-size: 0.75rem;
-  white-space: nowrap;
 }
 
 .rippleEffectImage {
@@ -161,7 +147,7 @@
 
   .heroTextContainer {
     position: absolute;
-    top: 20vh;
+    top: 17vh;
     right: 5vw;
     display: flex;
     flex-direction: column;
@@ -174,13 +160,6 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
     margin-bottom: 1rem;
-  }
-
-  .widgetContainer {
-    width: 30vw;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 1rem;
-    padding: 1.5rem;
   }
 
   .rippleEffectItemContainer {
@@ -235,13 +214,11 @@
     width: 67.5rem;
   }
 
-  .carousel
-    div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] {
+  .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-next-11'] {
     right: -6rem;
   }
 
-  .carousel
-    div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
+  .carousel div[class='Carousel-buttonWrapper-5 Carousel-fullHeightHoverWrapper-6 Carousel-prev-12'] {
     left: -6rem;
   }
 
@@ -284,9 +261,8 @@
   }
 
   .widgetContainer {
-    width: 100vw;
-    padding: 1.5rem;
-    margin-top: -3rem;
+    width: 100%;
+    margin-top: -2rem;
   }
 
   .rippleEffectItemContainer {

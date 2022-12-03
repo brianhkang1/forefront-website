@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './BuildersPage.module.css';
 import useIsMobile from '../../../hooks/useIsMobile';
 
@@ -42,26 +42,26 @@ const RippleEffectItems = [
     key: 'Water',
     text: 'Clean water for a family',
     amount: '$20',
-    img: RippleEffect_Water
+    img: RippleEffect_Water,
   },
   {
     key: 'Tuition',
     text: "One month student's tuition",
     amount: '$30',
-    img: RippleEffect_Tuition
+    img: RippleEffect_Tuition,
   },
   {
     key: 'StaffHousing',
     text: "One month staff's housing",
     amount: '$50',
-    img: RippleEffect_StaffHousing
+    img: RippleEffect_StaffHousing,
   },
   {
     key: 'Curriculum',
     text: "A classroom's curriculum",
     amount: '$100',
-    img: RippleEffect_Curriculum
-  }
+    img: RippleEffect_Curriculum,
+  },
 ];
 
 export const FourPillarItems = [
@@ -69,26 +69,26 @@ export const FourPillarItems = [
     title: 'WATER',
     icon: WaterIcon,
     description: 'Dig clean water wells and provide hand soap',
-    color: 'var(--blue-color)'
+    color: 'var(--blue-color)',
   },
   {
     title: 'EDUCATION',
     icon: EducationIcon,
     description: 'Provide quality education for children',
-    color: 'var(--yellow-color)'
+    color: 'var(--yellow-color)',
   },
   {
     title: 'MEDICAL CARE',
     icon: MedicalIcon,
     description: 'Create accessible and affordable health clinics',
-    color: 'var(--red-color)'
+    color: 'var(--red-color)',
   },
   {
     title: 'EMPOWERMENT',
     icon: EmpowermentIcon,
     description: 'Empower leadership training',
-    color: 'var(--purple-color)'
-  }
+    color: 'var(--purple-color)',
+  },
 ];
 
 const Testimonials = [
@@ -96,63 +96,69 @@ const Testimonials = [
     name: 'Anil',
     image: TestimonialAnil,
     description:
-      'I didn’t have a chance to study but through this school, children will now be able to. This is for their future.'
+      'I didn’t have a chance to study but through this school, children will now be able to. This is for their future.',
   },
   {
     name: 'Timothy',
     image: TestimonialTimothy,
-    description:
-      'I like to help build the school because I know it will help many people.'
+    description: 'I like to help build the school because I know it will help many people.',
   },
   {
     name: 'Vinod',
     image: TestimonialVinod,
     description:
-      'I can’t even sign my own name. So I’m happy to impact children’s education. I hope this helps kids get good jobs. '
+      'I can’t even sign my own name. So I’m happy to impact children’s education. I hope this helps kids get good jobs. ',
   },
   {
     name: 'Boshanam',
     image: TestimonialBoshanam,
     description:
-      'Because of the school, the future of many children will be brighter. There’s been no development on this side of the village and I’m glad the school is going to change our community. '
+      'Because of the school, the future of many children will be brighter. There’s been no development on this side of the village and I’m glad the school is going to change our community. ',
   },
   {
     name: 'Mani',
     image: TestimonialMani,
-    description:
-      'I have grandkids and I want them and their kids to study here.'
-  }
+    description: 'I have grandkids and I want them and their kids to study here.',
+  },
 ];
 
 const WhyBeABuilder = [
   {
     image: WhyBeBuilder1,
-    text: 'Builders Newsletters'
+    text: 'Builders Newsletters',
   },
   {
     image: WhyBeBuilder2,
-    text: 'Builders Exclusive Content'
+    text: 'Builders Exclusive Content',
   },
   {
     image: WhyBeBuilder3,
-    text: 'Behind the Scenes Updates'
-  }
+    text: 'Behind the Scenes Updates',
+  },
 ];
 
-const DonationWidget: React.FC = () => {
+const DonationWidget: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://givebutter.com/js/widget.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }, []);
+
   return (
-    <div
-      className={`${styles.widgetContainer} wow fadeIn`}
-      data-wow-delay='0.75s'
-    >
-      <div
-        data-widget-src='https://secure.givelively.org/donate/forefront-charity?ref=sd_widget'
-        id='give-lively-widget'
-        className='gl-branded-donation-widget'
-      />
-      <div className={styles.widgetDisclaimer}>
-        Thanks to a generous donor, your 2.2% credit card fee will be covered.
-      </div>
+    <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay='0.75s'>
+      <iframe
+        src='https://givebutter.com/embed/c/forefront-charity-donate'
+        style={{
+          width: isMobile ? '100%' : '500px',
+          height: isMobile ? '350px' : '450px',
+          overflow: 'auto',
+        }}
+        name='givebutter'
+        frameBorder='0'
+        scrolling='yes'
+        seamless
+        allow='payment'
+      ></iframe>
     </div>
   );
 };
@@ -160,13 +166,6 @@ const DonationWidget: React.FC = () => {
 const BuildersPage: React.FC = () => {
   const isMobile = useIsMobile();
   const mobileDonationWidget = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src =
-      'https://secure.givelively.org/widgets/simple_donation/forefront-charity.js?show_suggested_amount_buttons=true&address_required=false&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100';
-    document.getElementsByTagName('head')[0].appendChild(script);
-  }, []);
 
   return (
     <div className={styles.root}>
@@ -187,18 +186,16 @@ const BuildersPage: React.FC = () => {
           <div className={styles.heroTextContainer}>
             <div className={styles.heroText}>
               <PictureText padding='1rem 1.5rem'>
-                Builders: Monthly givers that invest in communities where every
-                person has the opportunity to thrive
+                Builders: Monthly givers that invest in communities where every person has the opportunity to thrive
               </PictureText>
             </div>
             {/* hacky way of ensuring heroText takes up space to place
             widget below appropriately */}
             <div className={styles.hiddenHeroText}>
-              Builders: Monthly givers that invest in communities where every
-              person has the opportunity to thrive
+              Builders: Monthly givers that invest in communities where every person has the opportunity to thrive
             </div>
 
-            {!isMobile && <DonationWidget />}
+            {!isMobile && <DonationWidget isMobile={isMobile} />}
           </div>
         </PictureFilter>
       </div>
@@ -206,7 +203,7 @@ const BuildersPage: React.FC = () => {
       {isMobile && (
         <div ref={mobileDonationWidget}>
           <Title title='Build a Brighter Future' />
-          <DonationWidget />
+          <DonationWidget isMobile={isMobile} />
         </div>
       )}
 
@@ -228,9 +225,7 @@ const BuildersPage: React.FC = () => {
                 mobileWidth='70vw'
                 mobileHeight='70vw'
               >
-                <div className={styles.rippleEffectIcon}>
-                  {rippleEffectItem.amount}
-                </div>
+                <div className={styles.rippleEffectIcon}>{rippleEffectItem.amount}</div>
               </Picture>
 
               <div className={styles.rippleEffectText}>
@@ -247,22 +242,16 @@ const BuildersPage: React.FC = () => {
             title='Become a Builder'
             description={
               <div>
-                Join other passionate and dedicated monthly givers to build up
-                local community leaders who will multiply into a global network
-                of change. Your giving equips communities with the necessities
-                to thrive:
+                Join other passionate and dedicated monthly givers to build up local community leaders who will multiply
+                into a global network of change. Your giving equips communities with the necessities to thrive:
               </div>
             }
           />
         </div>
 
         <div className={styles.iconsContainer}>
-          {FourPillarItems.map(item => (
-            <div
-              key={item.title}
-              className={styles.iconItem}
-              style={{ backgroundColor: item.color }}
-            >
+          {FourPillarItems.map((item) => (
+            <div key={item.title} className={styles.iconItem} style={{ backgroundColor: item.color }}>
               <Picture src={item.icon} width='6rem' height='6rem' />
               <div className={styles.iconDescription}>{item.description}</div>
             </div>
@@ -289,19 +278,10 @@ const BuildersPage: React.FC = () => {
 
         <div className={styles.whyBeBuilderContainer}>
           {WhyBeABuilder.map((whyBeBuilderItem, index) => (
-            <div
-              key={'whyBeBuilderItem' + (index + 1)}
-              className={styles.whyBeBuilderItem}
-            >
-              <Picture
-                src={whyBeBuilderItem.image}
-                height='18rem'
-                width='18rem'
-              />
+            <div key={'whyBeBuilderItem' + (index + 1)} className={styles.whyBeBuilderItem}>
+              <Picture src={whyBeBuilderItem.image} height='18rem' width='18rem' />
 
-              <div className={styles.whyBeBuilderText}>
-                {whyBeBuilderItem.text}
-              </div>
+              <div className={styles.whyBeBuilderText}>{whyBeBuilderItem.text}</div>
             </div>
           ))}
         </div>
@@ -357,10 +337,7 @@ const BuildersPage: React.FC = () => {
             className={styles.carousel}
           >
             {QuotePics.map((img, index) => (
-              <div
-                key={`Quote${index + 1}`}
-                className={styles.carouselPicContainer}
-              >
+              <div key={`Quote${index + 1}`} className={styles.carouselPicContainer}>
                 <img
                   src={img}
                   className={styles.quotePic}
@@ -374,28 +351,19 @@ const BuildersPage: React.FC = () => {
       </div>
 
       <div>
-        <Picture
-          src={BecomeABuilderPic}
-          width='100vw'
-          height='60vh'
-          mobileHeight='50vh'
-        >
+        <Picture src={BecomeABuilderPic} width='100vw' height='60vh' mobileHeight='50vh'>
           <div
             className={styles.link}
             onClick={() => {
-              const scrollToTop = isMobile
-                ? (mobileDonationWidget?.current?.offsetTop || 50) - 50
-                : 0;
+              const scrollToTop = isMobile ? (mobileDonationWidget?.current?.offsetTop || 50) - 50 : 0;
 
               window.scrollTo({
                 top: scrollToTop,
-                behavior: 'smooth'
+                behavior: 'smooth',
               });
             }}
           >
-            <Button size={isMobile ? 'medium' : 'large'}>
-              Become A Builder
-            </Button>
+            <Button size={isMobile ? 'medium' : 'large'}>Become A Builder</Button>
           </div>
         </Picture>
       </div>
