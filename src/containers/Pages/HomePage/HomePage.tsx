@@ -38,7 +38,7 @@ const OurImpact = [
     icon: WaterIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>45</span> water wells
+        <span className={styles.greenBold}>61</span> water wells
         <br />
         <span className={styles.greenBold}>94%</span> hand-washing rate
         <Popup content='Up from 39%' />
@@ -51,8 +51,7 @@ const OurImpact = [
     icon: EducationIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>20:1</span> student to teacher ratio
-        at FOREFRONT School
+        <span className={styles.greenBold}>20:1</span> student to teacher ratio at FOREFRONT School
       </span>
     ),
   },
@@ -62,8 +61,7 @@ const OurImpact = [
     icon: MedicalIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>5</span> health and wellness
-        workshops
+        <span className={styles.greenBold}>5</span> health and wellness workshops
       </span>
     ),
   },
@@ -108,11 +106,7 @@ class HomePage extends React.Component {
 
         <div className={styles.theirVisionVisual}>
           <Picture
-            src={
-              isDesktop
-                ? TheirVisionIsOurMissionDesktop
-                : TheirVisionIsOurMissionMobile
-            }
+            src={isDesktop ? TheirVisionIsOurMissionDesktop : TheirVisionIsOurMissionMobile}
             width={isDesktop ? '70vw' : '80vw'}
             height={isDesktop ? '30vh' : '40vh'}
             backgroundSize='contain'
@@ -129,10 +123,7 @@ class HomePage extends React.Component {
           />
           <div className={styles.ourImpactItemContainer}>
             {OurImpact.map((ourImpactItem, index) => (
-              <div
-                key={`ourImpactItem-${index + 1}`}
-                className={styles.ourImpactItem}
-              >
+              <div key={`ourImpactItem-${index + 1}`} className={styles.ourImpactItem}>
                 <Picture
                   src={ourImpactItem.image}
                   className={styles.ourImpactImage}
@@ -142,18 +133,12 @@ class HomePage extends React.Component {
                   mobileHeight='70vw'
                 >
                   <div className={styles.ourImpactIcon}>
-                    <Picture
-                      src={ourImpactItem.icon}
-                      width='5rem'
-                      height='5rem'
-                    />
+                    <Picture src={ourImpactItem.icon} width='5rem' height='5rem' />
                   </div>
                 </Picture>
 
                 <div className={styles.ourImpactText}>
-                  <div className={styles.ourImpactType}>
-                    {ourImpactItem.type}
-                  </div>
+                  <div className={styles.ourImpactType}>{ourImpactItem.type}</div>
                   <div>{ourImpactItem.text}</div>
                 </div>
               </div>
