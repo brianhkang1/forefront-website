@@ -58,7 +58,7 @@ class Footer extends React.Component {
           </div>
         </div>
 
-        <div className={styles.rightAlign}>
+        <div className={styles.middleAlign}>
           <div className={styles.text}>© 2023 by FOREFRONT Charity</div>
           <div className={`${styles.text} ${styles.textCenterAlign}`}>
             <div>450 Lexington Ave #1818</div>
@@ -66,6 +66,12 @@ class Footer extends React.Component {
           </div>
           <div className={styles.text}>contact@goforefront.org</div>
           <div className={styles.text}>US 501(c)(3) Public Charity, EIN 47-3373120</div>
+        </div>
+
+        <div className={styles.rightAlign}>
+          <a href='https://www.guidestar.org/profile/shared/4cf544c8-ffe8-4932-9579-be0f0a2fc34c' target='_blank'>
+            <img src='https://widgets.guidestar.org/TransparencySeal/9459799' />
+          </a>
         </div>
       </div>
     );
