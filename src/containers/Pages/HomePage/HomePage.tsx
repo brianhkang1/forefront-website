@@ -51,7 +51,7 @@ const OurImpact = [
     icon: EducationIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>20:1</span> student to teacher ratio at FOREFRONT School
+        <span className={styles.greenBold}>160 students</span> at FOREFRONT School from PreK - 3rd Grade
       </span>
     ),
   },
@@ -61,7 +61,7 @@ const OurImpact = [
     icon: MedicalIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>5</span> health and wellness workshops
+        <span className={styles.greenBold}>17</span> health and wellness workshops
       </span>
     ),
   },
