@@ -1,0 +1,38 @@
+/* DESKTOP */
+@media (min-width: 769px) {
+  .heroPictureContainer {
+    height: 95vh;
+    background: url('../../../Images/Marathon/Banner.svg') no-repeat top center / cover;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .heroPictureContainer {
+    height: 120vh;
+    background: url('../../../Images/Marathon/Banner_Vertical.svg') no-repeat center center;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+}
+
+/* ************************************** */
+
+.heroPictureContainer {
+  width: 100vw;
+  position: relative;
+}
+
+.linksContainer {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
