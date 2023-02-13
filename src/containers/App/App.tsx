@@ -9,6 +9,7 @@ import OurApproachPage from '../Pages/OurApproachPage';
 import OurWorkPage from '../Pages/OurWorkPage';
 import BuildersPage from '../Pages/BuildersPage';
 import AboutUsPage from '../Pages/AboutUsPage';
+import MarathonPage from '../Pages/MarathonPage';
 
 const routes = [
   { path: '/', name: 'Home', Component: HomePage },
@@ -16,6 +17,7 @@ const routes = [
   { path: '/our-work', name: 'Our Work', Component: OurWorkPage },
   { path: '/builders', name: 'Builders', Component: BuildersPage },
   { path: '/about-us', name: 'About Us', Component: AboutUsPage },
+  { path: '/marathon', name: 'Marathon', Component: MarathonPage },
 ];
 
 class App extends React.Component {
@@ -23,7 +25,7 @@ class App extends React.Component {
     new WOW().init();
   }
 
-  renderRoutes = location => {
+  renderRoutes = (location) => {
     return (
       <Switch location={location}>
         {routes.map(({ path, Component }) => (
