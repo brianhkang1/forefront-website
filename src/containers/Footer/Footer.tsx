@@ -3,6 +3,7 @@ import styles from './Footer.module.css';
 import { Icon } from 'semantic-ui-react';
 import EmailForm from '../../components/EmailForm';
 import ExposureIcon from '../../Images/Icons/exposureWhite.png';
+import { isMobile } from '../../util';
 
 class Footer extends React.Component {
   render() {
@@ -58,6 +59,14 @@ class Footer extends React.Component {
           </div>
         </div>
 
+        {isMobile && (
+          <div className={styles.rightAlign} style={{ marginBottom: '3rem' }}>
+            <a href='https://www.guidestar.org/profile/shared/4cf544c8-ffe8-4932-9579-be0f0a2fc34c' target='_blank'>
+              <img src='https://widgets.guidestar.org/TransparencySeal/9459799' />
+            </a>
+          </div>
+        )}
+
         <div className={styles.middleAlign}>
           <div className={styles.text}>© 2023 by FOREFRONT Charity</div>
           <div className={`${styles.text} ${styles.textCenterAlign}`}>
@@ -68,11 +77,13 @@ class Footer extends React.Component {
           <div className={styles.text}>US 501(c)(3) Public Charity, EIN 47-3373120</div>
         </div>
 
-        <div className={styles.rightAlign}>
-          <a href='https://www.guidestar.org/profile/shared/4cf544c8-ffe8-4932-9579-be0f0a2fc34c' target='_blank'>
-            <img src='https://widgets.guidestar.org/TransparencySeal/9459799' />
-          </a>
-        </div>
+        {!isMobile && (
+          <div className={styles.rightAlign}>
+            <a href='https://www.guidestar.org/profile/shared/4cf544c8-ffe8-4932-9579-be0f0a2fc34c' target='_blank'>
+              <img src='https://widgets.guidestar.org/TransparencySeal/9459799' />
+            </a>
+          </div>
+        )}
       </div>
     );
   }

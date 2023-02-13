@@ -51,6 +51,19 @@ class MarathonPage extends React.Component {
                   opportunities!
                 </b>
               </p>
+
+              <div style={{ color: 'var(--main-color)' }}>
+                <span className={styles.bold}>Run with Us! </span>
+                <a
+                  href='https://docs.google.com/forms/d/e/1FAIpQLSehuQTp71A9n7T72bcMAGajsaRoYS6ocIxrVnqvq-bDXk44aw/viewform'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={styles.bold}
+                >
+                  Click here to apply
+                </a>
+                <span className={styles.bold}> to be one of our five team members!</span>
+              </div>
             </div>
           }
         />
@@ -95,21 +108,9 @@ class MarathonPage extends React.Component {
         <Picture src={PictureThree} width='100vw' height='60vh' />
 
         <div className={styles.linksContainer}>
-          <div>
-            <span>Run with Us! </span>
-            <a
-              href='https://docs.google.com/forms/d/e/1FAIpQLSehuQTp71A9n7T72bcMAGajsaRoYS6ocIxrVnqvq-bDXk44aw/viewform'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Click here to apply
-            </a>
-            <span> to be one of our five team members!</span>
-          </div>
-
           <div style={{ marginTop: '1.5rem' }}>
             <a href='https://givebutter.com/ffmarathon23' target='_blank' rel='noopener noreferrer'>
-              Join a marathon team!
+              Support a marathon team!
             </a>
           </div>
 
@@ -119,6 +120,11 @@ class MarathonPage extends React.Component {
               follow us on social!
             </a>
           </div>
+        </div>
+
+        <div className={styles.logosContainer}>
+          <Picture src={Forefront_Logo} width='10rem' height='10rem' backgroundSize='contain' />
+          <Picture src={Marathon_Logo} width='10rem' height='10rem' backgroundSize='contain' />
         </div>
 
         <Footer />
