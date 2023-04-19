@@ -54,7 +54,7 @@ class HeaderLinks extends React.Component<Props> {
           </NavLink>
         </div>
         <GoogleEventTracker category={GoogleEventCategory.DONATE_HEADER_BUTTON} action={GoogleEventAction.CLICK}>
-          <div className={styles.link}>
+          <div className={styles.link} onClick={() => window.uet_report_conversion()}>
             {isMobile ? (
               <a href={'https://givebutter.com/unitedincompassion'} target='_blank' rel='noopener noreferrer'>
                 Donate
