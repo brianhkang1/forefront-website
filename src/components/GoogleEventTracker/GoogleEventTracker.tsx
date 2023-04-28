@@ -1,12 +1,7 @@
 import React from 'react';
-import ReactGA from 'react-ga';
-import {
-  GoogleEventAction,
-  GoogleEventCategory,
-  GoogleEventLabel
-} from '../../util';
+import ReactGA from 'react-ga4';
+import { GoogleEventAction, GoogleEventCategory, GoogleEventLabel } from '../../util';
 // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
-//https://github.com/react-ga/react-ga
 
 type Props = {
   children: any;
@@ -25,7 +20,7 @@ const GoogleEventTracker: React.FC<Props> = ({
   label,
   value,
   nonInteraction,
-  transport
+  transport,
 }) => {
   const onClick = () => {
     ReactGA.event({
@@ -34,7 +29,7 @@ const GoogleEventTracker: React.FC<Props> = ({
       label,
       value,
       nonInteraction,
-      transport
+      transport,
     });
   };
 

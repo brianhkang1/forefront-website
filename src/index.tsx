@@ -6,23 +6,21 @@ import * as serviceWorker from './serviceWorker';
 import { Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { createBrowserHistory } from 'history';
-import ReactGA from 'react-ga';
-import GoogleTagManager from 'react-gtm-module';
-
-const GoogleTagManagerArgs = {
-  gtmId: process.env.REACT_APP_GTM_TRACKING_ID || '',
-};
+import ReactGA from 'react-ga4';
 
 const trackPageView = (location) => {
   ReactGA.set({ page: location.pathname });
-  ReactGA.pageview(location.pathname);
+  ReactGA.send({ hitType: 'pageview', page: location.pathname, title: `Page view: ${location.pathname}` });
 };
 
 const initGoogleAnalytics = (history) => {
-  ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '', {
-    debug: true,
-  });
-  GoogleTagManager.initialize(GoogleTagManagerArgs);
+  ReactGA.initialize([
+    {
+      trackingId: process.env.REACT_APP_GA_4_MEASUREMENT_ID || '',
+      // gtagOptions: {...},
+      // gaOptions: {...},
+    },
+  ]);
 
   trackPageView(history.location);
   history.listen(trackPageView);
