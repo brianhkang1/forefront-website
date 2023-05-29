@@ -13,11 +13,16 @@ import Report2018 from '../../../Documents/annual_report_2018.pdf';
 import Report2019 from '../../../Documents/annual_report_2019.pdf';
 import Report2020 from '../../../Documents/annual_report_2020.pdf';
 import Report2021 from '../../../Documents/annual_report_2021.pdf';
+import Report2022 from '../../../Documents/annual_report_2022.pdf';
 import PictureFilter from '../../../components/PictureFilter';
 import PictureText from '../../../components/PictureText';
 import OurTeamContainer from '../../OurTeamContainer';
 
 const ANNUAL_REPORTS = [
+  {
+    year: '2022',
+    href: Report2022,
+  },
   {
     year: '2021',
     href: Report2021,
@@ -51,24 +56,15 @@ class AboutUsPage extends React.Component {
             alignItems: 'center',
           }}
         >
-          <PictureText
-            padding='1.75rem'
-            className={classNames(styles.heroText1, styles.heroText)}
-          >
+          <PictureText padding='1.75rem' className={classNames(styles.heroText1, styles.heroText)}>
             <div>Enable every person</div>
           </PictureText>
 
-          <PictureText
-            padding='1.75rem'
-            className={classNames(styles.heroText, styles.heroText2)}
-          >
+          <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText2)}>
             <div>Equip leaders</div>
           </PictureText>
 
-          <PictureText
-            padding='1.75rem'
-            className={classNames(styles.heroText, styles.heroText3)}
-          >
+          <PictureText padding='1.75rem' className={classNames(styles.heroText, styles.heroText3)}>
             <div>Establish self-sustaining communities</div>
           </PictureText>
         </div>
@@ -86,24 +82,15 @@ class AboutUsPage extends React.Component {
             alignItems: 'center',
           }}
         >
-          <PictureText
-            padding='1rem'
-            className={classNames(styles.heroText1, styles.heroText)}
-          >
+          <PictureText padding='1rem' className={classNames(styles.heroText1, styles.heroText)}>
             <div>Enable every person</div>
           </PictureText>
 
-          <PictureText
-            padding='1rem'
-            className={classNames(styles.heroText, styles.heroText2)}
-          >
+          <PictureText padding='1rem' className={classNames(styles.heroText, styles.heroText2)}>
             <div>Equip leaders</div>
           </PictureText>
 
-          <PictureText
-            padding='1rem'
-            className={classNames(styles.heroText, styles.heroText3)}
-          >
+          <PictureText padding='1rem' className={classNames(styles.heroText, styles.heroText3)}>
             <div>Establish </div>
             <div>self-sustaining</div>
             <div>communities</div>
@@ -135,49 +122,33 @@ class AboutUsPage extends React.Component {
               </div>
             )}
 
-            {isDesktop
-              ? this.renderDesktopHeroText()
-              : this.renderMobileHeroText()}
+            {isDesktop ? this.renderDesktopHeroText() : this.renderMobileHeroText()}
           </PictureFilter>
         </div>
 
         <div className={styles.iconsContainer}>
           <div className={styles.iconContainer}>
-            <div
-              className={styles.icon}
-              style={{ backgroundImage: `url(${SoTIcon})` }}
-            />
+            <div className={styles.icon} style={{ backgroundImage: `url(${SoTIcon})` }} />
             <div className={styles.iconText}>
               We are a 501(c)(3) non-profit <br />
               committed to transparency.
             </div>
             <div className={styles.iconLink}>
-              <a
-                href='https://www.guidestar.org/profile/47-3373120'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href='https://www.guidestar.org/profile/47-3373120' target='_blank' rel='noopener noreferrer'>
                 We are platinum certified
               </a>
             </div>
           </div>
 
           <div className={styles.iconContainer}>
-            <div
-              className={styles.icon}
-              style={{ backgroundImage: `url(${AnnualReportIcon})` }}
-            />
+            <div className={styles.icon} style={{ backgroundImage: `url(${AnnualReportIcon})` }} />
             <div className={styles.iconText}>
               Read our annual reports for <br />
               full transparency and program impact.
             </div>
 
             <div className={styles.dropdownContainer}>
-              <Dropdown
-                placeholder='Select a year'
-                selection
-                className={styles.dropdown}
-              >
+              <Dropdown placeholder='Select a year' selection className={styles.dropdown}>
                 <Dropdown.Menu className={styles.dropdownMenu}>
                   {ANNUAL_REPORTS.map((report) => (
                     <Dropdown.Item
@@ -193,20 +164,13 @@ class AboutUsPage extends React.Component {
           </div>
 
           <div className={styles.iconContainer}>
-            <div
-              className={styles.icon}
-              style={{ backgroundImage: `url(${BlogIcon})` }}
-            />
+            <div className={styles.icon} style={{ backgroundImage: `url(${BlogIcon})` }} />
             <div className={styles.iconText}>
               Read our personal stories and <br />
               the impact we are making from the field.
             </div>
             <div className={styles.iconLink}>
-              <a
-                href='https://blog.goforefront.org'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href='https://blog.goforefront.org' target='_blank' rel='noopener noreferrer'>
                 Check out our blog
               </a>
             </div>

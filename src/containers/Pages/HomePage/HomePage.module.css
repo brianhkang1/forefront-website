@@ -5,10 +5,6 @@
     height: 90vh;
   }
 
-  /* .heroPictureContainer::before {
-    background: url('../../../Images/Hero/HomePage.png') no-repeat center center;
-  } */
-
   .heroText {
     font-size: 4rem;
     line-height: 4.5rem;
@@ -44,10 +40,6 @@
   .heroPictureContainer::before {
     height: 93vh;
   }
-
-  /* .heroPictureContainer::before {
-    background: url('../../../Images/Hero/HomePage.png') no-repeat center center;
-  } */
 
   .header {
     position: fixed;
