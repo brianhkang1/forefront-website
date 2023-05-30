@@ -26,6 +26,8 @@ import AndrewPyonPic from '../../Images/Team/Andrew_Pyon.jpg';
 import BethGelmanPic from '../../Images/Team/Beth_Gelman.jpg';
 import JenniferHerreraPic from '../../Images/Team/Jennifer_Herrera.jpg';
 import YashDalviPic from '../../Images/Team/Yash_Dalvi.jpg';
+import EventTracker from '../../components/EventTracker/EventTracker';
+import { TrackingEventAction, TrackingEventLabel } from '../../util';
 
 type Member = {
   title: string;
@@ -186,11 +188,13 @@ const OurTeamContainer: React.FC = () => {
             Join The FOREFRONT Charity Team
           </div>
 
-          <div className={styles.mainPictureLink}>
-            <a href={'https://form.jotform.com/80993600806157'} target='_blank' rel='noopener noreferrer'>
-              Become a Volunteer
-            </a>
-          </div>
+          <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.BECOME_A_VOLUNTEER}>
+            <div className={styles.mainPictureLink}>
+              <a href={'https://form.jotform.com/80993600806157'} target='_blank' rel='noopener noreferrer'>
+                Become a Volunteer
+              </a>
+            </div>
+          </EventTracker>
 
           {/* <div className={styles.mainPictureLink}>
             <a href={InternshipDoc} target='_blank' rel='noopener noreferrer'>

@@ -24,13 +24,6 @@ import EducationIcon from '../../../Images/Icons/FourPillars/Education_color.png
 import MedicalIcon from '../../../Images/Icons/FourPillars/Medical_color.png';
 import EmpowermentIcon from '../../../Images/Icons/FourPillars/Empowerment_color.png';
 
-// import GoogleEventTracker from '../../../components/GoogleEventTracker';
-// import {
-//   GoogleEventAction,
-//   GoogleEventCategory,
-//   GoogleEventLabel
-// } from '../../../util';
-
 const OurImpact = [
   {
     type: 'WATER & SANITATION',
