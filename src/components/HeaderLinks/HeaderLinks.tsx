@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './HeaderLinks.module.css';
 import { NavLink } from 'react-router-dom';
 import Button from '../Button';
-import GoogleEventTracker from '../GoogleEventTracker';
-import { GoogleEventAction, GoogleEventCategory } from '../../util';
+import EventTracker from '../EventTracker';
+import { TrackingEventAction, TrackingEventLabel } from '../../util';
 
 interface Props {
   handleLinkClick: (e: any, name: string) => void;
@@ -53,8 +53,8 @@ class HeaderLinks extends React.Component<Props> {
             About Us
           </NavLink>
         </div>
-        <GoogleEventTracker category={GoogleEventCategory.DONATE_HEADER_BUTTON} action={GoogleEventAction.CLICK}>
-          <div className={styles.link} onClick={() => window.uet_report_conversion()}>
+        <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.DONATE}>
+          <div className={styles.link}>
             {isMobile ? (
               <a href={'https://givebutter.com/unitedincompassion'} target='_blank' rel='noopener noreferrer'>
                 Donate
@@ -67,7 +67,7 @@ class HeaderLinks extends React.Component<Props> {
               </Button>
             )}
           </div>
-        </GoogleEventTracker>
+        </EventTracker>
       </div>
     );
   }
