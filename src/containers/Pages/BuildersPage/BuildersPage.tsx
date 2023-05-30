@@ -34,6 +34,9 @@ import Quotes4 from '../../../Images/BuildersPage/Quotes4.png';
 import BecomeABuilderPic from '../../../Images/BuildersPage/BecomeABuilder.jpg';
 
 import Carousel from 'react-material-ui-carousel';
+import { Dialog } from '@material-ui/core';
+import EventTracker from '../../../components/EventTracker/EventTracker';
+import { TrackingEventAction, TrackingEventLabel } from '../../../util';
 
 const QuotePics = [Quotes1, Quotes2, Quotes3, Quotes4];
 
@@ -145,7 +148,7 @@ const DonationWidget: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
   }, []);
 
   return (
-    <div className={`${styles.widgetContainer} wow fadeIn`} data-wow-delay='0.75s'>
+    <div className={styles.widgetContainer}>
       <iframe
         src='https://givebutter.com/embed/c/forefront-charity-donate'
         style={{
@@ -163,7 +166,22 @@ const DonationWidget: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
   );
 };
 
+const DonationModal: React.FC<{ isOpen: boolean; isMobile: boolean; setIsModalOpen: (value: boolean) => void }> = ({
+  isOpen,
+  isMobile,
+  setIsModalOpen,
+}) => {
+  return (
+    <Dialog open={isOpen} onClose={() => setIsModalOpen(false)}>
+      <div>
+        <DonationWidget isMobile={isMobile} />
+      </div>
+    </Dialog>
+  );
+};
+
 const BuildersPage: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const isMobile = useIsMobile();
   const mobileDonationWidget = useRef<HTMLDivElement>(null);
 
@@ -195,7 +213,15 @@ const BuildersPage: React.FC = () => {
               Builders: Monthly givers that invest in communities where every person has the opportunity to thrive
             </div>
 
-            {!isMobile && <DonationWidget isMobile={isMobile} />}
+            {/* {!isMobile && <DonationWidget isMobile={isMobile} />} */}
+            {!isMobile && (
+              <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.JOIN_TODAY}>
+                <Button size='large' className={styles.joinTodayButton} onClick={() => setIsModalOpen(true)}>
+                  Join Today
+                </Button>
+                <DonationModal isOpen={isModalOpen} isMobile={isMobile} setIsModalOpen={setIsModalOpen} />
+              </EventTracker>
+            )}
           </div>
         </PictureFilter>
       </div>

@@ -14,4 +14,5 @@ export enum TrackingEventLabel {
   DONATE = 'donate',
   SEE_OPEN_ROLES = 'see_open_roles',
   BECOME_A_VOLUNTEER = 'become_a_volunteer',
+  JOIN_TODAY = 'join_today',
 }
