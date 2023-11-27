@@ -9,6 +9,7 @@
   .input {
     background-color: var(--main-color);
     -webkit-appearance: none;
+    appearance: none;
     box-shadow: none;
     width: 10rem;
     color: white;
@@ -51,6 +52,7 @@
   .input {
     background-color: var(--main-color);
     -webkit-appearance: none;
+    appearance: none;
     box-shadow: none;
     width: 5rem;
     color: white;
