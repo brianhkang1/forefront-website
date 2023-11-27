@@ -39,16 +39,6 @@ class HeaderLinks extends React.Component<Props> {
           </NavLink>
         </div>
         <div className={styles.link}>
-          <a href={'https://forefrontgallery.org'} target='_blank' rel='noopener noreferrer'>
-            Gallery
-          </a>
-        </div>
-        <div className={styles.link}>
-          <NavLink exact to='/marathon' activeClassName={styles.active}>
-            Marathon
-          </NavLink>
-        </div>
-        <div className={styles.link}>
           <NavLink exact to='/about-us' activeClassName={styles.active}>
             About Us
           </NavLink>
