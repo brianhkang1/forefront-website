@@ -43,6 +43,11 @@ class HeaderLinks extends React.Component<Props> {
             About Us
           </NavLink>
         </div>
+        <div className={styles.link}>
+          <a href={'https://givebutter.com/empoweringdreams'} target='_blank' rel='noopener noreferrer'>
+            Education
+          </a>
+        </div>
         <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.DONATE}>
           <div className={styles.link}>
             {isMobile ? (
