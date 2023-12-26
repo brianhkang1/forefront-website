@@ -32,9 +32,10 @@ import Quotes2 from '../../../Images/BuildersPage/Quotes2.png';
 import Quotes3 from '../../../Images/BuildersPage/Quotes3.png';
 import Quotes4 from '../../../Images/BuildersPage/Quotes4.png';
 import BecomeABuilderPic from '../../../Images/BuildersPage/BecomeABuilder.jpg';
+import DonationModal from '../../../components/DonationModal';
+import DonationWidget from '../../../components/DonationWidget';
 
 import Carousel from 'react-material-ui-carousel';
-import { Dialog } from '@material-ui/core';
 import EventTracker from '../../../components/EventTracker/EventTracker';
 import { TrackingEventAction, TrackingEventLabel } from '../../../util';
 
@@ -140,46 +141,6 @@ const WhyBeABuilder = [
   },
 ];
 
-const DonationWidget: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://givebutter.com/js/widget.js';
-    document.getElementsByTagName('head')[0].appendChild(script);
-  }, []);
-
-  return (
-    <div className={styles.widgetContainer}>
-      <iframe
-        src='https://givebutter.com/embed/c/forefront-charity-donate'
-        style={{
-          width: isMobile ? '100%' : '500px',
-          height: isMobile ? '350px' : '450px',
-          overflow: 'auto',
-        }}
-        name='givebutter'
-        frameBorder='0'
-        scrolling='yes'
-        seamless
-        allow='payment'
-      ></iframe>
-    </div>
-  );
-};
-
-const DonationModal: React.FC<{ isOpen: boolean; isMobile: boolean; setIsModalOpen: (value: boolean) => void }> = ({
-  isOpen,
-  isMobile,
-  setIsModalOpen,
-}) => {
-  return (
-    <Dialog open={isOpen} onClose={() => setIsModalOpen(false)}>
-      <div>
-        <DonationWidget isMobile={isMobile} />
-      </div>
-    </Dialog>
-  );
-};
-
 const BuildersPage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isMobile = useIsMobile();
@@ -213,13 +174,12 @@ const BuildersPage: React.FC = () => {
               Builders: Monthly givers that invest in communities where every person has the opportunity to thrive
             </div>
 
-            {/* {!isMobile && <DonationWidget isMobile={isMobile} />} */}
             {!isMobile && (
               <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.JOIN_TODAY}>
                 <Button size='large' className={styles.joinTodayButton} onClick={() => setIsModalOpen(true)}>
                   Join Today
                 </Button>
-                <DonationModal isOpen={isModalOpen} isMobile={isMobile} setIsModalOpen={setIsModalOpen} />
+                <DonationModal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
               </EventTracker>
             )}
           </div>
@@ -229,7 +189,7 @@ const BuildersPage: React.FC = () => {
       {isMobile && (
         <div ref={mobileDonationWidget}>
           <Title title='Build a Brighter Future' />
-          <DonationWidget isMobile={isMobile} />
+          <DonationWidget />
         </div>
       )}
 

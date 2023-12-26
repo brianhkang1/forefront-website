@@ -33,7 +33,7 @@ const blueVisualData = [
     name: 'waterWells',
     icon: WaterIcon,
     chart: <BarChart data={waterWellsData} domain={[0, 80]} isWhite />,
-    bigNumber: '61',
+    bigNumber: '72',
     subTitle: <div>total water wells built</div>,
     description: (
       <>
@@ -49,7 +49,7 @@ const blueVisualData = [
     name: 'soapToys',
     icon: SoapIcon,
     chart: <BarChart data={soapToysData} domain={[0, 8000]} isWhite />,
-    bigNumber: '8000+',
+    bigNumber: '8500+',
     subTitle: <div>total soap toys</div>,
     description: (
       <div>
@@ -66,7 +66,7 @@ const yellowVisualData = [
     name: 'schoolStudents',
     icon: SchoolIcon,
     chart: <BarChart data={schoolStudentsData} domain={[0, 200]} isWhite />,
-    bigNumber: '160',
+    bigNumber: '235',
     subTitle: <div>number of students</div>,
     description: (
       <div>
@@ -90,7 +90,7 @@ const yellowVisualData = [
     ),
     bigNumber: (
       <span className={styles.schoolFootprintBigNum}>
-        20,230 ft<sup>2</sup>
+        30,345 ft<sup>2</sup>
       </span>
     ),
     subTitle: <div className={styles.schoolFootprintSubtitle}>FOREFRONT School Footprint</div>,
@@ -111,7 +111,7 @@ const redVisualData = [
     name: 'diabetesPatients',
     icon: MedicalIcon,
     chart: <BarChart data={diabetesData} domain={[0, 800]} isWhite />,
-    bigNumber: '600+',
+    bigNumber: '825+',
     subTitle: <div>individuals reached</div>,
     description: (
       <div>
@@ -128,7 +128,7 @@ const purpleVisualData = [
     name: 'engagementSessions',
     icon: Diversity3Icon,
     chart: <BarChart data={engagementSessionsData} domain={[0, 30]} isWhite />,
-    bigNumber: '27',
+    bigNumber: '34',
     subTitle: <div>community engagement sessions</div>,
     description: (
       <>
@@ -145,7 +145,7 @@ const purpleVisualData = [
     name: 'changemakers',
     icon: EmpowermentIcon,
     chart: <BarChart data={changemakersData} domain={[0, 200]} isWhite />,
-    bigNumber: '150+',
+    bigNumber: '175+',
     subTitle: <div>total Changemakers</div>,
     description: (
       <div>

@@ -140,11 +140,6 @@
   margin-top: 1rem;
 }
 
-.modalContainer {
-  width: 500px;
-  min-height: 450px;
-}
-
 /* ********************************************* */
 /* DESKTOP */
 @media (min-width: 769px) {
@@ -233,6 +228,10 @@
 
   .carouselContainer {
     padding-bottom: 2rem;
+  }
+
+  .widgetContainer {
+    min-width: 500px;
   }
 }
 
