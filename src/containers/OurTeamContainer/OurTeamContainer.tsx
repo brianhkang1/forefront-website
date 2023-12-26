@@ -22,10 +22,10 @@ import JosephLeePic from '../../Images/Team/Joseph_Lee.jpg';
 import JasonChoePic from '../../Images/Team/Jason_Choe.jpg';
 import DanielKimPic from '../../Images/Team/Daniel_Kim.jpg';
 import AndreParkPic from '../../Images/Team/Andre_Park.jpg';
-import AndrewPyonPic from '../../Images/Team/Andrew_Pyon.jpg';
 import BethGelmanPic from '../../Images/Team/Beth_Gelman.jpg';
 import JenniferHerreraPic from '../../Images/Team/Jennifer_Herrera.jpg';
 import YashDalviPic from '../../Images/Team/Yash_Dalvi.jpg';
+import MichaelJangPic from '../../Images/Team/Michael_Jang.jpg';
 import EventTracker from '../../components/EventTracker/EventTracker';
 import { TrackingEventAction, TrackingEventLabel } from '../../util';
 
@@ -65,12 +65,6 @@ const TeamMembers = [
     image: AndreParkPic,
     description:
       "Andre leads the B2B sales initiatives at a tech-startup in NYC. As Forefront's People & Culture Lead, Andre helps curate the culture of our growing team and organization through full-cycle recruiting, team member engagement and internal events. Outside of his day-to-day, Andre loves raising his beagle, Rogen, watching the Lakers win championships, and organizing game nights with friends and family.",
-  },
-  {
-    title: 'ANDREW PYON',
-    image: AndrewPyonPic,
-    description:
-      'Andrew is a member of the water and sanitation team. He has a passion for increasing clean water access and wishes to help implement more and more sustainable solutions with Forefront in the future. He holds a B.S. in business administration from Georgia Tech.',
   },
   {
     title: 'BETH GELMAN',
@@ -143,6 +137,12 @@ const TeamMembers = [
     image: MattLawsonPic,
     description:
       'Matt is a graduate of Western Kentucky University where he studied International Affairs, Spanish, and Business Administration. Aside from international development, Matt loves learning languages, running and reading.',
+  },
+  {
+    title: 'MICHAEL JANG',
+    image: MichaelJangPic,
+    description:
+      'Michael is a management consultant and brings his expertise as Chief of Staff, leading Forefront’s strategic initiatives. Michael holds a B.S. in Operations Management and a B.A. in Philosophy from Boston College. In his free time, Michael enjoys golfing, hiking, and spending time with his wife.',
   },
   {
     title: 'SARAH KANG',

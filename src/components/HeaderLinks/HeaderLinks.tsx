@@ -39,14 +39,14 @@ class HeaderLinks extends React.Component<Props> {
           </NavLink>
         </div>
         <div className={styles.link}>
-          <NavLink exact to='/about-us' activeClassName={styles.active}>
-            About Us
-          </NavLink>
-        </div>
-        <div className={styles.link}>
           <a href={'https://givebutter.com/empoweringdreams'} target='_blank' rel='noopener noreferrer'>
             Education
           </a>
+        </div>
+        <div className={styles.link}>
+          <NavLink exact to='/about-us' activeClassName={styles.active}>
+            About Us
+          </NavLink>
         </div>
         <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.DONATE}>
           <div className={styles.link}>
