@@ -1,20 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './HeaderLinks.module.css';
 import { NavLink } from 'react-router-dom';
 import Button from '../Button';
 import EventTracker from '../EventTracker';
 import { TrackingEventAction, TrackingEventLabel } from '../../util';
+import DonationModal from '../DonationModal';
 
 interface Props {
-  handleLinkClick: (e: any, name: string) => void;
   isMobile?: boolean;
+  onGiveClick?: () => void;
 }
 
-class HeaderLinks extends React.Component<Props> {
-  render() {
-    const { isMobile } = this.props;
+const HeaderLinks = ({ isMobile, onGiveClick }: Props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    return (
+  return (
+    <>
       <div className={styles.headerLinks}>
         {isMobile ? (
           <div className={styles.link}>
@@ -49,23 +50,21 @@ class HeaderLinks extends React.Component<Props> {
           </NavLink>
         </div>
         <EventTracker action={TrackingEventAction.OUTBOUND_CLICK} label={TrackingEventLabel.DONATE}>
-          <div className={styles.link}>
+          <div className={styles.link} onClick={() => setIsModalOpen(true)}>
             {isMobile ? (
-              <a href={'https://givebutter.com/unitedincompassion'} target='_blank' rel='noopener noreferrer'>
-                Donate
-              </a>
+              <span onClick={() => onGiveClick?.()}>Give</span>
             ) : (
               <Button>
-                <a href={'https://givebutter.com/unitedincompassion'} target='_blank' rel='noopener noreferrer'>
-                  Donate
-                </a>
+                <span>Give</span>
               </Button>
             )}
           </div>
         </EventTracker>
       </div>
-    );
-  }
-}
+
+      <DonationModal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+    </>
+  );
+};
 
 export default HeaderLinks;
