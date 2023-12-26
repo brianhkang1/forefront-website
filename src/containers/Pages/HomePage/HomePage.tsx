@@ -31,7 +31,7 @@ const OurImpact = [
     icon: WaterIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>61</span> water wells
+        <span className={styles.greenBold}>72</span> water wells
         <br />
         <span className={styles.greenBold}>94%</span> hand-washing rate
         <Popup content='Up from 39%' />
@@ -44,7 +44,7 @@ const OurImpact = [
     icon: EducationIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>160 students</span> at FOREFRONT School from PreK - 3rd Grade
+        <span className={styles.greenBold}>235</span> students at FOREFRONT School from PreK - 5th Grade
       </span>
     ),
   },
@@ -54,7 +54,7 @@ const OurImpact = [
     icon: MedicalIcon,
     text: (
       <span>
-        <span className={styles.greenBold}>17</span> health and wellness workshops
+        <span className={styles.greenBold}>22</span> health and wellness workshops
       </span>
     ),
   },
@@ -62,7 +62,11 @@ const OurImpact = [
     type: 'EMPOWERMENT',
     image: OurImpactEmpowerment,
     icon: EmpowermentIcon,
-    text: <span>Soap business run by local women</span>,
+    text: (
+      <span>
+        Soap business run by <span className={styles.greenBold}>175+</span> local changemakers
+      </span>
+    ),
   },
 ];
 
