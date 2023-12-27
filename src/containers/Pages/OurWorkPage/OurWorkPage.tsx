@@ -48,7 +48,7 @@ const blueVisualData = [
   {
     name: 'soapToys',
     icon: SoapIcon,
-    chart: <BarChart data={soapToysData} domain={[0, 8000]} isWhite />,
+    chart: <BarChart data={soapToysData} domain={[0, 10000]} isWhite />,
     bigNumber: '8500+',
     subTitle: <div>total soap toys</div>,
     description: (
@@ -65,7 +65,7 @@ const yellowVisualData = [
   {
     name: 'schoolStudents',
     icon: SchoolIcon,
-    chart: <BarChart data={schoolStudentsData} domain={[0, 200]} isWhite />,
+    chart: <BarChart data={schoolStudentsData} domain={[0, 250]} isWhite />,
     bigNumber: '235',
     subTitle: <div>number of students</div>,
     description: (
@@ -110,7 +110,7 @@ const redVisualData = [
   {
     name: 'diabetesPatients',
     icon: MedicalIcon,
-    chart: <BarChart data={diabetesData} domain={[0, 800]} isWhite />,
+    chart: <BarChart data={diabetesData} domain={[0, 1000]} isWhite />,
     bigNumber: '825+',
     subTitle: <div>individuals reached</div>,
     description: (
@@ -127,7 +127,7 @@ const purpleVisualData = [
   {
     name: 'engagementSessions',
     icon: Diversity3Icon,
-    chart: <BarChart data={engagementSessionsData} domain={[0, 30]} isWhite />,
+    chart: <BarChart data={engagementSessionsData} domain={[0, 40]} isWhite />,
     bigNumber: '34',
     subTitle: <div>community engagement sessions</div>,
     description: (

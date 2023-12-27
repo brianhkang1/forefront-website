@@ -31,6 +31,10 @@ export const waterWellsData = [
     name: 2022,
     value: 61,
   },
+  {
+    name: 2023,
+    value: 72,
+  },
 ];
 
 export const soapToysData = [
@@ -66,6 +70,10 @@ export const soapToysData = [
     name: 2022,
     value: 8000,
   },
+  {
+    name: 2023,
+    value: 8500,
+  },
 ];
 
 export const schoolStudentsData = [
@@ -80,6 +88,10 @@ export const schoolStudentsData = [
   {
     name: 2022,
     value: 160,
+  },
+  {
+    name: 2023,
+    value: 235,
   },
 ];
 
@@ -99,6 +111,10 @@ export const diabetesData = [
   {
     name: 2022,
     value: 625,
+  },
+  {
+    name: 2023,
+    value: 825,
   },
 ];
 
@@ -122,6 +138,10 @@ export const engagementSessionsData = [
   {
     name: 2022,
     value: 27,
+  },
+  {
+    name: 2023,
+    value: 34,
   },
 ];
 
@@ -157,5 +177,9 @@ export const changemakersData = [
   {
     name: 2022,
     value: 168,
+  },
+  {
+    name: 2023,
+    value: 175,
   },
 ];
