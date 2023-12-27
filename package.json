@@ -1,6 +1,6 @@
 {
   "name": "forefront",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "private": true,
   "dependencies": {
     "leaflet": "^1.9.4",
