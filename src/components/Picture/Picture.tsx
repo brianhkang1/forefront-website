@@ -10,9 +10,10 @@ type Props = {
   className?: string;
   backgroundSize?: 'cover' | 'contain';
   backgroundPosition?: string;
+  children?: React.ReactNode;
 };
 
-const Picture: React.FC<Props> = ({
+const Picture = ({
   src,
   width,
   height,
@@ -20,8 +21,8 @@ const Picture: React.FC<Props> = ({
   mobileHeight,
   backgroundSize = 'cover',
   className,
-  children
-}) => {
+  children,
+}: Props) => {
   const isMobile = useIsMobile();
 
   return (
@@ -31,7 +32,7 @@ const Picture: React.FC<Props> = ({
         background: `url("${src}") no-repeat center center / ${backgroundSize}`,
         position: 'relative',
         width: isMobile && mobileWidth ? mobileWidth : width,
-        height: isMobile && mobileHeight ? mobileHeight : height
+        height: isMobile && mobileHeight ? mobileHeight : height,
       }}
     >
       {children}

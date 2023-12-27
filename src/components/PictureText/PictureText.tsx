@@ -4,14 +4,10 @@ type Props = {
   padding?: string;
   opacity?: number;
   className?: string;
+  children?: React.ReactNode;
 };
 
-const PictureText: React.FC<Props> = ({
-  padding = '1rem',
-  opacity = 0.8,
-  children,
-  className,
-}) => {
+const PictureText = ({ padding = '1rem', opacity = 0.8, children, className }: Props) => {
   return (
     <div
       style={{

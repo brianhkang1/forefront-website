@@ -9,6 +9,7 @@ interface Props {
   variant?: 'solid' | 'outlined' | 'text';
   fullWidth?: boolean;
   onClick?: any;
+  children?: React.ReactNode;
 }
 
 const Button: React.FunctionComponent<Props> = ({
@@ -20,13 +21,7 @@ const Button: React.FunctionComponent<Props> = ({
   ...props
 }) => (
   <button
-    className={classNames(
-      styles.button,
-      styles[size],
-      styles[variant],
-      fullWidth ? styles.fullWidth : null,
-      className
-    )}
+    className={classNames(styles.button, styles[size], styles[variant], fullWidth ? styles.fullWidth : null, className)}
     {...props}
   >
     {children}
