@@ -14,9 +14,9 @@ const initialFormFields = {
   email: '',
 };
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
 };
 
@@ -62,7 +62,7 @@ class EmailForm extends React.Component<{}, State> {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'Email subscription', ...body }),
     })
-      .then(res => {
+      .then((res) => {
         if (res.status === 200) {
           alert('You are successfully subscribed for Forefront emails');
           this.setState({ ...initialFormFields });
@@ -71,7 +71,7 @@ class EmailForm extends React.Component<{}, State> {
           alert('Unable to subscribe. Please try again later');
         }
       })
-      .catch(error => alert(error));
+      .catch((error) => alert(error));
 
     e.preventDefault();
   };
@@ -82,43 +82,43 @@ class EmailForm extends React.Component<{}, State> {
     return (
       <form
         className={styles.root}
-        name="Email subscription"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        name='Email subscription'
+        method='post'
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
       >
-        <input type="hidden" name="form-name" value="Email subscription" />
+        <input type='hidden' name='form-name' value='Email subscription' />
         <div className={styles.inputContainer}>
           <input
             required
             className={styles.input}
-            type="text"
-            placeholder="First Name"
+            type='text'
+            placeholder='First Name'
             value={firstName}
-            onChange={e => this.handleChange(e, 'firstName')}
-            autoComplete="new-password"
+            onChange={(e) => this.handleChange(e, 'firstName')}
+            autoComplete='new-password'
           />
         </div>
         <div className={styles.inputContainer}>
           <input
             required
             className={styles.input}
-            type="text"
-            placeholder="Last Name"
+            type='text'
+            placeholder='Last Name'
             value={lastName}
-            onChange={e => this.handleChange(e, 'lastName')}
-            autoComplete="new-password"
+            onChange={(e) => this.handleChange(e, 'lastName')}
+            autoComplete='new-password'
           />
         </div>
         <div className={styles.inputContainer}>
           <input
             required
             className={styles.input}
-            type="email"
-            placeholder="Email Address"
+            type='email'
+            placeholder='Email Address'
             value={email}
-            onChange={e => this.handleChange(e, 'email')}
-            autoComplete="new-password"
+            onChange={(e) => this.handleChange(e, 'email')}
+            autoComplete='new-password'
           />
         </div>
 
