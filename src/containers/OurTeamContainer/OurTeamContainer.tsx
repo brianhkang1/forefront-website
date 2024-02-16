@@ -26,6 +26,9 @@ import BethGelmanPic from '../../Images/Team/Beth_Gelman.jpg';
 import JenniferHerreraPic from '../../Images/Team/Jennifer_Herrera.jpg';
 import YashDalviPic from '../../Images/Team/Yash_Dalvi.jpg';
 import MichaelJangPic from '../../Images/Team/Michael_Jang.jpg';
+import HoseaMakPic from '../../Images/Team/Hosea_Mak.jpg';
+import LuciaMartinezCruzPic from '../../Images/Team/Lucia_Martinez_Cruz.jpg';
+import KassieBeckfordPic from '../../Images/Team/Kassie_Beckford.jpg';
 import EventTracker from '../../components/EventTracker/EventTracker';
 import { TrackingEventAction, TrackingEventLabel } from '../../util';
 
@@ -103,6 +106,12 @@ const TeamMembers = [
       'Eunice started out as an intern in 2016 while attending Rutgers University. She has since transitioned into a full time member working on the marketing team to strategize and execute digital campaigns on our various social platforms. Anyone that knows Eunice knows that she is obsessed with noodles.',
   },
   {
+    title: 'HOSEA MAK',
+    image: HoseaMakPic,
+    description:
+      "I am a Christian who loves listening to music, traveling, and playing board games! My background is in chemistry and public health and I have a huge passion for water, so I'm really grateful for the opportunity to dabble in public health with FOREFRONT's Water and Sanitation Pillar.",
+  },
+  {
     title: 'JASON CHOE',
     image: JasonChoePic,
     description:
@@ -127,10 +136,22 @@ const TeamMembers = [
       'Juliana holds a B.S. in Food Science from Cornell University.  Juliana is looking to make a positive impact on society through a unifying medium. She is a bookworm, extreme baker, nature lover, and can carry on a conversation about almost anything.',
   },
   {
+    title: 'KASSIE BECKFORD',
+    image: KassieBeckfordPic,
+    description:
+      'I find solace at the beach; it is my favorite place on earth. Exploring new cuisines from around the world excites me; I consider myself a foodie. Regular exercise not only contributes to my overall health but also enhances my mental well-being. Currently, I am also pursuing certification as a personal trainer. I have a deep love for art, and I am particularly drawn to painting and writing.',
+  },
+  {
     title: 'KATE KIM',
     image: KateKimPic,
     description:
       'Kate graduated from the Hotel School of Administration at Cornell University.  On the side, she is a wedding planner / coordinator!  She also loves travelling and spending time with her puppy.  She is excited to be part of this team making an impact around the globe!',
+  },
+  {
+    title: 'LUCIA MARTINEZ CRUZ',
+    image: LuciaMartinezCruzPic,
+    description:
+      "I was born and raised in Colombia and moved to the US to pursue my upper education. I've always been passionate about Global Health and finding ways to use my abilities to help those who need it most.",
   },
   {
     title: 'MATT LAWSON',

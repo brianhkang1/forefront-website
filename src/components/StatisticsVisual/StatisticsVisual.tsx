@@ -16,12 +16,12 @@ const StatisticsVisual = () => {
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>1200+</div>
+              <div className={styles.numberCounterItem}>1600+</div>
               <div>Unique Donors</div>
             </div>
 
             <div className={`${styles.statsItem} wow zoomIn`}>
-              <div className={styles.numberCounterItem}>$1,524,400</div>
+              <div className={styles.numberCounterItem}>$1,571,577</div>
               <div>Total Support</div>
             </div>
           </div>
