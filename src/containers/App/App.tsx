@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import styles from './App.module.css';
 import { Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import WOW from 'wow.js/dist/wow.js';
 
 import HomePage from '../Pages/HomePage';
-import OurApproachPage from '../Pages/OurApproachPage';
-import OurWorkPage from '../Pages/OurWorkPage';
-import BuildersPage from '../Pages/BuildersPage';
-import AboutUsPage from '../Pages/AboutUsPage';
+
+const OurApproachPage = lazy(() => import('../Pages/OurApproachPage'));
+const OurWorkPage = lazy(() => import('../Pages/OurWorkPage'));
+const BuildersPage = lazy(() => import('../Pages/BuildersPage'));
+const AboutUsPage = lazy(() => import('../Pages/AboutUsPage'));
 
 const routes = [
   { path: '/', name: 'Home', Component: HomePage },
@@ -25,15 +26,17 @@ class App extends React.Component {
 
   renderRoutes = (location) => {
     return (
-      <Switch location={location}>
-        {routes.map(({ path, Component }) => (
-          <Route key={path} exact path={path}>
-            <div className={styles.page}>
-              <Component />
-            </div>
-          </Route>
-        ))}
-      </Switch>
+      <Suspense fallback={<span />}>
+        <Switch location={location}>
+          {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+              <div className={styles.page}>
+                <Component />
+              </div>
+            </Route>
+          ))}
+        </Switch>
+      </Suspense>
     );
   };
 

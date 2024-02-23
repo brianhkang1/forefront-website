@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-// import ReactTypingEffect from 'react-typing-effect';
 import { isMobile, isDesktop } from '../../../util';
-// import PictureText from '../../../components/PictureText';
 import OurMissionContainer from '../../OurMissionContainer';
 import FourPillarsContainer from '../../FourPillarsContainer';
 import Picture from '../../../components/Picture';

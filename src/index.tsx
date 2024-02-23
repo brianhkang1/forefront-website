@@ -1,11 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './containers/App';
-import * as serviceWorker from './serviceWorker';
+import { createRoot } from 'react-dom/client';
 import { Router } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';
+import * as serviceWorker from './serviceWorker';
 import { createBrowserHistory } from 'history';
+import './index.css';
+import 'semantic-ui-css/semantic.min.css';
+
+import App from './containers/App';
+import ScrollToTop from './components/ScrollToTop';
 import ReactGA from 'react-ga4';
 
 const trackPageView = (location) => {
@@ -29,12 +31,14 @@ const initGoogleAnalytics = (history) => {
 const history = createBrowserHistory();
 initGoogleAnalytics(history);
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container!);
+
+root.render(
   <Router history={history}>
     <ScrollToTop />
     <App />
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
 
 // If you want your app to work offline and load faster, you can change

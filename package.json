@@ -1,6 +1,6 @@
 {
   "name": "forefront",
-  "version": "1.18.3",
+  "version": "1.18.4",
   "private": true,
   "dependencies": {
     "leaflet": "^1.9.4",
@@ -13,8 +13,8 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^5.0.0",
     "react-transition-group": "^4.2.0",
-    "react-typing-effect": "^2.0.3",
     "recharts": "^2.1.9",
+    "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.2",
     "typescript": "^4.5.5",
     "wow.js": "^1.2.2"
